@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply scroll-smooth;
+  -webkit-tap-highlight-color: transparent; /* For some mobile browsers like Safari */
+}
+
+header {
+  @apply animate-fadeIn;
+}
+.container {
+  @apply w-full px-5;
+}
+@media (min-width: 480px) {
+  .container {
+    @apply max-w-screen-xs;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    @apply max-w-[560px];
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    @apply max-w-[640px];
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    @apply max-w-[920px];
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    @apply max-w-[1100px];
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    @apply max-w-[1200px];
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    @apply max-w-[1100px];
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    @apply max-w-[1400px];
+  }
+}
+@media (max-width: 767px) {
+  .hidden-on-mobile {
+    display: none;
+  }
+}
+
+/* Headings */
+.subheading {
+  @apply inline-block pb-2 font-quicksand text-3xl font-bold capitalize leading-10 lg:text-[2rem] 4xl:text-4xl;
+}
+.heading-primary {
+  @apply bg-gradient-to-r from-primary-one to-yellow-400 bg-clip-text text-transparent;
+}
+
+/* Links and Paragraphs */
+a {
+  @apply outline-none;
+}
+.menu-link {
+  @apply flex justify-between border-slate-500 px-6 py-2.5 text-slate-200 text-sm font-semibold transition-all hover:text-primary-one xl:inline-block xl:px-0;
+}
+.submenu-link {
+  @apply flex justify-between px-6 py-2 text-sm font-semibold text-slate-200 transition-all hover:text-primary-one;
+}
+.para {
+  @apply font-quicksand text-sm  font-semibold leading-5 text-slate-400 lg:text-lg;
+}
+.admin-link-active {
+  @apply border-r-4 border-primary-300 pr-3 text-primary-300 transition-all;
+}
+.admin-link-hover {
+  @apply transition-all hover:border-r-4 hover:border-primary-300 hover:pr-3 hover:text-primary-300;
+}
+.text-light {
+  @apply text-slate-400 font-medium text-sm md:text-base xl:text-lg;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply w-fit rounded-xl bg-primary-one px-6 py-2 text-center text-xs font-medium text-primary-two transition-all hover:bg-transparent md:text-sm lg:w-full lg:px-6 lg:py-3.5 lg:text-base hover:text-primary-one;
+}
+.btn-one {
+  @apply w-fit rounded-full bg-primary-one px-6 py-2.5 text-center text-sm font-semibold text-primary-two transition-all hover:bg-transparent border-2 border-transparent hover:border-primary-one hover:text-primary-one lg:text-base;
+}
+.btn-transparent {
+  @apply w-fit rounded-xl border-2 border-slate-200 px-12 py-2 text-center text-xs transition-all hover:bg-primary-300 hover:text-white md:text-sm lg:w-full lg:px-6 lg:py-3.5 lg:text-base;
+}
+.btn-2 {
+  @apply px-3 py-1.5 rounded-lg border text-xs xl:text-sm font-bold inline-block outline-none;
+}
+
+/* Form Styles */
+.form-input {
+  @apply mb-3 block w-full rounded-lg border-2 border-slate-200 px-4 py-1.5 text-sm outline-none md:py-2.5 md:text-base;
+}
+.form-input-underline {
+  @apply mb-3 block w-full border-b-2  border-slate-200 py-1.5 text-sm outline-none md:py-2.5 md:text-base;
+}
+/* .auth-form-input {
+  @apply;
+} */
+
+/* Custom styling */
+.issue-card {
+  @apply mx-auto block h-20 w-20 object-cover lg:h-52 lg:w-52 2xl:h-60 2xl:w-60;
+}
+.experts-profile-bg {
+  @apply bg-gradient-to-b from-yellow-200 to-primary-one;
+}
+
+/* Swiper Styles */
+/* ---- Pagination  */
+.swiper-pagination {
+  @apply !-bottom-8 lg:!bottom-0;
+}
+.blog-categories .swiper-pagination {
+  @apply !-bottom-8 lg:!-bottom-10;
+}
+.mythsAndFacts .swiper-pagination {
+  @apply !-bottom-10;
+}
+.swiper-pagination-bullet {
+  @apply h-3 w-3;
+}
+.swiper-pagination-bullet-active {
+  @apply bg-primary-300;
+}
+.swiper-3d .swiper-slide-shadow-left {
+  @apply rounded-2xl;
+}
+.swiper-3d .swiper-slide-shadow-right {
+  @apply rounded-2xl;
+}
+
+/* Doctors Slider Styles */
+.doctorSlider .swiper-wrapper {
+  @apply h-fit;
+}
+
+.yoga-booking-navigation .swiper-button-next {
+  @apply !text-red-400;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Rubik One Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Rubik One Regular"), url("./RubikOne-Regular.woff") format("woff");
+}
