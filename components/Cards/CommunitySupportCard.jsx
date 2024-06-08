@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function CommunitySupportCard(props) {
   return (
-    <figure className="grid justify-between rounded-xl rounded-br-[3rem] border-2 border-primary-300 p-5 transition-all hover:bg-primary-50/40 hover:shadow-xl focus:bg-none">
-      <h3 className="text-center text-2xl font-bold text-primary-300">
+    <figure className="grid justify-between rounded-xl rounded-br-[3rem] border-2 border-primary-one p-5 transition-all hover:bg-primary-one/20 hover:shadow-xl focus:bg-none">
+      <h3 className="text-center text-2xl font-bold text-primary-one">
         {props.data.title}
       </h3>
       <div className="mx-auto h-32 w-32">
@@ -14,7 +14,9 @@ export default function CommunitySupportCard(props) {
         />
       </div>
       <figcaption>
-        <p className="text-center font-semibold">{props.data.desc}</p>
+        <p className="text-center font-semibold text-slate-300">
+          {props.data.desc}
+        </p>
       </figcaption>
     </figure>
   );

@@ -113,9 +113,12 @@ a {
 .form-input-underline {
   @apply mb-3 block w-full border-b-2  border-slate-200 py-1.5 text-sm outline-none md:py-2.5 md:text-base;
 }
-/* .auth-form-input {
-  @apply;
-} */
+.auth-form-group {
+  @apply mb-4 flex items-center rounded-md bg-transparent border border-slate-500;
+}
+.auth-form-input {
+  @apply w-full bg-transparent py-2.5 pr-4 outline-none text-white xl:py-3.5;
+}
 
 /* Custom styling */
 .issue-card {
@@ -156,12 +159,4 @@ a {
 
 .yoga-booking-navigation .swiper-button-next {
   @apply !text-red-400;
-}
-
-/* Fonts */
-@font-face {
-  font-family: "Rubik One Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Rubik One Regular"), url("./RubikOne-Regular.woff") format("woff");
 }

@@ -1,9 +1,14 @@
+import localFont from "next/font/local";
 import { Montserrat, Roboto_Flex } from "next/font/google";
 export const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
 export const roboto_flex = Roboto_Flex({ subsets: ["latin"], weight: "900" });
+
+export const rubik_one = localFont({
+  src: "./styles/RubikOne-Regular.woff",
+});
 
 // Home Images
 import mainHeaderImage from "./images/home/main-header-image.webp";

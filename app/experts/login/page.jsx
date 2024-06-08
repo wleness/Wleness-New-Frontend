@@ -94,10 +94,10 @@ export default function page() {
     <AuthLayout name={"login"}>
       <div>
         <div className="text-center">
-          <h2 className="mb-2 text-2xl font-extrabold text-primary-400 lg:text-5xl">
+          <h2 className="mb-2 text-2xl font-extrabold text-primary-one lg:text-5xl">
             Experts Login
           </h2>
-          <span className="mb-6 inline-block font-semibold text-slate-500">
+          <span className="mb-6 inline-block font-semibold text-slate-400">
             or use your id for login
           </span>
         </div>
@@ -125,7 +125,7 @@ export default function page() {
               {successMessage.message}
             </p>
           )}
-          <div className="mb-4 flex items-center rounded-md bg-slate-100">
+          <div className="auth-form-group">
             <label htmlFor="username">
               <FontAwesomeIcon icon={faUser} className="px-4 text-slate-400" />
             </label>
@@ -137,10 +137,10 @@ export default function page() {
               placeholder="User Id"
               value={formInfo.user_id}
               onChange={handleChange}
-              className="w-full bg-transparent py-2.5 pr-4 outline-none xl:py-3.5"
+              className="auth-form-input"
             />
           </div>
-          <div className="mb-2 flex items-center rounded-md bg-slate-100">
+          <div className="auth-form-group">
             <label htmlFor="password">
               <FontAwesomeIcon icon={faLock} className="px-4 text-slate-400" />
             </label>
@@ -151,18 +151,18 @@ export default function page() {
               placeholder="Password"
               value={formInfo.password}
               onChange={handleChange}
-              className="w-full bg-transparent py-2.5 pr-4 outline-none xl:py-3.5"
+              className="auth-form-input"
             />
           </div>
           <div className="mb-6 text-right">
             <Link
               href="/forgot-password"
-              className="inline-block text-sm font-semibold text-primary-400"
+              className="inline-block text-sm font-semibold text-primary-one"
             >
               Forgot Password?
             </Link>
           </div>
-          <button className="rounded-full border-2 border-primary-300 px-5 py-2 text-sm font-bold text-primary-300 xl:px-12 xl:py-3">
+          <button className="rounded-full border-2 border-primary-one px-5 py-2 text-sm font-bold text-primary-one xl:px-12 xl:py-3">
             LOGIN
           </button>
         </form>
@@ -170,7 +170,7 @@ export default function page() {
         <div className="font-semibold text-center text-slate-500">
           <Link
             href="/login"
-            className="inline-block text-primary-400 underline underline-offset-2"
+            className="inline-block text-primary-one underline underline-offset-2"
           >
             Login
           </Link>

@@ -37,12 +37,12 @@ export default function FrontlineGrowth() {
           {data.map((value, i) => (
             <div
               key={i}
-              className={`border border-slate-400 absolute w-32 lg:w-80 ${value.style} bg-black`}
+              className={`border border-slate-400 hover:border-primary-one group transition-all hover:bg-primary-one absolute w-32 lg:w-80 ${value.style} bg-black`}
             >
-              <h2 className="text-[8px] lg:text-xl font-semibold text-white p-2 border-b border-slate-400">
+              <h2 className="text-[8px] lg:text-xl group-hover:text-black font-semibold text-white p-2 border-b border-slate-400">
                 {value.title}
               </h2>
-              <p className="text-slate-300 text-[9px] lg:text-base p-2">
+              <p className="text-slate-300 group-hover:text-black text-[9px] lg:text-base p-2">
                 {value.desc}
               </p>
             </div>

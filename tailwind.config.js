@@ -39,7 +39,6 @@ module.exports = {
         light: "#464646",
       },
       fontFamily: {
-        "rubik-one": "Rubik One Regular",
         quicksand: ["Quicksand", "sans-serif"],
       },
       listStyleType: {

@@ -70,7 +70,7 @@ export default function page() {
               {successMessage.message}
             </p>
           )}
-          <div className="mb-4 flex items-center rounded-md bg-slate-100">
+          <div className="auth-form-group">
             <label htmlFor="username">
               <FontAwesomeIcon icon={faUser} className="px-4 text-slate-400" />
             </label>
@@ -81,10 +81,10 @@ export default function page() {
               placeholder="Email or Mobile Number"
               value={formInfo.username}
               onChange={handleChange}
-              className="w-full bg-transparent py-2.5 pr-4 outline-none xl:py-3.5"
+              className="auth-form-input"
             />
           </div>
-          <div className="mb-2 flex items-center rounded-md bg-slate-100">
+          <div className="auth-form-group">
             <label htmlFor="password">
               <FontAwesomeIcon icon={faLock} className="px-4 text-slate-400" />
             </label>
@@ -95,7 +95,7 @@ export default function page() {
               placeholder="Password"
               value={formInfo.password}
               onChange={handleChange}
-              className="w-full bg-transparent py-2.5 pr-4 outline-none xl:py-3.5"
+              className="auth-form-input"
             />
           </div>
           <div className="mb-6 text-right">

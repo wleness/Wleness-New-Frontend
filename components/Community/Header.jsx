@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="relative overflow-x-hidden overflow-y-clip bg-primary-50/30">
+    <header className="relative overflow-x-hidden overflow-y-clip bg-primary-two">
       <div className="container mx-auto text-center">
-        <h1 className="subheading my-8">
+        <h1 className="subheading my-8 text-white">
           <span className="heading-primary">Escape, Heal and Thrive </span>
           <span>with the Wleness Community</span>
         </h1>
@@ -19,7 +19,7 @@ export default function Header() {
             width={1280}
             height={640}
           />
-          <p className="mb-5 font-bold lg:text-lg xl:px-44 xl:text-xl">
+          <p className="mb-5 font-bold lg:text-lg xl:px-44 xl:text-xl text-slate-300">
             Let's come together and build a supportive community where we share,
             grow, and heal as one.
           </p>

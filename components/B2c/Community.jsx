@@ -1,4 +1,4 @@
-import { B2CCommunity, montserrat, rubik } from "@/public";
+import { B2CCommunity, montserrat, rubik, rubik_one } from "@/public";
 import Image from "next/image";
 import PrimaryTitle from "@components/Title/PrimaryTitle";
 import Certifications from "@components/common/Certifications";
@@ -57,7 +57,7 @@ export default function Community() {
             </svg>
             <span> We're an exclusive community of</span>
           </p>
-          <h2 className={`text-3xl text-primary-one font-rubik-one`}>
+          <h2 className={`text-3xl text-primary-one ${rubik_one.className}`}>
             Therapists. Psychologists. Psychiatrists. Coaches.
           </h2>
         </div>

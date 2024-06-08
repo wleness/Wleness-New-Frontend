@@ -1,3 +1,4 @@
+import Blogs from "@components/B2c/Blogs";
 import Community from "@components/B2c/Community";
 import Patterns from "@components/B2c/Patterns";
 import PrimaryHeader from "@components/B2c/PrimaryHeader";
@@ -14,6 +15,7 @@ export default function Home() {
       <Community />
       <Patterns />
       <Resolve />
+      <Blogs />
     </>
   );
 }

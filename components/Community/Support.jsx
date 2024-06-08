@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export default function Support() {
   return (
-    <section className="pt-8 text-center">
-      <div className="bg-primary-50/40 p-4">
-        <h1 className="subheading">
+    <section className="pt-8 text-center bg-primary-two ">
+      <div className="p-4">
+        <h1 className="subheading text-white">
           <span>Uncover your special heaven of </span>
           <span className="heading-primary">support and belonging</span>
         </h1>
-        <p className="text-base font-semibold lg:text-lg">
+        <p className="text-base font-semibold lg:text-lg text-slate-300">
           Always remember sharing your struggles only makes you stronger.
         </p>
       </div>
