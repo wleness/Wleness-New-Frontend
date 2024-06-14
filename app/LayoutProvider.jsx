@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import Footer from "@components/common/Footer";
 import PrimaryNavbar from "@components/common/PrimaryNavbar";
 import CTA from "@components/common/CTA";
+import Navbar from "@components/common/Navbar";
 
 export const LayoutProvider = ({ children }) => {
   const plain_pages = [
@@ -23,7 +24,8 @@ export const LayoutProvider = ({ children }) => {
   } else {
     return (
       <>
-        <PrimaryNavbar />
+        {/* <PrimaryNavbar /> */}
+        <Navbar />
         {children}
         <CTA />
         <Footer />

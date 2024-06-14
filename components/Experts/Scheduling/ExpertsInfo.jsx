@@ -1,3 +1,4 @@
+import { BOOKING_CREATE_ORDER } from "@data/api";
 import {
   faCalendar,
   faClock,
@@ -6,9 +7,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { expertClient, logo } from "@public";
+import axios from "axios";
 import Image from "next/image";
 
 export default function ExpertsInfo({ date, slot, day }) {
+  const handlePayment = () => {
+    let data = {
+      price: 500,
+    };
+    axios
+      .post(BOOKING_CREATE_ORDER, data)
+      .then((response) => console.log(response))
+      .catch((error) => console.error(error));
+  };
   return (
     <div>
       <Image
@@ -44,6 +55,13 @@ export default function ExpertsInfo({ date, slot, day }) {
           <span>Asia/Kolkata</span>
         </p>
       </div>
+      <br />
+      <button
+        onClick={handlePayment}
+        className="px-4 py-2 bg-primary-one rounded-full"
+      >
+        Pay Now
+      </button>
     </div>
   );
 }

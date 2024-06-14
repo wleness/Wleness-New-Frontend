@@ -527,99 +527,99 @@ export const coaches = [
       },
     ],
   },
-  {
-    name: "Shivani Narang",
-    category: "lifestyle",
-    profession: "Mindfulness Coach",
-    alt: "Shivani Narang - Lifestyle Coach - Wleness",
-    displayPricing: true,
-    slug: LS_COACH_SHIVANI_NARANG,
-    image: lifeCoachShivani,
-    desc: "Shivani Narang is a Mental Wellness Coach who helps individuals and organizations improve their mental health using simple and effective strategies. Having conducted over 200 sessions / workshops over 75 themes  and equipped with certifications in mindfulness and meditation, Shivani guides individuals in discovering inner balance and unlocking their full potential.",
-    about: {
-      title: "Shivani Narang",
-      desc: [
-        "Through her 5-step process, including reflection, challenging beliefs, unlearning, finding authenticity, and learning new strategies, Shivani empowers clients to make better decisions, unleash creativity, foster meaningful relationships, find joy and purpose, and become their own biggest supporters.",
-        "As the Founder of Healing Together (Meditative Buddha LLP), Shivani enhances employee wellness by introducing mindfulness tools, facilitating discussions on important wellness topics, providing safe spaces for individuals to share challenges, and offering practical tips and techniques to improve overall well-being. Additionally, she conducts workshops and provides one-on-one coaching to help clients navigate difficult situations and achieve personal growth.",
-        "Shivani has worked with clients like Great Place to Work, Cult Fit, Unilever, Loop Health, Howden Insurance and many more, where she incorporated mindfulness practices and improved the wellness of their employees",
-      ],
-    },
-    whyCoach: {
-      title: "Coach Shivani?",
-      image: lifeCoachShivani2,
-      reason: [
-        "Working with Shivani Narang offers a straightforward approach to improving mental wellness. With her expertise as a Mental Wellness Coach and certifications in mindfulness and meditation, Shivani provides practical strategies for achieving inner balance and personal growth.",
-        "Through her guidance, individuals and organizations can expect to make better decisions, enhance creativity, foster meaningful relationships, find joy and purpose, and receive personalized support to navigate challenges and improve overall well-being.",
-      ],
-    },
-    expertise: {
-      image: lifeCoachShivani2,
-      list: [
-        "Certified in mindfulness and meditation",
-        "Specializes in guiding individuals and organizations towards inner balance",
-        "Creator of a 5-step process for personal growth",
-        "Helps individuals move from confusion to clarity",
-        "Facilitates discussions on important wellness topics",
-        "Provides practical tools and tips to improve well-being",
-        "Helps clients navigate personal challenges to improve self-worth, purpose and joy",
-        "Offers one-on-one coaching for navigating challenging situations",
-      ],
-    },
-    certifications: [
-      "Diploma in coaching from Upskillist",
-      "Certification in Mindfulness and Well-being from Rice University ",
-      "Certified Mindfulness Meditation Teacher from Radical Compassion Institute",
-      "Certification in Introduction to Psychology from Yale University",
-      "Certification in Psychological First Aid from Johns Hopkins University ",
-    ],
-    packages: [
-      {
-        title: "Image Consultancy",
-        desc: "Image Consultancy is a personalized service where experts focus on improving an individual's ABC, that is,  Appearance, Behavior, and Communication. We offer guidance on grooming, body language, and communication skills to boost confidence, enhance career prospects, and build a positive personal brand. ",
-        pricing: [
-          {
-            name: "1 Session",
-            price: 2000,
-          },
-          {
-            name: "6 Sessions",
-            price: 6000,
-            original_price: 12000,
-          },
-        ],
-      },
-      {
-        title: "Soft Skills Improvement",
-        desc: "From effective business communication and relationship interaction to life coaching and interview preparation, we cover it all. Boost your workplace communication, ace presentations and public speaking, manage conflicts, and master time management with our expert guidance. Elevate your career with our comprehensive support.",
-        pricing: [
-          {
-            name: "1 Session",
-            price: 2000,
-          },
-          {
-            name: "6 Sessions",
-            price: 6000,
-            original_price: 12000,
-          },
-        ],
-      },
-      {
-        title: "Life Coaching",
-        desc: "Our service prioritizes your mental well-being to help you achieve goals with clarity. We guide individuals in forming a positive mindset, ensuring a strong foundation for pursuing and reaching their objectives. Let us support you on your journey towards success by nurturing your mental health first.",
-        pricing: [
-          {
-            name: "6 Sessions",
-            price: 10000,
-          },
-          {
-            name: "12 Sessions",
-            price: 18000,
-            original_price: 20000,
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   name: "Shivani Narang",
+  //   category: "lifestyle",
+  //   profession: "Mindfulness Coach",
+  //   alt: "Shivani Narang - Lifestyle Coach - Wleness",
+  //   displayPricing: true,
+  //   slug: LS_COACH_SHIVANI_NARANG,
+  //   image: lifeCoachShivani,
+  //   desc: "Shivani Narang is a Mental Wellness Coach who helps individuals and organizations improve their mental health using simple and effective strategies. Having conducted over 200 sessions / workshops over 75 themes  and equipped with certifications in mindfulness and meditation, Shivani guides individuals in discovering inner balance and unlocking their full potential.",
+  //   about: {
+  //     title: "Shivani Narang",
+  //     desc: [
+  //       "Through her 5-step process, including reflection, challenging beliefs, unlearning, finding authenticity, and learning new strategies, Shivani empowers clients to make better decisions, unleash creativity, foster meaningful relationships, find joy and purpose, and become their own biggest supporters.",
+  //       "As the Founder of Healing Together (Meditative Buddha LLP), Shivani enhances employee wellness by introducing mindfulness tools, facilitating discussions on important wellness topics, providing safe spaces for individuals to share challenges, and offering practical tips and techniques to improve overall well-being. Additionally, she conducts workshops and provides one-on-one coaching to help clients navigate difficult situations and achieve personal growth.",
+  //       "Shivani has worked with clients like Great Place to Work, Cult Fit, Unilever, Loop Health, Howden Insurance and many more, where she incorporated mindfulness practices and improved the wellness of their employees",
+  //     ],
+  //   },
+  //   whyCoach: {
+  //     title: "Coach Shivani?",
+  //     image: lifeCoachShivani2,
+  //     reason: [
+  //       "Working with Shivani Narang offers a straightforward approach to improving mental wellness. With her expertise as a Mental Wellness Coach and certifications in mindfulness and meditation, Shivani provides practical strategies for achieving inner balance and personal growth.",
+  //       "Through her guidance, individuals and organizations can expect to make better decisions, enhance creativity, foster meaningful relationships, find joy and purpose, and receive personalized support to navigate challenges and improve overall well-being.",
+  //     ],
+  //   },
+  //   expertise: {
+  //     image: lifeCoachShivani2,
+  //     list: [
+  //       "Certified in mindfulness and meditation",
+  //       "Specializes in guiding individuals and organizations towards inner balance",
+  //       "Creator of a 5-step process for personal growth",
+  //       "Helps individuals move from confusion to clarity",
+  //       "Facilitates discussions on important wellness topics",
+  //       "Provides practical tools and tips to improve well-being",
+  //       "Helps clients navigate personal challenges to improve self-worth, purpose and joy",
+  //       "Offers one-on-one coaching for navigating challenging situations",
+  //     ],
+  //   },
+  //   certifications: [
+  //     "Diploma in coaching from Upskillist",
+  //     "Certification in Mindfulness and Well-being from Rice University ",
+  //     "Certified Mindfulness Meditation Teacher from Radical Compassion Institute",
+  //     "Certification in Introduction to Psychology from Yale University",
+  //     "Certification in Psychological First Aid from Johns Hopkins University ",
+  //   ],
+  //   packages: [
+  //     {
+  //       title: "Image Consultancy",
+  //       desc: "Image Consultancy is a personalized service where experts focus on improving an individual's ABC, that is,  Appearance, Behavior, and Communication. We offer guidance on grooming, body language, and communication skills to boost confidence, enhance career prospects, and build a positive personal brand. ",
+  //       pricing: [
+  //         {
+  //           name: "1 Session",
+  //           price: 2000,
+  //         },
+  //         {
+  //           name: "6 Sessions",
+  //           price: 6000,
+  //           original_price: 12000,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "Soft Skills Improvement",
+  //       desc: "From effective business communication and relationship interaction to life coaching and interview preparation, we cover it all. Boost your workplace communication, ace presentations and public speaking, manage conflicts, and master time management with our expert guidance. Elevate your career with our comprehensive support.",
+  //       pricing: [
+  //         {
+  //           name: "1 Session",
+  //           price: 2000,
+  //         },
+  //         {
+  //           name: "6 Sessions",
+  //           price: 6000,
+  //           original_price: 12000,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "Life Coaching",
+  //       desc: "Our service prioritizes your mental well-being to help you achieve goals with clarity. We guide individuals in forming a positive mindset, ensuring a strong foundation for pursuing and reaching their objectives. Let us support you on your journey towards success by nurturing your mental health first.",
+  //       pricing: [
+  //         {
+  //           name: "6 Sessions",
+  //           price: 10000,
+  //         },
+  //         {
+  //           name: "12 Sessions",
+  //           price: 18000,
+  //           original_price: 20000,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     name: "Saloni Gupta",
     profession: "Executive Coach",

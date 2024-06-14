@@ -9,6 +9,8 @@ import {
   seldCareSubpages,
   serviceMenuPages,
 } from "@data/navigation";
+import { montserrat } from "@public";
+import { StarIcon } from "@components/Icons";
 
 export default function DesktopNavbar({
   toggleJoinUs,
@@ -18,17 +20,20 @@ export default function DesktopNavbar({
 }) {
   return (
     <>
-      <ul className="hidden w-fit justify-end space-x-4 p-6 xl:flex">
-        <DesktopMenuLink url="/" text="Home" />
+      <ul className="hidden w-fit justify-self-end space-x-4 p-6 xl:flex">
         <DesktopDropdown url="" text="Services" pages={serviceMenuPages} />
         <DesktopMenuLink url="/experts" text="Our Experts" />
-        <DesktopDropdown url="" text="Self Care" pages={seldCareSubpages} />
+        <DesktopDropdown
+          url=""
+          text="Self Assessment"
+          pages={seldCareSubpages}
+        />
         <DesktopDropdown url="" text="Resources" pages={resourcesSubpages} />
         <DesktopMenuLink url="/about-us" text="About Us" />
       </ul>
 
       {/* Authentication */}
-      <div className="hidden xl:flex xl:items-center">
+      {/* <div className="hidden xl:flex xl:items-center">
         <button
           onClick={toggleJoinUs}
           className="btn-primary mr-2 !w-fit !rounded-full border-2 border-primary-one !py-1.5"
@@ -50,13 +55,31 @@ export default function DesktopNavbar({
             }
             className="btn-primary flex !w-fit items-center !rounded-full !bg-transparent !py-2.5 font-semibold !text-primary-one !border-primary-one !border-2"
           >
-            {/* <img src={profile} alt="" className="mr-1 w-5 rounded-full" /> */}
             <FontAwesomeIcon icon={faUserCircle} className="mr-1" />
             <span className="text-sm">
               {username ? username.split(" ")[0] : "User"}
             </span>
           </Link>
         )}
+      </div> */}
+
+      <div className="flex gap-x-2 items-center justify-end">
+        <Link
+          className="btn-2 border-primary-one text-primary-one"
+          href={"/b2b"}
+        >
+          For your team
+        </Link>
+
+        <Link
+          href={"/"}
+          className={`${montserrat.className} btn-2 border-primary-one bg-primary-one`}
+        >
+          <span className="flex items-center gap-x-2">
+            <span>Connect</span>
+            <StarIcon theme={"dark"} />
+          </span>
+        </Link>
       </div>
     </>
   );

@@ -71,3 +71,6 @@ export const THERAPIST_JOIN_URI = URI + "join-therapist";
 export const PSYCHIATRIST_JOIN_URI = URI + "join-psychiatrist";
 export const CAMPUS_AMBASSADOR_JOIN_URI = URI + "join-campus-ambassador";
 export const INTERNSHIP_JOIN_URI = URI + "join-internships";
+
+// Bookings
+export const BOOKING_CREATE_ORDER = URI + "booking";

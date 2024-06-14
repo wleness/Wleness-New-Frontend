@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import axios from "axios";
 
-import { logo } from "@public";
+import { Favicon, logo } from "@public";
 import useLogout from "@utils/useLogout";
 import useToken from "@utils/useToken";
 import { USER_PROFILE_URI } from "@data/api";
@@ -80,15 +80,14 @@ export default function Navbar() {
     <>
       {/* ========== Navigation Bar ========== */}
       <nav className="sticky left-0 right-0 top-0 z-40 bg-primary-two">
-        <div className="container relative mx-auto flex items-center justify-between">
+        <div className="relative grid items-center grid-cols-2 xl:grid-cols-[2fr_4fr_2fr] px-10">
           {/* Logo */}
-          <div className="w-40 py-2 md:w-56 lg:w-64 xl:w-48 xl:py-3">
-            <Link href="/" className="outline-none visited:bg-green-500">
+          <div>
+            <Link href={"/"}>
               <Image
-                src={logo}
-                priority
-                alt="Wleness Logo"
-                className="w-full object-cover "
+                src={Favicon}
+                alt="website favicon"
+                className="w-10 xl:w-12"
               />
             </Link>
           </div>
