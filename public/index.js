@@ -193,7 +193,7 @@ import salonimaam from "./images/aboutus/salonimaam.webp";
 import sreyashsir from "./images/aboutus/sreyashsir.webp";
 import aboutusHeader from "./images/aboutus/aboutus-header.webp";
 import problem from "./images/aboutus/problem.webp";
-import approveIcon from "./images/aboutus/approveIcon.webp";
+import approveIcon from "./images/aboutus/approveicon.webp";
 
 export {
   about1,
@@ -232,15 +232,15 @@ export {
   executiveimage3,
 };
 
-import meditationCheckoutBg from "./images/meditationcheckoutBg.png";
-import sadhnaCheckoutBg from "./images/sadhnacheckoutBg.png";
-import yogaCheckoutBg from "./images/sadhnacheckoutBg.png";
+import meditationCheckoutBg from "./images/meditation-checkout-bg.png";
+import sadhnaCheckoutBg from "./images/sadhna-checkout-bg.png";
+import yogaCheckoutBg from "./images/sadhna-checkout-bg.png";
 
 export { meditationCheckoutBg, sadhnaCheckoutBg, yogaCheckoutBg };
 // Coaches
-import saloniHeader from "./images/coaches/saloniGuptaHeader.webp";
-import saloniBottom from "./images/coaches/saloniBottom.webp";
-import saloniMid from "./images/coaches/saloniMid.webp";
+import saloniHeader from "./images/coaches/saloni-gupta-header.webp";
+import saloniBottom from "./images/coaches/saloni-bottom.webp";
+import saloniMid from "./images/coaches/saloni-mid.webp";
 import anjuHeader from "./images/coaches/anjuHeader.webp";
 import anjuBottom from "./images/coaches/anjuBottom.webp";
 import anjuMid from "./images/coaches/anjuMid.webp";
