@@ -8,8 +8,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function JoinUs({ isOpen, onClose }) {
-  if (!isOpen) return null;
-
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (isOpen && !event.target.closest(".joinus")) {
@@ -27,7 +25,11 @@ export default function JoinUs({ isOpen, onClose }) {
   }, [isOpen, onClose]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-none backdrop-brightness-50 backdrop-filter">
+    <div
+      className={`fixed inset-0 z-50 items-center justify-center backdrop-blur-none backdrop-brightness-50 backdrop-filter ${
+        isOpen ? "grid" : "hidden"
+      }`}
+    >
       <div className="joinus relative flex w-[90%] flex-col items-center rounded-lg bg-slate-800 p-6 shadow-md md:w-1/2 md:flex-row md:p-20 border-2 border-primary-one/50">
         <div>
           <h2 className="mb-4 text-center text-3xl font-extrabold text-primary-one md:text-5xl">

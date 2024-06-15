@@ -98,7 +98,7 @@ export default function Appointment({ params }) {
       .catch((error) => {
         console.error(error);
       });
-  }, []);
+  });
 
   if (loading) {
     return <div className="mb-5 text-center">Loading...</div>;

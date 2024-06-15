@@ -27,22 +27,21 @@ export default function ExpertsDashboardPage() {
   // ======== Get user appointments and details ===========
   let wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
 
-  if (
-    token == null ||
-    token == "" ||
-    token == undefined ||
-    wleness_user.type != "expert"
-  ) {
-    // Navigate to login
-    useEffect(() => {
+  // Navigate to login
+  useEffect(() => {
+    if (
+      token == null ||
+      token == "" ||
+      token == undefined ||
+      wleness_user.type != "expert"
+    ) {
       router.push("/experts/login", {
         state: {
           successMessage: "Please Login",
         },
       });
-    });
-    return null;
-  }
+    }
+  }, [token, router, wleness_user.type]);
 
   let url = EXPERTS_PROFILE_URI + wleness_user.user_id;
   useEffect(() => {
@@ -64,13 +63,11 @@ export default function ExpertsDashboardPage() {
         if (error.response.status == 401) {
           // Logout and redirect user
           logout();
-          useEffect(() => {
-            router.push("/experts/login", {
-              state: {
-                successMessage: "Session Expired Please Login",
-              },
-            });
-          }, []);
+          router.push("/experts/login", {
+            state: {
+              successMessage: "Session Expired Please Login",
+            },
+          });
           return null;
         } else {
           console.error(error);
@@ -103,19 +100,16 @@ export default function ExpertsDashboardPage() {
         if (error.response.status == 401) {
           // Logout and redirect user
           logout();
-          useEffect(() => {
-            router.push("/experts/login", {
-              state: {
-                successMessage: "Session Expired Please Login",
-              },
-            });
-          }, []);
-          return null;
+          router.push("/experts/login", {
+            state: {
+              successMessage: "Session Expired Please Login",
+            },
+          });
         } else {
           console.error(error);
         }
       });
-  }, [slots]);
+  }, [slots, logout, router, token, wleness_user.user_id]);
 
   if (loading) {
     return <div className="mb-5 text-center">Loading...</div>;

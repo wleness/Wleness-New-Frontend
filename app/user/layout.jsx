@@ -22,14 +22,14 @@ export default function UserDashboardLayout({ children }) {
         },
       });
     }
-  }, []);
+  });
 
   const wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
-  if (wleness_user.type != "user") {
-    useEffect(() => {
+  useEffect(() => {
+    if (wleness_user.type != "user") {
       router.push("/");
-    }, []);
-  }
+    }
+  });
 
   // Handle Navigation bar
   const [isMenuOpen, setMenuOpen] = useState(false); // Menu Modal

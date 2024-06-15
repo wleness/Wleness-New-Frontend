@@ -1,5 +1,6 @@
-import { assessment1, assessment2 } from "../../assets";
+import Link from "next/link";
 import Image from "next/image";
+import { assessment1, assessment2 } from "@public";
 
 export default function Welcome() {
   return (
@@ -13,7 +14,7 @@ export default function Welcome() {
           <h4 className="mb-5 text-xl">
             <span className="font-semibold">Do you want help finding a</span>
             <Link
-              to="/services/therapy"
+              href="/services/therapy"
               className="block text-xl font-bold text-primary-400"
             >
               Therapist?
@@ -32,13 +33,13 @@ export default function Welcome() {
               Do you want to browse all our
             </span>
             <Link
-              to="/services/therapy"
+              href="/services/therapy"
               className="text-xl font-bold text-primary-400"
             >
               Therapist?
             </Link>
           </h4>
-          <Link to="/experts/all" className="btn-primary block">
+          <Link href="/experts/all" className="btn-primary block">
             Browse all Therapist
           </Link>
         </div>

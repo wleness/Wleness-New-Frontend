@@ -28,28 +28,6 @@ const avatars = [
 export default function ProfilePage() {
   const { token } = useToken();
   const router = useRouter();
-  // Redirect user if loggedin
-  if (token == null || token == "" || token == undefined) {
-    // Navigate to login
-    useEffect(() => {
-      router.push("/login", {
-        state: {
-          successMessage: "Please Login",
-        },
-      });
-    });
-    return null;
-  }
-
-  const { logout } = useLogout();
-  let wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
-  let userInfo = JSON.parse(localStorage.getItem("userInfo"));
-  if (wleness_user.type == "expert") {
-    useEffect(() => {
-      router.push("/experts/dashboard");
-    }, []);
-    return null;
-  }
   const [userData, setUserData] = useState({
     name: userInfo.name,
     email: userInfo.email,
@@ -60,6 +38,27 @@ export default function ProfilePage() {
   const [successMessage, setSuccessMessage] = useState({
     status: "",
     message: "",
+  });
+
+  // Redirect user if loggedin
+  useEffect(() => {
+    if (token == null || token == "" || token == undefined) {
+      // Navigate to login
+      router.push("/login", {
+        state: {
+          successMessage: "Please Login",
+        },
+      });
+    }
+  });
+
+  const { logout } = useLogout();
+  let wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
+  let userInfo = JSON.parse(localStorage.getItem("userInfo"));
+  useEffect(() => {
+    if (wleness_user.type == "expert") {
+      router.push("/experts/dashboard");
+    }
   });
 
   const handleChange = (e) => {

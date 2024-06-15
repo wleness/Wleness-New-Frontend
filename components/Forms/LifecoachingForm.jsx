@@ -6,8 +6,6 @@ import Link from "next/link";
 import { PRIVACY_POLICY } from "@data/urls";
 
 export default function LifeCoachingForm({ isOpen, onClose, setConfirmation }) {
-  if (!isOpen) return null;
-
   const router = useRouter();
 
   // Handle Joining Form
@@ -111,7 +109,11 @@ export default function LifeCoachingForm({ isOpen, onClose, setConfirmation }) {
   };
 
   return (
-    <section className="fixed inset-0 z-50 grid animate-fadeIn place-items-center bg-black/20 transition-all">
+    <section
+      className={`fixed inset-0 z-50 animate-fadeIn place-items-center bg-black/20 transition-all ${
+        isOpen ? "grid" : "hidden"
+      }`}
+    >
       <div className="life-coaching w-4/5 animate-scaleIn rounded-2xl bg-white p-6 transition-all lg:w-[620px]">
         <div className="text-center">
           <h2 className="subheading">Life-coaching Join</h2>

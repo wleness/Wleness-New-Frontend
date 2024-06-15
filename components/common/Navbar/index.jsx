@@ -20,57 +20,57 @@ export default function Navbar() {
   // ======== Get user appointments and details ===========  // Redirect user if loggedin
   let wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
 
-  if (token && token !== "" && token !== undefined && wleness_user != null) {
-    let wleness_user_type = wleness_user.type;
+  // if (token && token !== "" && token !== undefined && wleness_user != null) {
+  //   let wleness_user_type = wleness_user.type;
 
-    if (wleness_user_type == "user") {
-      let url = USER_PROFILE_URI + "/" + wleness_user.username;
-      useEffect(() => {
-        // Make a GET request using Axios
-        axios
-          .get(url, {
-            headers: {
-              Authorization: "Bearer " + token,
-            },
-            params: {
-              type: wleness_user.key,
-            },
-          })
-          .then((response) => {
-            if (response.status == 200) {
-              setUser(response.data);
-              localStorage.setItem("userInfo", JSON.stringify(response.data));
-            } else {
-              console.log(response);
-            }
-          })
-          .catch((error) => {
-            if (error.response.status == 401) {
-              // Logout and redirect user
-              logout();
-              useEffect(() => {
-                navigate("/login", {
-                  state: {
-                    successMessage: "Session Expired Please Login",
-                  },
-                });
-              }, []);
-              return null;
-            } else {
-              // Handle errors
-              console.error("Error fetching doctor details:", error);
-            }
-          });
-      });
-    } else {
-      let wleness_user = JSON.parse(localStorage.getItem("userInfo"));
-      useEffect(() => {
-        setUser({
-          name: wleness_user.name,
-        });
-      }, []);
-    }
-  }
+  //   if (wleness_user_type == "user") {
+  //     let url = USER_PROFILE_URI + "/" + wleness_user.username;
+  //     useEffect(() => {
+  //       // Make a GET request using Axios
+  //       axios
+  //         .get(url, {
+  //           headers: {
+  //             Authorization: "Bearer " + token,
+  //           },
+  //           params: {
+  //             type: wleness_user.key,
+  //           },
+  //         })
+  //         .then((response) => {
+  //           if (response.status == 200) {
+  //             setUser(response.data);
+  //             localStorage.setItem("userInfo", JSON.stringify(response.data));
+  //           } else {
+  //             console.log(response);
+  //           }
+  //         })
+  //         .catch((error) => {
+  //           if (error.response.status == 401) {
+  //             // Logout and redirect user
+  //             logout();
+  //             useEffect(() => {
+  //               navigate("/login", {
+  //                 state: {
+  //                   successMessage: "Session Expired Please Login",
+  //                 },
+  //               });
+  //             }, []);
+  //             return null;
+  //           } else {
+  //             // Handle errors
+  //             console.error("Error fetching doctor details:", error);
+  //           }
+  //         });
+  //     });
+  //   } else {
+  //     let wleness_user = JSON.parse(localStorage.getItem("userInfo"));
+  //     useEffect(() => {
+  //       setUser({
+  //         name: wleness_user.name,
+  //       });
+  //     }, []);
+  //   }
+  // }
 
   const toggleJoinUs = () => {
     setJoinUsModal(!openJoinUs);

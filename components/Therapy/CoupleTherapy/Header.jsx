@@ -22,11 +22,10 @@ export default function Header({ data }) {
           >
             {data.images.map((value, i) => {
               return (
-                <SwiperSlide className="rounded-2xl">
+                <SwiperSlide key={i} className="rounded-2xl">
                   <Image
-                    key={i}
                     src={value}
-                    alt=""
+                    alt="header image"
                     className="block w-fit object-cover"
                   />
                 </SwiperSlide>

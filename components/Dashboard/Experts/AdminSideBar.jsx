@@ -9,6 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { avatarImage6 } from "@public";
 import useToken from "@utils/useToken";
+import { EXPERTS_LOGIN } from "@data/urls";
 
 export default function AdminSideBar({ isMenuOpen, closeMenu }) {
   const { token } = useToken();
@@ -32,10 +33,12 @@ export default function AdminSideBar({ isMenuOpen, closeMenu }) {
   });
 
   const wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
-  if (wleness_user.type != "expert") {
-    router.push("/");
-    return null;
-  }
+  useEffect(() => {
+    if (wleness_user.type != "expert") {
+      router.push("/");
+      return null;
+    }
+  });
 
   // ============================================================
   // Get Experts Info
@@ -60,14 +63,11 @@ export default function AdminSideBar({ isMenuOpen, closeMenu }) {
         if (error.response.status == 401) {
           // Logout and redirect user
           logout();
-          useEffect(() => {
-            router.push("/experts/login", {
-              state: {
-                successMessage: "Session Expired Please Login",
-              },
-            });
-          }, []);
-          return null;
+          router.push(EXPERTS_LOGIN, {
+            state: {
+              successMessage: "Session Expired Please Login",
+            },
+          });
         } else {
           console.error(error);
         }

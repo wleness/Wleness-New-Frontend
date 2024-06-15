@@ -4,8 +4,6 @@ import { useRouter } from "next/navigation";
 import { CAMPUS_AMBASSADOR_JOIN_URI } from "@data/api";
 
 export default function CampusAmbassadorForm({ isOpen, onClose }) {
-  if (!isOpen) return null;
-
   const router = useRouter();
   const [formInfo, setFormInfo] = useState({
     firstName: "",
@@ -127,7 +125,11 @@ export default function CampusAmbassadorForm({ isOpen, onClose }) {
   }, [isOpen, onClose]);
 
   return (
-    <section className="fixed inset-0 z-40 flex animate-fadeIn justify-center pt-8 backdrop-brightness-50 transition-all">
+    <section
+      className={`fixed inset-0 z-40 flex animate-fadeIn justify-center pt-8 backdrop-brightness-50 transition-all ${
+        isOpen ? "grid" : "hidden"
+      }`}
+    >
       <div className="campus-ambassador-form w-[640px] animate-scaleIn overflow-y-scroll rounded-lg bg-white p-6 transition-all">
         <h4 className="mb-4 text-center text-2xl font-bold text-primary-300">
           Campus Ambassador Form

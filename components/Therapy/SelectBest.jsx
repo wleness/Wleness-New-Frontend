@@ -62,4 +62,5 @@ const SelectBest = React.forwardRef((props, ref) => {
   );
 });
 
+SelectBest.displayName = "SelectBest";
 export default SelectBest;

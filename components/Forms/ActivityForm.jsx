@@ -4,8 +4,6 @@ import { useRouter } from "next/navigation";
 import { GENERAL_ENQUIRY_URI } from "@data/api";
 
 export default function ActivityForm({ isOpen, onClose, purpose }) {
-  if (!isOpen) return null;
-
   const router = useRouter();
 
   // Handle Joining Form
@@ -96,7 +94,11 @@ export default function ActivityForm({ isOpen, onClose, purpose }) {
   };
 
   return (
-    <section className="fixed inset-0 z-50 grid animate-fadeIn place-items-center bg-primary-two/40 transition-all">
+    <section
+      className={`fixed inset-0 z-50 animate-fadeIn place-items-center bg-primary-two/40 transition-all ${
+        isOpen ? "grid" : "hidden"
+      }`}
+    >
       <div className="enquiry-form w-4/5 animate-scaleIn rounded-2xl bg-slate-900 p-6 transition-all lg:w-[420px] border border-primary-one">
         <div className="text-center">
           <h2 className="subheading text-white">Enquire Now</h2>

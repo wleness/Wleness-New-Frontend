@@ -22,8 +22,6 @@ export default function BasicInfo({
   onAssessmentClose,
   buttons,
 }) {
-  if (!isAssessmentOpen) return null;
-
   // Slides States
   const [selectFeeling, setSelectFeeling] = useState([]);
   const [selectExperienceIssue, setSelectExperienceIssue] = useState("");
@@ -156,7 +154,11 @@ export default function BasicInfo({
   }, [isAssessmentOpen, onAssessmentClose]);
 
   return (
-    <div className="fixed inset-0 z-50 grid w-full place-items-center backdrop-brightness-50">
+    <div
+      className={`fixed inset-0 z-50 w-full place-items-center backdrop-brightness-50 ${
+        isAssessmentOpen ? "grid" : "hidden"
+      }`}
+    >
       <div className="assessment absolute mx-auto flex h-full w-full items-center justify-center overflow-hidden bg-[#E5FEFB] py-4 md:w-[720px] lg:relative lg:h-fit lg:w-[920px] lg:rounded-3xl lg:border-2 lg:py-12">
         {/* Welcome Page */}
         {startAssessment && (
@@ -309,7 +311,7 @@ export default function BasicInfo({
         {screenFour && (
           <div className="flex flex-col justify-center px-4 lg:mx-auto lg:h-[500px] lg:w-[600px] lg:px-0">
             <h2 className="heading-primary flex flex-col text-center text-3xl font-bold lg:text-4xl">
-              Thanks, Let's Begin!
+              Thanks, Let&apos;s Begin!
             </h2>
             <div className="my-8 flex flex-wrap justify-center gap-4">
               <div className="w-full rounded-xl bg-primary-100 px-6 py-2">

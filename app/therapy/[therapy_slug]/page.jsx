@@ -12,6 +12,9 @@ import { notFound } from "next/navigation";
 import CouplesTherapy from "./CouplesTherapy";
 
 export default function TherapyDetailPage({ params }) {
+  const [isAssessmentModalOpen, setShowAssessmentModal] = useState(false);
+  const [rediredurl, setRediredurl] = useState(null);
+
   if (params.therapy_slug == "couples-therapy") {
     return <CouplesTherapy />;
   }
@@ -20,8 +23,6 @@ export default function TherapyDetailPage({ params }) {
     return notFound();
   }
 
-  const [isAssessmentModalOpen, setShowAssessmentModal] = useState(false);
-  const [rediredurl, setRediredurl] = useState(null);
   const resetBookNow = () => {
     openAssessmentModal();
 

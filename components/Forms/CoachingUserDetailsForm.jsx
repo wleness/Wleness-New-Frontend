@@ -3,8 +3,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function CoachingUserDetailsForm({ plan, isOpen, onClose }) {
-  if (!isOpen) return null;
-
   // Handle Joining Form
   const [formInfo, setFormData] = useState({
     full_name: "",
@@ -77,7 +75,11 @@ export default function CoachingUserDetailsForm({ plan, isOpen, onClose }) {
   };
 
   return (
-    <section className="fixed inset-0 z-50 grid animate-fadeIn place-items-center bg-black/20 transition-all">
+    <section
+      className={`fixed inset-0 z-50 animate-fadeIn place-items-center bg-black/20 transition-all ${
+        isOpen ? "grid" : "hidden"
+      }`}
+    >
       <div className="user-details-form w-4/5 animate-scaleIn rounded-2xl bg-white p-6 transition-all lg:w-[420px]">
         <div className="text-center">
           <h2 className="subheading">Enter Your Details</h2>

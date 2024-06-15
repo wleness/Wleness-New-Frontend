@@ -6,8 +6,6 @@ import { PRIVACY_POLICY } from "@data/urls";
 import Link from "next/link";
 
 export default function CorporateForm({ isOpen, onClose }) {
-  if (!isOpen) return null;
-
   const router = useRouter();
 
   // Handle Joining Form
@@ -111,7 +109,11 @@ export default function CorporateForm({ isOpen, onClose }) {
   };
 
   return (
-    <section className="fixed inset-0 z-50 grid animate-fadeIn place-items-center bg-black/20 transition-all">
+    <section
+      className={`fixed inset-0 z-50 animate-fadeIn place-items-center bg-black/20 transition-all ${
+        isOpen ? "grid" : "hidden"
+      }`}
+    >
       <div className="corporate-form w-4/5 animate-scaleIn rounded-2xl bg-white p-6 transition-all lg:w-[620px]">
         <div className="text-center">
           <h2 className="subheading">Corporate Join</h2>

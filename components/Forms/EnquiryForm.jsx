@@ -4,8 +4,6 @@ import { GENERAL_ENQUIRY_URI } from "@data/api";
 import { useRouter } from "next/navigation";
 
 export default function EnquiryForm({ isOpen, onClose, purpose }) {
-  if (!isOpen) return null;
-
   const router = useRouter();
 
   // Handle Joining Form
@@ -96,7 +94,11 @@ export default function EnquiryForm({ isOpen, onClose, purpose }) {
   };
 
   return (
-    <section className="fixed inset-0 z-50 grid animate-fadeIn place-items-center bg-black/20 transition-all">
+    <section
+      className={`fixed inset-0 z-50 animate-fadeIn place-items-center bg-black/20 transition-all ${
+        isOpen ? "grid" : "block"
+      }`}
+    >
       <div className="enquiry-form w-4/5 animate-scaleIn rounded-2xl bg-white p-6 transition-all lg:w-[420px]">
         <div className="text-center">
           <h2 className="subheading">Enquire Now</h2>
