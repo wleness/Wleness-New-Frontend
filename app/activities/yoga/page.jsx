@@ -11,7 +11,7 @@ import { yoga } from "@data/activities";
 import { yogaClients } from "@data/clients";
 import useEnquiryForm from "@utils/useEnquiryForm";
 
-export default function page() {
+export default function Yogapage() {
   const { enquiryForm, toggleForm } = useEnquiryForm();
   return (
     <>

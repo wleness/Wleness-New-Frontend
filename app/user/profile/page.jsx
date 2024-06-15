@@ -25,7 +25,7 @@ const avatars = [
   avatarImage6,
 ];
 
-export default function page() {
+export default function ProfilePage() {
   const { token } = useToken();
   const router = useRouter();
   // Redirect user if loggedin
@@ -37,7 +37,7 @@ export default function page() {
           successMessage: "Please Login",
         },
       });
-    }, []);
+    });
     return null;
   }
 

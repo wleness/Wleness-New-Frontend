@@ -13,8 +13,8 @@ export default function Community() {
         <p className="para pb-6 !text-xl">
           Join our community and discover a network of understanding hearts
           where support flows freely, and compassion knows no bounds. Here,
-          you'll find comfort, encouragement, and a sense of belonging as we
-          walk hand in hand through life's ups and downs
+          you&apos;ll find comfort, encouragement, and a sense of belonging as
+          we walk hand in hand through life&apos;s ups and downs
         </p>
         <Link href={COMMUNITY} className="btn-one mx-auto block w-fit">
           Join Now

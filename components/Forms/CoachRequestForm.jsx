@@ -91,7 +91,7 @@ export default function CoachRequestForm({ name, title }) {
               Book a free 30 Minutes exploratory session.
             </p>
             <p className="pb-4 pt-2 text-slate-400 font-semibold opacity-90 lg:text-lg">
-              We'll book your appointment within 24-48 Hrs.
+              We&apos;ll book your appointment within 24-48 Hrs.
             </p>
           </div>
         </div>

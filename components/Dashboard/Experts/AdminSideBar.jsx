@@ -29,7 +29,7 @@ export default function AdminSideBar({ isMenuOpen, closeMenu }) {
       });
       return null;
     }
-  }, []);
+  });
 
   const wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
   if (wleness_user.type != "expert") {
@@ -72,7 +72,7 @@ export default function AdminSideBar({ isMenuOpen, closeMenu }) {
           console.error(error);
         }
       });
-  }, []);
+  });
 
   return (
     <aside

@@ -22,15 +22,16 @@ export default function page() {
           Welcome to our website. If you continue to browse and use this website
           you are agreeing to comply with and be bound by the following terms
           and conditions of use, which together with our privacy policy govern
-          GREEN CLOVER IT SYSTEMS PRIVATE LIMITED''s relationship with you in
-          relation to this website.
+          GREEN CLOVER IT SYSTEMS PRIVATE LIMITED&apos;s relationship with you
+          in relation to this website.
         </p>
         <p>
-          The term '<strong>GREEN CLOVER IT SYSTEMS PRIVATE LIMITED</strong>' or
-          'us' or 'we' refers to the owner of the website whose
-          registered/operational office is 100503 Valley view estate,Gwal Pahri
-          Road,Gurgaon Sector 45,Gurgaon Gurgaon HARYANA 122003. The term 'you'
-          refers to the user or viewer of our website.
+          The term &apos;
+          <strong>GREEN CLOVER IT SYSTEMS PRIVATE LIMITED</strong>&apos; or
+          &apos;us&apos; or &apos;we&apos; refers to the owner of the website
+          whose registered/operational office is 100503 Valley view estate,Gwal
+          Pahri Road,Gurgaon Sector 45,Gurgaon Gurgaon HARYANA 122003. The term
+          &apos;you&apos; refers to the user or viewer of our website.
         </p>
 
         <h2 className="text-2xl font-bold">
@@ -102,8 +103,11 @@ export default function page() {
             <p>
               You may not create a link to this website from another website or
               document without
-              <strong> GREEN CLOVER IT SYSTEMS PRIVATE LIMITED's </strong> prior
-              written consent.
+              <strong>
+                {" "}
+                GREEN CLOVER IT SYSTEMS PRIVATE LIMITED&apos;s{" "}
+              </strong>{" "}
+              prior written consent.
             </p>
           </li>
           <li>

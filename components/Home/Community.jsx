@@ -33,15 +33,15 @@ export default function Community() {
               <p className="para ml-1 text-lg"></p>
             </hgroup>
             <p className="ml-1 text-sm font-medium leading-6 lg:pr-28 lg:text-lg">
-              At Wleness, the community is at the heart of our mission. We’re
-              more than a platform; we're an active collection of individuals
-              united by the effort of holistic well-being. Here, you'll find
-              more than just a community.
+              At Wleness, the community is at the heart of our mission.
+              We&apos;re more than a platform; we&apos;re an active collection
+              of individuals united by the effort of holistic well-being. Here,
+              you&apos;ll find more than just a community.
             </p>
             <p className="ml-1 text-sm font-medium leading-6 lg:mb-8 lg:pr-28 lg:text-lg">
-              You'll find a place where wellness wins and friendships grow. And
-              the best part? You can be anonymous, as per your comfort. Join us
-              and be part of a top community committed to holistic living.
+              You&apos;ll find a place where wellness wins and friendships grow.
+              And the best part? You can be anonymous, as per your comfort. Join
+              us and be part of a top community committed to holistic living.
             </p>
             <Link href="/community" className="btn-one inline-block">
               Join Us Now

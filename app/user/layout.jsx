@@ -12,18 +12,17 @@ export default function UserDashboardLayout({ children }) {
   const { token } = useToken();
   const router = useRouter();
 
-  // Redirect user if loggedin
-  if (token == null || token == "" || token == undefined) {
-    // Navigate to login
-    useEffect(() => {
+  // Navigate to login
+  useEffect(() => {
+    // Redirect user if loggedin
+    if (token == null || token == "" || token == undefined) {
       router.push("/login", {
         state: {
           successMessage: "Please Login",
         },
       });
-    }, []);
-    return null;
-  }
+    }
+  }, []);
 
   const wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
   if (wleness_user.type != "user") {

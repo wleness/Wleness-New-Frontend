@@ -20,8 +20,8 @@ export default function Header() {
             height={640}
           />
           <p className="mb-5 font-bold lg:text-lg xl:px-44 xl:text-xl text-slate-300">
-            Let's come together and build a supportive community where we share,
-            grow, and heal as one.
+            Let&apos;s come together and build a supportive community where we
+            share, grow, and heal as one.
           </p>
           <Link
             href="https://community.wleness.com/"

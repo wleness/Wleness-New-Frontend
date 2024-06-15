@@ -11,7 +11,7 @@ import IssueQuote from "@components/Therapy/Detail/IssueQuote";
 import { notFound } from "next/navigation";
 import CouplesTherapy from "./CouplesTherapy";
 
-export default function page({ params }) {
+export default function TherapyDetailPage({ params }) {
   if (params.therapy_slug == "couples-therapy") {
     return <CouplesTherapy />;
   }

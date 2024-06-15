@@ -12,7 +12,7 @@ import CoachRequestForm from "@components/Forms/CoachRequestForm";
 import ActivityForm from "@components/Forms/ActivityForm";
 import Guide from "@components/Coach/Executive/Guide";
 
-export default function page() {
+export default function ExecutiveCoachingPage() {
   const { enquiryForm, toggleForm } = useEnquiryForm();
   // Filter executive coaches
   const executive_coaches = coaches.filter(

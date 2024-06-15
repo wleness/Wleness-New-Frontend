@@ -48,7 +48,7 @@ export const whyToApplyCampus = [
   },
 ];
 
-export default function page() {
+export default function CampusAmbassadorPage() {
   const [campusModal, setcampusModal] = useState(false);
 
   const openCampusModal = () => {
@@ -113,10 +113,10 @@ export default function page() {
                 <div className="-mt-2 ml-10 rounded-2xl rounded-br-[4rem] bg-primary-one px-6 py-3 text-sm shadow-lg md:text-base lg:ml-20">
                   <p className="font-medium">
                     By becoming a part of our Wellness Campus Ambassador
-                    Program, you're not just joining a team - you're joining a
-                    movement. Your passion for wellness will have a ripple
-                    effect, touching the lives of your peers and creating a
-                    lasting legacy of health consciousness.
+                    Program, you&apos;re not just joining a team - you&apos;re
+                    joining a movement. Your passion for wellness will have a
+                    ripple effect, touching the lives of your peers and creating
+                    a lasting legacy of health consciousness.
                   </p>
                 </div>
               </figcaption>

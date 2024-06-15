@@ -105,8 +105,9 @@ export default function page() {
           </h2>
           <p className="text-center font-medium leading-5 xl:text-lg xl:leading-6 text-slate-400">
             Hear from our valued clients about their experience with us and the
-            impact we've made on their lives. Read their heartfelt testimonials
-            and discover the quality of care and support we provide.
+            impact we&apos;ve made on their lives. Read their heartfelt
+            testimonials and discover the quality of care and support we
+            provide.
           </p>
         </div>
       </div>

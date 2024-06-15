@@ -5,7 +5,7 @@ import ResourceAssessment from "./ResourceAssessment";
 import ResourceBlogs from "./ResourceBlogs";
 import ResourceVideos from "./ResourceVideos";
 
-export default function index() {
+export default function Resources() {
   const [activeTab, setActiveTab] = useState("Videos");
 
   const tabs = [
@@ -48,8 +48,8 @@ export default function index() {
 
       {tabs
         .filter((tab) => tab.name == activeTab)
-        .map((value) => {
-          return <value.component />;
+        .map((value, i) => {
+          return <value.component key={i} />;
         })}
     </section>
   );

@@ -61,7 +61,7 @@ export default function WellbeingHub({ toggleForm }) {
                 health, our platform ensures all aspects of employee well-being
                 are addressed effectively. Elevate productivity, satisfaction,
                 and engagement through this cutting-edge tool to meet your
-                company's unique requirements.
+                company&apos;s unique requirements.
               </p>
               <button className="btn-one" onClick={toggleForm}>
                 Enquiry now

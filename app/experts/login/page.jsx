@@ -9,7 +9,7 @@ import { EXPERTS_LOGIN_URI } from "@data/api";
 import useToken from "@utils/useToken";
 import AuthLayout from "@components/Authentication/AuthLayout";
 
-export default function page() {
+export default function ExpertsLoginPage() {
   const { token, setToken } = useToken();
   const router = useRouter();
 
@@ -19,7 +19,7 @@ export default function page() {
       // Navigate to login
       router.push("/experts/dashboard");
     }
-  }, []);
+  });
 
   const [formInfo, setFormData] = useState({
     user_id: "",

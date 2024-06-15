@@ -166,7 +166,7 @@ export default function Internship() {
         <div className="container mx-auto">
           <h2 className="text-center">
             <span className="subheading heading-primary">
-              Want to know what it's like to work at WLENESS
+              Want to know what it&apos;s like to work at WLENESS
             </span>
           </h2>
 

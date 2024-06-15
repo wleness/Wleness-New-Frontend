@@ -10,8 +10,8 @@ export default function Certifications() {
             We are <span className="heading-primary">Certified</span>
           </h1>
           <p className="para mb-4">
-            We're certified as the top mental well-being platform, trusted by
-            thousands for our proven results. Our expert team offers India’s
+            We&apos;re certified as the top mental well-being platform, trusted
+            by thousands for our proven results. Our expert team offers India’s
             best personalized support to enhance mental health and well-being.
             Experience the best mental online therapy and wellness with our
             comprehensive services tailored to your needs.

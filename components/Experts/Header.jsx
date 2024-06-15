@@ -35,10 +35,10 @@ export default function Header() {
             At Wleness, we provide a holistic approach to unlocking your
             wellness. Our team of dedicated psychologists and therapists is here
             to offer personalized guidance and support tailored to your unique
-            needs. Whether you're seeking to manage stress, overcome challenges,
-            or enhance your overall mental health, we're committed to empowering
-            you on your path to wellness. Together, we'll unlock the potential
-            for a healthier and happier you.
+            needs. Whether you&apos;re seeking to manage stress, overcome
+            challenges, or enhance your overall mental health, we&apos;re
+            committed to empowering you on your path to wellness. Together,
+            we&apos;ll unlock the potential for a healthier and happier you.
           </p>
           <div className="space-y-3 lg:flex lg:space-x-3 lg:space-y-0">
             <button

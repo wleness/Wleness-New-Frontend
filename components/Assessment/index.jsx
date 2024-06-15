@@ -15,6 +15,7 @@ import {
 import AssessmentOption from "./AssessmentOption";
 import AssessmentTextBtn from "./AssessmentTextBtn";
 import Buttons from "./Buttons";
+import Image from "next/image";
 
 export default function Assessment({
   isAssessmentOpen,
@@ -37,7 +38,7 @@ export default function Assessment({
     setSelectFeeling(
       exists
         ? selectFeeling.filter((element) => element !== event.target.value)
-        : [...selectFeeling, event.target.value],
+        : [...selectFeeling, event.target.value]
     );
   };
 
@@ -57,7 +58,7 @@ export default function Assessment({
     setSelectLanguage(
       exists
         ? selectLanguage.filter((element) => element !== event.target.value)
-        : [...selectLanguage, event.target.value],
+        : [...selectLanguage, event.target.value]
     );
   };
 
@@ -164,10 +165,10 @@ export default function Assessment({
               <span className="heading-primary">Welcome to Wleness</span>
             </h2>
 
-            <img
+            <Image
               loading="lazy"
               src={assessment1}
-              alt=""
+              alt="assessment image"
               className="mx-auto my-4 mb-8 w-28 lg:w-36"
             />
             <button

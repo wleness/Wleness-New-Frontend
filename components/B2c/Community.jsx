@@ -15,7 +15,7 @@ export default function Community() {
         <div className="my-6 grid xl:grid-cols-2 xl:gap-28">
           <div className="space-y-2 mb-6 xl:mb-0">
             <p className="text-light">
-              You're trained to solve for specific problems of your fellow
+              You&apos;re trained to solve for specific problems of your fellow
               humans, with your unique skills.
             </p>
             <span className="text-xl font-bold inline-block text-white xl:text-2xl">
@@ -24,7 +24,7 @@ export default function Community() {
             <h4
               className={`text-xl text-primary-one xl:text-2xl leading-7  ${montserrat.className}`}
             >
-              <span>we're </span>
+              <span>we&apos;re </span>
               <span className="font-bold"> trained</span>
               <span> to solve your </span>
               <span className="font-bold"> emotional & mental states</span>
@@ -55,7 +55,7 @@ export default function Community() {
                 stroke-width="3"
               />
             </svg>
-            <span> We're an exclusive community of</span>
+            <span> We&apos;re an exclusive community of</span>
           </p>
           <h2 className={`text-3xl text-primary-one ${rubik_one.className}`}>
             Therapists. Psychologists. Psychiatrists. Coaches.

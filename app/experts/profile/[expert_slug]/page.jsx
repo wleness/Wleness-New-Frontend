@@ -8,7 +8,7 @@ import ExpertPricing from "@components/Experts/Profile/ExpertPricing";
 import ExpertsStatistics from "@components/Experts/Profile/ExpertsStatistics";
 import { ExpertSuggestion } from "@components/Experts/Profile/ExpertSuggestion";
 
-export default function page({ params }) {
+export default function ExpertsProfilePage({ params }) {
   // return <>{params.expert_slug} page is here</>;
   const [profileDetails, setProfileDetails] = useState({});
   const [loading, setLoading] = useState(true);
@@ -27,7 +27,7 @@ export default function page({ params }) {
         console.error("Error fetching doctor details:", error);
         setLoading(false);
       });
-  }, []);
+  });
 
   if (loading) {
     return <div className="mb-5 text-center">Loading...</div>;

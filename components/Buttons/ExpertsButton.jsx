@@ -10,7 +10,7 @@ export default function ExpertsButton({ text, isActive, switchTo }) {
     >
       {/* <span className={isActive ? "text-white" : "text-black"}> */}
       <span>
-        <span className={isActive ? "" : "text-white"}>Expert's </span>
+        <span className={isActive ? "" : "text-white"}>Expert&apos;s </span>
         <span className={isActive ? "" : "heading-primary"}>{text}</span>
       </span>
     </button>

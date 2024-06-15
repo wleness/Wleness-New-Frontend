@@ -6,7 +6,7 @@ export default function Symptoms({ data }) {
     <section className="py-5 text-center bg-black">
       <div className="container mx-auto">
         <h2 className="subheading mb-2 text-white">
-          <span>Here's How Generalized</span>
+          <span>Here&apos;s How Generalized</span>
           <p>
             <span className="heading-primary">{data.highlight} </span>
             <span>May Appear</span>

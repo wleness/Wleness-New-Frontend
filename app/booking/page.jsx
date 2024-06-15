@@ -5,7 +5,7 @@ import SchedulingCalendar from "@components/Experts/Scheduling/SchedulingCalenda
 import SchedulingForm from "@components/Experts/Scheduling/SchedulingForm";
 import SchedulingSlot from "@components/Experts/Scheduling/SchedulingSlot";
 
-export default function page() {
+export default function BookingsPage() {
   const [userData, setUserData] = useState({
     name: "",
     email: "",

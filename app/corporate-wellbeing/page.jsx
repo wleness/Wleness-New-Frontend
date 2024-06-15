@@ -5,7 +5,7 @@ import WhyCorporate from "@components/Corporate/WhyCorporate";
 import CorporateForm from "@components/Forms/CorporateForm";
 import { useState } from "react";
 
-export default function page() {
+export default function CorporatePage() {
   const [corporateForm, setCorporateForm] = useState(false);
 
   // Toggle form

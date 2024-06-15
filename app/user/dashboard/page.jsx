@@ -39,7 +39,7 @@ const moodsIcons = [
   { label: "Overwhelming", icon: OverwhelmingIcon },
 ];
 
-export default function page() {
+export default function UserDashboardPage() {
   const { token } = useToken();
   const { logout } = useLogout();
 
@@ -83,7 +83,7 @@ export default function page() {
       });
 
     return () => {};
-  }, []);
+  });
 
   // Handle add todo
   const handleTodo = (e) => {
@@ -167,7 +167,7 @@ export default function page() {
       });
 
     return () => {};
-  }, []);
+  });
 
   // Handle adding goals
   const handleGoals = (e) => {
@@ -251,7 +251,7 @@ export default function page() {
       });
 
     return () => {};
-  }, []);
+  });
 
   // Handle adding goals
   const handleJournals = (e) => {
@@ -561,7 +561,11 @@ export default function page() {
               <div className=" border-r border-slate-300 pr-4">
                 <div className="flex">
                   <div>
-                    <Image src={Spark} className="h-8 w-8 lg:h-10 lg:w-10" />
+                    <Image
+                      src={Spark}
+                      className="h-8 w-8 lg:h-10 lg:w-10"
+                      alt="Spark image"
+                    />
                   </div>
                   <div>
                     <span className="text-3xl font-bold text-teal-500">1</span>
@@ -573,7 +577,11 @@ export default function page() {
               <div className="pl-4">
                 <div className="flex">
                   <div>
-                    <Image src={Album} className="h-8 w-8 lg:h-10 lg:w-10" />
+                    <Image
+                      src={Album}
+                      className="h-8 w-8 lg:h-10 lg:w-10"
+                      alt="Album image"
+                    />
                   </div>
                   <div>
                     <span className="text-3xl font-bold text-teal-500">0</span>

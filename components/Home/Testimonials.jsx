@@ -5,6 +5,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { homeTestimonials } from "../../data/testimonials";
+import Image from "next/image";
 
 export default function Testimonials() {
   const [swiper, setSwiper] = useState(null); // Store Swiper instance
@@ -69,7 +70,7 @@ export default function Testimonials() {
                     {value.profession}
                   </p>
                 </div>
-                <img
+                <Image
                   src={value.image}
                   className="absolute bottom-0 right-0 w-20 lg:w-28"
                   alt={value.name}

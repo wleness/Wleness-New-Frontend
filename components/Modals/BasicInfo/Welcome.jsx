@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { assessment1, assessment2 } from "../../assets";
+import Image from "next/image";
 
 export default function Welcome() {
   return (
@@ -45,8 +44,12 @@ export default function Welcome() {
         </div>
       </div>
       {/* Images */}
-      <img src={assessment1} alt="" className="absolute left-20 top-32 w-32" />
-      <img
+      <Image
+        src={assessment1}
+        alt=""
+        className="absolute left-20 top-32 w-32"
+      />
+      <Image
         src={assessment2}
         alt=""
         className="absolute bottom-40 right-20 w-32"

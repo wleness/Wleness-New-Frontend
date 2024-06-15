@@ -13,7 +13,7 @@ import WlenessCoaching from "@components/Coach/Life/WlenessCoaching";
 import Results from "@components/Coach/Life/Results";
 import PropelForward from "@components/Coach/Life/PropelForward";
 
-export default function page() {
+export default function LifeCoachingPage() {
   const [lifecoachingForm, setLifeCoachingForm] = useState(false);
 
   // Toggle form

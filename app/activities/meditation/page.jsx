@@ -5,7 +5,7 @@ import EnquiryForm from "@components/Forms/EnquiryForm";
 import { meditation } from "@data/activities";
 import useEnquiryForm from "@utils/useEnquiryForm";
 
-export default function page() {
+export default function MeditationPage() {
   const { enquiryForm, toggleForm } = useEnquiryForm();
 
   return (
@@ -32,7 +32,7 @@ export default function page() {
           {/* Sadhnas */}
           <div className="grid gap-6 pb-4 lg:grid-cols-3 xl:grid-cols-4 xl:gap-0">
             {meditation.activities.types.map((value, i) => {
-              return <InfoCard data={value} />;
+              return <InfoCard key={i} data={value} />;
             })}
           </div>
 

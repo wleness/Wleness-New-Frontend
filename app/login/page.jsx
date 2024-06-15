@@ -10,7 +10,7 @@ import AuthHeading from "@components/Authentication/AuthHeading";
 import useLogin from "./useLogin";
 import { EXPERTS_LOGIN } from "@data/urls";
 
-export default function page() {
+export default function LoginPage() {
   const router = useRouter();
   const { token, setToken } = useToken();
 
@@ -20,7 +20,7 @@ export default function page() {
       // Navigate to login
       router.push("/");
     }
-  }, []);
+  });
 
   const {
     successMessage,

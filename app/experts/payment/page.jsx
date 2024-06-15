@@ -6,7 +6,7 @@ import ExpertsDashboard from "@components/Dashboard/Experts/ExpertsLayout";
 import { expertsIconDp } from "@public";
 import Image from "next/image";
 
-export default function page() {
+export default function ExpertsPayment() {
   const { token } = useToken();
   const router = useRouter();
 
@@ -28,7 +28,7 @@ export default function page() {
       });
       return null;
     }
-  }, []);
+  });
 
   return (
     <ExpertsDashboard>
@@ -61,6 +61,7 @@ export default function page() {
               }
               return (
                 <tr
+                  key={i}
                   className={
                     active
                       ? "border-y-[1px] border-primary-300 bg-primary-10"

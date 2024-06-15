@@ -15,7 +15,7 @@ import Image from "next/image";
 import UpdateExpertSlots from "@components/Dashboard/Experts/UpdateExpertSlots";
 import ExpertsDashboard from "@components/Dashboard/Experts/ExpertsLayout";
 
-export default function page() {
+export default function ExpertsDashboardPage() {
   const { token, setToken } = useToken();
   const { logout } = useLogout();
   const [loading, setLoading] = useState(true); // set loading screen
@@ -40,7 +40,7 @@ export default function page() {
           successMessage: "Please Login",
         },
       });
-    }, []);
+    });
     return null;
   }
 
@@ -76,7 +76,7 @@ export default function page() {
           console.error(error);
         }
       });
-  }, []);
+  });
 
   // ============================================================
   // Fetch Experts Dashboard Details

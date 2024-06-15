@@ -12,7 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function page() {
+export default function ForgotPasswordPage() {
   const [email, setEmail] = useState(null);
   const [resetEmailSent, setResetEmailSent] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -70,10 +70,11 @@ export default function page() {
                 Welcome to Wleness
               </h2>
               <p className="font-medium lg:text-lg text-slate-400">
-                Mental health is vital—it's the foundation of our well-being,
-                impacting relationships, productivity, and life's challenges.
-                Recognizing its importance fosters a stigma-free society that
-                supports happier, healthier lives for all.
+                Mental health is vital—it&apos;s the foundation of our
+                well-being, impacting relationships, productivity, and
+                life&apos;s challenges. Recognizing its importance fosters a
+                stigma-free society that supports happier, healthier lives for
+                all.
               </p>
             </div>
             <Image

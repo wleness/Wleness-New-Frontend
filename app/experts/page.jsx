@@ -34,7 +34,7 @@ const expertsCoupleTherapy = {
   slug: COUPLES_THERAPY,
 };
 
-export default function page() {
+export default function ExpertsPage() {
   const [isAssessmentModalOpen, setShowAssessmentModal] = useState(false);
   const [rediredurl, setRediredurl] = useState(null);
   const [experts, setExperts] = useState([]);

@@ -26,7 +26,7 @@ import {
   googleProvider,
 } from "@components/Authentication/FirebaseConfig";
 
-export default function page() {
+export default function SignupPage() {
   const router = useRouter();
   const { token, setToken } = useToken();
 
@@ -36,7 +36,7 @@ export default function page() {
       // Navigate to login
       router.push("/");
     }
-  }, []);
+  });
 
   const [otp, setOTP] = useState(null);
   const [OTPModal, setOTPModal] = useState(false);

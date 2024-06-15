@@ -14,7 +14,7 @@ import { musicalTherapyClient } from "@data/clients";
 import { musicalTherapyFaq } from "@data/faqs";
 import FaqWithImage from "@components/Therapy/CoupleTherapy/FaqWithImage";
 
-export default function page() {
+export default function MusicHealingPage() {
   const { enquiryForm, toggleForm } = useEnquiryForm();
 
   return (

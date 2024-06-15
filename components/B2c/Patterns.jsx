@@ -34,7 +34,7 @@ export default function Patterns() {
     <section className="px-4 bg-primary-two xl:px-10 py-10 pt-56">
       <PrimaryTitle text={"Same species. Same patterns."} />
       <p className="text-light text-center">
-        you're not alone in what you're going through.
+        you&apos;re not alone in what you&apos;re going through.
       </p>
       <div className="py-6 xl:py-8">
         {/* Buttons / Tabs */}

@@ -68,7 +68,7 @@ export function GoalPlanner({ day, date, time }) {
   );
 }
 
-export default function page() {
+export default function HistoryPage() {
   const { token } = useToken();
   const [activeIndex, setActiveIndex] = useState(0);
   const [journals, setJournals] = useState(null);
@@ -109,7 +109,7 @@ export default function page() {
       });
 
     return () => {};
-  }, []);
+  });
 
   return (
     <>

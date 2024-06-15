@@ -35,7 +35,7 @@ export default function Faqs(props) {
           loading="lazy"
         />
         <Link href="/faqs" className="btn-one inline-block">
-          Go to FAQ's
+          Go to FAQ&apos;s
         </Link>
       </div>
       <div className="flex flex-col gap-4 lg:w-1/2" id="home-page-faqs">

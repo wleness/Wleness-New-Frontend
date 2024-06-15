@@ -61,7 +61,7 @@ export default function Navbar() {
               console.error("Error fetching doctor details:", error);
             }
           });
-      }, []);
+      });
     } else {
       let wleness_user = JSON.parse(localStorage.getItem("userInfo"));
       useEffect(() => {

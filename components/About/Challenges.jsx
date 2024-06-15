@@ -13,15 +13,16 @@ export default function Challenges() {
                 <span className="heading-primary"> Challenges</span>
               </h2>
               <p className="text-base font-medium lg:text-lg text-slate-400">
-                In today's fast-paced world, the demands of modern life, coupled
-                with the pervasive influence of digital devices and social
-                media, can amplify feelings of stress, anxiety, and isolation.
-                While therapy is a potential solution, it's not always
-                accessible due to costs, societal stigmas, or geographical
-                barriers. The digital age calls for comprehensive, affordable
-                mental health solutions that transcend these limitations, yet a
-                unified platform addressing holistic wellness remains elusive,
-                forcing individuals to search across various forums.
+                In today&apos;s fast-paced world, the demands of modern life,
+                coupled with the pervasive influence of digital devices and
+                social media, can amplify feelings of stress, anxiety, and
+                isolation. While therapy is a potential solution, it&apos;s not
+                always accessible due to costs, societal stigmas, or
+                geographical barriers. The digital age calls for comprehensive,
+                affordable mental health solutions that transcend these
+                limitations, yet a unified platform addressing holistic wellness
+                remains elusive, forcing individuals to search across various
+                forums.
               </p>
             </div>
 

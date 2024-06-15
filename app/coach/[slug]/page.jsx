@@ -25,7 +25,7 @@ const reviewsHeading = {
   ],
 };
 
-export default function page({ params }) {
+export default function CoachPage({ params }) {
   const coach = coaches.filter(
     (value) => value.slug == "/coach/" + params.slug
   )[0];

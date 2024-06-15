@@ -8,7 +8,7 @@ import { therapyClient } from "@data/clients";
 import { TherapyData } from "@data/therapy";
 import { useRef, useState } from "react";
 
-export default function page() {
+export default function TherapyPage() {
   const [isAssessmentModalOpen, setShowAssessmentModal] = useState(false);
   const [rediredurl, setRediredurl] = useState(null);
 

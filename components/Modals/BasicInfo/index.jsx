@@ -15,8 +15,9 @@ import {
 import Options from "./Options";
 import Buttons from "./Buttons";
 import TextBtn from "./TextBtn";
+import Image from "next/image";
 
-export default function index({
+export default function BasicInfo({
   isAssessmentOpen,
   onAssessmentClose,
   buttons,
@@ -164,7 +165,7 @@ export default function index({
               <span className="heading-primary">Welcome to Wleness</span>
             </h2>
 
-            <img
+            <Image
               loading="lazy"
               src={assessment1}
               alt=""

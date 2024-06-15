@@ -34,10 +34,10 @@ export default function Header({ toggleForm }) {
             </li>
             <li className="mb-6 rounded-2xl bg-slate-900 text-slate-300 p-3 font-semibold">
               Our approach blends data-driven insights, business psychology, and
-              cutting-edge tech to deliver a transformative experience. We don't
-              just coach; we empower leaders to navigate change and confidently
-              lead their organizations to success. At Wleness, we know the
-              corporate world craves adaptable trailblazers.
+              cutting-edge tech to deliver a transformative experience. We
+              don&apos;t just coach; we empower leaders to navigate change and
+              confidently lead their organizations to success. At Wleness, we
+              know the corporate world craves adaptable trailblazers.
             </li>
           </ul>
 

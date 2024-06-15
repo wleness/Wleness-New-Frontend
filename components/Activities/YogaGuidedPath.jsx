@@ -96,7 +96,7 @@ export default function YogaGuidedPath({ title }) {
           </h2>
           <p className="para mb-6 text-left text-slate-300">
             A 20-day program designed to make yoga accessible and enjoyable for
-            you. With expert guidance, you'll explore relaxation,
+            you. With expert guidance, you&apos;ll explore relaxation,
             strength-building, and mindfulness, guiding a fulfilling mental and
             physical wellness journey.
           </p>
