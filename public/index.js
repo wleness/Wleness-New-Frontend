@@ -241,13 +241,13 @@ export { meditationCheckoutBg, sadhnaCheckoutBg, yogaCheckoutBg };
 import saloniHeader from "./images/coaches/saloni-gupta-header.webp";
 import saloniBottom from "./images/coaches/saloni-bottom.webp";
 import saloniMid from "./images/coaches/saloni-mid.webp";
-import anjuHeader from "./images/coaches/anjuHeader.webp";
-import anjuBottom from "./images/coaches/anjuBottom.webp";
-import anjuMid from "./images/coaches/anjuMid.webp";
+import anjuHeader from "./images/coaches/anjuheader.webp";
+import anjuBottom from "./images/coaches/anjubottom.webp";
+import anjuMid from "./images/coaches/anjumid.webp";
 import leaf from "./images/coaches/leaf.webp";
-import andreaHeader from "./images/coaches/andreaHeader.webp";
-import andreaMid from "./images/coaches/andreaMid.webp";
-import andreaBottom from "./images/coaches/andreaBottom.webp";
+import andreaHeader from "./images/coaches/andreaheader.webp";
+import andreaMid from "./images/coaches/andreamid.webp";
+import andreaBottom from "./images/coaches/andreabottom.webp";
 
 export {
   saloniBottom,
