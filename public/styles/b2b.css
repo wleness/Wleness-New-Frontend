@@ -1,0 +1,98 @@
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 28rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* Range 1  */
+/* ============================  */
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+.white-range::-webkit-slider-runnable-track {
+  background-color: rgb(160, 159, 159);
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+.white-range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -8px; /* Centers thumb on the track */
+
+  /*custom styles*/
+  background-color: white;
+  height: 1.5rem;
+  border-radius: 5px;
+  width: 8px;
+}
+
+/******** Firefox styles ********/
+/* slider track */
+.white-range::-moz-range-track {
+  background-color: rgb(160, 159, 159);
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+.white-range::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+
+  /*custom styles*/
+  background-color: white;
+  height: 1.5rem;
+  border-radius: 5px;
+  width: 8px;
+}
+
+/* Range 2  */
+/* ============================  */
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+.red-range::-webkit-slider-runnable-track {
+  background-color: #ff5300;
+  border-radius: 0.3rem;
+  height: 1.5rem;
+}
+
+/* slider thumb */
+.red-range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -8px; /* Centers thumb on the track */
+
+  /*custom styles*/
+  background-color: white;
+  height: 2.5rem;
+  border-radius: 5px;
+  width: 8px;
+}
+
+/******** Firefox styles ********/
+/* slider track */
+.red-range::-moz-range-track {
+  background-color: rgb(160, 159, 159);
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+.red-range::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+
+  /*custom styles*/
+  background-color: white;
+  height: 2.5rem;
+  border-radius: 5px;
+  width: 8px;
+}

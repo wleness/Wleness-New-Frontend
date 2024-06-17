@@ -53,50 +53,19 @@ import {
 } from "./urls";
 
 // ================= Navigation Bar =================
-// Services sub pages
-export const serviceMenuPages = [
-  {
-    name: "Therapy",
-    slug: THERAPY,
-    subPages: [
-      ["Couples Therapy", COUPLES_THERAPY],
-      ["Stress", STRESS],
-      ["Depression", DEPRESSION],
-      ["Anxiety", ANXIETY],
-      ["Anger", ANGER_ISSUES],
-      ["Panic Attack", PANIC_ATTACKS],
-      ["Bipolar Disorder", BIPOLAR_DISORDER],
-      ["LGBTQ", LGBTQ],
-      ["ADHD", ADHD],
-      ["ODD", ODD],
-      ["Paranoia", PARANOIA],
-      ["Conduct Disorder", CONDUCT_DISORDER],
-    ],
-  },
-  {
-    name: "Yoga",
-    slug: YOGA,
-  },
-  {
-    name: "Lifestyle & Mindulness Coaching",
-    slug: LIFESTYLE_COACHING,
-  },
-  {
-    name: "Executive Coaching",
-    slug: EXECUTIVE_COACHING,
-  },
-  {
-    name: "Corporate Wellbeing",
-    slug: CORPORATE_WELLBEING,
-  },
-  {
-    name: "Music Healing",
-    slug: MUSICAL_HEALING,
-  },
-  {
-    name: "Meditation",
-    slug: MEDITATION,
-  },
+export const services_subpages = [
+  ["Couples Therapy", COUPLES_THERAPY],
+  ["Stress", STRESS],
+  ["Depression", DEPRESSION],
+  ["Anxiety", ANXIETY],
+  ["Anger", ANGER_ISSUES],
+  ["Panic Attack", PANIC_ATTACKS],
+  ["Bipolar Disorder", BIPOLAR_DISORDER],
+  ["LGBTQ", LGBTQ],
+  ["ADHD", ADHD],
+  ["ODD", ODD],
+  ["Paranoia", PARANOIA],
+  ["Conduct Disorder", CONDUCT_DISORDER],
 ];
 
 // Activities sub pages

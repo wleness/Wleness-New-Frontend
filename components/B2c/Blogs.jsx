@@ -19,7 +19,6 @@ export default function Blogs() {
       .then((response) => {
         setBlogs(response.data.blogs);
         setLoading(false);
-        console.log(response.data.blogs);
       })
       .catch((error) => console.error(error));
     return () => {};

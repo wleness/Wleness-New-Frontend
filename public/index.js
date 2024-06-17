@@ -1188,6 +1188,10 @@ import colorIconFacebook from "./images/icons/facebook.png";
 import DummyClient from "./images/icons/200x200.png";
 import Icon1 from "./images/icons/icon-1.svg";
 import Icon2 from "./images/icons/icon-2.svg";
+import Icon3 from "./images/icons/icon-3.png";
+import Icon4 from "./images/icons/icon-4.png";
+import Icon5 from "./images/icons/icon-5.png";
+import Icon6 from "./images/icons/icon-6.png";
 import Favicon from "./images/icons/favicon.svg";
 
 export {
@@ -1216,6 +1220,10 @@ export {
   DummyClient,
   Icon1,
   Icon2,
+  Icon3,
+  Icon4,
+  Icon5,
+  Icon6,
   Favicon,
 };
 
@@ -1368,6 +1376,9 @@ import CommunityIcon1 from "./images/b2c/community-icon-1.png";
 import CommunityIcon2 from "./images/b2c/community-icon-2.png";
 import CommunityIcon3 from "./images/b2c/community-icon-3.png";
 import ResolveImage from "./images/b2c/resolve.png";
+import ResolveCommunity from "./images/b2c/resolve-community.png";
+import ResolveSelfHelp from "./images/b2c/resolve-self-help.png";
+import ResolveSession from "./images/b2c/resolve-session.png";
 export {
   PrimaryHeaderImage,
   B2CCommunity,
@@ -1375,6 +1386,9 @@ export {
   CommunityIcon2,
   CommunityIcon3,
   ResolveImage,
+  ResolveCommunity,
+  ResolveSelfHelp,
+  ResolveSession,
 };
 
 // B2b

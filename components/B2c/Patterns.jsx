@@ -42,10 +42,10 @@ export default function Patterns() {
           {same_patterns.map((value, i) => (
             <h2
               key={i}
-              className={`text-white z-10 sticky top-0 font-semibold text-sm lg:text-lg cursor-pointer text-center py-1.5  ${
+              className={`z-10 sticky top-0 font-semibold text-sm lg:text-lg cursor-pointer text-center py-1.5  ${
                 value.label == activeTab.label
-                  ? "bg-primary-three"
-                  : "bg-slate-600"
+                  ? "bg-primary-one"
+                  : "bg-slate-600 text-white"
               }`}
               onClick={() => setActiveTab(value)}
             >
@@ -59,7 +59,7 @@ export default function Patterns() {
               key={i}
               className={`border pb-4 h-[340px] overflow-y-scroll pattern-scrollbar ${
                 value.label == activeTab.label
-                  ? "border-primary-three"
+                  ? "border-primary-one"
                   : "border-slate-600 hidden xl:block"
               }`}
             >
@@ -67,11 +67,7 @@ export default function Patterns() {
                 {value.patterns.map((key, j) => (
                   <div
                     key={j}
-                    className={`grid grid-cols-[2fr_4fr] lg:grid-cols-[1fr_3fr] py-2 ${
-                      value.label == activeTab.label
-                        ? "group even:bg-primary-three odd:bg-[#002033]"
-                        : "even:bg-slate-600"
-                    }`}
+                    className={`grid grid-cols-[2fr_4fr] lg:grid-cols-[1fr_3fr] py-2 `}
                   >
                     <div>
                       <Image
@@ -85,8 +81,9 @@ export default function Patterns() {
                     <div className="pr-3">
                       <h4
                         className={`font-bold flex items-center justify-between ${
-                          value.label == activeTab.label
-                            ? "group-odd:text-primary-three group-even:text-white"
+                          value.label == activeTab.label ||
+                          myPatterns.includes(key.title)
+                            ? "text-primary-one"
                             : "text-white"
                         }`}
                       >
@@ -119,14 +116,16 @@ export default function Patterns() {
         </div>
       </div>
 
-      <div>
-        <PrimaryTitle text={"my patterns"} />
-        <div className="space-x-2 space-y-2 text-center mt-6">
+      <div className="grid xl:grid-cols-[2fr_1fr]">
+        <div className="w-fit">
+          <PrimaryTitle text={"Humans have the same patterns. Choose yours."} />
+        </div>
+        <div className="text-center border-2 border-primary-one p-2 flex gap-2 flex-wrap">
           {myPatterns?.map((value, i) => (
             <span
               key={i}
               onClick={() => removePattern(value)}
-              className="inline-block text-xs py-1 px-4 text-white rounded-lg even:bg-orange-600 font-medium odd:bg-primary-three relative group hover:pr-7 transition-all"
+              className="inline-block text-xs py-1 px-4 rounded-lg font-medium bg-primary-one relative group hover:pr-7 transition-all"
             >
               {value}
               <FontAwesomeIcon

@@ -12,7 +12,6 @@ function getExperts() {
       .get(EXPERTS_URI)
       .then((response) => {
         // Handle the successful response
-        console.log(response);
         setDoctorDetails(response.data["experts"]);
         setStatus(true);
       })
