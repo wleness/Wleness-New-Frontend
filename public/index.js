@@ -770,7 +770,7 @@ export {
 };
 
 // Issues Images
-import issuesHeader from "./images/issues/issuesheader.png";
+import issuesHeader from "./images/issues/issuesHeader.png";
 import issueAnxiety from "./images/issues/issue-anxiety.webp";
 import issueAdhd from "./images/issues/issue-adhd.webp";
 import issueBiopolarDisorder from "./images/issues/issue-biopolar-disorder.webp";
