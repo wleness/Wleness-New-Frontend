@@ -33,11 +33,13 @@ export default function LoginPage() {
 
   // Handle Redirect Messsages
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const paramValue = urlParams.get("source");
+    if (typeof window !== "undefined") {
+      const urlParams = new URLSearchParams(window.location.search);
+      const paramValue = urlParams.get("source");
 
-    if (paramValue == "passwordReset") {
-      setMessages("success", "Password reset successfully! Please Login");
+      if (paramValue == "passwordReset") {
+        setMessages("success", "Password reset successfully! Please Login");
+      }
     }
   }, []);
 
@@ -52,14 +54,7 @@ export default function LoginPage() {
 
         {/* Login Form */}
         <form onSubmit={handleSubmit} className="mx-auto mb-4 lg:w-96">
-          {successMessage.status == "" ? (
-            location.state &&
-            location.state.successMessage && (
-              <p className="mb-3 text-center font-semibold text-red-500">
-                {location.state.successMessage}
-              </p>
-            )
-          ) : (
+          {successMessage.status && (
             <p
               className={`mb-3 text-center font-semibold ${
                 successMessage.status == "success"

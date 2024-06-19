@@ -60,7 +60,7 @@ export default function Community() {
                 <path
                   d="M14.5 -6.33815e-07L14.5 65M14.5 65C14.4233 58.0517 22.3254 44.1552 29 44.1552M14.5 65C14.5767 58.0517 6.6746 44.1552 -2.0791e-06 44.1552"
                   stroke="white"
-                  stroke-width="2"
+                  strokeWidth={2}
                 />
               </svg>
               <span> We&apos;re an exclusive community of</span>

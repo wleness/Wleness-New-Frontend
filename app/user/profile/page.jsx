@@ -27,8 +27,26 @@ const avatars = [
 ];
 
 export default function ProfilePage() {
-  const { token } = useToken();
   const router = useRouter();
+  const { logout } = useLogout();
+  const { token } = useToken();
+  // Redirect user if loggedin
+  useEffect(() => {
+    if (token == null || token == "" || token == undefined) {
+      // Navigate to login
+      router.push("/login");
+    }
+  });
+
+  // Fetch user data
+  let wleness_user = JSON.parse(getLocalItem("wleness_user"));
+  let userInfo = JSON.parse(getLocalItem("userInfo"));
+  useEffect(() => {
+    if (wleness_user.type == "expert") {
+      router.push("/experts/dashboard");
+    }
+  });
+
   const [userData, setUserData] = useState({
     name: userInfo.name,
     email: userInfo.email,
@@ -39,28 +57,6 @@ export default function ProfilePage() {
   const [successMessage, setSuccessMessage] = useState({
     status: "",
     message: "",
-  });
-
-  // Redirect user if loggedin
-  useEffect(() => {
-    if (token == null || token == "" || token == undefined) {
-      // Navigate to login
-      router.push("/login", {
-        state: {
-          successMessage: "Please Login",
-        },
-      });
-    }
-  });
-
-  const { logout } = useLogout();
-
-  let wleness_user = JSON.parse(getLocalItem("wleness_user"));
-  let userInfo = JSON.parse(getLocalItem("userInfo"));
-  useEffect(() => {
-    if (wleness_user.type == "expert") {
-      router.push("/experts/dashboard");
-    }
   });
 
   const handleChange = (e) => {
@@ -120,7 +116,7 @@ export default function ProfilePage() {
       })
       .catch((error) => {
         // setMessage(error.data.status, error.data.message);
-        logout() ? error.response.status == 401 : "";
+        error.response.status == 401 ? logout() : "";
       });
   };
 

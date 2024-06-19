@@ -228,14 +228,7 @@ export default function SignupPage() {
 
         {/* Login Form */}
         <form onSubmit={handleSubmit} className="mx-auto lg:w-96">
-          {successMessage.status == "" ? (
-            location.state &&
-            location.state.successMessage && (
-              <p className="mb-3 text-center font-semibold text-red-500">
-                {location.state.successMessage}
-              </p>
-            )
-          ) : (
+          {successMessage.status && (
             <p
               className={`mb-3 text-center font-semibold ${
                 successMessage.status == "success"
