@@ -2,10 +2,11 @@ import axios from "axios";
 
 import useToken from "./useToken";
 import { LOGOUT_USER_URI } from "@data/api";
+import { getLocalItem, removeLocalItem } from "@utils";
 
 function useLogout() {
   const { removeToken } = useToken();
-  const wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
+  const wleness_user = JSON.parse(getLocalItem("wleness_user"));
 
   const logMeOut = async () => {
     const response = await axios.post(LOGOUT_USER_URI);
@@ -13,16 +14,16 @@ function useLogout() {
       // Clear user data from local storage
       removeToken();
       if (wleness_user.type == "expert") {
-        localStorage.removeItem("wleness_experts_id");
+        removeLocalItem("wleness_experts_id");
       } else {
-        localStorage.removeItem("phone");
-        localStorage.removeItem("email");
+        removeLocalItem("phone");
+        removeLocalItem("email");
       }
-      localStorage.removeItem("userInfo");
-      localStorage.removeItem("wleness_user");
-      localStorage.removeItem("wleness_user_type");
-      localStorage.removeItem("username");
-      localStorage.removeItem("login_type");
+      removeLocalItem("userInfo");
+      removeLocalItem("wleness_user");
+      removeLocalItem("wleness_user_type");
+      removeLocalItem("username");
+      removeLocalItem("login_type");
       window.location = "/";
       // navigate("/login");
     }

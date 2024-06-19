@@ -25,6 +25,7 @@ import {
   facebookProvider,
   googleProvider,
 } from "@components/Authentication/FirebaseConfig";
+import { setLocalItem } from "@utils";
 
 export default function SignupPage() {
   const router = useRouter();
@@ -108,7 +109,7 @@ export default function SignupPage() {
       if (response.data.status == "success") {
         // Set login token
         setToken(response.data.access_token);
-        localStorage.setItem(
+        setLocalItem(
           "wleness_user",
           JSON.stringify({
             key: "email",
@@ -158,7 +159,7 @@ export default function SignupPage() {
           // Empty form after successfully sending data
           if (response.data.status == "success") {
             setEmail(formInfo["email"]);
-            localStorage.setItem(
+            setLocalItem(
               "wleness_user",
               JSON.stringify({
                 key: "email",
@@ -207,7 +208,7 @@ export default function SignupPage() {
           if (response.data.status == "success") {
             // Set login token after OTP Verification
             setToken(newToken);
-            localStorage.setItem("phone", phone);
+            setLocalItem("phone", phone);
             router.push("/");
           } else {
             setOTPAlert(response.data.message);

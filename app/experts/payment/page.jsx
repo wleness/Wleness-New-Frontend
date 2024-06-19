@@ -5,13 +5,14 @@ import { useRouter } from "next/navigation";
 import ExpertsDashboard from "@components/Dashboard/Experts/ExpertsLayout";
 import { expertsIconDp } from "@public";
 import Image from "next/image";
+import { getLocalItem } from "@utils";
 
 export default function ExpertsPayment() {
   const { token } = useToken();
   const router = useRouter();
 
   // ======== Get user appointments and details ===========
-  let wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
+  let wleness_user = JSON.parse(getLocalItem("wleness_user"));
 
   // Navigate to login
   useEffect(() => {

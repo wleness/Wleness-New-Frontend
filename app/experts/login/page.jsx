@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { EXPERTS_LOGIN_URI } from "@data/api";
 import useToken from "@utils/useToken";
 import AuthLayout from "@components/Authentication/AuthLayout";
+import { setLocalItem } from "@utils";
 
 export default function ExpertsLoginPage() {
   const { token, setToken } = useToken();
@@ -67,15 +68,14 @@ export default function ExpertsLoginPage() {
             });
 
             setToken(response.data.access_token);
-
-            localStorage.setItem(
+            setLocalItem(
               "wleness_user",
               JSON.stringify({
                 user_id: formInfo["user_id"],
                 type: "expert",
               })
             );
-            localStorage.setItem("wleness_user_type", "expert");
+            setLocalItem("wleness_user_type", "expert");
 
             router.push("/experts/dashboard");
           }
@@ -107,14 +107,7 @@ export default function ExpertsLoginPage() {
           onSubmit={handleSubmit}
           className="mx-auto mb-4 lg:w-96 text-center"
         >
-          {successMessage.status == "" ? (
-            location.state &&
-            location.state.successMessage && (
-              <p className="mb-3 text-center font-semibold text-red-500">
-                {location.state.successMessage}
-              </p>
-            )
-          ) : (
+          {successMessage.status && (
             <p
               className={`mb-3 text-center font-semibold ${
                 successMessage.status == "success"

@@ -14,6 +14,7 @@ import {
 } from "@public";
 import { USER_PROFILE_UPDATE_URI } from "@data/api";
 import Image from "next/image";
+import { getLocalItem, removeLocalItem, setLocalItem } from "@utils";
 
 const genders = ["Male", "Female", "Transgender"];
 const avatars = [
@@ -53,8 +54,9 @@ export default function ProfilePage() {
   });
 
   const { logout } = useLogout();
-  let wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
-  let userInfo = JSON.parse(localStorage.getItem("userInfo"));
+
+  let wleness_user = JSON.parse(getLocalItem("wleness_user"));
+  let userInfo = JSON.parse(getLocalItem("userInfo"));
   useEffect(() => {
     if (wleness_user.type == "expert") {
       router.push("/experts/dashboard");
@@ -101,11 +103,11 @@ export default function ProfilePage() {
       .then((response) => {
         setMessage(response.data.status, response.data.message);
         if (response.data.status == "success") {
-          localStorage.removeItem("userInfo");
-          localStorage.removeItem("wleness_user");
+          removeLocalItem("userInfo");
+          removeLocalItem("wleness_user");
           // Update localStorage information
-          localStorage.setItem("userInfo", JSON.stringify(response.data));
-          localStorage.setItem(
+          setLocalItem("userInfo", JSON.stringify(response.data));
+          setLocalItem(
             "wleness_user",
             JSON.stringify({
               key: "email",

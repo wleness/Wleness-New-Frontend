@@ -4,6 +4,7 @@ import {
   googleProvider,
 } from "@components/Authentication/FirebaseConfig";
 import { GOOGLE_LOGIN_URI, LOGIN_USER_URI } from "@data/api";
+import { setLocalItem } from "@utils";
 import axios from "axios";
 import { signInWithPopup } from "firebase/auth";
 import { useRouter } from "next/navigation";
@@ -63,8 +64,7 @@ export default function useLogin({ setToken }) {
         // Empty form after successfully sending data
         if (response.data.status === "success") {
           setToken(response.data.access_token);
-
-          localStorage.setItem(
+          setLocalItem(
             "wleness_user",
             JSON.stringify({
               key: "email",
@@ -73,7 +73,6 @@ export default function useLogin({ setToken }) {
               login_type: login_type,
             })
           );
-
           router.push("/");
         }
         setMessages(response.data.status, response.data.message);
@@ -109,7 +108,7 @@ export default function useLogin({ setToken }) {
         .then((response) => {
           if (response.data.status === "success") {
             setToken(response.data.access_token);
-            localStorage.setItem(
+            setLocalItem(
               "wleness_user",
               JSON.stringify({
                 key: userType,

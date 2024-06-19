@@ -10,6 +10,7 @@ import useToken from "@utils/useToken";
 import { USER_PROFILE_URI } from "@data/api";
 import DesktopNavbar from "./DesktopNavbar";
 import JoinUs from "@components/JoinUs";
+import { getLocalItem } from "@utils";
 
 export default function Navbar() {
   const { logout } = useLogout();
@@ -18,7 +19,7 @@ export default function Navbar() {
   const { token } = useToken();
 
   // ======== Get user appointments and details ===========  // Redirect user if loggedin
-  let wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
+  let wleness_user = JSON.parse(getLocalItem("wleness_user"));
 
   // if (token && token !== "" && token !== undefined && wleness_user != null) {
   //   let wleness_user_type = wleness_user.type;

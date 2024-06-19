@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { USER_PROFILE_URI } from "../data/api";
+import { getLocalItem } from "@utils";
 
 export default function useEnquiryForm() {
   const [enquiryForm, setEnquiryForm] = useState(false);
@@ -19,7 +20,7 @@ export default function useEnquiryForm() {
 // Get User information
 export function getUserInfo(token) {
   if (token && token !== "" && token !== undefined) {
-    let wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
+    let wleness_user = JSON.parse(getLocalItem("wleness_user"));
     let url = USER_PROFILE_URI + "/" + wleness_user.username;
 
     useEffect(() => {

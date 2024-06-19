@@ -10,6 +10,7 @@ import Image from "next/image";
 import { avatarImage6 } from "@public";
 import useToken from "@utils/useToken";
 import { EXPERTS_LOGIN } from "@data/urls";
+import { getLocalItem, setLocalItem } from "@utils";
 
 export default function AdminSideBar({ isMenuOpen, closeMenu }) {
   const { token } = useToken();
@@ -32,7 +33,7 @@ export default function AdminSideBar({ isMenuOpen, closeMenu }) {
     }
   });
 
-  const wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
+  const wleness_user = JSON.parse(getLocalItem("wleness_user"));
   useEffect(() => {
     if (wleness_user.type != "expert") {
       router.push("/");
@@ -55,7 +56,7 @@ export default function AdminSideBar({ isMenuOpen, closeMenu }) {
       .then((response) => {
         if (response.status == 200) {
           setUser(response.data);
-          localStorage.setItem("userInfo", JSON.stringify(response.data));
+          setLocalItem("userInfo", JSON.stringify(response.data));
         }
       })
       .catch((error) => {

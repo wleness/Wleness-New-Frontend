@@ -14,6 +14,7 @@ import { EXPERTS_DASHBOARD, EXPERTS_PROFILE_URI } from "@data/api";
 import Image from "next/image";
 import UpdateExpertSlots from "@components/Dashboard/Experts/UpdateExpertSlots";
 import ExpertsDashboard from "@components/Dashboard/Experts/ExpertsLayout";
+import { getLocalItem, setLocalItem } from "@utils";
 
 export default function ExpertsDashboardPage() {
   const { token, setToken } = useToken();
@@ -25,7 +26,7 @@ export default function ExpertsDashboardPage() {
   const router = useRouter();
 
   // ======== Get user appointments and details ===========
-  let wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
+  let wleness_user = JSON.parse(getLocalItem("wleness_user"));
 
   // Navigate to login
   useEffect(() => {
@@ -54,7 +55,7 @@ export default function ExpertsDashboardPage() {
       })
       .then((response) => {
         if (response.status == 200) {
-          localStorage.setItem("userInfo", JSON.stringify(response.data));
+          setLocalItem("userInfo", JSON.stringify(response.data));
           setLoading(false);
         }
       })

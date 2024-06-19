@@ -1,3 +1,6 @@
+"use client";
+import { useEffect } from "react";
+
 // Colourize text with theme color
 export const textColorize = (strings) => {
   const text = strings.map((value, index) => {
@@ -39,4 +42,35 @@ export const get_title_text = (title) => {
     newTitle += title[key].text;
   }
   return newTitle;
+};
+
+export const getLocalItem = (key) => {
+  useEffect(() => {
+    try {
+      const item = localStorage.getItem(key);
+      return item;
+    } catch (error) {
+      console.log(error);
+    }
+  }, [key]);
+};
+
+export const setLocalItem = (key, value) => {
+  useEffect(() => {
+    try {
+      localStorage.setItem(key, value);
+    } catch (error) {
+      console.log(error);
+    }
+  }, [key, value]);
+};
+
+export const removeLocalItem = (key) => {
+  useEffect(() => {
+    try {
+      localStorage.removeItem(key);
+    } catch (error) {
+      console.log(error);
+    }
+  }, [key]);
 };

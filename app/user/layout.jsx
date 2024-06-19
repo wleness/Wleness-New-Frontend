@@ -7,6 +7,7 @@ import Image from "next/image";
 import { avatarImage6, palmWave } from "@public";
 import UserSidebar from "@components/Dashboard/User/UserSidebar";
 import useToken from "@utils/useToken";
+import { getLocalItem } from "@utils";
 
 export default function UserDashboardLayout({ children }) {
   const { token } = useToken();
@@ -24,7 +25,7 @@ export default function UserDashboardLayout({ children }) {
     }
   });
 
-  const wleness_user = JSON.parse(localStorage.getItem("wleness_user"));
+  const wleness_user = JSON.parse(getLocalItem("wleness_user"));
   useEffect(() => {
     if (wleness_user.type != "user") {
       router.push("/");
@@ -42,7 +43,7 @@ export default function UserDashboardLayout({ children }) {
     setMenuOpen(false);
   };
 
-  const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+  const userInfo = JSON.parse(getLocalItem("userInfo"));
 
   return (
     <div className="lg:flex lg:justify-end">
