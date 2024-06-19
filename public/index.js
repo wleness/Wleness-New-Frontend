@@ -1193,6 +1193,7 @@ import Icon4 from "./images/icons/icon-4.png";
 import Icon5 from "./images/icons/icon-5.png";
 import Icon6 from "./images/icons/icon-6.png";
 import Favicon from "./images/icons/favicon.svg";
+import DoubleArrow from "./images/icons/double-arrow.png";
 
 export {
   iconInstagram,
@@ -1225,6 +1226,7 @@ export {
   Icon5,
   Icon6,
   Favicon,
+  DoubleArrow,
 };
 
 // Other Images
@@ -1379,6 +1381,8 @@ import ResolveImage from "./images/b2c/resolve.png";
 import ResolveCommunity from "./images/b2c/resolve-community.png";
 import ResolveSelfHelp from "./images/b2c/resolve-self-help.png";
 import ResolveSession from "./images/b2c/resolve-session.png";
+import EngineersBuild from "./images/b2c/engineers-build.svg";
+import Trapezoid from "./images/b2c/trapezoid.svg";
 export {
   PrimaryHeaderImage,
   B2CCommunity,
@@ -1389,6 +1393,8 @@ export {
   ResolveCommunity,
   ResolveSelfHelp,
   ResolveSession,
+  EngineersBuild,
+  Trapezoid,
 };
 
 // B2b

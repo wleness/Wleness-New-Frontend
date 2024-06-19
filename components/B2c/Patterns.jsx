@@ -33,8 +33,11 @@ export default function Patterns() {
   return (
     <section className="px-4 bg-primary-two xl:px-10 py-10 pt-56">
       <PrimaryTitle text={"Same species. Same patterns."} />
-      <p className="text-light text-center">
+      <p className="text-gray-400 text-center">
         you&apos;re not alone in what you&apos;re going through.
+      </p>
+      <p className="text-gray-400 text-center">
+        you&apos;re biologically wired to face what you&apos;re facing.
       </p>
       <div className="py-6 xl:py-8">
         {/* Buttons / Tabs */}
@@ -116,25 +119,38 @@ export default function Patterns() {
         </div>
       </div>
 
-      <div className="grid xl:grid-cols-[2fr_1fr]">
-        <div className="w-fit">
-          <PrimaryTitle text={"Humans have the same patterns. Choose yours."} />
-        </div>
+      <div className="w-[450px] mx-auto border-2 border-primary-one">
         <div className="text-center border-2 border-primary-one p-2 flex gap-2 flex-wrap">
           {myPatterns?.map((value, i) => (
             <span
               key={i}
               onClick={() => removePattern(value)}
-              className="inline-block text-xs py-1 px-4 rounded-lg font-medium bg-primary-one relative group hover:pr-7 transition-all"
+              className="inline-block text-xs py-1 px-4 rounded-md font-medium bg-primary-one relative group hover:pr-7 transition-all"
             >
               {value}
               <FontAwesomeIcon
                 icon={faClose}
-                className="font-bold bg-red-500 w-4 h-4 p-1 rounded-md hidden cursor-pointer transition-all group-hover:block absolute -right-1 top-0"
+                className="font-bold text-primary-one bg-black w-3 h-3 p-1 right-1 rounded-sm hidden cursor-pointer transition-all group-hover:block absolute  top-1/2 -translate-y-1/2"
               />
             </span>
           ))}
         </div>
+      </div>
+      <div className="space-y-8 grid place-items-center mt-10">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="29"
+          height="66"
+          viewBox="0 0 29 66"
+          fill="none"
+        >
+          <path
+            d="M14.5 -6.33815e-07L14.5 65M14.5 65C14.4233 58.0517 22.3254 44.1552 29 44.1552M14.5 65C14.5767 58.0517 6.6746 44.1552 -2.0791e-06 44.1552"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+        <button className="btn-2 bg-primary-one">Let's solve now</button>
       </div>
     </section>
   );

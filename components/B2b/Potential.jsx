@@ -37,6 +37,9 @@ export default function Potential() {
   return (
     <section className="px-4 xl:px-10 pt-36 bg-primary-two">
       <PrimaryTitle text={"Calculate your Potential Loss"} />
+      <p className="text-gray-400 text-center">
+        What can&apos;t be measured, can&apos;t be improved.
+      </p>
       <div className="grid gap-y-10 lg:gap-y-0 xl:grid-cols-2 p-8 mt-10 rounded-md">
         <div className="space-y-6 xl:space-y-12 grid place-items-center">
           {data.map((value, i) => (
