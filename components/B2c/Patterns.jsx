@@ -150,7 +150,7 @@ export default function Patterns() {
             stroke-width="2"
           />
         </svg>
-        <button className="btn-2 bg-primary-one">Let's solve now</button>
+        <button className="btn-2 bg-primary-one">Let&apos;s solve now</button>
       </div>
     </section>
   );

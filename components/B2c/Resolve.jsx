@@ -80,7 +80,7 @@ export default function Resolve() {
       <div className="pt-8">
         <div className="grid grid-cols-3">
           {tabData.map((value, i) => (
-            <div>
+            <div key={i}>
               <button
                 key={i}
                 onClick={() => setActiveTab(value)}
