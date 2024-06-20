@@ -22,7 +22,7 @@ export default function PrimaryNavbar() {
             <Image
               src={Favicon}
               alt="website favicon"
-              className="w-10 xl:w-12"
+              className="w-8 xl:w-12"
             />
           </Link>
         </div>
@@ -47,13 +47,13 @@ export default function PrimaryNavbar() {
           <button name="menu-button" type="button" onClick={openMenu}>
             <FontAwesomeIcon
               icon={faBars}
-              className="text-white text-3xl hover:text-primary-one transition-all ml-4"
+              className="text-white text-2xl xl:text-3xl hover:text-primary-one transition-all ml-1 xl:ml-4"
             />
           </button>
         </div>
 
         <div
-          className={`fixed w-72 top-0 bg-slate-900 z-50 transition-all px-8 bottom-0 pt-5 overflow-y-scroll overflow-x-clip ${
+          className={`fixed w-56 xl:w-72 top-0 bg-slate-900 z-50 transition-all px-5 xl:px-8 bottom-0 pt-5 overflow-y-scroll overflow-x-clip ${
             menu ? "right-0" : "-right-[500px]"
           }`}
         >
@@ -63,7 +63,10 @@ export default function PrimaryNavbar() {
             type="button"
             onClick={closeMenu}
           >
-            <FontAwesomeIcon icon={faClose} className="text-white text-3xl" />
+            <FontAwesomeIcon
+              icon={faClose}
+              className="text-white text-2xl xl:text-3xl"
+            />
           </button>
           <ul>
             <MenuLink

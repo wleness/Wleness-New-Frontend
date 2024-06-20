@@ -14,7 +14,7 @@ export default function MenuLink({ url, text, subpages, close }) {
     <li className="relative">
       <div
         onClick={url == "" ? toggleDropdown : close}
-        className="xl:px-0 flex justify-between border-slate-200 text-gray-300 px-6 cursor-pointer py-2.5 text-lg font-semibold transition-all hover:text-primary-one"
+        className="xl:px-0 flex justify-between border-slate-200 text-gray-300 px-6 cursor-pointer py-2.5 xl:text-lg font-semibold transition-all hover:text-primary-one"
       >
         <Link href={url}>{text}</Link>
         {subpages && (

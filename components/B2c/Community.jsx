@@ -47,9 +47,9 @@ export default function Community() {
           <div className="bg-[#BF0000]"></div>
         </div>
 
-        <div className={box_class}>
+        <div className={`p-4 ${box_class}`}>
           <div className="mb-4 xl:mb-6">
-            <p className="text-white font-semibold xl:text-xl flex flex-col items-center gap-x-3">
+            <p className="text-white font-semibold xl:text-xl flex flex-col mb-4 items-center gap-x-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="29"

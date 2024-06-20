@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { PotentialBarGraph, PotentialChartGraph } from "@/public";
 import PrimaryTitle from "@components/Title/PrimaryTitle";
 import "@public/styles/b2b.css";
 
@@ -40,8 +38,8 @@ export default function Potential() {
       <p className="text-gray-400 text-center">
         What can&apos;t be measured, can&apos;t be improved.
       </p>
-      <div className="grid gap-y-10 lg:gap-y-0 xl:grid-cols-2 p-8 mt-10 rounded-md">
-        <div className="space-y-6 xl:space-y-12 grid place-items-center">
+      <div className="grid gap-y-10 lg:gap-y-0 md:grid-cols-2 xl:p-8 mt-10 rounded-md">
+        <div className="space-y-6 xl:space-y-12 grid xl:place-items-center">
           {data.map((value, i) => (
             <div key={i}>
               <h4 className="text-white">{value.title}</h4>
@@ -50,14 +48,14 @@ export default function Potential() {
                   type="range"
                   name={value.title}
                   id={value.title}
-                  className="white-range"
+                  className="white-range w-64 xl:w-96"
                 />
               </label>
             </div>
           ))}
         </div>
 
-        <div className="space-y-6 xl:space-y-12 grid place-items-center">
+        <div className="space-y-6 xl:space-y-12 grid xl:place-items-center">
           {data2.map((value, i) => (
             <div key={i}>
               <h4 className="text-white mb-3">{value.title}</h4>
@@ -66,7 +64,7 @@ export default function Potential() {
                   type="range"
                   name={value.title}
                   id={value.title}
-                  className="red-range"
+                  className="red-range w-64 xl:w-96"
                 />
               </label>
             </div>

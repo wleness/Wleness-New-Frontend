@@ -119,7 +119,7 @@ export default function Patterns() {
         </div>
       </div>
 
-      <div className="w-[450px] mx-auto border-2 border-primary-one">
+      <div className="xl:w-[450px] mx-auto border-2 border-primary-one">
         <div className="text-center border-2 border-primary-one p-2 flex gap-2 flex-wrap">
           {myPatterns?.map((value, i) => (
             <span

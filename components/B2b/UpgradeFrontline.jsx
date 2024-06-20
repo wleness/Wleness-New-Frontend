@@ -138,8 +138,8 @@ export default function UpgradeFrontline() {
                   {value.decrease}
                 </p>
                 <p
-                  className={` ${
-                    value.highlight ? "bg-primary-one py-4" : "text-gray-400"
+                  className={`py-4 ${
+                    value.highlight ? "bg-primary-one" : "text-gray-400"
                   }`}
                 >
                   {value.desc}
