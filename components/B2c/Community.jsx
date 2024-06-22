@@ -66,7 +66,7 @@ export default function Community() {
               <span> We&apos;re an exclusive community of</span>
             </p>
             <h2
-              className={`text-3xl py-2 text-primary-one ${rubik_one.className}`}
+              className={`text-3xl font-bold py-2 text-primary-one ${montserrat.className}`}
             >
               Therapists. Psychologists. Psychiatrists. Coaches.
             </h2>

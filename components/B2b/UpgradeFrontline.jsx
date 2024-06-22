@@ -99,7 +99,7 @@ export default function UpgradeFrontline() {
   const [frontlineTab, setFrontlineTab] = useState(tabData[3]);
 
   return (
-    <section className="px-4 xl:px-10 pt-10 xl:pt-20 bg-primary-two">
+    <section className="px-4 xl:px-10 pt-10 bg-primary-two">
       <div className="mt-40">
         <div className="mt-9">
           <div className="grid grid-cols-2 xl:grid-cols-4">

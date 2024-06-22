@@ -12,7 +12,7 @@ const tabData = [
   {
     id: 1,
     label: "Self Help Kit",
-    desc: "Empower yourself with curated tools and resources for personal growth.",
+    desc: "Get a self-care toolbox covering everything you need to take care of yourself. Access health and wellness resources for nurturing yourself for better mental well-being from the comfort of your home today!",
     title: "Self Care",
     image: ResolveSelfHelp,
     btn: {
@@ -23,7 +23,7 @@ const tabData = [
   {
     id: 2,
     label: "Book a Session",
-    desc: "Talk to a human being experienced in helping you overcome your obstacles.",
+    desc: "Get the best and most recommended online therapy and guidance packages with India's best psychiatrists, therapists, and guides. Connect with a trained and certified online psychologist and counselor.",
     title: "Book a Session",
     image: ResolveSession,
     btn: {
@@ -34,7 +34,7 @@ const tabData = [
   {
     id: 3,
     label: "Join our Community",
-    desc: "Connect, share, & grow with a supportive network of fellow human beings.",
+    desc: "Join us to find more than just a community; rather a place where wellness wins and friendships grow. And the best part? You can be anonymous, as per your comfort.",
     title: "Join Community",
     image: ResolveCommunity,
     btn: {
@@ -63,7 +63,7 @@ export default function Resolve() {
           {value.label}
         </button>
 
-        <div className="bg-[#000D15] border  py-20">
+        <div className="bg-[#000D15] border py-20">
           <div>
             <Image
               src={value.image}
@@ -75,6 +75,7 @@ export default function Resolve() {
               {value.desc}
             </p>
             <div className="text-center mt-4">
+              faef
               <Link href={value.btn.slug} className="btn-2 bg-primary-one">
                 {value.btn.text}
               </Link>
@@ -116,18 +117,9 @@ export default function Resolve() {
                     width={450}
                     className="w-48 h-48 mx-auto object-contain"
                   />
-                  <p className="text-gray-400 text-center text-lg">
+                  <p className="text-gray-400 px-4 text-center text-lg">
                     {tabData[1].desc}
                   </p>
-
-                  <div className="text-center mt-4">
-                    <Link
-                      href={tabData[1].btn.slug}
-                      className="btn-2 bg-primary-one"
-                    >
-                      {tabData[1].btn.text}
-                    </Link>
-                  </div>
                 </div>
               </div>
               <div className="bg-[#000D15] text-center py-4">
@@ -148,13 +140,17 @@ export default function Resolve() {
                 </div>
 
                 <p className="text-lg grid mb-4">
-                  <del className="text-gray-400">₹ 2800</del>
-                  <span className="text-white">You save ₹ 300</span>
+                  <del className="text-gray-400">₹ {sessions * 2800} </del>
+                  <span className="text-white">
+                    You save ₹ {Math.floor((sessions * 2800) / 9.32)}
+                  </span>
                   <span className="font-bold text-primary-one text-3xl">
-                    ₹ 2500
+                    ₹ {sessions * 2500}
                   </span>
                 </p>
-                <button className="btn-2 bg-primary-one">Book Sessions</button>
+                <button className="btn-2 bg-primary-one">
+                  {tabData[1].btn.text}
+                </button>
               </div>
             </div>
           </div>

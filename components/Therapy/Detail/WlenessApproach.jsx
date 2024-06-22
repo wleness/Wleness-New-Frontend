@@ -14,9 +14,11 @@ export default function WlenessApproach({ data }) {
           {data.title[0]}
           <span className="heading-primary"> {data.title[1]}</span>
         </h2>
-        <p className="text-xl font-medium text-slate-300">{data.desc}</p>
+        <p className="text-lg xl:text-xl font-medium text-slate-300">
+          {data.desc}
+        </p>
 
-        <div className="my-6 grid grid-cols-3 gap-6 rounded-xl bg-black p-2 lg:my-10 lg:grid-cols-3 lg:gap-6 lg:p-4">
+        <div className="my-6 grid gap-6 rounded-xl bg-black p-2 lg:my-10 md:grid-cols-3 lg:gap-6 lg:p-4">
           <ApproachCard
             data={{
               title: "Talk to a Therapist",

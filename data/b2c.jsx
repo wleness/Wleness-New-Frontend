@@ -8,7 +8,7 @@ export const clients = [
     bg: "bg-[#05A0FD]",
     categories: ["ADHD", "Anxiety"],
     review:
-      "lLorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.Lorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.",
+      "I've been using Wleness for the past six months, and it has greatly improved my mental health. The variety of guided exercises are really helpful. The community forums are also a fantastic resource for support and advice. The website is user-friendly and easy to use. Highly recommend it to anyone.",
   },
   {
     name: "Aryan singh",
@@ -17,7 +17,7 @@ export const clients = [
     bg: "bg-[#FF5300]",
     categories: ["ADHD", "Anxiety"],
     review:
-      "lLorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.Lorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.",
+      "Wleness has been a life changer for me. The personalized mental wellness plans are incredibly detailed making it very helpful. The virtual therapy sessions are convenient and just as effective as in-person sessions. I also love the informative articles and resources available on the site. .",
   },
   {
     name: "Aryan singh",
@@ -26,7 +26,7 @@ export const clients = [
     bg: "bg-[#FFDB01]",
     categories: ["ADHD", "Anxiety"],
     review:
-      "lLorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.Lorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.",
+      "I've tried several mental health apps, but Wleness stands out. The user interface is clean, making it easy to use. I particularly appreciate the mood tracker, which has helped me identify patterns and triggers. The community support is a great feature—I've connected with people who truly understand. ",
   },
   {
     name: "Aryan singh",
@@ -35,25 +35,7 @@ export const clients = [
     categories: ["ADHD", "Anxiety"],
     image: DummyClient,
     review:
-      "lLorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.Lorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.",
-  },
-  {
-    name: "Aryan singh",
-    designation: "Designer",
-    bg: "bg-[#FF5300]",
-    categories: ["ADHD", "Anxiety"],
-    image: DummyClient,
-    review:
-      "lLorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.Lorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.",
-  },
-  {
-    name: "Rahul singh",
-    designation: "Designer",
-    bg: "bg-[#FFDB01]",
-    categories: ["ADHD", "Anxiety"],
-    image: DummyClient,
-    review:
-      "lLorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.Lorem ipsum dolor sit amet consectetur. In nibh leo aenean lacus imperdiet sapien sed.",
+      "Wleness has exceeded my expectations. The range of services offered, from therapy sessions to mindfulness exercises, is impressive. I've found the yoga sessions particularly helpful in managing my anxiety. The content is high-quality and the experts behind the scenes are clearly knowledgeable.",
   },
 ];
 

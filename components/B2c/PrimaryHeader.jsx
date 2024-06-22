@@ -8,9 +8,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 import { StarIcon } from "@components/Icons";
-import { clients } from "@data/b2c";
 
-export default function PrimaryHeader({ title, desc, subtitle }) {
+export default function PrimaryHeader({ title, desc, subtitle, clients }) {
   return (
     <header className="py-14 bg-primary-two pb-36">
       <div className="grid gap-y-3 mb-12 px-4 xl:px-20">

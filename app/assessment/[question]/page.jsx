@@ -140,16 +140,16 @@ export default function AssessmentCategoryPage({ params }) {
                 <span className="hidden md:block">Back</span>
               </button>
 
-              <small className="justify-self-end font-semibold lg:hidden">
+              <small className="justify-self-end text-white font-semibold lg:hidden">
                 {activeQuestion ? questions.indexOf(activeQuestion) + 1 : 1} /
                 {questions ? questions.length : 0}
               </small>
 
-              <h2 className="heading-primary col-span-2 mt-6 justify-self-center text-center text-xl font-bold text-primary-300 lg:col-span-1 lg:mt-0 xl:text-2xl">
+              <h2 className="heading-primary col-span-2 mt-6 justify-self-center text-center text-xl font-bold lg:col-span-1 lg:mt-0 xl:text-2xl">
                 {activeQuestion ? activeQuestion : questions && questions[0]}
               </h2>
 
-              <small className="hidden justify-self-end font-semibold lg:inline-block">
+              <small className="hidden text-white justify-self-end font-semibold lg:inline-block">
                 {activeQuestion ? questions.indexOf(activeQuestion) + 1 : 1} /
                 {questions ? questions.length : 0}
               </small>

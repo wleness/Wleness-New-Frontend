@@ -47,6 +47,7 @@ module.exports = {
       animation: {
         fadeIn: "fadeInAni .5s ease-in-out forwards",
         scaleIn: "scaleUpAni .3s ease-out forwards",
+        slider: "imageCarousel 20s infinite linear ",
       },
       keyframes: {
         fadeInAni: {
@@ -56,6 +57,14 @@ module.exports = {
         scaleUpAni: {
           from: { transform: "scale(.5)" },
           to: { transform: "scale(1)" },
+        },
+        imageCarousel: {
+          from: {
+            transform: "translateX(0%)",
+          },
+          to: {
+            transform: "translateX(-100%)",
+          },
         },
       },
     },

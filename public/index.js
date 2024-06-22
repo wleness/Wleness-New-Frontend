@@ -1405,6 +1405,7 @@ import FrontlineArmour2 from "./images/b2b/frontline-armour-2.png";
 import FrontlineArmour3 from "./images/b2b/frontline-armour-3.png";
 import FrontlineArmour4 from "./images/b2b/frontline-armour-4.png";
 import FrontlineTreeMap from "./images/b2b/frontline-tree-map.png";
+import CompanyLogo1 from "./images/b2b/company-logo-1.png";
 
 export {
   PotentialBarGraph,
@@ -1414,6 +1415,7 @@ export {
   FrontlineArmour3,
   FrontlineArmour4,
   FrontlineTreeMap,
+  CompanyLogo1,
 };
 
 /*
