@@ -77,7 +77,8 @@ export default function Patterns() {
                         src={key.image}
                         alt={key.title}
                         className={`${
-                          value.label != activeTab.label && "grayscale"
+                          myPatterns.includes(key.title) ||
+                          (value.label != activeTab.label && "grayscale")
                         }`}
                       />
                     </div>
@@ -130,7 +131,7 @@ export default function Patterns() {
               {value}
               <FontAwesomeIcon
                 icon={faClose}
-                className="font-bold text-primary-one bg-black w-3 h-3 p-1 right-1 rounded-sm hidden cursor-pointer transition-all group-hover:block absolute  top-1/2 -translate-y-1/2"
+                className="font-bold text-primary-one bg-red-600 w-3 h-3 p-1 right-1 rounded-sm hidden cursor-pointer transition-all group-hover:block absolute  top-1/2 -translate-y-1/2"
               />
             </span>
           ))}

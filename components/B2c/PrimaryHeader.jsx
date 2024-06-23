@@ -27,7 +27,7 @@ export default function PrimaryHeader({ title, desc, subtitle, clients }) {
         </h1>
         <div>
           <p
-            className={`${montserrat.className} mb-1 font-[400] text-primary-one text-xs text-center xl:text-[20px]`}
+            className={`${montserrat.className} mb-2 font-semibold text-primary-one text-xs text-center xl:text-[20px]`}
           >
             {subtitle}
           </p>

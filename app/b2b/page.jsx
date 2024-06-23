@@ -7,37 +7,37 @@ import { DummyClient } from "@public";
 
 const clients = [
   {
-    name: "Aryan singh",
-    designation: "Designer",
+    name: "Nandini Kale",
+    designation: "Content Writer",
     image: DummyClient,
     bg: "bg-[#05A0FD]",
-    categories: ["ADHD", "Anxiety"],
+    categories: ["Stress", "Anxiety"],
     review:
       "It was a good start for our organization to work with Wleness on their mental health website. The self-paced workshops and individualized one-on-one counseling were valued by staff and fellows who found them to be practical and adaptable.",
   },
   {
-    name: "Aryan singh",
-    designation: "Designer",
+    name: "Paras Shewale",
+    designation: "Software Engineer",
     image: DummyClient,
     bg: "bg-[#FF5300]",
-    categories: ["ADHD", "Anxiety"],
+    categories: ["ADHD", "Anger"],
     review:
       "A valuable tool for maintaining employee health is a comprehensive Wellness Program that tracks and validates employee well-being data. This program can be a user-friendly platform where employees can input their health goals, track progress, and identify stressors.",
   },
   {
-    name: "Aryan singh",
-    designation: "Designer",
+    name: "Niraj Hirve",
+    designation: "Web Desinger",
     image: DummyClient,
     bg: "bg-[#FFDB01]",
-    categories: ["ADHD", "Anxiety"],
+    categories: ["Depression", "ADHD"],
     review:
       "It is a great platform that allows our organization to recognize more consistently, with an awesome rewards catalog with something for everyone. Consistent recognition becomes effortless. Easy way to enable recognition within the company, with clear communication.",
   },
   {
-    name: "Aryan singh",
+    name: "Suresh Jat",
     designation: "Designer",
     bg: "bg-[#05A0FD]",
-    categories: ["ADHD", "Anxiety"],
+    categories: ["Relationship", "OCD"],
     image: DummyClient,
     review:
       "Our employees loves the Community feature of this product to share information, updates, and ease of engagement with clients. Having your scheduler, communication tools, assessment, and data collection all bundled into one place is a game-changer.",

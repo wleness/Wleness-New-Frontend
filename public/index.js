@@ -1188,10 +1188,11 @@ import colorIconFacebook from "./images/icons/facebook.png";
 import DummyClient from "./images/icons/200x200.png";
 import Icon1 from "./images/icons/icon-1.svg";
 import Icon2 from "./images/icons/icon-2.svg";
-import Icon3 from "./images/icons/icon-3.png";
+import Icon3 from "./images/icons/icon-3.svg";
 import Icon4 from "./images/icons/icon-4.png";
 import Icon5 from "./images/icons/icon-5.png";
 import Icon6 from "./images/icons/icon-6.png";
+import Icon7 from "./images/icons/icon-7.svg";
 import Favicon from "./images/icons/favicon.svg";
 import DoubleArrow from "./images/icons/double-arrow.png";
 
@@ -1225,6 +1226,7 @@ export {
   Icon4,
   Icon5,
   Icon6,
+  Icon7,
   Favicon,
   DoubleArrow,
 };

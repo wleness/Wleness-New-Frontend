@@ -2,37 +2,37 @@ import { DummyClient, Icon1, Icon2 } from "@public";
 
 export const clients = [
   {
-    name: "Aryan singh",
-    designation: "Designer",
+    name: "Aryan Raj",
+    designation: "UI Desinger",
     image: DummyClient,
     bg: "bg-[#05A0FD]",
-    categories: ["ADHD", "Anxiety"],
+    categories: ["Stress", "Anxiety"],
     review:
       "I've been using Wleness for the past six months, and it has greatly improved my mental health. The variety of guided exercises are really helpful. The community forums are also a fantastic resource for support and advice. The website is user-friendly and easy to use. Highly recommend it to anyone.",
   },
   {
-    name: "Aryan singh",
-    designation: "Designer",
+    name: "Shweta Sargar",
+    designation: "Adminstrator",
     image: DummyClient,
     bg: "bg-[#FF5300]",
-    categories: ["ADHD", "Anxiety"],
+    categories: ["ADHD", "Anger"],
     review:
       "Wleness has been a life changer for me. The personalized mental wellness plans are incredibly detailed making it very helpful. The virtual therapy sessions are convenient and just as effective as in-person sessions. I also love the informative articles and resources available on the site. .",
   },
   {
-    name: "Aryan singh",
-    designation: "Designer",
+    name: "Vaishnavi Kamble",
+    designation: "Design Head",
     image: DummyClient,
     bg: "bg-[#FFDB01]",
-    categories: ["ADHD", "Anxiety"],
+    categories: ["Depression", "ADHD"],
     review:
       "I've tried several mental health apps, but Wleness stands out. The user interface is clean, making it easy to use. I particularly appreciate the mood tracker, which has helped me identify patterns and triggers. The community support is a great feature—I've connected with people who truly understand. ",
   },
   {
-    name: "Aryan singh",
-    designation: "Designer",
+    name: "Mukesh Kumar",
+    designation: "Photographer",
     bg: "bg-[#05A0FD]",
-    categories: ["ADHD", "Anxiety"],
+    categories: ["Relationship", "OCD"],
     image: DummyClient,
     review:
       "Wleness has exceeded my expectations. The range of services offered, from therapy sessions to mindfulness exercises, is impressive. I've found the yoga sessions particularly helpful in managing my anxiety. The content is high-quality and the experts behind the scenes are clearly knowledgeable.",

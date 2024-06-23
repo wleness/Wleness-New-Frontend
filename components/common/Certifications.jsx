@@ -30,7 +30,7 @@ export default function Certifications() {
             <Image
               src={value.image}
               alt="community icon"
-              className="object-contain aspect-square grayscale max-w-16 w-16"
+              className="object-contain aspect-square grayscale max-w-16 w-16 transition-all hover:grayscale-0 cursor-pointer"
             />
           </div>
           <p

@@ -28,17 +28,16 @@ export default function Blogs() {
     return <span>Loading...</span>;
   }
   return (
-    <section className="bg-primary-two">
-      <div className="container mx-auto rounded-xl py-14 lg:pt-20">
-        <div className="flex flex-col items-center justify-center text-center mb-5">
-          <h2
-            className={`subheading text-white !font-medium ${rubik_one.className}`}
-          >
-            Our Resources
-          </h2>
-        </div>
-
-        <div className="grid gap-8 lg:grid-cols-3 lg:gap-6">
+    <section className="bg-primary-two pt-10 xl:pt-16">
+      <div className="flex flex-col items-center justify-center text-center mb-5">
+        <h2
+          className={`subheading text-white !font-medium ${rubik_one.className}`}
+        >
+          Our Resources
+        </h2>
+      </div>
+      <div className="container mx-auto border border-primary-one rounded-xl py-14 lg:pt-20">
+        <div className="grid gap-8 lg:grid-cols-3 lg:gap-8 px-5 ">
           {blogs.slice(0, 3).map((value, i) => {
             return (
               <div key={i}>
@@ -48,7 +47,7 @@ export default function Blogs() {
                     alt={value.title}
                     width={320}
                     height={180}
-                    className="mb-2 rounded-lg"
+                    className="mb-2 rounded-lg xl:w-full"
                   />
                   <h2 className="text-lg font-bold text-white">
                     {value.title.length > 50 ? (

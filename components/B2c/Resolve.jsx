@@ -53,17 +53,15 @@ export default function Resolve() {
       <div>
         <button
           onClick={() => setActiveTab(value)}
-          className={`block mb-6 w-full border-2 text-sm md:text-base font-bold py-3 ${
-            value.id == activeTab.id
-              ? "border-primary-one bg-primary-one"
-              : "border-slate-400 text-white"
+          className={`block mb-4 w-full border-2 text-sm md:text-base font-bold py-3 border-primary-one ${
+            value.id == activeTab.id ? "bg-primary-one" : "text-white"
           }`}
           name={value.label}
         >
           {value.label}
         </button>
 
-        <div className="bg-[#000D15] border py-20">
+        <div className="bg-[#000D15] border border-primary-one py-20">
           <div>
             <Image
               src={value.image}
@@ -93,22 +91,22 @@ export default function Resolve() {
         You&apos;re not alone. You&apos;re one of the many.
       </p>
       <div className="pt-8">
-        <div className="grid gap-5 xl:grid-cols-3 items-start">
+        <div className="grid gap-5 xl:gap-0 xl:grid-cols-3 items-start">
           <Box value={tabData[0]} />
 
           <div>
             <button
               onClick={() => setActiveTab(tabData[1])}
-              className={`block mb-6 w-full border-2 text-sm md:text-base font-bold py-3 ${
+              className={`block mb-4 w-full border-primary-one border-2 text-sm md:text-base font-bold py-3 ${
                 tabData[1].id == activeTab.id
-                  ? "border-primary-one bg-primary-one"
-                  : "border-slate-400 text-white"
+                  ? " bg-primary-one"
+                  : " text-white"
               }`}
               name={tabData[1].label}
             >
               {tabData[1].label}
             </button>
-            <div className="border pb-10">
+            <div className="border pb-10 border-primary-one">
               <div className="bg-[#000D15] pt-20 pb-10">
                 <div>
                   <Image

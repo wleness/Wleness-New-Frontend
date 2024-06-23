@@ -4,57 +4,9 @@ import {
   FrontlineArmour2,
   FrontlineArmour3,
   FrontlineArmour4,
-  ResolveImage,
 } from "@/public";
 import Image from "next/image";
 import { useState } from "react";
-import Link from "next/link";
-import { COMMUNITY, EXPERTS } from "@data/urls";
-import PrimaryTitle from "@components/Title/PrimaryTitle";
-import { StarIcon } from "@components/Icons";
-
-const tabData = [
-  {
-    id: 1,
-    label: "Workshops",
-    title: "Workshops Title Goes Here",
-    image: ResolveImage,
-    button: {
-      text: "Get Started",
-      slug: "/",
-    },
-  },
-  {
-    id: 2,
-    label: "Tactical Upgrades",
-    title: "Tactical Upgrades Title",
-    image: ResolveImage,
-    button: {
-      text: "Book Session",
-      slug: EXPERTS,
-    },
-  },
-  {
-    id: 3,
-    label: "Data Insight",
-    title: "Data Insight Title",
-    image: ResolveImage,
-    button: {
-      text: "Join Community",
-      slug: COMMUNITY,
-    },
-  },
-  {
-    id: 3,
-    label: "Data Insights",
-    title: "Data Insights Title",
-    image: ResolveImage,
-    button: {
-      text: "Book a Demo",
-      slug: "/",
-    },
-  },
-];
 
 const frontline_armour = [
   {
@@ -63,7 +15,6 @@ const frontline_armour = [
     image: FrontlineArmour4,
     increase: "Reduced attrition rates by 10-20%",
     decrease: "Increased job satisfaction by 70%",
-    highlight: true,
     desc: "Gain actionable soft insights to boost human efficiency & predict team challenges way in advance.",
   },
   {
@@ -72,7 +23,6 @@ const frontline_armour = [
     image: FrontlineArmour1,
     increase: "4x Increase in Revenue Growth",
     decrease: "51% increase in team efficiency",
-    highlight: false,
     desc: "Enhance leadership morale through focused trainings & workshops to amplify human performance.",
   },
   {
@@ -81,7 +31,6 @@ const frontline_armour = [
     image: FrontlineArmour2,
     increase: "Upto 35% increase in productivity",
     decrease: "Upto 28% decrease in Sick Leaves",
-    highlight: false,
     desc: "Ensure peak performance and employee satisfaction with continuous, integrated support.",
   },
   {
@@ -90,31 +39,30 @@ const frontline_armour = [
     image: FrontlineArmour3,
     increase: "7.9x Return on Investment",
     decrease: "60-70% increase in Productivity",
-    highlight: false,
     desc: "Outsource team-building and best practices to strengthen your company's core values while you focus on your core.",
   },
 ];
 
 export default function UpgradeFrontline() {
-  const [frontlineTab, setFrontlineTab] = useState(tabData[3]);
+  const [frontlineTab, setFrontlineTab] = useState(frontline_armour[0]);
 
   return (
     <section className="px-4 xl:px-10 pt-10 bg-primary-two">
       <div className="mt-40">
         <div className="mt-9">
           <div className="grid grid-cols-2 xl:grid-cols-4">
-            {tabData.map((value, i) => (
+            {frontline_armour.map((value, i) => (
               <button
                 key={i}
                 onClick={() => setFrontlineTab(value)}
                 className={`${
-                  value.label == frontlineTab.label
+                  value.title == frontlineTab.title
                     ? "border-primary-one bg-primary-one"
                     : "border-slate-400 text-white"
                 } border-2 font-bold py-3 text-xs lg:text-base`}
-                name={value.label}
+                name={value.title}
               >
-                {value.label}
+                {value.title}
               </button>
             ))}
           </div>
@@ -138,8 +86,10 @@ export default function UpgradeFrontline() {
                   {value.decrease}
                 </p>
                 <p
-                  className={`py-4 ${
-                    value.highlight ? "bg-primary-one" : "text-gray-400"
+                  className={`p-4 ${
+                    value.title == frontlineTab.title
+                      ? "bg-primary-one"
+                      : "text-gray-400"
                   }`}
                 >
                   {value.desc}
