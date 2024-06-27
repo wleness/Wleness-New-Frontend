@@ -1403,7 +1403,7 @@ import ResolveSelfHelp from "./images/b2c/resolve-self-help.png";
 import ResolveSession from "./images/b2c/resolve-session.png";
 import EngineersBuild from "./images/b2c/engineers-build.svg";
 import Trapezoid from "./images/b2c/trapezoid.svg";
-import EngineersMarketers from "./images/b2c/engineers-marketers.png";
+import EngineersMarketers from "./images/b2c/engineers-marketeers.png";
 export {
   PrimaryHeaderImage,
   B2CCommunity,
