@@ -3,14 +3,20 @@ import FrontlineGrowth from "@components/B2b/FrontlineGrowth";
 import Potential from "@components/B2b/Potential";
 import UpgradeFrontline from "@components/B2b/UpgradeFrontline";
 import PrimaryHeader from "@components/B2c/PrimaryHeader";
-import { DummyClient } from "@public";
+import {
+  DummyClient,
+  therapyClient1,
+  therapyClient2,
+  therapyClient3,
+  therapyClient4,
+} from "@public";
 
 const clients = [
   {
-    name: "Nandini Kale",
+    name: "Jeevan Kale",
     designation: "Content Writer",
-    image: DummyClient,
-    bg: "bg-[#05A0FD]",
+    image: therapyClient1,
+    bg: "bg-[#ff53f6]",
     categories: ["Stress", "Anxiety"],
     review:
       "It was a good start for our organization to work with Wleness on their mental health website. The self-paced workshops and individualized one-on-one counseling were valued by staff and fellows who found them to be practical and adaptable.",
@@ -18,7 +24,7 @@ const clients = [
   {
     name: "Paras Shewale",
     designation: "Software Engineer",
-    image: DummyClient,
+    image: therapyClient2,
     bg: "bg-[#FF5300]",
     categories: ["ADHD", "Anger"],
     review:
@@ -27,7 +33,7 @@ const clients = [
   {
     name: "Niraj Hirve",
     designation: "Web Desinger",
-    image: DummyClient,
+    image: therapyClient3,
     bg: "bg-[#FFDB01]",
     categories: ["Depression", "ADHD"],
     review:
@@ -38,7 +44,7 @@ const clients = [
     designation: "Designer",
     bg: "bg-[#05A0FD]",
     categories: ["Relationship", "OCD"],
-    image: DummyClient,
+    image: therapyClient4,
     review:
       "Our employees loves the Community feature of this product to share information, updates, and ease of engagement with clients. Having your scheduler, communication tools, assessment, and data collection all bundled into one place is a game-changer.",
   },

@@ -96,7 +96,7 @@ export default function PrimaryHeader({
                         alt={value.name}
                         width={60}
                         height={60}
-                        className="rounded-lg xl:w-20 xl:h-20"
+                        className="rounded-lg xl:w-20 xl:h-20 object-cover"
                       />
                     </div>
                     <div className="flex flex-col items-start">

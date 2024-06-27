@@ -8,25 +8,28 @@ import {
   Doodle7,
   Doodle8,
   Doodle9,
-  DummyClient,
   Icon1,
   Icon2,
+  therapyClient1,
+  therapyClient2,
+  therapyClient3,
+  therapyClient4,
 } from "@public";
 
 export const clients = [
   {
     name: "Aryan Raj",
     designation: "UI Desinger",
-    image: DummyClient,
-    bg: "bg-[#05A0FD]",
+    image: therapyClient1,
+    bg: "bg-[#ff53f6]",
     categories: ["Stress", "Anxiety"],
     review:
       "I've been using Wleness for the past six months, and it has greatly improved my mental health. The variety of guided exercises are really helpful. The community forums are also a fantastic resource for support and advice. The website is user-friendly and easy to use. Highly recommend it to anyone.",
   },
   {
-    name: "Shweta Sargar",
+    name: "Mahesh Sargar",
     designation: "Adminstrator",
-    image: DummyClient,
+    image: therapyClient2,
     bg: "bg-[#FF5300]",
     categories: ["ADHD", "Anger"],
     review:
@@ -35,7 +38,7 @@ export const clients = [
   {
     name: "Vaishnavi Kamble",
     designation: "Design Head",
-    image: DummyClient,
+    image: therapyClient3,
     bg: "bg-[#FFDB01]",
     categories: ["Depression", "ADHD"],
     review:
@@ -46,7 +49,7 @@ export const clients = [
     designation: "Photographer",
     bg: "bg-[#05A0FD]",
     categories: ["Relationship", "OCD"],
-    image: DummyClient,
+    image: therapyClient4,
     review:
       "Wleness has exceeded my expectations. The range of services offered, from therapy sessions to mindfulness exercises, is impressive. I've found the yoga sessions particularly helpful in managing my anxiety. The content is high-quality and the experts behind the scenes are clearly knowledgeable.",
   },
