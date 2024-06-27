@@ -1,11 +1,15 @@
+"use client";
 import Blogs from "@components/B2c/Blogs";
 import Community from "@components/B2c/Community";
 import Patterns from "@components/B2c/Patterns";
 import PrimaryHeader from "@components/B2c/PrimaryHeader";
 import Resolve from "@components/B2c/Resolve";
+import PricingCards from "@components/Cards/PricingCards";
 import { clients } from "@data/b2c";
+import usePricingScroll from "@utils/usePricingScroll";
 
 export default function Home() {
+  const { ref, handleScrollToComponent } = usePricingScroll();
   return (
     <>
       <PrimaryHeader
@@ -13,10 +17,12 @@ export default function Home() {
         subtitle="vent. gossip. confess. discuss. laugh. cry. live."
         desc="your safe-space. just yours. "
         clients={clients}
+        handleScrollToComponent={handleScrollToComponent}
       />
       <Community />
-      <Patterns />
-      <Resolve />
+      <Patterns handleScrollToComponent={handleScrollToComponent} />
+      <Resolve handleScrollToComponent={handleScrollToComponent} />
+      <PricingCards ref={ref} />
       <Blogs />
     </>
   );

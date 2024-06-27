@@ -48,6 +48,7 @@ module.exports = {
         fadeIn: "fadeInAni .5s ease-in-out forwards",
         scaleIn: "scaleUpAni .3s ease-out forwards",
         slider: "imageCarousel 20s infinite linear ",
+        loader: "ButtonLoader 1s infinite linear",
       },
       keyframes: {
         fadeInAni: {
@@ -64,6 +65,14 @@ module.exports = {
           },
           to: {
             transform: "translateX(-100%)",
+          },
+        },
+        ButtonLoader: {
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(360deg)",
           },
         },
       },

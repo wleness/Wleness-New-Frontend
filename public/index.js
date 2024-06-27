@@ -1195,6 +1195,15 @@ import Icon6 from "./images/icons/icon-6.png";
 import Icon7 from "./images/icons/icon-7.svg";
 import Favicon from "./images/icons/favicon.svg";
 import DoubleArrow from "./images/icons/double-arrow.png";
+import Doodle1 from "./images/icons/doodle-1.jpeg";
+import Doodle2 from "./images/icons/doodle-2.jpeg";
+import Doodle3 from "./images/icons/doodle-3.jpeg";
+import Doodle4 from "./images/icons/doodle-4.jpeg";
+import Doodle5 from "./images/icons/doodle-5.jpeg";
+import Doodle6 from "./images/icons/doodle-6.jpeg";
+import Doodle7 from "./images/icons/doodle-7.jpeg";
+import Doodle8 from "./images/icons/doodle-8.jpeg";
+import Doodle9 from "./images/icons/doodle-9.jpeg";
 
 export {
   iconInstagram,
@@ -1229,6 +1238,15 @@ export {
   Icon7,
   Favicon,
   DoubleArrow,
+  Doodle1,
+  Doodle2,
+  Doodle3,
+  Doodle4,
+  Doodle5,
+  Doodle6,
+  Doodle7,
+  Doodle8,
+  Doodle9,
 };
 
 // Other Images
@@ -1385,6 +1403,7 @@ import ResolveSelfHelp from "./images/b2c/resolve-self-help.png";
 import ResolveSession from "./images/b2c/resolve-session.png";
 import EngineersBuild from "./images/b2c/engineers-build.svg";
 import Trapezoid from "./images/b2c/trapezoid.svg";
+import EngineersMarketers from "./images/b2c/engineers-marketers.png";
 export {
   PrimaryHeaderImage,
   B2CCommunity,
@@ -1397,6 +1416,7 @@ export {
   ResolveSession,
   EngineersBuild,
   Trapezoid,
+  EngineersMarketers,
 };
 
 // B2b

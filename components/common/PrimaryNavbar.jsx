@@ -6,8 +6,8 @@ import Link from "next/link";
 
 import { Favicon, montserrat } from "@/public";
 import MenuLink from "./Navbar/MenuLink";
-import { ASSESSMENT, BLOGS, COMMUNITY } from "@data/urls";
-import { services_subpages } from "@data/navigation";
+import { ALL_EXPERTS, ASSESSMENT, BLOGS, COMMUNITY } from "@data/urls";
+import { aboutus_subpages, services_pages } from "@data/navigation";
 import { StarIcon } from "@components/Icons";
 import useNavbar from "./Navbar/useNavbar";
 
@@ -35,15 +35,14 @@ export default function PrimaryNavbar() {
             For your team
           </Link>
 
-          <Link
-            href={"/"}
+          <button
             className={`${montserrat.className} btn-2 border-primary-one bg-primary-one`}
           >
             <span className="flex items-center gap-x-2">
               <span>Connect</span>
               <StarIcon theme={"dark"} />
             </span>
-          </Link>
+          </button>
           <button name="menu-button" type="button" onClick={openMenu}>
             <FontAwesomeIcon
               icon={faBars}
@@ -72,9 +71,10 @@ export default function PrimaryNavbar() {
             <MenuLink
               url=""
               text="Services"
-              subpages={services_subpages}
+              pages={services_pages}
               close={closeMenu}
             />
+            <MenuLink url={ALL_EXPERTS} text="Our Experts" close={closeMenu} />
             <MenuLink
               url={ASSESSMENT}
               text="Self Assessment"
@@ -83,11 +83,17 @@ export default function PrimaryNavbar() {
             <MenuLink
               url=""
               text="Resources"
-              subpages={[
+              pages={[
                 ["Blogs", BLOGS],
                 ["Community", COMMUNITY],
               ]}
               close={closeMenu}
+            />
+            <MenuLink
+              url=""
+              text="About Us"
+              close={closeMenu}
+              pages={aboutus_subpages}
             />
           </ul>
         </div>

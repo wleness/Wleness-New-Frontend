@@ -1,3 +1,5 @@
+import { resolve } from "styled-jsx/css";
+
 // Colourize text with theme color
 export const textColorize = (strings) => {
   const text = strings.map((value, index) => {
@@ -74,4 +76,21 @@ export const removeLocalItem = (key) => {
       console.log(error);
     }
   }
+};
+
+export const loadScript = (src) => {
+  return new Promise((resolve) => {
+    const script = document.createElement("script");
+    script.src = src;
+
+    script.onload = () => {
+      resolve(true);
+    };
+
+    script.onerror = () => {
+      resolve(false);
+    };
+
+    document.body.appendChild(script);
+  });
 };

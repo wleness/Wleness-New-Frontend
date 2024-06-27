@@ -6,11 +6,11 @@ import {
   faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { expertClient, logo } from "@public";
+import { logo } from "@public";
 import axios from "axios";
 import Image from "next/image";
 
-export default function ExpertsInfo({ date, slot, day }) {
+export default function ExpertsInfo({ date, slot, day, session }) {
   const handlePayment = () => {
     let data = {
       price: 500,
@@ -22,13 +22,11 @@ export default function ExpertsInfo({ date, slot, day }) {
   };
   return (
     <div>
-      <Image
-        src={logo}
-        alt="expert profile icon"
-        className="w-20 object-cover"
-      />
-      <h1 className="text-slate-400 font-medium">Demo Session</h1>
-      <h2 className="text-white text-xl font-medium mb-4">15 Min Meeting</h2>
+      <span className="text-2xl font-bold text-primary-one mb-2 inline-block">
+        Wleness
+      </span>
+      <h1 className="text-slate-400 font-medium">{session}</h1>
+      <h2 className="text-white text-xl font-medium mb-4">50 Min Meeting</h2>
       <div className="text-slate-300 *:space-x-2 text-sm space-y-2">
         {date && slot && (
           <div className="flex">
@@ -44,7 +42,7 @@ export default function ExpertsInfo({ date, slot, day }) {
 
         <p>
           <FontAwesomeIcon icon={faClock} />
-          <span>15 mins</span>
+          <span>50 mins</span>
         </p>
         <p>
           <FontAwesomeIcon icon={faVideo} />
@@ -55,13 +53,6 @@ export default function ExpertsInfo({ date, slot, day }) {
           <span>Asia/Kolkata</span>
         </p>
       </div>
-      <br />
-      <button
-        onClick={handlePayment}
-        className="px-4 py-2 bg-primary-one rounded-full"
-      >
-        Pay Now
-      </button>
     </div>
   );
 }

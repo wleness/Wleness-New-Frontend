@@ -9,7 +9,13 @@ import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 import { StarIcon } from "@components/Icons";
 
-export default function PrimaryHeader({ title, desc, subtitle, clients }) {
+export default function PrimaryHeader({
+  title,
+  desc,
+  subtitle,
+  clients,
+  handleScrollToComponent,
+}) {
   return (
     <header className="py-14 bg-primary-two pb-36">
       <div className="grid gap-y-3 mb-12 px-4 xl:px-20">
@@ -39,6 +45,7 @@ export default function PrimaryHeader({ title, desc, subtitle, clients }) {
         </div>
         <div className="text-center">
           <button
+            onClick={handleScrollToComponent}
             className={`${montserrat.className} btn-2 border-primary-one text-primary-one`}
           >
             <span className="flex items-center gap-x-2">

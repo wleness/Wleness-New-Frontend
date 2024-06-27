@@ -12,7 +12,7 @@ import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import PrimaryTitle from "@components/Title/PrimaryTitle";
 import { same_patterns } from "@data/b2c";
 
-export default function Patterns() {
+export default function Patterns({ handleScrollToComponent }) {
   const [activeTab, setActiveTab] = useState(same_patterns[0]);
   const [myPatterns, setMyPatterns] = useState([
     "Sexual Wellness",
@@ -31,7 +31,7 @@ export default function Patterns() {
     setMyPatterns(myPatterns.filter((pattern) => pattern !== text));
   };
   return (
-    <section className="px-4 bg-primary-two xl:px-10 py-10 pt-56">
+    <section className="px-4 bg-primary-two xl:px-10 py-10 pt-48">
       <PrimaryTitle text={"Same species. Same patterns."} />
       <p className="text-gray-400 text-center">
         you&apos;re not alone in what you&apos;re going through.
@@ -151,7 +151,12 @@ export default function Patterns() {
             strokeWidth={2}
           />
         </svg>
-        <button className="btn-2 bg-primary-one">Let&apos;s solve now</button>
+        <button
+          onClick={handleScrollToComponent}
+          className="btn-2 bg-primary-one"
+        >
+          Let&apos;s solve now
+        </button>
       </div>
     </section>
   );

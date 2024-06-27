@@ -45,6 +45,7 @@ import {
   PANIC_ATTACKS,
   PARANOIA,
   PSYCHIATRIST_JOIN,
+  RELATIONSHIP,
   SADHNA,
   STRESS,
   THERAPIST_JOIN,
@@ -54,18 +55,27 @@ import {
 
 // ================= Navigation Bar =================
 export const services_subpages = [
-  ["Couples Therapy", COUPLES_THERAPY],
+  ["Relationship", RELATIONSHIP],
   ["Stress", STRESS],
   ["Depression", DEPRESSION],
   ["Anxiety", ANXIETY],
   ["Anger", ANGER_ISSUES],
-  ["Panic Attack", PANIC_ATTACKS],
-  ["Bipolar Disorder", BIPOLAR_DISORDER],
-  ["LGBTQ", LGBTQ],
   ["ADHD", ADHD],
-  ["ODD", ODD],
-  ["Paranoia", PARANOIA],
-  ["Conduct Disorder", CONDUCT_DISORDER],
+  ["Panic Attack", PANIC_ATTACKS],
+  ["LGBTQ", LGBTQ],
+];
+
+export const services_pages = [
+  ["Therapy", THERAPY, services_subpages],
+  ["Executive Coaching", EXECUTIVE_COACHING],
+  ["Life Coaching", LIFESTYLE_COACHING],
+  ["YOGA", YOGA],
+];
+
+export const aboutus_subpages = [
+  ["About Wleness", ABOUT_US],
+  ["Contact Us", CONTACT_US],
+  ["FAQs", ""],
 ];
 
 // Activities sub pages

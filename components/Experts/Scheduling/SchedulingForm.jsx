@@ -1,4 +1,6 @@
 import { PRIVACY_POLICY, TERMS_AND_CONDITIONS } from "@data/urls";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 const FormInput = ({ type, name, value, label, onchange }) => {
@@ -19,18 +21,20 @@ const FormInput = ({ type, name, value, label, onchange }) => {
   );
 };
 
-export default function SchedulingForm({ back, userData, setUserData }) {
+export default function SchedulingForm({
+  back,
+  userData,
+  setUserData,
+  handleSubmit,
+  loader,
+  setLoader,
+}) {
   // Handle form value changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    console.log("Form is submitted");
-  };
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -73,8 +77,16 @@ export default function SchedulingForm({ back, userData, setUserData }) {
           >
             Back
           </button>
-          <button type="submit" className="btn-2 bg-primary-one">
-            Confirm
+          <button
+            type="submit"
+            className="btn-2 bg-primary-one disabled:bg-slate-700 disabled:text-slate-400"
+            onClick={() => setLoader(true)}
+            disabled={Object.values(userData).includes("")}
+          >
+            {loader && !Object.values(userData).includes("") && (
+              <FontAwesomeIcon className="animate-loader" icon={faSpinner} />
+            )}
+            <span> Confirm</span>
           </button>
         </div>
       </form>
