@@ -1195,15 +1195,15 @@ import Icon6 from "./images/icons/icon-6.png";
 import Icon7 from "./images/icons/icon-7.svg";
 import Favicon from "./images/icons/favicon.svg";
 import DoubleArrow from "./images/icons/double-arrow.png";
-import Doodle1 from "./images/icons/doodle-1.jpeg";
-import Doodle2 from "./images/icons/doodle-2.jpeg";
-import Doodle3 from "./images/icons/doodle-3.jpeg";
-import Doodle4 from "./images/icons/doodle-4.jpeg";
-import Doodle5 from "./images/icons/doodle-5.jpeg";
-import Doodle6 from "./images/icons/doodle-6.jpeg";
-import Doodle7 from "./images/icons/doodle-7.jpeg";
-import Doodle8 from "./images/icons/doodle-8.jpeg";
-import Doodle9 from "./images/icons/doodle-9.jpeg";
+import Doodle1 from "./images/icons/doodle-1.png";
+import Doodle2 from "./images/icons/doodle-7.png";
+import Doodle3 from "./images/icons/doodle-3.png";
+import Doodle4 from "./images/icons/doodle-4.png";
+import Doodle5 from "./images/icons/doodle-5.png";
+import Doodle6 from "./images/icons/doodle-6.png";
+import Doodle7 from "./images/icons/doodle-2.png";
+import Doodle8 from "./images/icons/doodle-8.png";
+import Doodle9 from "./images/icons/doodle-9.png";
 
 export {
   iconInstagram,

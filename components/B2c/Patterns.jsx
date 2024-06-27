@@ -76,7 +76,7 @@ export default function Patterns({ handleScrollToComponent }) {
                       <Image
                         src={key.image}
                         alt={key.title}
-                        className={`${
+                        className={`w-24 h-24 mx-auto object-contain ${
                           myPatterns.includes(key.title) ||
                           (value.label != activeTab.label && "grayscale")
                         }`}
