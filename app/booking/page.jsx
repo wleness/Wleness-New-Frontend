@@ -8,6 +8,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import axios from "axios";
 import { BOOKING_CREATE_ORDER, RAZORPAY_KEY, RECORD_BOOKING } from "@data/api";
 import { loadScript } from "@utils";
+import { SUCCESS } from "@data/urls";
 
 function BookingsPage() {
   const searchParams = useSearchParams();
@@ -80,7 +81,7 @@ function BookingsPage() {
           .post(RECORD_BOOKING, order_data)
           .then((response) => {
             if (response.data.status == "success") {
-              router.push("/thank-you");
+              router.push(SUCCESS);
             }
           })
           .catch((error) => console.error(error));
