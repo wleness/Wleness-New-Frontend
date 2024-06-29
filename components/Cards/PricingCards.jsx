@@ -9,7 +9,13 @@ const Box = ({ data }) => {
   return (
     <figure className="border-2 border-primary-one">
       <div>
-        <Image src={data.image} alt="banner image" className="w-full" />
+        <Image
+          src={data.image}
+          alt="banner image"
+          className="w-full"
+          width={300}
+          height={150}
+        />
       </div>
       <div>
         <h3 className="text-lg font-semibold py-2 border-y border-slate-500 text-center text-white">
