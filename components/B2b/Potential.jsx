@@ -4,10 +4,13 @@ import "@public/styles/b2b.css";
 import { useState } from "react";
 
 // Range Bar
-const Range = ({ title, value, handle_change }) => {
+const Range = ({ title, value, handle_change, max }) => {
   return (
     <div className="justify-self-center">
-      <h4 className="text-white">{title}</h4>
+      <h4 className="text-white flex items-center justify-between">
+        <span>{title}</span>
+        <small>{value}</small>
+      </h4>
       <label htmlFor={title} className="block">
         <input
           type="range"
@@ -16,10 +19,12 @@ const Range = ({ title, value, handle_change }) => {
           value={value}
           onChange={handle_change}
           min={0}
-          max={100}
+          step={1}
+          max={max}
           className="white-range w-64 xl:w-96"
         />
       </label>
+      {max > 100000 && <small className="text-slate-400">Value in crore</small>}
     </div>
   );
 };
@@ -77,11 +82,13 @@ export default function Potential() {
             handle_change={handleRange1}
             title="Organization Size"
             value={range1}
+            max={100000}
           />
           <Range
             handle_change={handleRange2}
             title="Annulalized Revenue"
             value={range2}
+            max={1000000000000}
           />
         </div>
         <div className="grid xl:grid-cols-3 gap-4">

@@ -4,7 +4,6 @@ import Potential from "@components/B2b/Potential";
 import UpgradeFrontline from "@components/B2b/UpgradeFrontline";
 import PrimaryHeader from "@components/B2c/PrimaryHeader";
 import {
-  DummyClient,
   therapyClient1,
   therapyClient2,
   therapyClient3,
