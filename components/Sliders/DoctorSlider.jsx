@@ -14,6 +14,8 @@ import "swiper/css/pagination";
 import { textColorize } from "@utils";
 import { EXPERTS_URI } from "@data/api";
 import DoctorSliderBtns from "@components/Buttons/DoctorSliderBtns";
+import Link from "next/link";
+import { PRICING } from "@data/urls";
 
 export default function DoctorSlider(props) {
   const [swiper, setSwiper] = useState(null); // Store Swiper instance
@@ -181,13 +183,12 @@ export default function DoctorSlider(props) {
                             </span>
                           </p>
                           <div className="mt-4">
-                            <button
-                              onClick={() => handleBookNow(booking_slug)}
-                              target="_blank"
+                            <Link
+                              href={PRICING}
                               className="btn-one mx-auto inline-block !py-2 !text-sm"
                             >
                               Book Now
-                            </button>
+                            </Link>
                           </div>
                         </div>
                       </figcaption>

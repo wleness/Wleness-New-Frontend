@@ -30,16 +30,14 @@ const data = [
 
 const ContainerBox = ({ value }) => {
   return (
-    <div className="relative rounded-md group cursor-pointer">
+    <div className="relative rounded-md cursor-pointer">
       <Image
         src={value.image}
         alt={value.title}
-        className={`w-16 h-16 xl:w-28 xl:h-28 object-contain mx-auto absolute z-10 grayscale group-hover:grayscale-0 transition-all ${value.style}`}
+        className={`w-16 h-16 xl:w-28 xl:h-28 object-contain mx-auto absolute z-10 transition-all ${value.style}`}
       />
-      <div className="border-2 bg-black border-slate-500 group-hover:border-primary-one  z-20 relative">
-        <h4 className="p-1 bg-slate-600 text-white group-hover:bg-primary-one group-hover:text-black font-medium">
-          {value.title}
-        </h4>
+      <div className="border-2 bg-black border-primary-one z-20 relative">
+        <h4 className="p-1 bg-primary-one font-medium">{value.title}</h4>
         <p className="text-slate-300 p-4">{value.desc}</p>
       </div>
     </div>

@@ -12,6 +12,7 @@ export const FAQ = "/faqs";
 export const ASSESSMENT = "/assessment";
 export const ASSESSMENT_SLUG = "/assessment/:slug";
 export const ASSESSMENT_RESULT = "/assessment/result";
+export const PRICING = "/pricing";
 
 // Self Assessment
 export const SELF_ASSESSMENT = "/self-assessment";

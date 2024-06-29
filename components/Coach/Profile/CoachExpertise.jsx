@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function CoachExpertise({ heading, image, lists }) {
   return (
     <section className="bg-black pb-10">
-      <div className="container mx-auto flex flex-col items-center border-4 border-slate-500 p-4 lg:flex-row lg:p-0">
+      <div className="container mx-auto flex flex-col items-center border-4 border-slate-800 p-4 lg:flex-row lg:p-0">
         <div className="mb-8 lg:order-2 lg:mb-0">
           <Image
             src={image} // Replace with your image URL

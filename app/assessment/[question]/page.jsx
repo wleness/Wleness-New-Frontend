@@ -1,11 +1,13 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { answers, self_assessments } from "@data/self_assessment";
 import { ASSESSMENT_RESULT } from "@data/api";
 import axios from "axios";
+import ThankYou from "@components/Assessment/ThankYou";
+import { setLocalItem } from "@utils";
 
 export default function AssessmentCategoryPage({ params }) {
   const slug = params.question;
@@ -19,7 +21,6 @@ export default function AssessmentCategoryPage({ params }) {
   const [username, setUsername] = useState("");
   const [phone, setPhone] = useState("");
   const [showResult, setSetshowResult] = useState(false);
-  const [assessmentResult, setAssessmentResult] = useState(null);
   const [modal, setModal] = useState(false);
 
   // Set Assessment Questions
@@ -115,7 +116,7 @@ export default function AssessmentCategoryPage({ params }) {
       .then((response) => {
         if (response.status == 201) {
           setModal(true);
-          setAssessmentResult(response.data);
+          setLocalItem("assessment_result", JSON.stringify(response.data));
         }
       })
       .catch((error) => {
@@ -188,7 +189,7 @@ export default function AssessmentCategoryPage({ params }) {
           </div>
         ) : (
           <div className="px-10">
-            <h2 className="text-center text-lg font-bold text-gray-600 xl:text-3xl">
+            <h2 className="text-center text-lg font-bold text-gray-200 xl:text-3xl">
               Enter your details to see your results
             </h2>
 
@@ -244,11 +245,7 @@ export default function AssessmentCategoryPage({ params }) {
           </div>
         )}
 
-        {/* <ThankYou
-          status={modal}
-          assessmentResult={assessmentResult}
-          setStatus={setModal}
-        /> */}
+        <ThankYou status={modal} setStatus={setModal} />
       </section>
     </>
   );

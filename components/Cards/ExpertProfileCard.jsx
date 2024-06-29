@@ -1,6 +1,7 @@
 import FormatPrice from "@utils/FormatPrice";
 import Link from "next/link";
 import Image from "next/image";
+import { PRICING } from "@data/urls";
 
 export default function ExpertProfileCard(props) {
   const slug = `/experts/profile/${props.data.slug}`; // slug for profile
@@ -68,7 +69,7 @@ export default function ExpertProfileCard(props) {
         <div className="w-[65%] px-4 lg:w-3/5 3xl:px-6">
           <Link
             // to={props.data.bookingUrl}
-            href={bookNow}
+            href={PRICING}
             className="block w-fit rounded-full bg-primary-one px-4 py-2.5 text-center text-xs font-semibold border-2 border-transparent hover:text-primary-one hover:border-primary-one transition-all hover:bg-transparent lg:px-6 lg:py-2 lg:text-sm"
           >
             Book Now

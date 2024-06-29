@@ -9,6 +9,8 @@ export default function ExpertsCard(props) {
           <Image
             src={props.data.image}
             alt="Therapy"
+            width={300}
+            height={400}
             className="w-[90%] object-cover"
           />
         </Link>

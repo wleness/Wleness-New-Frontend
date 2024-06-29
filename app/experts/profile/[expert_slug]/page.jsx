@@ -7,6 +7,7 @@ import { bgDotsPattern, profileMask } from "@public";
 import ExpertPricing from "@components/Experts/Profile/ExpertPricing";
 import ExpertsStatistics from "@components/Experts/Profile/ExpertsStatistics";
 import { ExpertSuggestion } from "@components/Experts/Profile/ExpertSuggestion";
+import PricingCards from "@components/Cards/PricingCards";
 
 export default function ExpertsProfilePage({ params }) {
   // return <>{params.expert_slug} page is here</>;
@@ -105,10 +106,11 @@ export default function ExpertsProfilePage({ params }) {
           className="absolute -left-20 top-20 w-32 lg:top-40 lg:w-72"
         />
       </header>
-      <ExpertPricing
+      <PricingCards />
+      {/* <ExpertPricing
         slug={"/experts/booking/" + profileDetails.slug}
         packages={profileDetails.packages}
-      />
+      /> */}
       <ExpertsStatistics
         rating={profileDetails.rating}
         recommend={profileDetails.recommend}
