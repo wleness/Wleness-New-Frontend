@@ -33,10 +33,10 @@ export default function AssessmentResult() {
       {
         label: "# of Score",
         data: [
-          chartScore["Never"],
-          chartScore["Sometimes"],
-          chartScore["Often"],
-          chartScore["Always"],
+          chartScore?.Never,
+          chartScore?.Sometimes,
+          chartScore?.Often,
+          chartScore?.Always,
         ],
         backgroundColor: ["green", "yellow", "orange", "red"],
         borderColor: [
