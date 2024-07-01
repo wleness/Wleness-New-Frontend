@@ -106,10 +106,10 @@ function BookingsPage() {
     <main className="bg-primary-two pt-20">
       <div className="container mx-auto !px-0">
         <div
-          className={`grid overflow-hidden h-[450px] mx-auto transition-all bg-gray-900 rounded-lg *:border-x *:border-slate-700 *:p-6 ${
+          className={`grid overflow-hidden xl:h-[450px] mx-auto transition-all bg-gray-900 rounded-lg *:border-x *:border-slate-700 *:p-6 ${
             selectedDate == "" || (selectedDate != "" && selectedSlot != "")
-              ? "grid-cols-[2fr_3fr] xl:w-[750px] "
-              : "grid-cols-[2fr_3fr_2fr]"
+              ? "xl:grid-cols-[2fr_3fr] xl:w-[750px] "
+              : "xl:grid-cols-[2fr_3fr_2fr]"
           }`}
         >
           <ExpertsInfo

@@ -5,9 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { montserrat } from "@public";
 import Link from "next/link";
 
-export default function CTA() {
+export default function CTA({ isMobile }) {
   return (
-    <div className="text-primary-one fixed top-72 -right-24 z-40 bg-slate-700 pl-4 grid grid-cols-[1fr_1fr_1fr_3fr] items-center -rotate-90">
+    <div
+      className={`text-primary-one  fixed top-72 -right-24 z-40 bg-slate-700 pl-4 grid-cols-[1fr_1fr_1fr_3fr] items-center -rotate-90 ${
+        isMobile ? "grid" : "hidden xl:grid"
+      }`}
+    >
       <span>
         <FontAwesomeIcon icon={faPhoneVolume} />
       </span>

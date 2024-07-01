@@ -5,6 +5,7 @@ import Patterns from "@components/B2c/Patterns";
 import PrimaryHeader from "@components/B2c/PrimaryHeader";
 import Resolve from "@components/B2c/Resolve";
 import PricingCards from "@components/Cards/PricingCards";
+import CTA from "@components/common/CTA";
 import { clients } from "@data/b2c";
 import usePricingScroll from "@utils/usePricingScroll";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Resolve handleScrollToComponent={handleScrollToComponent} />
       <PricingCards ref={ref} />
       <Blogs />
+      <CTA isMobile={true} />
     </>
   );
 }

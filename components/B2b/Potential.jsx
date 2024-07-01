@@ -9,7 +9,11 @@ const Range = ({ title, value, handle_change, max }) => {
     <div className="justify-self-center">
       <h4 className="text-white flex items-center justify-between">
         <span>{title}</span>
-        <small>{value}</small>
+        <small>
+          {value >= 100001
+            ? String(Math.floor(value / 10000000) + " Cr")
+            : value}
+        </small>
       </h4>
       <label htmlFor={title} className="block">
         <input
@@ -44,8 +48,8 @@ const AlgoDataBox = ({ title, value }) => {
 };
 
 export default function Potential() {
-  const [range1, setRange1] = useState(50);
-  const [range2, setRange2] = useState(50);
+  const [range1, setRange1] = useState(50000);
+  const [range2, setRange2] = useState(50000);
   const [data, setData] = useState({
     mental_issue: 0.4 * range1,
     unproductivity: 0.35 * range2,
@@ -98,11 +102,11 @@ export default function Potential() {
           />
           <AlgoDataBox
             title={"Potential Revenue Loss due to unproductivity"}
-            value={Math.floor(data.unproductivity)}
+            value={`${Math.floor(data.unproductivity / 10000000)} Cr`}
           />
           <AlgoDataBox
             title={"Potential Revenue Loss due to attrition"}
-            value={Math.floor(data.attrition)}
+            value={`${Math.floor(data.attrition / 10000000)} Cr`}
           />
         </div>
       </div>

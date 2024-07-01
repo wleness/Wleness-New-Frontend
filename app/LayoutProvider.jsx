@@ -25,7 +25,7 @@ export const LayoutProvider = ({ children }) => {
       <>
         <PrimaryNavbar />
         {children}
-        <CTA />
+        <CTA isMobile={false} />
         <Footer />
       </>
     );
