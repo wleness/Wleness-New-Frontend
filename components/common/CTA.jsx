@@ -12,17 +12,17 @@ export default function CTA({ isMobile }) {
         isMobile ? "grid" : "hidden xl:grid"
       }`}
     >
-      <span>
+      <Link href={"tel:9147047488"} target="_blank">
         <FontAwesomeIcon icon={faPhoneVolume} />
-      </span>
-      <span>
+      </Link>
+      <Link href={"https://wa.me/919147047488"} target="_blank">
         <FontAwesomeIcon icon={faWhatsapp} />
-      </span>
+      </Link>
       <span>
         <FontAwesomeIcon icon={faMessage} />
       </span>
       <Link
-        href={"/"}
+        href={"/b2b"}
         className={`${montserrat.className} btn-2 border-primary-one text-black bg-primary-one`}
       >
         <span className="flex items-center gap-x-2">
