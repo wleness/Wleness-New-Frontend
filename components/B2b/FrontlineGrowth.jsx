@@ -11,7 +11,7 @@ const data = [
   {
     title: "Fragile Culture",
     image: Icon4,
-    desc: "58% of employees would go with a competitor if they had a better culture.",
+    desc: "21% of employees would go with a competitor if they had a better culture.",
     style: "-top-10 md:-right-16 right-0",
   },
   {

@@ -7,12 +7,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import {
-  faClipboardList,
   faGlobe,
-  faHome,
   faLocationDot,
   faPhone,
-  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   JoinUsCampusAmbassador,
@@ -29,7 +26,6 @@ import {
   BIPOLAR_DISORDER,
   BRAIN_EXERCISE,
   CAREER,
-  CONDUCT_DISORDER,
   CONTACT_US,
   CORPORATE_WELLBEING,
   COUPLES_THERAPY,
@@ -75,7 +71,7 @@ export const services_pages = [
 export const aboutus_subpages = [
   ["About Wleness", ABOUT_US],
   ["Contact Us", CONTACT_US],
-  ["FAQs", ""],
+  ["FAQs", FAQ],
 ];
 
 // Activities sub pages

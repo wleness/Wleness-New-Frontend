@@ -52,16 +52,16 @@ export default function Potential() {
   const [range2, setRange2] = useState(50000);
   const [data, setData] = useState({
     mental_issue: 0.4 * range1,
-    unproductivity: 0.35 * range2,
-    attrition: (range2 / (0.25 * range1)) * 0.66,
+    unproductivity: 0.082 * range2,
+    attrition: (range2 / range1) * 0.66 * 25,
   });
 
   const handleRange1 = (event) => {
     setRange1(event.target.value);
     setData({
       mental_issue: 0.4 * event.target.value,
-      unproductivity: 0.35 * range2,
-      attrition: (range2 / (0.25 * event.target.value)) * 0.66,
+      unproductivity: 0.082 * range2,
+      attrition: (range2 / event.target.value) * 0.66 * 25,
     });
   };
 
@@ -69,8 +69,8 @@ export default function Potential() {
     setRange2(event.target.value);
     setData({
       mental_issue: 0.4 * range1,
-      unproductivity: 0.35 * event.target.value,
-      attrition: (event.target.value / (0.25 * range1)) * 0.66,
+      unproductivity: 0.082 * event.target.value,
+      attrition: (event.target.value / range1) * 0.66 * 25,
     });
   };
 
