@@ -60,7 +60,7 @@ export default function page() {
       />
       <FrontlineGrowth />
       <Potential />
-      <CompanyLogoSlider />
+      {/* <CompanyLogoSlider /> */}
       <UpgradeFrontline />
     </>
   );
