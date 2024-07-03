@@ -2,6 +2,7 @@ import { CompanyLogo1 } from "@public";
 import Image from "next/image";
 
 export default function CompanyLogoSlider() {
+  console.log("hi");
   return (
     <section className="bg-primary-two pt-10 xl:pt-20">
       <div className="bg-primary-one py-16 overflow-hidden relative whitespace-nowrap">
