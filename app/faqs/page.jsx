@@ -25,12 +25,12 @@ export default function FAQsPage() {
         <div className="container mx-auto">
           <h1 className="subheading mt-8 !grid text-center text-white">
             <span>
-              <span>You've got </span>
+              <span>You&apos;ve got </span>
               <span className="heading-primary">questions</span>
               <span>?</span>
             </span>
             <span>
-              <span>We've got </span>
+              <span>We&apos;ve got </span>
               <span className="heading-primary">answers </span>
               <span>!</span>
             </span>

@@ -26,18 +26,18 @@ export default function ContactUsPage() {
 
             <div className="grid grid-cols-1 items-center gap-4 sm:grid-cols-2 md:grid-cols-3 text-slate-300">
               <div className="text-center">
-                <Image className="mx-auto" src={about1} />
+                <Image className="mx-auto" src={about1} alt="contact us" />
                 <h2 className="text-lg font-semibold text-primary-one">
                   Email Us At
                 </h2>
                 <h3 className="font-bold ">hello@wleness.com</h3>
                 <p className="font-semibold">
-                  We'll get back to you within 24Hrs
+                  We&apos;ll get back to you within 24Hrs
                 </p>
               </div>
 
               <div className="text-center">
-                <Image className="mx-auto" src={about4} />
+                <Image className="mx-auto" src={about4} alt="contact us" />
                 <h2 className="text-lg font-semibold text-primary-one">
                   Visit Us At
                 </h2>
@@ -48,7 +48,7 @@ export default function ContactUsPage() {
               </div>
 
               <div className="text-center">
-                <Image className="mx-auto" src={meeting} />
+                <Image className="mx-auto" src={meeting} alt="contact us" />
                 <h2 className="text-lg font-semibold text-primary-one">
                   Call Us At
                 </h2>

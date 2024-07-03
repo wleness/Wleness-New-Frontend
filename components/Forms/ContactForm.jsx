@@ -76,7 +76,7 @@ function ContactForm() {
       <div className="md:flex md:h-full md:flex-col md:px-6">
         <div>
           <h3 className="font-medium text-primary-one opacity-80 lg:text-lg">
-            Need an expert's consulting?
+            Need an expert&apos;s consulting?
           </h3>
           <h1 className="font-quicksand text-4xl font-bold leading-tight tracking-tight text-white opacity-90 xl:text-4xl">
             Request a Call Back
