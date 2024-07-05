@@ -1,3 +1,4 @@
+import { PRICING } from "@data/urls";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,12 +22,12 @@ export default function TherapyCard(props) {
             {props.data.name}
           </h3>
         </Link>
-        <button
+        <Link
+          href={PRICING}
           className="btn-one !text-sm !font-bold transition-colors hover:shadow-md"
-          onClick={props.openAssessmentModal}
         >
           Book Now
-        </button>
+        </Link>
       </div>
     </div>
   );

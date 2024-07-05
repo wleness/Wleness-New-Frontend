@@ -21,7 +21,7 @@ export default function ExecutiveCoachingPage() {
 
   return (
     <>
-      <Header />
+      <Header toggleForm={toggleForm} />
       <WhyExecutiveCoaching data={executive_coaching.coaching} />
       <Coaches title="Executive Experts" coaches={executive_coaches} />
       <Guide data={executive_coaching.guide} />

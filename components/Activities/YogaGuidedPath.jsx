@@ -160,11 +160,11 @@ export default function YogaGuidedPath({ title }) {
               <>
                 <div
                   key={index}
-                  className="col-span-1 flex items-center justify-center rounded-lg bg-[#289C8F] p-2 text-lg font-semibold text-white xs:block xs:p-5 xs:text-xl"
+                  className="col-span-1 flex items-center justify-center rounded-lg bg-primary-one p-2 text-lg font-semibold xs:block xs:p-5 xs:text-xl"
                 >
                   <p className="">{el?.day}</p>
                 </div>
-                <div className="col-span-2 rounded-lg bg-[#2FC4B1] p-2 text-lg font-semibold text-white xs:p-5 xs:text-xl">
+                <div className="col-span-2 rounded-lg bg-primary-one p-2 text-lg font-semibold xs:p-5 xs:text-xl">
                   <p>{el?.yoga}</p>
                 </div>
               </>
@@ -174,11 +174,11 @@ export default function YogaGuidedPath({ title }) {
               <>
                 <div
                   key={index}
-                  className="col-span-1 flex items-center justify-center rounded-lg bg-[#289C8F] p-2 text-lg font-semibold text-white xs:block xs:p-5 xs:text-xl"
+                  className="col-span-1 flex items-center justify-center rounded-lg bg-primary-one p-2 text-lg font-semibold xs:block xs:p-5 xs:text-xl"
                 >
                   <p className="">{el?.day}</p>
                 </div>
-                <div className="col-span-2 rounded-lg bg-[#2FC4B1] p-2 text-lg font-semibold text-white xs:p-5 xs:text-xl">
+                <div className="col-span-2 rounded-lg bg-primary-one p-2 text-lg font-semibold  xs:p-5 xs:text-xl">
                   <p>{el?.yoga}</p>
                 </div>
               </>
@@ -188,11 +188,11 @@ export default function YogaGuidedPath({ title }) {
               <>
                 <div
                   key={index}
-                  className="col-span-1 flex items-center justify-center rounded-lg bg-[#289C8F] p-2 text-lg font-semibold text-white xs:block xs:p-5 xs:text-xl"
+                  className="col-span-1 flex items-center justify-center rounded-lg bg-primary-one p-2 text-lg font-semibold xs:block xs:p-5 xs:text-xl"
                 >
                   <p className="">{el?.day}</p>
                 </div>
-                <div className="col-span-2 rounded-lg bg-[#2FC4B1] p-2 text-lg font-semibold text-white xs:p-5 xs:text-xl">
+                <div className="col-span-2 rounded-lg bg-primary-one p-2 text-lg font-semibold xs:p-5 xs:text-xl">
                   <p>{el?.yoga}</p>
                 </div>
               </>

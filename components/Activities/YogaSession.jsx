@@ -3,6 +3,7 @@ import { yoga__montly_subscription, yoga__one_time_session } from "@public";
 import useEnquiryForm from "@utils/useEnquiryForm";
 import { textColorize } from "@utils";
 import Image from "next/image";
+import YogaUserDetailsForm from "@components/Forms/YogaUserDetailsForm";
 
 export default function YogaSession({ title, one_time, one_month }) {
   const { enquiryForm, toggleForm } = useEnquiryForm();
@@ -129,6 +130,13 @@ export default function YogaSession({ title, one_time, one_month }) {
           </div>
         </div>
       </section>
+
+      {/* Modals */}
+      <YogaUserDetailsForm
+        plan={plan}
+        isOpen={enquiryForm}
+        onClose={toggleForm}
+      />
     </>
   );
 }

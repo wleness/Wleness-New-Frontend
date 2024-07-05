@@ -4,6 +4,8 @@ import { textColorize } from "@utils";
 import Image from "next/image";
 import React from "react";
 import { themeWAve } from "@public";
+import Link from "next/link";
+import { PRICING } from "@data/urls";
 
 const SelectBest = React.forwardRef((props, ref) => {
   return (
@@ -45,9 +47,9 @@ const SelectBest = React.forwardRef((props, ref) => {
           </div>
 
           <div className="pb-6 pt-7 text-center lg:pb-10 lg:pt-14" ref={ref}>
-            <button className="btn-one" onClick={props.openAssessmentModal}>
+            <Link href={PRICING} className="btn-one">
               Start the Therapy
-            </button>
+            </Link>
           </div>
 
           <Image

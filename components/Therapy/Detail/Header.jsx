@@ -1,5 +1,7 @@
+import { ALL_EXPERTS } from "@data/urls";
 import { textColorize } from "@utils";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DetailHeader({ data, openAssessmentModal }) {
   return (
@@ -29,9 +31,9 @@ export default function DetailHeader({ data, openAssessmentModal }) {
             })}
           </div>
           <div className="text-center xl:text-left">
-            <button className="btn-one !px-14" onClick={openAssessmentModal}>
+            <Link href={ALL_EXPERTS} className="btn-one inline-block !px-14">
               Talk to Therapist
-            </button>
+            </Link>
           </div>
         </div>
       </div>
