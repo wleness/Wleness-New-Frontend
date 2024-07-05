@@ -1,4 +1,5 @@
 import { StarIcon } from "@components/Icons";
+import { PRICING } from "@data/urls";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faMessage, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,7 +23,7 @@ export default function CTA({ isMobile }) {
         <FontAwesomeIcon icon={faMessage} />
       </span>
       <Link
-        href={"/b2b"}
+        href={PRICING}
         className={`${montserrat.className} btn-2 border-primary-one text-black bg-primary-one`}
       >
         <span className="flex items-center gap-x-2">

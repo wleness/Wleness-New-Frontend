@@ -8,6 +8,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 import { StarIcon } from "@components/Icons";
+import Link from "next/link";
+import { PRICING } from "@data/urls";
 
 export default function PrimaryHeader({
   title,
@@ -44,15 +46,27 @@ export default function PrimaryHeader({
           </h2>
         </div>
         <div className="text-center">
-          <button
-            onClick={handleScrollToComponent}
-            className={`${montserrat.className} btn-2 border-primary-one text-primary-one`}
-          >
-            <span className="flex items-center gap-x-2">
-              <span>Connect</span>
-              <StarIcon theme={"light"} />
-            </span>
-          </button>
+          {handleScrollToComponent ? (
+            <button
+              onClick={handleScrollToComponent}
+              className={`${montserrat.className} btn-2 border-primary-one text-primary-one`}
+            >
+              <span className="flex items-center gap-x-2">
+                <span>Connect</span>
+                <StarIcon theme={"light"} />
+              </span>
+            </button>
+          ) : (
+            <Link
+              href={PRICING}
+              className={`${montserrat.className} btn-2 border-primary-one text-primary-one`}
+            >
+              <span className="flex items-center gap-x-2">
+                <span>Connect</span>
+                <StarIcon theme={"light"} />
+              </span>
+            </Link>
+          )}
         </div>
       </div>
 

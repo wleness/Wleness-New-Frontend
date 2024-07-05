@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import {
+  footer_assessment,
   footerAboutWleness,
   footerFocusAreas,
   footerLocation,
@@ -30,8 +31,8 @@ export default function Footer() {
         />
       </div>
 
-      <div className="container mx-auto py-12">
-        <div className="grid grid-cols-2 gap-x-5 gap-y-7 sm:gap-4 sm:space-y-0 lg:grid-cols-5 xl:pb-0">
+      <div className="px-12 py-12">
+        <div className="grid grid-cols-2 gap-x-5 gap-y-7 sm:gap-4 sm:space-y-0 lg:grid-cols-3 xl:grid-cols-6 xl:pb-0">
           <div className="2xl:pr-5">
             <h4 className="mb-2 text-lg font-semibold md:mb-4 lg:text-xl text-white">
               Location
@@ -155,10 +156,30 @@ export default function Footer() {
               </ul>
             </div>
           </div>
+
+          <div>
+            <h4 className="mb-2 text-lg font-semibold md:mb-4 lg:text-xl text-white">
+              Assessments
+            </h4>
+            <ul className="md:space-y-1">
+              {footer_assessment.map((value, index) => {
+                return (
+                  <li key={index}>
+                    <Link
+                      className="text-xs md:text-sm text-slate-300 hover:text-primary-one transition-all"
+                      href={value[1]}
+                    >
+                      {value[0]}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div className="container mx-auto mb-6 border-y-2 border-slate-600 py-8">
+      <div className="px-12 mb-6 border-y-2 border-slate-600 py-8">
         <h4 className="mb-2 text-center text-lg font-semibold md:mb-4 lg:text-xl text-white">
           Useful Links
         </h4>
@@ -179,7 +200,7 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div className="container mx-auto pb-1 lg:pb-4">
+      <div className="px-12 pb-1 lg:pb-4">
         <div className="pb-2 text-center text-[13px] md:text-right text-slate-300">
           <Link href="/privacy-policy">Privacy Policy</Link>
           <span> | </span>
@@ -249,7 +270,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="container mx-auto mb-5 space-y-4 text-justify text-xs text-slate-300 lg:mb-0">
+      <div className="px-12 mb-5 space-y-4 text-justify text-xs text-slate-300 lg:mb-0">
         <p>
           Wleness does not cover emergencies in medicine or psychology. We do
           not intend to support those in distress, such as when they have

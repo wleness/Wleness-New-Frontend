@@ -65,7 +65,7 @@ export const services_pages = [
   ["Therapy", THERAPY, services_subpages],
   ["Executive Coaching", EXECUTIVE_COACHING],
   ["Life Coaching", LIFESTYLE_COACHING],
-  ["YOGA", YOGA],
+  // ["YOGA", YOGA],
 ];
 
 export const aboutus_subpages = [
@@ -197,6 +197,14 @@ export const footerFocusAreas = [
   // ["ODD", "/therapy/odd"],
   // ["Paranoia", "/therapy/paranoia"],
   // ["Conduct Disorder", "/therapy/conduct-disorder"],
+];
+
+// Footer - Focus Areas
+export const footer_assessment = [
+  ["Am I stressed", ""],
+  ["Am I Sad or Depressed?", ""],
+  ["How am I sleeping?", ""],
+  ["Am I Anxious?", ""],
 ];
 
 // Footer - Useful Links

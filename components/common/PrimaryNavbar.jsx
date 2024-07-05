@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { Favicon, montserrat } from "@/public";
 import MenuLink from "./Navbar/MenuLink";
-import { ALL_EXPERTS, ASSESSMENT, BLOGS, COMMUNITY } from "@data/urls";
+import { ALL_EXPERTS, ASSESSMENT, BLOGS, COMMUNITY, PRICING } from "@data/urls";
 import { aboutus_subpages, services_pages } from "@data/navigation";
 import { StarIcon } from "@components/Icons";
 import useNavbar from "./Navbar/useNavbar";
@@ -35,14 +35,15 @@ export default function PrimaryNavbar() {
             For your team
           </Link>
 
-          <button
+          <Link
+            href={PRICING}
             className={`${montserrat.className} btn-2 border-primary-one bg-primary-one`}
           >
             <span className="flex items-center gap-x-2">
               <span>Connect</span>
               <StarIcon theme={"dark"} />
             </span>
-          </button>
+          </Link>
           <button name="menu-button" type="button" onClick={openMenu}>
             <FontAwesomeIcon
               icon={faBars}
