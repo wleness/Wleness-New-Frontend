@@ -1,11 +1,12 @@
 import axios from "axios";
-
 import useToken from "./useToken";
 import { LOGOUT_USER_URI } from "@data/api";
 import { getLocalItem, removeLocalItem } from "@utils";
+import { useRouter } from "next/navigation";
 
 function useLogout() {
   const { removeToken } = useToken();
+  const router = useRouter();
   const wleness_user = JSON.parse(getLocalItem("wleness_user"));
 
   const logMeOut = async () => {
@@ -24,8 +25,7 @@ function useLogout() {
       removeLocalItem("wleness_user_type");
       removeLocalItem("username");
       removeLocalItem("login_type");
-      window.location = "/";
-      // navigate("/login");
+      // router.push("/");
     }
   };
 

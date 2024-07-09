@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import Footer from "@components/common/Footer";
 import PrimaryNavbar from "@components/common/PrimaryNavbar";
 import CTA from "@components/common/CTA";
+import { getUserInfo } from "@utils/useEnquiryForm";
 
 export const LayoutProvider = ({ children }) => {
   const plain_pages = [

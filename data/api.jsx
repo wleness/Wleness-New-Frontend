@@ -1,10 +1,10 @@
 // Production config
-const URI = "https://api.wleness.com/api/";
-export const RAZORPAY_KEY = "rzp_live_uXrB4iqmQ2NvWp";
+// const URI = "https://api.wleness.com/api/";
+// export const RAZORPAY_KEY = "rzp_live_uXrB4iqmQ2NvWp";
 
 // Development Config
-// const URI = "http://127.0.0.1:5000/api/";
-// export const RAZORPAY_KEY = "rzp_test_T3QRzhOh7mgTpN";
+const URI = "http://127.0.0.1:5000/api/";
+export const RAZORPAY_KEY = "rzp_test_T3QRzhOh7mgTpN";
 
 // ============= API Endpoints =============
 // Authentication
@@ -81,5 +81,7 @@ export const INTERNSHIP_JOIN_URI = URI + "join-internships";
 export const BOOKING_CREATE_ORDER = URI + "booking";
 export const RECORD_BOOKING = URI + "record-booking";
 export const GET_SESSIONS = URI + "get-sessions";
+export const GET_SESSION_DETAILS = URI + "get-session-details";
+export const APPLY_BOOKING_COUPON = URI + "apply-booking-coupon";
 
 // Razorpay Key

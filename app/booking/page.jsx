@@ -2,47 +2,88 @@
 import { Suspense, useState } from "react";
 import ExpertsInfo from "@components/Experts/Scheduling/ExpertsInfo";
 import SchedulingCalendar from "@components/Experts/Scheduling/SchedulingCalendar";
-import SchedulingForm from "@components/Experts/Scheduling/SchedulingForm";
 import SchedulingSlot from "@components/Experts/Scheduling/SchedulingSlot";
 import { useRouter, useSearchParams } from "next/navigation";
 import axios from "axios";
-import { BOOKING_CREATE_ORDER, RAZORPAY_KEY, RECORD_BOOKING } from "@data/api";
+import {
+  APPLY_BOOKING_COUPON,
+  BOOKING_CREATE_ORDER,
+  RAZORPAY_KEY,
+  RECORD_BOOKING,
+} from "@data/api";
 import { loadScript } from "@utils";
 import { SUCCESS } from "@data/urls";
+import OrderDetails from "@components/Experts/Scheduling/OrderDetails";
+import useToken from "@utils/useToken";
+import getSession from "@utils/getSession";
+import { getUserInfo } from "@utils/useEnquiryForm";
 
 function BookingsPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
+  const { isLoggedIn, token } = useToken();
+  const { userData } = getUserInfo();
 
-  const session = searchParams.get("session");
+  const session_name = searchParams.get("session");
   const session_id = searchParams.get("id");
-  const [userData, setUserData] = useState({
-    full_name: "",
-    email: "",
-    phone: "",
-  });
+  const session = getSession(session_id);
+
   const [selectedDate, setSelectedDate] = useState("");
+  const [coupon, setCoupon] = useState({
+    code: "",
+    is_applied: false,
+    message: "",
+  });
   const [selectedSlot, setSelectedSlot] = useState("");
   const [day, setDay] = useState("");
-  const [loader, setLoader] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleCoupon = (event) => {
+    event.preventDefault();
+
+    const options = {
+      headers: { Authorization: "Bearer " + token },
+    };
 
     const data = {
-      ...userData,
       package_id: session_id,
+      code: coupon.code,
     };
 
     axios
-      .post(BOOKING_CREATE_ORDER, data)
+      .post(APPLY_BOOKING_COUPON, data, options)
+      .then((res) => {
+        if (res.data.status == "success") {
+          console.log(res.data);
+          setCoupon({
+            ...coupon,
+            is_applied: true,
+            message: res.data.message,
+          });
+        }
+      })
+      .catch((error) => {
+        console.log(error.message);
+        setCoupon({
+          ...coupon,
+          message: error.message,
+        });
+      });
+  };
+
+  const handleSubmit = () => {
+    const options = {
+      headers: { Authorization: "Bearer " + token },
+    };
+
+    const data = {
+      package_id: session_id,
+      price: session?.discount_price + session?.discount_price * 0.09 * 2,
+    };
+
+    axios
+      .post(BOOKING_CREATE_ORDER, data, options)
       .then((res) => {
         handleRazorpayScreen(res.data.data);
-        // setUserData({
-        //   full_name: "",
-        //   email: "",
-        //   phone: "",
-        // });
       })
       .catch((error) => console.error(error));
   };
@@ -59,16 +100,18 @@ function BookingsPage() {
 
     const options = {
       key: RAZORPAY_KEY,
-      amount: data.price,
+      amount: data?.price,
       currency: "INR",
       name: "Wleness",
       description: "Test Transaction",
       image: "https://wleness.com/assets/logo-d0920f6f.png",
-      order_id: data.order_id,
+      order_id: data?.order_id,
       handler: (response) => {
+        const option_headers = {
+          headers: { Authorization: "Bearer " + token },
+        };
         // Store the data in the backend
         const order_data = {
-          ...userData,
           session_id: session_id,
           razorpay_order_id: response.razorpay_order_id,
           razorpay_payment_id: response.razorpay_payment_id,
@@ -76,9 +119,10 @@ function BookingsPage() {
           date: selectedDate,
           time: selectedSlot,
           day: day,
+          price: data?.price / 100,
         };
         axios
-          .post(RECORD_BOOKING, order_data)
+          .post(RECORD_BOOKING, order_data, option_headers)
           .then((response) => {
             if (response.data.status == "success") {
               router.push(SUCCESS);
@@ -102,13 +146,14 @@ function BookingsPage() {
     const paymentObject = new window.Razorpay(options);
     paymentObject.open();
   };
+
   return (
-    <main className="bg-primary-two pt-20">
+    <main className="bg-primary-two pt-12">
       <div className="container mx-auto !px-0">
         <div
-          className={`grid overflow-hidden xl:h-[450px] mx-auto transition-all bg-gray-900 rounded-lg *:border-x *:border-slate-700 *:p-6 ${
+          className={`grid overflow-hidden xl:h-[550px] mx-auto transition-all bg-gray-900 rounded-lg *:border-x *:border-slate-700 *:p-6 ${
             selectedDate == "" || (selectedDate != "" && selectedSlot != "")
-              ? "xl:grid-cols-[2fr_3fr] xl:w-[750px] "
+              ? "xl:grid-cols-[2fr_2.5fr] xl:w-[850px]"
               : "xl:grid-cols-[2fr_3fr_2fr]"
           }`}
         >
@@ -116,7 +161,7 @@ function BookingsPage() {
             date={selectedDate}
             slot={selectedSlot}
             day={day}
-            session={session}
+            session={session_name}
           />
           {[selectedDate, selectedSlot].includes("") ? (
             <>
@@ -130,13 +175,15 @@ function BookingsPage() {
               )}
             </>
           ) : (
-            <SchedulingForm
-              setUserData={setUserData}
+            <OrderDetails
+              user={userData}
+              isLoggedIn={isLoggedIn()}
               handleSubmit={handleSubmit}
-              userData={userData}
-              back={() => setSelectedSlot("")}
-              loader={loader}
-              setLoader={setLoader}
+              session={session}
+              handleCoupon={handleCoupon}
+              code={coupon.code}
+              setCode={(e) => setCoupon({ ...coupon, code: e.target.value })}
+              code_message={coupon.message}
             />
           )}
         </div>

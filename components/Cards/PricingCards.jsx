@@ -7,7 +7,7 @@ import { useEffect, useState, forwardRef } from "react";
 
 const Box = ({ data }) => {
   return (
-    <figure className="border-2 border-primary-one">
+    <figure className="border-2 border-primary-one grid justify-between h-full">
       <div>
         <Image
           src={data.image}
@@ -16,8 +16,6 @@ const Box = ({ data }) => {
           width={300}
           height={150}
         />
-      </div>
-      <div>
         <h3 className="text-lg font-semibold py-2 border-y border-slate-500 text-center text-white">
           {data.title}
         </h3>
@@ -33,19 +31,18 @@ const Box = ({ data }) => {
             <del className="text-slate-300">Rs. {data.price}</del>
           </span>
           <p>
-            <small className="text-white">{data.discount_text[0]}</small>
-            <small className="text-slate-400"> {data.discount_text[1]}</small>
+            <small className="text-slate-400"> {data.discount_text}</small>
           </p>
         </div>
-        <ul className="*:text-slate-400 py-2 text-center px-4 xl:px-6 ">
-          {data.features.map((element, i) => (
-            <span key={i}>{element} </span>
-          ))}
-        </ul>
+        <p className="text-slate-400 py-2 text-center px-4 xl:px-6 ">
+          {data.features}
+        </p>
         <p className="text-white text-2xl font-bold text-center pt-14 pb-4">
           <span className="text-sm">₹ </span>
           {data.discount_price}
         </p>
+      </div>
+      <div>
         <Link
           href={{
             pathname: "/booking",

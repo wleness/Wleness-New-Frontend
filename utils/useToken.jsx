@@ -20,10 +20,19 @@ function useToken() {
     setToken(null);
   }
 
+  function isLoggedIn() {
+    if (token && token !== "" && token !== undefined && token != "{}") {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   return {
     setToken: saveToken,
     token,
     removeToken,
+    isLoggedIn,
   };
 }
 

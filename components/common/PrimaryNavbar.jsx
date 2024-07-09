@@ -1,18 +1,28 @@
 "use client";
-import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faClose, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
 import { Favicon, montserrat } from "@/public";
 import MenuLink from "./Navbar/MenuLink";
-import { ALL_EXPERTS, ASSESSMENT, BLOGS, COMMUNITY, PRICING } from "@data/urls";
+import {
+  ALL_EXPERTS,
+  ASSESSMENT,
+  BLOGS,
+  COMMUNITY,
+  LOGIN,
+  PRICING,
+  USER_DASHBOARD,
+} from "@data/urls";
 import { aboutus_subpages, services_pages } from "@data/navigation";
 import { StarIcon } from "@components/Icons";
 import useNavbar from "./Navbar/useNavbar";
+import { getUserInfo } from "@utils/useEnquiryForm";
 
 export default function PrimaryNavbar() {
   const { menu, openMenu, closeMenu } = useNavbar();
+  const { userData } = getUserInfo();
 
   return (
     <nav className="p-4 xl:px-10 py-3 bg-primary-two">
@@ -40,7 +50,7 @@ export default function PrimaryNavbar() {
             className={`${montserrat.className} btn-2 border-primary-one bg-primary-one`}
           >
             <span className="flex items-center gap-x-2">
-              <span>Connect</span>
+              <span>For You</span>
               <StarIcon theme={"dark"} />
             </span>
           </Link>
@@ -97,6 +107,20 @@ export default function PrimaryNavbar() {
               pages={aboutus_subpages}
             />
           </ul>
+          <br />
+          <Link
+            href={userData ? USER_DASHBOARD : LOGIN}
+            className="block py-2.5 bg-primary-one text-center font-medium rounded-lg"
+          >
+            {userData ? (
+              <div className="flex gap-x-2 items-center justify-center">
+                <FontAwesomeIcon icon={faUser} />
+                <p>{userData?.name.split(" ")[0]}</p>
+              </div>
+            ) : (
+              "Login / Signup"
+            )}
+          </Link>
         </div>
       </div>
     </nav>

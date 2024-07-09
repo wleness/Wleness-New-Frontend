@@ -16,7 +16,7 @@ export default function LoginPage() {
 
   // Redirect user if loggedin
   useEffect(() => {
-    if (token && token !== "" && token !== undefined) {
+    if (token && token !== "" && token !== undefined && token == {}) {
       // Navigate to login
       router.push("/");
     }
