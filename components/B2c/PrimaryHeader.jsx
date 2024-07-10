@@ -46,7 +46,7 @@ export default function PrimaryHeader({
           </h2>
         </div>
         <div className="text-center">
-          {handleScrollToComponent ? (
+          {/* {handleScrollToComponent ? (
             <button
               onClick={handleScrollToComponent}
               className={`${montserrat.className} btn-2 border-primary-one text-primary-one`}
@@ -66,7 +66,17 @@ export default function PrimaryHeader({
                 <StarIcon theme={"light"} />
               </span>
             </Link>
-          )}
+          )} */}
+
+          <Link
+            href={PRICING}
+            className={`${montserrat.className} btn-2 border-primary-one text-primary-one`}
+          >
+            <span className="flex items-center gap-x-2">
+              <span>Connect</span>
+              <StarIcon theme={"light"} />
+            </span>
+          </Link>
         </div>
       </div>
 

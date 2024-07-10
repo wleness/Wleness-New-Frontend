@@ -33,7 +33,7 @@ export default function SignupPage() {
 
   // Redirect user if loggedin
   useEffect(() => {
-    if (token && token !== "" && token !== undefined) {
+    if (token && token !== "" && token !== undefined && token != "{}") {
       // Navigate to login
       router.push("/");
     }
@@ -239,7 +239,7 @@ export default function SignupPage() {
               {successMessage.message}
             </p>
           )}
-          <div className="mb-4 flex items-center rounded-md bg-slate-100">
+          <div className="auth-form-group">
             <label htmlFor="name">
               <FontAwesomeIcon icon={faUser} className="px-4 text-slate-400" />
             </label>
@@ -250,10 +250,10 @@ export default function SignupPage() {
               placeholder="Name"
               value={formInfo.name}
               onChange={handleChange}
-              className="w-full bg-transparent py-2.5 pr-4 outline-none xl:py-3.5"
+              className="auth-form-input"
             />
           </div>
-          <div className="mb-4 flex items-center rounded-md bg-slate-100">
+          <div className="auth-form-group">
             <label htmlFor="phone">
               <FontAwesomeIcon icon={faPhone} className="px-4 text-slate-400" />
             </label>
@@ -264,10 +264,10 @@ export default function SignupPage() {
               placeholder="Mobile"
               value={formInfo.phone}
               onChange={handleChange}
-              className="w-full bg-transparent py-2.5 pr-4 outline-none xl:py-3.5"
+              className="auth-form-input"
             />
           </div>
-          <div className="mb-4 flex items-center rounded-md bg-slate-100">
+          <div className="auth-form-group">
             <label htmlFor="email">
               <FontAwesomeIcon
                 icon={faEnvelope}
@@ -281,10 +281,10 @@ export default function SignupPage() {
               placeholder="Email"
               value={formInfo.email}
               onChange={handleChange}
-              className="w-full bg-transparent py-2.5 pr-4 outline-none xl:py-3.5"
+              className="auth-form-input"
             />
           </div>
-          <div className="mb-6 flex items-center rounded-md bg-slate-100">
+          <div className="auth-form-group">
             <label htmlFor="password">
               <FontAwesomeIcon icon={faLock} className="px-4 text-slate-400" />
             </label>
@@ -295,7 +295,7 @@ export default function SignupPage() {
               placeholder="Password"
               value={formInfo.password}
               onChange={handleChange}
-              className="w-full bg-transparent py-2.5 pr-4 outline-none xl:py-3.5"
+              className="auth-form-input"
             />
           </div>
           <button className="rounded-full border-2 border-primary-one px-5 py-2 text-sm font-bold text-primary-one xl:px-12 xl:py-3">

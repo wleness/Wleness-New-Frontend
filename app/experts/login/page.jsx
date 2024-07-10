@@ -16,7 +16,7 @@ export default function ExpertsLoginPage() {
 
   // Redirect user if loggedin
   useEffect(() => {
-    if (token && token !== "" && token !== undefined) {
+    if (token && token !== "" && token !== undefined && token != "{}") {
       // Navigate to login
       router.push("/experts/dashboard");
     }
