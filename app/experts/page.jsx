@@ -1,17 +1,17 @@
-"use client";
-import axios from "axios";
-import { useEffect, useState } from "react";
-
 import { expertsWhy1, expertsWhy2, expertsWhy3 } from "@public";
 import Header from "@components/Experts/Header";
 import Specialist from "@components/Experts/Specialist";
 import WhyUs from "@components/Experts/WhyUs";
 import Appointment from "@components/Experts/Appointment";
 import HappyClient from "@components/Sliders/HappyClient";
-import { EXPERTS_URI } from "@data/api";
 import { doctorsPageClient } from "@data/clients";
 import { COUPLES_THERAPY, PSYCHIATRIST, THERAPY } from "@data/urls";
-import getExperts from "@utils/getExperts";
+
+export const metadata = {
+  title: "Best Psychologist in India | Wleness",
+  description:
+    "Find the perfect match for your needs. Wleness connects you with India's top-rated psychologists for online therapy & counseling. Affordable & convenient. Get started now!",
+};
 
 const expertsTherapy = {
   title: "Therapy",
@@ -35,46 +35,16 @@ const expertsCoupleTherapy = {
 };
 
 export default function ExpertsPage() {
-  const [isAssessmentModalOpen, setShowAssessmentModal] = useState(false);
-  const [rediredurl, setRediredurl] = useState(null);
-  const [experts, setExperts] = useState([]);
-  const { status, doctorDetails } = getExperts();
-
-  const openAssessmentModal = () => {
-    setShowAssessmentModal(true);
-  };
-
-  const closeAssessmentModal = () => {
-    setShowAssessmentModal(false);
-  };
-
-  const resetBookNow = () => {
-    openAssessmentModal();
-
-    setRediredurl({
-      title: "Find a Therapist",
-      name: "Find a Therapist",
-      url: "/experts/all",
-    });
-  };
-
-  useEffect(() => {
-    setExperts(doctorDetails.splice(0, 6));
-  }, [doctorDetails]);
-
-  if (!status) {
-    return <div className="mb-5 text-center">Loading...</div>;
-  }
   return (
     <>
       <Header />
-      <Specialist doctorDetails={experts} />
+      <Specialist />
       <WhyUs
         expertsTherapy={expertsTherapy}
         expertsPsychiatrist={expertsPsychiatrist}
         expertsCoupleTherapy={expertsCoupleTherapy}
       />
-      <Appointment resetBookNow={resetBookNow} />
+      <Appointment />
       <HappyClient data={doctorsPageClient} />
     </>
   );

@@ -62,16 +62,6 @@ export default function DoctorSlider(props) {
     }
   };
 
-  const handleBookNow = (url) => {
-    props.openAssessmentModal();
-
-    props.setUrl({
-      title: "Schedule a Session",
-      name: "Book Now",
-      url: url,
-    });
-  };
-
   const handleMouseEnter = () => {
     swiper ? swiper.autoplay.stop() : "";
   };

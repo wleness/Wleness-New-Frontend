@@ -13,6 +13,12 @@ import WlenessCoaching from "@components/Coach/Life/WlenessCoaching";
 import Results from "@components/Coach/Life/Results";
 import PropelForward from "@components/Coach/Life/PropelForward";
 
+const metadata = {
+  title: "Build Your Personal Growth with Wleness Life Coaching Program",
+  description:
+    " Wleness Life Coaching program help you to achieve your goals and live a fulfilling life. Schedule a consultation today!",
+};
+
 export default function LifeCoachingPage() {
   const [lifecoachingForm, setLifeCoachingForm] = useState(false);
 

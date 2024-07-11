@@ -12,6 +12,12 @@ import CoachRequestForm from "@components/Forms/CoachRequestForm";
 import ActivityForm from "@components/Forms/ActivityForm";
 import Guide from "@components/Coach/Executive/Guide";
 
+const metadata = {
+  title: "Executive Coaching | Unlock Your Leadership Potential -Wleness",
+  description:
+    "Achieve mental well-being with Wleness, India's leading platform for affordable online therapy. Book a session with the best online psychologists for anxiety, stress, relationships, and more. Chat, call, or video - get started on your wellness journey today.",
+};
+
 export default function ExecutiveCoachingPage() {
   const { enquiryForm, toggleForm } = useEnquiryForm();
   // Filter executive coaches

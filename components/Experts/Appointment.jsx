@@ -1,4 +1,7 @@
-export default function Appointment({ resetBookNow }) {
+import { PRICING } from "@data/urls";
+import Link from "next/link";
+
+export default function Appointment() {
   return (
     <section className="bg-primary-two pb-12">
       <div className="container mx-auto rounded-2xl bg-slate-800 p-8 text-center lg:p-14">
@@ -14,9 +17,9 @@ export default function Appointment({ resetBookNow }) {
           look forward to assisting you in achieving your therapeutic goals.
         </p>
         <div className="text-center">
-          <button className="btn-one" onClick={() => resetBookNow()}>
+          <Link href={PRICING} className="btn-one">
             Make an appointment
-          </button>
+          </Link>
         </div>
       </div>
     </section>

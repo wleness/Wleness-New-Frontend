@@ -1,6 +1,4 @@
-"use client";
 // Components
-import { useState } from "react";
 import { therapy_details } from "@data/therapy";
 import DetailHeader from "@components/Therapy/Detail/Header";
 import Symptoms from "@components/Therapy/Detail/Symptoms";
@@ -11,48 +9,28 @@ import IssueQuote from "@components/Therapy/Detail/IssueQuote";
 import { notFound } from "next/navigation";
 import CouplesTherapy from "./CouplesTherapy";
 
-export default function TherapyDetailPage({ params }) {
-  const [isAssessmentModalOpen, setShowAssessmentModal] = useState(false);
-  const [rediredurl, setRediredurl] = useState(null);
+export const generateMetadata = ({ params }) => {
+  return {
+    title: `${therapy_details[params.therapy_slug]?.meta_title}`,
+    description: `${therapy_details[params.therapy_slug]?.meta_desc}`,
+  };
+};
 
+export default function TherapyDetailPage({ params }) {
   if (params.therapy_slug == "couples-therapy") {
     return <CouplesTherapy />;
   }
   const info = therapy_details[params.therapy_slug];
+
   if (!info) {
     return notFound();
   }
-
-  const resetBookNow = () => {
-    openAssessmentModal();
-
-    setRediredurl({
-      title: "Find a Therapist",
-      name: "Find a Therapist",
-      url: "/experts/all",
-    });
-  };
-  const openAssessmentModal = () => {
-    setShowAssessmentModal(true);
-  };
-
-  const closeAssessmentModal = () => {
-    setShowAssessmentModal(false);
-  };
-
   return (
     <>
-      <DetailHeader
-        data={info.header}
-        openAssessmentModal={() => resetBookNow()}
-      />
+      <DetailHeader data={info.header} />
       <Symptoms data={info.symptoms} />
       <WlenessApproach data={info.approach} />
-      <DoctorSlider
-        data={info.doctors}
-        openAssessmentModal={openAssessmentModal}
-        setUrl={setRediredurl}
-      />
+      <DoctorSlider data={info.doctors} />
       <Community />
       <IssueQuote quote={info.quote} />
       {/* <Assessment

@@ -1,5 +1,8 @@
+"use client";
+import { PRICING } from "@data/urls";
 import { expertsHeader } from "@public";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -41,12 +44,9 @@ export default function Header() {
             we&apos;ll unlock the potential for a healthier and happier you.
           </p>
           <div className="space-y-3 lg:flex lg:space-x-3 lg:space-y-0">
-            <button
-              className="btn-one !w-full lg:!w-fit lg:px-6"
-              onClick={() => resetBookNow()}
-            >
+            <Link href={PRICING} className="btn-one !w-full lg:!w-fit lg:px-6">
               Make an appointment
-            </button>
+            </Link>
           </div>
         </div>
       </div>

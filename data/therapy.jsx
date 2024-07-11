@@ -131,6 +131,9 @@ const therapy_doctors = {
 
 export const therapy_details = {
   stress: {
+    meta_title: "Stress Relief Counselling| Therapy for Stress",
+    meta_desc:
+      "Don't let stress control you. Wleness provides online therapy for stress.Our therapists use proven techniques to manage stress, improve coping skills & promote well-being.",
     slug: STRESS,
     header: {
       title: [
@@ -177,6 +180,9 @@ export const therapy_details = {
       "Research published in the journal JAMA Internal Medicine indicates that practising stress reduction techniques can lead to a 38% reduction in the likelihood of developing anxiety disorders.",
   },
   depression: {
+    meta_title: "Online Therapy and Counselling For Depression| Wleness",
+    meta_desc:
+      "Feeling down? Get matched with a depression therapist online. Schedule today!",
     slug: DEPRESSION,
     header: {
       title: [
@@ -223,6 +229,10 @@ export const therapy_details = {
       "Over 80% of people with depression can experience significant improvement through therapy, medication, or a combination of both",
   },
   "panic-attack": {
+    meta_title:
+      "Online Counselling and Therapy for Panic Attack - Schedule an appointment",
+    meta_desc:
+      "Get instant support for panic attacks - schedule an online therapy session and connect with a licensed therapist from the comfort of your own space.",
     slug: PANIC_ATTACKS,
     header: {
       title: [
@@ -269,6 +279,9 @@ export const therapy_details = {
       "Panic attacks are more common than you might think, affecting approximately 2-3% of the global population at some point in their lives.",
   },
   anxiety: {
+    meta_title: " Online Therapy for Anxiety- Schedule an appointment",
+    meta_desc:
+      "Reduce anxiety with online therapy. Affordable sessions with licensed therapists. Stop feeling overwhelmed & regain control. Schedule today!",
     slug: ANXIETY,
     header: {
       title: [
@@ -314,244 +327,247 @@ export const therapy_details = {
     quote:
       "Research published in the Journal of Consulting and Clinical Psychology demonstrates that therapy interventions for anxiety can lead to significant improvements in as little as 8 to 12 weeks.",
   },
-  ocd: {
-    slug: OCD,
-    header: {
-      title: [
-        {
-          color: false,
-          text: "Discovering Effective Strategies to Overcome ",
-        },
-        {
-          color: true,
-          text: "OCD",
-        },
-      ],
-      desc: [
-        "Obsessive-Compulsive Disorder (OCD) is a mental health condition characterized by persistent, distressing thoughts (obsessions) and repetitive behaviours or rituals (compulsions) performed to alleviate anxiety or discomfort.",
-        "",
-      ],
-      image: ocdHeader,
-    },
-    approach: {
-      title: ["The Wleness Way of", " OCD Management"],
-      desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive ocd treatment program at the healthcare center, where relaxation and well-being intertwine.",
-      approaches: [
-        "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
-        "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
-        "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
-      ],
-    },
-    symptoms: {
-      highlight: " OCD symptoms ",
-      points: [
-        "Intrusive, Distressing Thoughts",
-        "Repetitive Rituals or Behaviors",
-        "Fear of Contamination or Germs",
-        "Need for Symmetry or Order",
-        "Unwanted Taboo or Aggressive Thoughts",
-        "Excessive Doubting and Checking",
-      ],
-      image: symptomsOcd,
-    },
-    doctors: therapy_doctors,
-    quote:
-      "Effective treatments for OCD, such as Cognitive Behavioral Therapy (CBT) and medication, have success rates of around 70-80%. Seeking help increases your chances of achieving significant improvement.",
-  },
-  "bipolar-disorder": {
-    slug: BIPOLAR_DISORDER,
-    header: {
-      title: [
-        {
-          color: false,
-          text: "Embrace Quality Care Navigating ",
-        },
-        {
-          color: true,
-          text: "Bipolar Disorder ",
-        },
-        {
-          color: false,
-          text: "with Support",
-        },
-      ],
-      desc: [
-        "Bipolar disorder is a mental health condition characterized by extreme mood swings, encompassing periods of elevated energy and mood (mania) and depressive episodes.",
-        "These fluctuations can significantly impact daily functioning and well-being.",
-      ],
-      image: biopolarDisorderHeader,
-      alt: "Wleness - Embrace Quality Care Navigating Bipolar Disorder with Support",
-    },
-    approach: {
-      title: ["The Wleness Way of", " Bipolar Disorder Management"],
-      desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive bipolar disorder treatment program at the healthcare center, where relaxation and well-being intertwine.",
-      approaches: [
-        "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
-        "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
-        "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
-      ],
-    },
-    symptoms: {
-      highlight: " Bipolar Disorder symptoms ",
-      points: [
-        "Intense Euphoria and Energy",
-        "Severe Irritability or Agitation",
-        "Decreased Need for Sleep",
-        "Changes in Appetite and Weight",
-        "Grandiose Beliefs or Ideas",
-        "Hopelessness and Fatigue",
-      ],
-      image: symptomsBiopolarDisorder,
-      alt: "Wleness - Here's How Generalized Bipolar Disorder Symptoms May Appear",
-    },
-    doctors: therapy_doctors,
-    quote:
-      "Up to 60% of individuals with bipolar disorder experience co-occurring substance abuse. Seeking help can address these complex challenges.",
-  },
-  schizophrenia: {
-    slug: SCHIZOPHRENIA,
-    header: {
-      title: [
-        {
-          color: false,
-          text: "Navigate ",
-        },
-        {
-          color: true,
-          text: "Schizophrenia ",
-        },
-        {
-          color: false,
-          text: "with Quality Care",
-        },
-      ],
-      desc: [
-        "Schizophrenia is a chronic mental disorder characterized by a disconnection from reality, involving hallucinations, delusions, disorganized thinking, and impaired social functioning.",
-        "It often requires comprehensive treatment and support.",
-      ],
-      image: schizophreniaHeader,
-    },
-    approach: {
-      title: ["The Wleness Way of", " Schizophrenia Management"],
-      desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive schizophrenia program at the healthcare center, where relaxation and well-being intertwine.",
-      approaches: [
-        "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
-        "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
-        "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
-      ],
-    },
-    symptoms: {
-      highlight: " Schizophrenia symptoms ",
-      points: [
-        "Hallucinations",
-        "Impaired Social Functioning",
-        "Disorganized Behavior",
-        "Negative Symptoms",
-        "Disorganized Speech",
-        "Delusions",
-      ],
-      image: symptomsSchizophrenia,
-    },
-    doctors: therapy_doctors,
-    quote:
-      "Many individuals with schizophrenia can achieve significant recovery, with studies indicating that about 20-30% complete remission of symptoms and improved psychosocial functioning over time.",
-  },
-  "eating-disorder": {
-    slug: EATING_DISORDER,
-    header: {
-      title: [
-        {
-          color: false,
-          text: "Build Better Life with Right Treatment for ",
-        },
-        {
-          color: true,
-          text: "Eating Disorder",
-        },
-      ],
-      desc: [
-        "An eating disorder is a complex mental health condition characterized by persistent eating patterns and body image disturbances, often leading to severe physical and emotional consequences",
-        "Seeking professional help is vital for effective treatment and recovery.",
-      ],
-      image: eatingDisorderHeader,
-    },
+  // ocd: {
+  //   slug: OCD,
+  //   header: {
+  //     title: [
+  //       {
+  //         color: false,
+  //         text: "Discovering Effective Strategies to Overcome ",
+  //       },
+  //       {
+  //         color: true,
+  //         text: "OCD",
+  //       },
+  //     ],
+  //     desc: [
+  //       "Obsessive-Compulsive Disorder (OCD) is a mental health condition characterized by persistent, distressing thoughts (obsessions) and repetitive behaviours or rituals (compulsions) performed to alleviate anxiety or discomfort.",
+  //       "",
+  //     ],
+  //     image: ocdHeader,
+  //   },
+  //   approach: {
+  //     title: ["The Wleness Way of", " OCD Management"],
+  //     desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive ocd treatment program at the healthcare center, where relaxation and well-being intertwine.",
+  //     approaches: [
+  //       "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
+  //       "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
+  //       "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
+  //     ],
+  //   },
+  //   symptoms: {
+  //     highlight: " OCD symptoms ",
+  //     points: [
+  //       "Intrusive, Distressing Thoughts",
+  //       "Repetitive Rituals or Behaviors",
+  //       "Fear of Contamination or Germs",
+  //       "Need for Symmetry or Order",
+  //       "Unwanted Taboo or Aggressive Thoughts",
+  //       "Excessive Doubting and Checking",
+  //     ],
+  //     image: symptomsOcd,
+  //   },
+  //   doctors: therapy_doctors,
+  //   quote:
+  //     "Effective treatments for OCD, such as Cognitive Behavioral Therapy (CBT) and medication, have success rates of around 70-80%. Seeking help increases your chances of achieving significant improvement.",
+  // },
+  // "bipolar-disorder": {
+  //   slug: BIPOLAR_DISORDER,
+  //   header: {
+  //     title: [
+  //       {
+  //         color: false,
+  //         text: "Embrace Quality Care Navigating ",
+  //       },
+  //       {
+  //         color: true,
+  //         text: "Bipolar Disorder ",
+  //       },
+  //       {
+  //         color: false,
+  //         text: "with Support",
+  //       },
+  //     ],
+  //     desc: [
+  //       "Bipolar disorder is a mental health condition characterized by extreme mood swings, encompassing periods of elevated energy and mood (mania) and depressive episodes.",
+  //       "These fluctuations can significantly impact daily functioning and well-being.",
+  //     ],
+  //     image: biopolarDisorderHeader,
+  //     alt: "Wleness - Embrace Quality Care Navigating Bipolar Disorder with Support",
+  //   },
+  //   approach: {
+  //     title: ["The Wleness Way of", " Bipolar Disorder Management"],
+  //     desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive bipolar disorder treatment program at the healthcare center, where relaxation and well-being intertwine.",
+  //     approaches: [
+  //       "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
+  //       "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
+  //       "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
+  //     ],
+  //   },
+  //   symptoms: {
+  //     highlight: " Bipolar Disorder symptoms ",
+  //     points: [
+  //       "Intense Euphoria and Energy",
+  //       "Severe Irritability or Agitation",
+  //       "Decreased Need for Sleep",
+  //       "Changes in Appetite and Weight",
+  //       "Grandiose Beliefs or Ideas",
+  //       "Hopelessness and Fatigue",
+  //     ],
+  //     image: symptomsBiopolarDisorder,
+  //     alt: "Wleness - Here's How Generalized Bipolar Disorder Symptoms May Appear",
+  //   },
+  //   doctors: therapy_doctors,
+  //   quote:
+  //     "Up to 60% of individuals with bipolar disorder experience co-occurring substance abuse. Seeking help can address these complex challenges.",
+  // },
+  // schizophrenia: {
+  //   slug: SCHIZOPHRENIA,
+  //   header: {
+  //     title: [
+  //       {
+  //         color: false,
+  //         text: "Navigate ",
+  //       },
+  //       {
+  //         color: true,
+  //         text: "Schizophrenia ",
+  //       },
+  //       {
+  //         color: false,
+  //         text: "with Quality Care",
+  //       },
+  //     ],
+  //     desc: [
+  //       "Schizophrenia is a chronic mental disorder characterized by a disconnection from reality, involving hallucinations, delusions, disorganized thinking, and impaired social functioning.",
+  //       "It often requires comprehensive treatment and support.",
+  //     ],
+  //     image: schizophreniaHeader,
+  //   },
+  //   approach: {
+  //     title: ["The Wleness Way of", " Schizophrenia Management"],
+  //     desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive schizophrenia program at the healthcare center, where relaxation and well-being intertwine.",
+  //     approaches: [
+  //       "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
+  //       "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
+  //       "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
+  //     ],
+  //   },
+  //   symptoms: {
+  //     highlight: " Schizophrenia symptoms ",
+  //     points: [
+  //       "Hallucinations",
+  //       "Impaired Social Functioning",
+  //       "Disorganized Behavior",
+  //       "Negative Symptoms",
+  //       "Disorganized Speech",
+  //       "Delusions",
+  //     ],
+  //     image: symptomsSchizophrenia,
+  //   },
+  //   doctors: therapy_doctors,
+  //   quote:
+  //     "Many individuals with schizophrenia can achieve significant recovery, with studies indicating that about 20-30% complete remission of symptoms and improved psychosocial functioning over time.",
+  // },
+  // "eating-disorder": {
+  //   slug: EATING_DISORDER,
+  //   header: {
+  //     title: [
+  //       {
+  //         color: false,
+  //         text: "Build Better Life with Right Treatment for ",
+  //       },
+  //       {
+  //         color: true,
+  //         text: "Eating Disorder",
+  //       },
+  //     ],
+  //     desc: [
+  //       "An eating disorder is a complex mental health condition characterized by persistent eating patterns and body image disturbances, often leading to severe physical and emotional consequences",
+  //       "Seeking professional help is vital for effective treatment and recovery.",
+  //     ],
+  //     image: eatingDisorderHeader,
+  //   },
 
-    approach: {
-      title: ["The Wleness Way of", " Eating Disorder Management"],
-      desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive eating disorder treatment program at the healthcare center, where relaxation and well-being intertwine.",
-      approaches: [
-        "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
-        "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
-        "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
-      ],
-    },
-    symptoms: {
-      highlight: " Eating Disorder symptoms ",
-      points: [
-        "Social Withdrawal and Isolation",
-        "Obsession with Weight and Body Shape",
-        "Restrictive Eating or Extreme Dieting",
-        "Binge Eating and Loss of Control",
-        "Compulsive Exercising",
-        "Self-Induced Vomiting or Laxative Use",
-      ],
-      image: symptomsEatingDisorder,
-    },
-    doctors: therapy_doctors,
-    quote:
-      "Continued treatment and post-treatment support reduce relapse rates, with studies indicating that relapse rates can be as low as 10% with ongoing care.",
-  },
-  paranoia: {
-    slug: PARANOIA,
-    header: {
-      title: [
-        {
-          color: false,
-          text: "Overcome ",
-        },
-        {
-          color: true,
-          text: "Paranoia ",
-        },
-        {
-          color: false,
-          text: "with Quality Care",
-        },
-      ],
-      desc: [
-        "Paranoia is a mental health condition characterized by persistent, irrational beliefs of harm, suspicion, or persecution, often leading to mistrust and heightened vigilance in daily interactions.",
-        "Seeking help is essential to address and manage these distressing thoughts.",
-      ],
-      image: paranoiaHeader,
-      alt: "Wleness - Overcome Paranoia With Quality Care",
-    },
-    approach: {
-      title: ["The Wleness Way of", " Paranoia Management"],
-      desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive paranoia treatment program at the healthcare center, where relaxation and well-being intertwine.",
-      approaches: [
-        "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
-        "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
-        "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
-      ],
-    },
-    symptoms: {
-      highlight: " Paranoia symptoms ",
-      points: [
-        "Social withdrawal due to fear.",
-        "Persistent mistrust of others' intentions.",
-        "The constant expectation of betrayal or harm.",
-        "The firm false belief of being singled out for harm",
-        "Interpreting innocent actions as threatening.",
-        "Being excessively watchful and cautious.",
-      ],
-      image: symptomsParanoia,
-      alt: "Wleness - Here's How Generalized Paranoia symptoms May Appear",
-    },
-    doctors: therapy_doctors,
-    quote:
-      "Virtual therapy has demonstrated a 30-40% reduction in paranoia severity, showcasing the potential of technology-based treatments.",
-  },
+  //   approach: {
+  //     title: ["The Wleness Way of", " Eating Disorder Management"],
+  //     desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive eating disorder treatment program at the healthcare center, where relaxation and well-being intertwine.",
+  //     approaches: [
+  //       "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
+  //       "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
+  //       "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
+  //     ],
+  //   },
+  //   symptoms: {
+  //     highlight: " Eating Disorder symptoms ",
+  //     points: [
+  //       "Social Withdrawal and Isolation",
+  //       "Obsession with Weight and Body Shape",
+  //       "Restrictive Eating or Extreme Dieting",
+  //       "Binge Eating and Loss of Control",
+  //       "Compulsive Exercising",
+  //       "Self-Induced Vomiting or Laxative Use",
+  //     ],
+  //     image: symptomsEatingDisorder,
+  //   },
+  //   doctors: therapy_doctors,
+  //   quote:
+  //     "Continued treatment and post-treatment support reduce relapse rates, with studies indicating that relapse rates can be as low as 10% with ongoing care.",
+  // },
+  // paranoia: {
+  //   slug: PARANOIA,
+  //   header: {
+  //     title: [
+  //       {
+  //         color: false,
+  //         text: "Overcome ",
+  //       },
+  //       {
+  //         color: true,
+  //         text: "Paranoia ",
+  //       },
+  //       {
+  //         color: false,
+  //         text: "with Quality Care",
+  //       },
+  //     ],
+  //     desc: [
+  //       "Paranoia is a mental health condition characterized by persistent, irrational beliefs of harm, suspicion, or persecution, often leading to mistrust and heightened vigilance in daily interactions.",
+  //       "Seeking help is essential to address and manage these distressing thoughts.",
+  //     ],
+  //     image: paranoiaHeader,
+  //     alt: "Wleness - Overcome Paranoia With Quality Care",
+  //   },
+  //   approach: {
+  //     title: ["The Wleness Way of", " Paranoia Management"],
+  //     desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive paranoia treatment program at the healthcare center, where relaxation and well-being intertwine.",
+  //     approaches: [
+  //       "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
+  //       "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
+  //       "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
+  //     ],
+  //   },
+  //   symptoms: {
+  //     highlight: " Paranoia symptoms ",
+  //     points: [
+  //       "Social withdrawal due to fear.",
+  //       "Persistent mistrust of others' intentions.",
+  //       "The constant expectation of betrayal or harm.",
+  //       "The firm false belief of being singled out for harm",
+  //       "Interpreting innocent actions as threatening.",
+  //       "Being excessively watchful and cautious.",
+  //     ],
+  //     image: symptomsParanoia,
+  //     alt: "Wleness - Here's How Generalized Paranoia symptoms May Appear",
+  //   },
+  //   doctors: therapy_doctors,
+  //   quote:
+  //     "Virtual therapy has demonstrated a 30-40% reduction in paranoia severity, showcasing the potential of technology-based treatments.",
+  // },
   adhd: {
+    meta_title: "Online Therapy for ADHD | Wleness",
+    meta_desc:
+      "Manage ADHD Symptoms with Weleness Online Therapy. Get personalized support from licensed therapists & develop coping mechanisms. ",
     slug: ADHD,
     header: {
       title: [
@@ -601,108 +617,111 @@ export const therapy_details = {
     quote:
       "Approximately 70% of children diagnosed with ADHD encounter challenges in their academic journey, impacting both their educational advancement and prospects for the future",
   },
-  odd: {
-    slug: ODD,
-    header: {
-      title: [
-        {
-          color: false,
-          text: "Empowering Individuals with ",
-        },
-        {
-          color: true,
-          text: "ODD ",
-        },
-        {
-          color: true,
-          text: "through Effective Treatment ",
-        },
-      ],
-      desc: [
-        "Oppositional Defiant Disorder (ODD) is a psychiatric disorder characterized by a persistent pattern of defiant, disobedient, and hostile behaviour toward authority figures, often causing significant impairment in social, academic, and occupational functioning.",
-        "",
-      ],
-      image: oddHeader,
-      alt: "Wleness - Empowering Individuals with ODD through Effective Treatment",
-    },
-    approach: {
-      title: ["The Wleness Way of", " ODD Management"],
-      desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive ODD treatment program at the healthcare center, where relaxation and well-being intertwine.",
-      approaches: [
-        "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
-        "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
-        "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
-      ],
-    },
-    symptoms: {
-      highlight: " ODD symptoms ",
-      points: [
-        "Vindictiveness and seeking revenge when feeling wronged.",
-        "Easily angered, resentful, or spiteful behavior.",
-        "Blaming others for mistakes or misbehavior.",
-        "Deliberate attempts to annoy or provoke others.",
-        "Frequent arguments and conflicts with authority figures.",
-        "Persistent defiance and refusal to comply with rules or requests.",
-      ],
-      image: symptomsOdd,
-      alt: "Wleness - Here's How Generalized ODD symptoms May Appear",
-    },
-    doctors: therapy_doctors,
-    quote:
-      "Approximately 70-80% of children with ODD also meet the criteria for another mental health disorder, such as ADHD or conduct disorder.",
-  },
-  "conduct-disorder": {
-    slug: CONDUCT_DISORDER,
-    header: {
-      title: [
-        {
-          color: false,
-          text: "Unlock Potential: Treat ",
-        },
-        {
-          color: true,
-          text: "Conduct Disorder ",
-        },
-        {
-          color: false,
-          text: "Effectively",
-        },
-      ],
-      desc: [
-        "Conduct Disorder (CD) is a psychiatric disorder characterized by persistent patterns of aggressive, antisocial behaviour that violates the rights of others and societal norms, often leading to significant impairment in social, academic, and occupational functionin",
-        "",
-      ],
-      image: cdHeader,
-      alt: "Wleness - Unlock Potential: Treat Conduct Disorder Effectively",
-    },
+  // odd: {
+  //   slug: ODD,
+  //   header: {
+  //     title: [
+  //       {
+  //         color: false,
+  //         text: "Empowering Individuals with ",
+  //       },
+  //       {
+  //         color: true,
+  //         text: "ODD ",
+  //       },
+  //       {
+  //         color: true,
+  //         text: "through Effective Treatment ",
+  //       },
+  //     ],
+  //     desc: [
+  //       "Oppositional Defiant Disorder (ODD) is a psychiatric disorder characterized by a persistent pattern of defiant, disobedient, and hostile behaviour toward authority figures, often causing significant impairment in social, academic, and occupational functioning.",
+  //       "",
+  //     ],
+  //     image: oddHeader,
+  //     alt: "Wleness - Empowering Individuals with ODD through Effective Treatment",
+  //   },
+  //   approach: {
+  //     title: ["The Wleness Way of", " ODD Management"],
+  //     desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive ODD treatment program at the healthcare center, where relaxation and well-being intertwine.",
+  //     approaches: [
+  //       "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
+  //       "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
+  //       "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
+  //     ],
+  //   },
+  //   symptoms: {
+  //     highlight: " ODD symptoms ",
+  //     points: [
+  //       "Vindictiveness and seeking revenge when feeling wronged.",
+  //       "Easily angered, resentful, or spiteful behavior.",
+  //       "Blaming others for mistakes or misbehavior.",
+  //       "Deliberate attempts to annoy or provoke others.",
+  //       "Frequent arguments and conflicts with authority figures.",
+  //       "Persistent defiance and refusal to comply with rules or requests.",
+  //     ],
+  //     image: symptomsOdd,
+  //     alt: "Wleness - Here's How Generalized ODD symptoms May Appear",
+  //   },
+  //   doctors: therapy_doctors,
+  //   quote:
+  //     "Approximately 70-80% of children with ODD also meet the criteria for another mental health disorder, such as ADHD or conduct disorder.",
+  // },
+  // "conduct-disorder": {
+  //   slug: CONDUCT_DISORDER,
+  //   header: {
+  //     title: [
+  //       {
+  //         color: false,
+  //         text: "Unlock Potential: Treat ",
+  //       },
+  //       {
+  //         color: true,
+  //         text: "Conduct Disorder ",
+  //       },
+  //       {
+  //         color: false,
+  //         text: "Effectively",
+  //       },
+  //     ],
+  //     desc: [
+  //       "Conduct Disorder (CD) is a psychiatric disorder characterized by persistent patterns of aggressive, antisocial behaviour that violates the rights of others and societal norms, often leading to significant impairment in social, academic, and occupational functionin",
+  //       "",
+  //     ],
+  //     image: cdHeader,
+  //     alt: "Wleness - Unlock Potential: Treat Conduct Disorder Effectively",
+  //   },
 
-    approach: {
-      title: ["The Wleness Way of", " Conduct Disorder Management"],
-      desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive conduct disorder treatment program at the healthcare center, where relaxation and well-being intertwine.",
-      approaches: [
-        "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
-        "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
-        "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
-      ],
-    },
-    symptoms: {
-      highlight: " Conduct Disorder symptoms ",
-      points: [
-        "Aggression towards people and animals.",
-        "Frequent bullying, intimidation, or physical fights.",
-        "Destruction of property and vandalism.",
-        "Deceitfulness, lying, and theft.",
-        "Serious violations of rules and laws.",
-        "Lack of empathy and disregard for the feelings and rights of others.",
-      ],
-      image: symptomsCd,
-      alt: "Wleness - Here's How Generalized Conduct Disorder symptoms May Appear",
-    },
-    doctors: therapy_doctors,
-    quote:
-      "Research indicates that individuals with CD are more likely to develop antisocial personality disorder in adulthood.",
-  },
+  //   approach: {
+  //     title: ["The Wleness Way of", " Conduct Disorder Management"],
+  //     desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive conduct disorder treatment program at the healthcare center, where relaxation and well-being intertwine.",
+  //     approaches: [
+  //       "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
+  //       "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
+  //       "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
+  //     ],
+  //   },
+  //   symptoms: {
+  //     highlight: " Conduct Disorder symptoms ",
+  //     points: [
+  //       "Aggression towards people and animals.",
+  //       "Frequent bullying, intimidation, or physical fights.",
+  //       "Destruction of property and vandalism.",
+  //       "Deceitfulness, lying, and theft.",
+  //       "Serious violations of rules and laws.",
+  //       "Lack of empathy and disregard for the feelings and rights of others.",
+  //     ],
+  //     image: symptomsCd,
+  //     alt: "Wleness - Here's How Generalized Conduct Disorder symptoms May Appear",
+  //   },
+  //   doctors: therapy_doctors,
+  //   quote:
+  //     "Research indicates that individuals with CD are more likely to develop antisocial personality disorder in adulthood.",
+  // },
   "anger-issues": {
+    meta_title: "Online Therapy and Counselling for Anger Issues | Wleness",
+    meta_desc:
+      "Don't Let Anger Control You. Wleness Online Counseling for Anger Issues. Get personalized support from top therapists to manage anger, improve communication, and build healthy relationships. ",
     slug: ANGER_ISSUES,
     header: {
       title: [
@@ -753,6 +772,10 @@ export const therapy_details = {
       "Approximately 8% of adults, or about 18 million people, have reported experiencing frequent anger issues that significantly affect their daily lives, relationships, and overall well-being.",
   },
   relationship: {
+    meta_title:
+      "Counsellor for Relationships | Online Marriage Counselling in India",
+    meta_desc:
+      "Strengthen your relationship with Wleness online couple counseling. Find experienced counselors for affordable, personalized sessions addressing communication, intimacy, and more. Chat, call, or video - reignite the spark today. ",
     slug: RELATIONSHIP,
     header: {
       title: [
@@ -801,6 +824,9 @@ export const therapy_details = {
       "According to a survey by Mind and Relate, 77% of people with a mental health problem surveyed actively tell their partners about their mental health, and only 5% of those people said their partners broke up with them when they heard about their condition.",
   },
   lgbtq: {
+    meta_title: "Therapy for LGBTQ+ | Wleness",
+    meta_desc:
+      "Find a safe and affirming space to explore your identity - schedule LGBTQ+ therapy sessions online and connect with a supportive and knowledgeable therapist.",
     slug: LGBTQ,
     header: {
       title: [
@@ -850,50 +876,50 @@ export const therapy_details = {
     quote:
       "LGBTQ+ individuals are approximately 2.5 times more likely to experience depression and anxiety compared to heterosexual individuals.",
   },
-  parenting: {
-    slug: PARENTING,
-    header: {
-      title: [
-        {
-          color: true,
-          text: "Parenting: ",
-        },
-        {
-          color: false,
-          text: " Nurturing both your's and your child's well being",
-        },
-      ],
-      desc: [
-        "Parenting is a profound journey filled with love and joy, but it also brings unique challenges. The connection between parenting and mental health is crucial, as it affects the well-being of both parents and children, shaping family dynamics.",
-        "",
-      ],
-      image: parentingHeader,
-    },
-    approach: {
-      title: ["The Wleness Way of", " Parenting"],
-      desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive stress treatment program at the healthcare center, where relaxation and well-being intertwine.",
-      approaches: [
-        "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
-        "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
-        "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
-      ],
-    },
-    symptoms: {
-      highlight: " Parenting Challenges ",
-      points: [
-        "Postpartum Depression: Many new mothers experience postpartum depression, characterized by persistent feelings of sadness, exhaustion, and anxiety after giving birth.",
-        "Parental Anxiety: Parents often grapple with anxiety, worrying about their children's safety, well-being, and future, which can impact their mental health.",
-        "Parental Stress: The demands of parenting can lead to high levels of stress, affecting parents' mental well-being and potentially their parenting abilities.",
-        "Burnout: Parental burnout, marked by emotional exhaustion and detachment from parenting responsibilities, can develop when the demands of parenting become overwhelming",
-        "Guilt and Self-Doubt: Parents may experience feelings of guilt and self-doubt, wondering if they're doing enough or making the right decisions for their children.",
-        "Children's Mental Health: Parents also face the challenge of supporting their children's mental health, addressing issues like anxiety, depression, or behavioral problems, which can affect the entire family's well-being.",
-      ],
-      image: symptomsParenting,
-    },
-    doctors: therapy_doctors,
-    quote:
-      "Research suggests that parental burnout is not uncommon. Studies have indicated that approximately 12-20% of parents experience symptoms consistent with burnout.",
-  },
+  // parenting: {
+  //   slug: PARENTING,
+  //   header: {
+  //     title: [
+  //       {
+  //         color: true,
+  //         text: "Parenting: ",
+  //       },
+  //       {
+  //         color: false,
+  //         text: " Nurturing both your's and your child's well being",
+  //       },
+  //     ],
+  //     desc: [
+  //       "Parenting is a profound journey filled with love and joy, but it also brings unique challenges. The connection between parenting and mental health is crucial, as it affects the well-being of both parents and children, shaping family dynamics.",
+  //       "",
+  //     ],
+  //     image: parentingHeader,
+  //   },
+  //   approach: {
+  //     title: ["The Wleness Way of", " Parenting"],
+  //     desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive stress treatment program at the healthcare center, where relaxation and well-being intertwine.",
+  //     approaches: [
+  //       "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
+  //       "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
+  //       "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
+  //     ],
+  //   },
+  //   symptoms: {
+  //     highlight: " Parenting Challenges ",
+  //     points: [
+  //       "Postpartum Depression: Many new mothers experience postpartum depression, characterized by persistent feelings of sadness, exhaustion, and anxiety after giving birth.",
+  //       "Parental Anxiety: Parents often grapple with anxiety, worrying about their children's safety, well-being, and future, which can impact their mental health.",
+  //       "Parental Stress: The demands of parenting can lead to high levels of stress, affecting parents' mental well-being and potentially their parenting abilities.",
+  //       "Burnout: Parental burnout, marked by emotional exhaustion and detachment from parenting responsibilities, can develop when the demands of parenting become overwhelming",
+  //       "Guilt and Self-Doubt: Parents may experience feelings of guilt and self-doubt, wondering if they're doing enough or making the right decisions for their children.",
+  //       "Children's Mental Health: Parents also face the challenge of supporting their children's mental health, addressing issues like anxiety, depression, or behavioral problems, which can affect the entire family's well-being.",
+  //     ],
+  //     image: symptomsParenting,
+  //   },
+  //   doctors: therapy_doctors,
+  //   quote:
+  //     "Research suggests that parental burnout is not uncommon. Studies have indicated that approximately 12-20% of parents experience symptoms consistent with burnout.",
+  // },
 };
 
 // Couple Therapy Data

@@ -1,3 +1,4 @@
+"use client";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { USER_PROFILE_URI } from "../data/api";

@@ -1,3 +1,4 @@
+"use client";
 import ExpertsCard from "@components/Cards/ExpertsCard";
 import { bubbles } from "@public";
 import Image from "next/image";

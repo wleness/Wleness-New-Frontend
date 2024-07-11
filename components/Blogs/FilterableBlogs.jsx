@@ -1,3 +1,4 @@
+"use client";
 import BlogCard from "@components/Cards/BlogCard";
 
 export default function FilterableBlogs({

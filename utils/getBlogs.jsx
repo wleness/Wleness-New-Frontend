@@ -1,8 +1,9 @@
+"use client";
 import { BLOGS_URI } from "@data/api";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-function getBlogs() {
+export default function getBlogs() {
   const [blogPosts, setBlogPosts] = useState([]);
   const [allBlogPosts, setAllBlogPosts] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -59,5 +60,3 @@ function getBlogs() {
     handleBlogsFilter: handleBlogsFilter,
   };
 }
-
-export default getBlogs;

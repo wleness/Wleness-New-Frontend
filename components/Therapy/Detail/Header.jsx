@@ -3,7 +3,7 @@ import { textColorize } from "@utils";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function DetailHeader({ data, openAssessmentModal }) {
+export default function DetailHeader({ data }) {
   return (
     <header className="bg-black py-2 lg:py-6 2xl:pb-10 2xl:py-14">
       <div className="container mx-auto flex flex-col items-center lg:flex-row 2xl:justify-between">

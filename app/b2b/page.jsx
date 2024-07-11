@@ -1,4 +1,3 @@
-import CompanyLogoSlider from "@components/B2b/CompanyLogoSlider";
 import FrontlineGrowth from "@components/B2b/FrontlineGrowth";
 import Potential from "@components/B2b/Potential";
 import UpgradeFrontline from "@components/B2b/UpgradeFrontline";
@@ -9,6 +8,12 @@ import {
   therapyClient3,
   therapyClient4,
 } from "@public";
+
+export const metadata = {
+  title: "Empower Your Workforce: Wleness Corporate Mental Wellbeing",
+  description:
+    "Invest in your team's well-being with Wleness Corporate Programs. Reduce stress, improve engagement, and empower your workforce!",
+};
 
 const clients = [
   {

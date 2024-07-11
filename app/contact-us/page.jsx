@@ -2,6 +2,12 @@ import ContactForm from "@components/Forms/ContactForm";
 import { about1, about4, meeting } from "@public";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Contact Us | Wleness",
+  description:
+    "Have questions? We're here to help! Contact Wleness for any inquiries about our online therapy, coaching programs, or mental health resources.",
+};
+
 export default function ContactUsPage() {
   return (
     <>

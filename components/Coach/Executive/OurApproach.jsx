@@ -1,4 +1,3 @@
-import { bgExecutiveApproach } from "@public";
 import Image from "next/image";
 
 export default function OurApproach({ data }) {

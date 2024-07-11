@@ -1,24 +1,14 @@
-"use client";
-import Faq from "@components/Buttons/Faq";
-import { faqs } from "@data/faqs";
-import { bgDotsPattern, faq3 } from "@public";
 import Image from "next/image";
-import { useState } from "react";
+import { bgDotsPattern, faq3 } from "@public";
+import FAQsection from "@components/FAQsection";
+
+export const metadata = {
+  title: "Frequantly Asked Question | Wleness",
+  description:
+    "Get answers to your questions about Wleness online therapy, life coaching, and mental health resources. Visit our comprehensive FAQ section today!",
+};
 
 export default function FAQsPage() {
-  const [openFAQ, setOpenFAQ] = useState(-1); // Initialize with -1 to represent all FAQs as closed
-
-  // Toggle Faq's
-  const toggleFAQ = (index) => {
-    if (index === openFAQ) {
-      // If it's already open, close it
-      setOpenFAQ(1); // Close all FAQs
-    } else {
-      // If it's closed or a different FAQ is open, open it
-      setOpenFAQ(index);
-    }
-  };
-
   return (
     <>
       <header className="relative overflow-x-hidden overflow-y-clip bg-primary-two">
@@ -58,25 +48,7 @@ export default function FAQsPage() {
         />
       </header>
 
-      <section className="bg-primary-two">
-        <div className="container mx-auto pb-10">
-          <div className="pt-10">
-            <div className="space-y-4">
-              {faqs.map((value, index) => {
-                return (
-                  <Faq
-                    key={index}
-                    question={value.question}
-                    answer={value.answer}
-                    isOpen={index === openFAQ}
-                    toggleFAQ={() => toggleFAQ(index)}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
+      <FAQsection />
     </>
   );
 }
