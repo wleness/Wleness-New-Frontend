@@ -65,25 +65,21 @@ export default function UserDashboardPage() {
     setSelectedDay(days[day]);
   }, []);
 
+  const options = {
+    headers: {
+      Authorization: "Bearer " + token,
+    },
+  };
+
   // ================== To-do List ==================
   // Fetch users todos
   useEffect(() => {
-    axios
-      .get(ADD_TODO_URI, {
-        headers: {
-          Authorization: "Bearer " + token,
-        },
-      })
-      .then((reponse) => {
-        console.log(reponse);
-
-        if (reponse.data.status == "success") {
-          setTodos(reponse.data.todos);
-        }
-      });
-
-    return () => {};
-  });
+    axios.get(ADD_TODO_URI, options).then((reponse) => {
+      if (reponse.data.status == "success") {
+        setTodos(reponse.data.todos);
+      }
+    });
+  }, [setTodos]);
 
   // Handle add todo
   const handleTodo = (e) => {
@@ -154,20 +150,12 @@ export default function UserDashboardPage() {
   // ================== Handle Goal Planning Actions ==================
   // Fetch user goals
   useEffect(() => {
-    axios
-      .get(ADD_GOAL_URI, {
-        headers: {
-          Authorization: "Bearer " + token,
-        },
-      })
-      .then((reponse) => {
-        if (reponse.data.status == "success") {
-          setGoals(reponse.data.goals);
-        }
-      });
-
-    return () => {};
-  });
+    axios.get(ADD_GOAL_URI, options).then((reponse) => {
+      if (reponse.data.status == "success") {
+        setGoals(reponse.data.goals);
+      }
+    });
+  }, [setGoals]);
 
   // Handle adding goals
   const handleGoals = (e) => {
@@ -238,20 +226,12 @@ export default function UserDashboardPage() {
   // ================== Handle Journal Actions ==================
   // Fetch user goals
   useEffect(() => {
-    axios
-      .get(ADD_JOURNAL_URI, {
-        headers: {
-          Authorization: "Bearer " + token,
-        },
-      })
-      .then((reponse) => {
-        if (reponse.data.status == "success") {
-          setJournals(reponse.data.journals);
-        }
-      });
-
-    return () => {};
-  });
+    axios.get(ADD_JOURNAL_URI, options).then((reponse) => {
+      if (reponse.data.status == "success") {
+        setJournals(reponse.data.journals);
+      }
+    });
+  }, [setJournals]);
 
   // Handle adding goals
   const handleJournals = (e) => {

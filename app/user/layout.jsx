@@ -16,7 +16,7 @@ export default function UserDashboardLayout({ children }) {
   // Navigate to login
   useEffect(() => {
     // Redirect user if loggedin
-    if (token == null || token == "" || token == undefined) {
+    if (token == null || token == "" || token == undefined || token == "{}") {
       router.push("/login", {
         state: {
           successMessage: "Please Login",

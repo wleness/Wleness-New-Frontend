@@ -1,5 +1,5 @@
 "use client";
-import { Suspense, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import ExpertsInfo from "@components/Experts/Scheduling/ExpertsInfo";
 import SchedulingCalendar from "@components/Experts/Scheduling/SchedulingCalendar";
 import SchedulingSlot from "@components/Experts/Scheduling/SchedulingSlot";
@@ -24,21 +24,45 @@ function BookingsPage() {
   const { isLoggedIn, token } = useToken();
   const { userData } = getUserInfo();
 
+  // Session details
   const session_name = searchParams.get("session");
   const session_id = searchParams.get("id");
   const session = getSession(session_id);
 
   const [selectedDate, setSelectedDate] = useState("");
+  const [selectedSlot, setSelectedSlot] = useState("");
+  const [day, setDay] = useState("");
+
+  // Pricing Details
+  const [pricing, setPricing] = useState({
+    price: "",
+    subtotal: false,
+  });
   const [coupon, setCoupon] = useState({
     code: "",
     is_applied: false,
     message: "",
   });
-  const [selectedSlot, setSelectedSlot] = useState("");
-  const [day, setDay] = useState("");
+
+  useEffect(() => {
+    setPricing({
+      price: session?.discount_price,
+      subtotal: Math.floor(
+        session?.discount_price + session?.discount_price * 0.09 * 2
+      ),
+    });
+  }, [session]);
 
   const handleCoupon = (event) => {
     event.preventDefault();
+
+    if (session_id != 1) {
+      setCoupon({
+        ...coupon,
+        message: "Invalid Coupon",
+      });
+      return null;
+    }
 
     const options = {
       headers: { Authorization: "Bearer " + token },
@@ -59,6 +83,18 @@ function BookingsPage() {
             is_applied: true,
             message: res.data.message,
           });
+          setPricing({
+            price: Math.floor(
+              session?.discount_price - session?.discount_price * 0.5
+            ),
+            subtotal: Math.floor(
+              session?.discount_price -
+                session?.discount_price * 0.5 +
+                (session?.discount_price - session?.discount_price * 0.5) *
+                  0.09 *
+                  2
+            ),
+          });
         }
       })
       .catch((error) => {
@@ -77,7 +113,7 @@ function BookingsPage() {
 
     const data = {
       package_id: session_id,
-      price: session?.discount_price + session?.discount_price * 0.09 * 2,
+      price: pricing?.subtotal,
     };
 
     axios
@@ -120,6 +156,8 @@ function BookingsPage() {
           time: selectedSlot,
           day: day,
           price: data?.price / 100,
+          discount_price: pricing?.price,
+          total: pricing?.subtotal,
         };
         axios
           .post(RECORD_BOOKING, order_data, option_headers)
@@ -181,9 +219,9 @@ function BookingsPage() {
               handleSubmit={handleSubmit}
               session={session}
               handleCoupon={handleCoupon}
-              code={coupon.code}
+              coupon={coupon}
               setCode={(e) => setCoupon({ ...coupon, code: e.target.value })}
-              code_message={coupon.message}
+              pricing={pricing}
             />
           )}
         </div>

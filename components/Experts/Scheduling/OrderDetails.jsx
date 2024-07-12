@@ -1,5 +1,5 @@
 import { LOGIN } from "@data/urls";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faSpinner, faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useState } from "react";
@@ -19,9 +19,9 @@ export default function OrderDetails({
   handleSubmit,
   session,
   handleCoupon,
-  code,
+  coupon,
   setCode,
-  code_message,
+  pricing,
 }) {
   const [showCoupon, setShowCoupon] = useState(false);
   const [loader, setLoader] = useState(false);
@@ -31,24 +31,13 @@ export default function OrderDetails({
       <h2 className="text-white text-lg font-medium mb-2">Order Details</h2>
       <ul className="space-y-1">
         <ListItem name="Plan Name" value={session?.title} />
-        <ListItem name="Plan Charges" value={session?.discount_price} />
-        <ListItem
-          name="SGST 9%"
-          value={Math.floor(session?.discount_price * 0.09)}
-        />
-        <ListItem
-          name="CGST 9%"
-          value={Math.floor(session?.discount_price * 0.09)}
-        />
+        <ListItem name="Plan Charges" value={pricing?.price} />
+        <ListItem name="SGST 9%" value={Math.floor(pricing?.price * 0.09)} />
+        <ListItem name="CGST 9%" value={Math.floor(pricing?.price * 0.09)} />
       </ul>
       <div className="flex justify-between text-white py-3 border-y border-slate-500 mt-5">
         <span>Total Amount:</span>
-        <span>
-          Rs.{" "}
-          {Math.floor(
-            session?.discount_price + session?.discount_price * 0.09 * 2
-          )}
-        </span>
+        <span>Rs. {pricing?.subtotal}</span>
       </div>
 
       {!isLoggedIn ? (
@@ -60,45 +49,63 @@ export default function OrderDetails({
           to Apply
         </p>
       ) : (
-        <div className="grid xl:grid-cols-2">
-          <p className="text-slate-300 text-xs py-3">
-            Have a coupon code{" "}
-            <button
-              className="text-primary-one"
-              onClick={() => setShowCoupon(true)}
-            >
-              Apply here
-            </button>
-          </p>
-          {showCoupon && (
-            <form
-              onSubmit={handleCoupon}
-              className="grid xl:grid-cols-[3fr_1fr] gap-x-2 py-2"
-            >
-              <div>
-                <input
-                  type="text"
-                  name="coupon_code"
-                  id="coupon_code"
-                  placeholder="XXXXXX"
-                  value={code}
-                  onChange={setCode}
-                  className="bg-transparent rounded-lg px-2 py-1 text-white text-sm w-full outline-none border border-slate-400"
-                />
-                <small className="text-slate-400">{code_message}</small>
-              </div>
-              <div>
-                <input
-                  type="submit"
-                  value="Apply"
-                  className="border-transparent cursor-pointer bg-primary-one text-sm font-semibold py-1 px-1.5 rounded-md"
-                />
-              </div>
-            </form>
+        <>
+          <div
+            className={`xl:grid-cols-2 ${
+              coupon?.is_applied ? "hidden" : "grid"
+            }`}
+          >
+            <p className="text-slate-300 text-xs py-3">
+              Have a coupon code{" "}
+              <button
+                className="text-primary-one"
+                onClick={() => setShowCoupon(true)}
+              >
+                Apply here
+              </button>
+            </p>
+            {showCoupon && (
+              <form
+                onSubmit={handleCoupon}
+                className="grid xl:grid-cols-[3fr_1fr] gap-x-2 py-2"
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="coupon_code"
+                    id="coupon_code"
+                    placeholder="XXXXXX"
+                    value={coupon?.code}
+                    onChange={setCode}
+                    className="bg-transparent rounded-lg px-2 py-1 text-white text-sm w-full outline-none border border-slate-400"
+                  />
+                  <small className="text-slate-400">{coupon?.message}</small>
+                </div>
+                <div>
+                  <input
+                    type="submit"
+                    disabled={coupon?.is_applied}
+                    value="Apply"
+                    className="border-transparent cursor-pointer bg-primary-one text-sm font-semibold py-1 px-1.5 rounded-md disabled:bg-slate-600 disabled:text-white disabled:cursor-not-allowed"
+                  />
+                </div>
+              </form>
+            )}
+          </div>
+
+          {coupon?.is_applied && (
+            <div className="pt-2 text-center">
+              <span className="text-slate-400 mr-2">Applied</span>
+              <span className="border border-dotted border-slate-500 px-4 text-slate-400 text-xs py-1.5 rounded-md space-x-2">
+                <FontAwesomeIcon icon={faTag} />
+                <span>{coupon?.code}</span>
+              </span>
+            </div>
           )}
-        </div>
+        </>
       )}
 
+      {/* User Details */}
       {isLoggedIn && (
         <div className="mt-4">
           <h2 className="text-white text-lg font-medium mb-2">User Details</h2>

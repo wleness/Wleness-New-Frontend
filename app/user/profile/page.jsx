@@ -15,6 +15,7 @@ import {
 import { USER_PROFILE_UPDATE_URI } from "@data/api";
 import Image from "next/image";
 import { getLocalItem, removeLocalItem, setLocalItem } from "@utils";
+import { getUserInfo } from "@utils/useEnquiryForm";
 
 const genders = ["Male", "Female", "Transgender"];
 const avatars = [
@@ -30,9 +31,11 @@ export default function ProfilePage() {
   const router = useRouter();
   const { logout } = useLogout();
   const { token } = useToken();
+  const { user_data } = getUserInfo();
+
   // Redirect user if loggedin
   useEffect(() => {
-    if (token == null || token == "" || token == undefined) {
+    if (token == null || token == "" || token == undefined || token == "{}") {
       // Navigate to login
       router.push("/login");
     }

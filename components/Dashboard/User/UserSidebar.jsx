@@ -3,8 +3,10 @@ import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import useLogout from "@utils/useLogout";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function UserSidebar({ image, isMenuOpen, closeMenu }) {
+  const router = useRouter();
   const { logout } = useLogout();
 
   return (
@@ -50,7 +52,13 @@ export default function UserSidebar({ image, isMenuOpen, closeMenu }) {
             </Link>
           </li>
           <li className="font-semibold">
-            <span onClick={() => logout()} className="cursor-pointer">
+            <span
+              onClick={() => {
+                logout();
+                router.push("/");
+              }}
+              className="cursor-pointer"
+            >
               Logout
             </span>
           </li>
