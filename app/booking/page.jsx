@@ -140,7 +140,7 @@ function BookingsPage() {
       currency: "INR",
       name: "Wleness",
       description: "Test Transaction",
-      image: "https://wleness.com/assets/logo-d0920f6f.png",
+      image: "https://api.wleness.com/static/img/payment-favicon.svg",
       order_id: data?.order_id,
       handler: (response) => {
         const option_headers = {

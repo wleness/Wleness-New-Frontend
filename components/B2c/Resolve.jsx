@@ -90,7 +90,7 @@ export default function Resolve({ handleScrollToComponent }) {
   };
 
   return (
-    <section className="px-4 xl:px-10 pt-28 xl:py-28 bg-primary-two">
+    <section className="px-4 xl:px-10 pb-20 pt-28 xl:py-28 bg-primary-two">
       <PrimaryTitle text={"All humans have the same problems. "} />
       <p className="text-gray-400 font-semibold xl:text-2xl text-center text-xl">
         You&apos;re not alone. You&apos;re one of the many.
