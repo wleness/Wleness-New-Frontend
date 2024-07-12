@@ -94,7 +94,7 @@ export default function PrimaryHeader({
           slidesPerView={1}
           spaceBetween={20}
           className="!overflow-x-clip overflow-y-visible"
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 5000 }}
           breakpoints={{
             640: {
               slidesPerView: 2,
