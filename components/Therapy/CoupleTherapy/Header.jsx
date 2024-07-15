@@ -1,9 +1,12 @@
+"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/effect-fade";
 import "swiper/css";
 import { Autoplay, EffectFade } from "swiper/modules";
 import Image from "next/image";
 import { textColorize } from "@utils";
+import Link from "next/link";
+import { PRICING } from "@data/urls";
 
 export default function Header({ data }) {
   return (
@@ -43,12 +46,9 @@ export default function Header({ data }) {
               </h5>
             </hgroup>
             <div className="lg:text-left">
-              <button
-                className="btn-one mr-2"
-                // onClick={props.openAssessmentModal}
-              >
+              <Link href={PRICING} className="btn-one mr-2 inline-block">
                 Book Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>

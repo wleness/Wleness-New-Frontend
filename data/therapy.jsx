@@ -920,6 +920,57 @@ export const therapy_details = {
   //   quote:
   //     "Research suggests that parental burnout is not uncommon. Studies have indicated that approximately 12-20% of parents experience symptoms consistent with burnout.",
   // },
+
+  "bipolar-disorder": {
+    slug: BIPOLAR_DISORDER,
+    header: {
+      title: [
+        {
+          color: false,
+          text: "Embrace Quality Care Navigating ",
+        },
+        {
+          color: true,
+          text: "Bipolar Disorder ",
+        },
+        {
+          color: false,
+          text: "with Support",
+        },
+      ],
+      desc: [
+        "Bipolar disorder is a mental health condition characterized by extreme mood swings, encompassing periods of elevated energy and mood (mania) and depressive episodes.",
+        "These fluctuations can significantly impact daily functioning and well-being.",
+      ],
+      image: biopolarDisorderHeader,
+      alt: "Wleness - Embrace Quality Care Navigating Bipolar Disorder with Support",
+    },
+    approach: {
+      title: ["The Wleness Way of", " Bipolar Disorder Management"],
+      desc: "Indulge in a rejuvenating journey towards tranquillity with our comprehensive bipolar disorder treatment program at the healthcare center, where relaxation and well-being intertwine.",
+      approaches: [
+        "Talk to the best therapists online and get insights on coping strategies, gain valuable insights, and work towards overcoming depression.",
+        "Get professional guidance and expertise in understanding and managing mental health challenges, including depression symptoms.",
+        "The Wleness community opens doors to a supportive network of individuals where you'll find encouragement and valuable resources for motivation.",
+      ],
+    },
+    symptoms: {
+      highlight: " Bipolar Disorder symptoms ",
+      points: [
+        "Intense Euphoria and Energy",
+        "Severe Irritability or Agitation",
+        "Decreased Need for Sleep",
+        "Changes in Appetite and Weight",
+        "Grandiose Beliefs or Ideas",
+        "Hopelessness and Fatigue",
+      ],
+      image: symptomsBiopolarDisorder,
+      alt: "Wleness - Here's How Generalized Bipolar Disorder Symptoms May Appear",
+    },
+    doctors: therapy_doctors,
+    quote:
+      "Up to 60% of individuals with bipolar disorder experience co-occurring substance abuse. Seeking help can address these complex challenges.",
+  },
 };
 
 // Couple Therapy Data

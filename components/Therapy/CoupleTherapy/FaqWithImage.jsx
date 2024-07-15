@@ -1,3 +1,4 @@
+"use client";
 import Faq from "@components/Buttons/Faq";
 import { textColorize } from "@utils";
 import { useState } from "react";

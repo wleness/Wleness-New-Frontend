@@ -20,18 +20,31 @@ const Box = ({ data }) => {
           {data.title}
         </h3>
         <div className="border-y border-slate-600 text-center py-4">
-          <h4 className="text-lg font-semibold text-primary-one text-center">
+          <h4 className="text-lg mb-2 font-semibold text-primary-one text-center">
             {data.session}
           </h4>
           <span>
-            <span className="text-white text-xl font-bold">
-              <span className="text-sm">₹ </span>
+            <span className=" text-xl font-bold text-primary-one">
+              <span className="text-sm ">₹ </span>
               {data.discount_price}{" "}
             </span>
-            <del className="text-slate-300">Rs. {data.price}</del>
+            <del className={`${data.id == 1 ? "hidden" : "text-slate-300"}`}>
+              Rs. {data.price}
+            </del>
           </span>
           <p>
-            <small className="text-slate-400"> {data.discount_text}</small>
+            <small className="text-slate-400 capitalize">
+              {data.discount_text.map((value, i) => {
+                return (
+                  <span
+                    key={i}
+                    className={i + 1 == 2 && "text-primary-one font-semibold"}
+                  >
+                    {value}
+                  </span>
+                );
+              })}
+            </small>
           </p>
         </div>
         <p className="text-slate-400 py-2 text-center px-4 xl:px-6 ">

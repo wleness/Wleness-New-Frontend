@@ -10,10 +10,18 @@ import { notFound } from "next/navigation";
 import CouplesTherapy from "./CouplesTherapy";
 
 export const generateMetadata = ({ params }) => {
-  return {
-    title: `${therapy_details[params.therapy_slug]?.meta_title}`,
-    description: `${therapy_details[params.therapy_slug]?.meta_desc}`,
-  };
+  if (params.therapy_slug == "couples-therapy") {
+    return {
+      title: "Couples Therapy | Wleness Wellbeing",
+      description:
+        "Wleness Couples Therapy program help you to achieve your goals and live a fulfilling life. Schedule a consultation today!",
+    };
+  } else {
+    return {
+      title: `${therapy_details[params.therapy_slug]?.meta_title}`,
+      description: `${therapy_details[params.therapy_slug]?.meta_desc}`,
+    };
+  }
 };
 
 export default function TherapyDetailPage({ params }) {

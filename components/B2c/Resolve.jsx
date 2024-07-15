@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { ResolveCommunity, ResolveSelfHelp, ResolveSession } from "@/public";
-import { ASSESSMENT, COMMUNITY } from "@data/urls";
+import { ASSESSMENT, COMMUNITY, PRICING } from "@data/urls";
 import PrimaryTitle from "@components/Title/PrimaryTitle";
 
 const tabData = [
@@ -26,7 +26,7 @@ const tabData = [
     image: ResolveSession,
     btn: {
       text: "Book Session",
-      slug: "",
+      slug: PRICING,
     },
   },
   {

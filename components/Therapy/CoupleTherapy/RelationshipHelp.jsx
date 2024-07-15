@@ -1,3 +1,4 @@
+"use client";
 import { textColorize } from "@utils";
 
 export default function RelationshipHelp({ data }) {
