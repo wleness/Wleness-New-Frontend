@@ -1,24 +1,30 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { Suspense, useEffect } from "react";
 import { faLock, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useToken from "@utils/useToken";
 import AuthLayout from "@components/Authentication/AuthLayout";
 import AuthHeading from "@components/Authentication/AuthHeading";
 import useLogin from "./useLogin";
-import { EXPERTS_LOGIN } from "@data/urls";
+import { EXPERTS_LOGIN, PRICING } from "@data/urls";
 
-export default function LoginPage() {
+function LoginPage() {
   const router = useRouter();
   const { token, setToken } = useToken();
+
+  const searchParams = useSearchParams();
+  const booking = searchParams.get("booking");
 
   // Redirect user if loggedin
   useEffect(() => {
     if (token && token !== "" && token !== undefined && token == {}) {
-      // Navigate to login
-      router.push("/");
+      if (booking) {
+        router.push(PRICING);
+      } else {
+        router.push("/");
+      }
     }
   });
 
@@ -116,5 +122,13 @@ export default function LoginPage() {
         </div>
       </div>
     </AuthLayout>
+  );
+}
+
+export default function MainLoginPage() {
+  return (
+    <Suspense>
+      <LoginPage />
+    </Suspense>
   );
 }

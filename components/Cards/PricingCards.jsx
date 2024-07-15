@@ -66,7 +66,7 @@ const Box = ({ data }) => {
           }}
           className="bg-primary-one inline-block text-center w-full font-medium py-2"
         >
-          Get Therapy
+          Start Your Transformation
         </Link>
       </div>
     </figure>

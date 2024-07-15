@@ -43,7 +43,15 @@ export default function OrderDetails({
       {!isLoggedIn ? (
         <p className="text-slate-300 text-sm py-3">
           Have a coupon code{" "}
-          <Link href={LOGIN} className="text-primary-one">
+          <Link
+            href={{
+              pathname: LOGIN,
+              query: {
+                booking: true,
+              },
+            }}
+            className="text-primary-one"
+          >
             Login
           </Link>{" "}
           to Apply
