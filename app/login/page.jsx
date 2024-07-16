@@ -19,7 +19,7 @@ function LoginPage() {
 
   // Redirect user if loggedin
   useEffect(() => {
-    if (token && token !== "" && token !== undefined && token == {}) {
+    if (token && token !== "" && token !== undefined && token !== "{}") {
       if (booking) {
         router.push(PRICING);
       } else {

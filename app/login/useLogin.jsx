@@ -73,7 +73,6 @@ export default function useLogin({ setToken }) {
               login_type: login_type,
             })
           );
-          router.push("/");
         }
         setMessages(response.data.status, response.data.message);
       })
@@ -121,8 +120,6 @@ export default function useLogin({ setToken }) {
               username: "",
               password: "",
             });
-
-            router.push("/");
           } else {
             setMessages(response.data.status, response.data.message);
           }
