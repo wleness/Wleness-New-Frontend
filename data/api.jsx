@@ -72,6 +72,7 @@ export const SINGLE_BLOG_URI = URI + "blog";
 
 // Joining Forms
 export const CORPORATE_JOIN_URI = URI + "join-corporate";
+export const B2B_JOIN_URI = URI + "join-b2b";
 export const THERAPIST_JOIN_URI = URI + "join-therapist";
 export const PSYCHIATRIST_JOIN_URI = URI + "join-psychiatrist";
 export const CAMPUS_AMBASSADOR_JOIN_URI = URI + "join-campus-ambassador";

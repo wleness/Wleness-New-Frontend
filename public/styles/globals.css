@@ -108,7 +108,7 @@ a {
 
 /* Form Styles */
 .form-input {
-  @apply mb-3 block w-full rounded-lg border-2 border-slate-200 px-4 py-1.5 text-sm outline-none md:py-2.5 md:text-base;
+  @apply mb-3 block w-full rounded-lg border-2 bg-slate-800 border-slate-600 px-4 text-white py-1.5 text-sm outline-none md:py-2.5 md:text-base;
 }
 .form-input-underline {
   @apply mb-3 block w-full border-b-2  border-slate-200 py-1.5 text-sm outline-none md:py-2.5 md:text-base;

@@ -1,6 +1,6 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import Image from "next/image";
 
 import { montserrat } from "@/public";
@@ -12,14 +12,9 @@ import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import PrimaryTitle from "@components/Title/PrimaryTitle";
 import { same_patterns } from "@data/b2c";
 
-export default function Patterns({ handleScrollToComponent }) {
+const Patterns = forwardRef((props) => {
   const [activeTab, setActiveTab] = useState(same_patterns[0]);
-  const [myPatterns, setMyPatterns] = useState([
-    "Sexual Wellness",
-    "PTSD3",
-    "Dreams",
-    "TagBadge",
-  ]);
+  const [myPatterns, setMyPatterns] = useState(["Anxiety", "Trust Issues"]);
 
   const handlePatterns = (text) => {
     if (!myPatterns.includes(text)) {
@@ -31,7 +26,7 @@ export default function Patterns({ handleScrollToComponent }) {
     setMyPatterns(myPatterns.filter((pattern) => pattern !== text));
   };
   return (
-    <section className="px-4 bg-primary-two xl:px-10 py-10 pt-48">
+    <section className="px-4 bg-primary-two xl:px-10 py-10 pt-16">
       <PrimaryTitle text={"Same species. Same patterns."} />
       <p className="text-gray-400 text-center">
         you&apos;re not alone in what you&apos;re going through.
@@ -151,13 +146,11 @@ export default function Patterns({ handleScrollToComponent }) {
             strokeWidth={2}
           />
         </svg>
-        <button
-          onClick={handleScrollToComponent}
-          className="btn-2 bg-primary-one"
-        >
-          Let&apos;s solve now
-        </button>
+        <button className="btn-2 bg-primary-one">Let&apos;s solve now</button>
       </div>
     </section>
   );
-}
+});
+
+Patterns.displayName = "Patterns";
+export default Patterns;

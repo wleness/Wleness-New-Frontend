@@ -5,6 +5,7 @@ import {
   FrontlineArmour3,
   FrontlineArmour4,
 } from "@/public";
+import B2BForm from "@components/Forms/B2BForm";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -45,66 +46,76 @@ const frontline_armour = [
 
 export default function UpgradeFrontline() {
   const [frontlineTab, setFrontlineTab] = useState(frontline_armour[0]);
+  const [b2bForm, setB2bForm] = useState(false);
+
+  // Toggle form
+  const toggleForm = () => {
+    setB2bForm(!b2bForm);
+  };
 
   return (
-    <section className="px-4 xl:px-10 pt-10 bg-primary-two">
-      <div className="mt-40">
-        <div className="mt-9">
-          <div className="grid grid-cols-2 xl:grid-cols-4">
-            {frontline_armour.map((value, i) => (
-              <button
-                key={i}
-                onClick={() => setFrontlineTab(value)}
-                className={`${
-                  value.title == frontlineTab.title
-                    ? "border-primary-one bg-primary-one"
-                    : "border-slate-400 text-white"
-                } border-2 font-bold py-3 text-xs lg:text-base`}
-                name={value.title}
-              >
-                {value.title}
-              </button>
-            ))}
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-y-9 xl:grid-cols-4 mt-6 lg:gap-5">
-            {frontline_armour.map((value, i) => (
-              <div className="text-center border pt-8" key={i}>
-                <Image
-                  src={value.image}
-                  alt={value.title}
-                  width={180}
-                  className="mb-4 mx-auto xl:w-60"
-                />
-                <h4 className="text-xs lg:text-base text-slate-500 font-semibold">
-                  {value.subtitle}
-                </h4>
-                <p className="text-xs lg:text-base font-semibold text-primary-one">
-                  {value.increase}
-                </p>
-                <p className="text-xs lg:text-base font-semibold text-primary-three mb-4">
-                  {value.decrease}
-                </p>
-                <p
-                  className={`p-4 ${
+    <>
+      <section className="px-4 xl:px-10 pt-10 bg-primary-two">
+        <div className="mt-40">
+          <div className="mt-9">
+            <div className="grid grid-cols-2 xl:grid-cols-4">
+              {frontline_armour.map((value, i) => (
+                <button
+                  key={i}
+                  onClick={() => setFrontlineTab(value)}
+                  className={`${
                     value.title == frontlineTab.title
-                      ? "bg-primary-one"
-                      : "text-gray-400"
-                  }`}
+                      ? "border-primary-one bg-primary-one"
+                      : "border-slate-400 text-white"
+                  } border-2 font-bold py-3 text-xs lg:text-base`}
+                  name={value.title}
                 >
-                  {value.desc}
-                </p>
-              </div>
-            ))}
-          </div>
+                  {value.title}
+                </button>
+              ))}
+            </div>
 
-          <div className="text-center mt-10">
-            <button className="btn-2 bg-primary-one">
-              Amplify Human Performance
-            </button>
+            <div className="grid md:grid-cols-2 gap-y-9 xl:grid-cols-4 mt-6 lg:gap-5">
+              {frontline_armour.map((value, i) => (
+                <div className="text-center border pt-8" key={i}>
+                  <Image
+                    src={value.image}
+                    alt={value.title}
+                    width={180}
+                    className="mb-4 mx-auto xl:w-60"
+                  />
+                  <h4 className="text-xs lg:text-base text-slate-500 font-semibold">
+                    {value.subtitle}
+                  </h4>
+                  <p className="text-xs lg:text-base font-semibold text-primary-one">
+                    {value.increase}
+                  </p>
+                  <p className="text-xs lg:text-base font-semibold text-primary-three mb-4">
+                    {value.decrease}
+                  </p>
+                  <p
+                    className={`p-4 ${
+                      value.title == frontlineTab.title
+                        ? "bg-primary-one"
+                        : "text-gray-400"
+                    }`}
+                  >
+                    {value.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-10">
+              <button onClick={toggleForm} className="btn-2 bg-primary-one">
+                Amplify Human Performance
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <B2BForm isOpen={b2bForm} onClose={toggleForm} />
+    </>
   );
 }

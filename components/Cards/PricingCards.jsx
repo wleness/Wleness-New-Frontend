@@ -7,8 +7,8 @@ import { useEffect, useState, forwardRef } from "react";
 
 const Box = ({ data }) => {
   return (
-    <figure className="border-2 border-primary-one grid justify-between h-full">
-      <div>
+    <figure className="border-2 border-primary-one flex flex-col justify-between h-full">
+      <div className="h-full">
         <Image
           src={data.image}
           alt="banner image"
@@ -50,12 +50,12 @@ const Box = ({ data }) => {
         <p className="text-slate-400 py-2 text-center px-4 xl:px-6 ">
           {data.features}
         </p>
+      </div>
+      <div>
         <p className="text-white text-2xl font-bold text-center pt-14 pb-4">
           <span className="text-sm">₹ </span>
           {data.discount_price}
         </p>
-      </div>
-      <div>
         <Link
           href={{
             pathname: "/booking",

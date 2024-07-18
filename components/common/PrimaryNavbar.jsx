@@ -12,7 +12,6 @@ import {
   BLOGS,
   COMMUNITY,
   LOGIN,
-  PRICING,
   USER_DASHBOARD,
 } from "@data/urls";
 import { aboutus_subpages, services_pages } from "@data/navigation";
@@ -45,15 +44,15 @@ export default function PrimaryNavbar() {
             For your team
           </Link>
 
-          <Link
-            href={PRICING}
+          <button
             className={`${montserrat.className} btn-2 border-primary-one bg-primary-one`}
           >
             <span className="flex items-center gap-x-2">
               <span>For You</span>
               <StarIcon theme={"dark"} />
             </span>
-          </Link>
+          </button>
+
           <button name="menu-button" type="button" onClick={openMenu}>
             <FontAwesomeIcon
               icon={faBars}

@@ -20,7 +20,7 @@ export default function Home() {
         handleScrollToComponent={handleScrollToComponent}
       />
       <Community />
-      <Patterns handleScrollToComponent={handleScrollToComponent} />
+      <Patterns />
       <Resolve handleScrollToComponent={handleScrollToComponent} />
       <Blogs />
       <CTA isMobile={true} />
