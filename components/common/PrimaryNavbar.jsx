@@ -18,6 +18,7 @@ import { aboutus_subpages, services_pages } from "@data/navigation";
 import { StarIcon } from "@components/Icons";
 import useNavbar from "./Navbar/useNavbar";
 import { getUserInfo } from "@utils/useEnquiryForm";
+import { useRouter } from "next/navigation";
 
 export default function PrimaryNavbar() {
   const { menu, openMenu, closeMenu } = useNavbar();
@@ -44,14 +45,15 @@ export default function PrimaryNavbar() {
             For your team
           </Link>
 
-          <button
+          <Link
+            href={"/#patterns"}
             className={`${montserrat.className} btn-2 border-primary-one bg-primary-one`}
           >
             <span className="flex items-center gap-x-2">
               <span>For You</span>
               <StarIcon theme={"dark"} />
             </span>
-          </button>
+          </Link>
 
           <button name="menu-button" type="button" onClick={openMenu}>
             <FontAwesomeIcon

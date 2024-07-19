@@ -23,7 +23,7 @@ export default function CTA({ isMobile }) {
         <FontAwesomeIcon icon={faMessage} />
       </span>
       <Link
-        href={PRICING}
+        href={"/#patterns"}
         className={`${montserrat.className} btn-2 border-primary-one text-black bg-primary-one`}
       >
         <span className="flex items-center gap-x-2">
