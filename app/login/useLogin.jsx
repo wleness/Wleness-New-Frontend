@@ -164,5 +164,6 @@ export default function useLogin({ setToken }) {
     handleFacebookSignIn: handleFacebookSignIn,
     successMessage: successMessage,
     formInfo: formInfo,
+    setMessages,
   };
 }

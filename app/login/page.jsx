@@ -35,6 +35,7 @@ function LoginPage() {
     handleChange,
     handleGoogleSignIn,
     handleFacebookSignIn,
+    setMessages,
   } = useLogin({ setToken });
 
   // Handle Redirect Messsages
