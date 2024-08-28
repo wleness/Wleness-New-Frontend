@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import Footer from "@components/common/Footer";
 import PrimaryNavbar from "@components/common/PrimaryNavbar";
 import CTA from "@components/common/CTA";
+import Script from "next/script";
 
 export const LayoutProvider = ({ children }) => {
   const plain_pages = [
@@ -32,12 +33,12 @@ export const LayoutProvider = ({ children }) => {
         <PrimaryNavbar />
         {children}
         <CTA isMobile={false} />
-        <script
+        <Script
           type="text/javascript"
           src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
           id="aisensy-wa-widget"
           widget-id="GppAXM"
-        ></script>
+        />
         <Footer />
       </>
     );
