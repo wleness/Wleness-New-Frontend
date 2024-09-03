@@ -279,9 +279,9 @@ export const therapy_details = {
       "Panic attacks are more common than you might think, affecting approximately 2-3% of the global population at some point in their lives.",
   },
   anxiety: {
-    meta_title: " Online Therapy for Anxiety- Schedule an appointment",
+    meta_title: "Online Therapy for Anxiety- Schedule an appointment",
     meta_desc:
-      "Reduce anxiety with online therapy. Affordable sessions with licensed therapists. Stop feeling overwhelmed & regain control. Schedule today!",
+      "Stop feeling overwhelmed & regain control. Reduce anxiety with online therapy. Affordable sessions with licensed therapists.  Schedule today!",
     slug: ANXIETY,
     header: {
       title: [

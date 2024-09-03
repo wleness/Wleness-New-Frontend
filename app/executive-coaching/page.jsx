@@ -1,44 +1,11 @@
-"use client";
-// Data
-import { coaches, executive_coaching } from "@data/coach";
-import useEnquiryForm from "@utils/useEnquiryForm";
-// Components
-import Header from "@components/Coach/Executive/Header";
-import Coaches from "@components/Coach/Coaches";
-import WhyExecutiveCoaching from "@components/Coach/Executive/WhyExecutiveCoaching";
-import Pointers from "@components/Coach/Executive/Pointers";
-import OurApproach from "@components/Coach/Executive/OurApproach";
-import CoachRequestForm from "@components/Forms/CoachRequestForm";
-import ActivityForm from "@components/Forms/ActivityForm";
-import Guide from "@components/Coach/Executive/Guide";
+import ExecutiveCoachPage from "@components/Coach/Executive/ExecutiveCoachPage";
 
-const metadata = {
+export const metadata = {
   title: "Executive Coaching | Unlock Your Leadership Potential -Wleness",
   description:
-    "Achieve mental well-being with Wleness, India's leading platform for affordable online therapy. Book a session with the best online psychologists for anxiety, stress, relationships, and more. Chat, call, or video - get started on your wellness journey today.",
+    "Elevate your leadership skills and drive business success with our expert executive coaching services. Schedule a session now and transform your approach to leadership, strategy, and team management",
 };
 
 export default function ExecutiveCoachingPage() {
-  const { enquiryForm, toggleForm } = useEnquiryForm();
-  // Filter executive coaches
-  const executive_coaches = coaches.filter(
-    (value) => value.category == "executive"
-  );
-
-  return (
-    <>
-      <Header toggleForm={toggleForm} />
-      <WhyExecutiveCoaching data={executive_coaching.coaching} />
-      <Coaches title="Executive Experts" coaches={executive_coaches} />
-      <Guide data={executive_coaching.guide} />
-      <Pointers data={executive_coaching.points} />
-      <OurApproach data={executive_coaching.approach} />
-      <CoachRequestForm name="Executive Coaching" onClose={toggleForm} />
-      <ActivityForm
-        purpose="Executive Coaching"
-        isOpen={enquiryForm}
-        onClose={toggleForm}
-      />
-    </>
-  );
+  return <ExecutiveCoachPage />;
 }

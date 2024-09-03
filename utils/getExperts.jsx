@@ -1,3 +1,4 @@
+"use client";
 import { EXPERTS_URI } from "@data/api";
 import axios from "axios";
 import { useEffect, useState } from "react";
