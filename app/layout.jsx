@@ -16,15 +16,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <link rel="icon" href={Favicon} type="image/svg+xml" />
-
+      </Head>
+      <body>
         <Script
           type="text/javascript"
           src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
           id="aisensy-wa-widget"
           widget-id="GppAXM"
         />
-      </Head>
-      <body>
         <LayoutProvider>{children}</LayoutProvider>
       </body>
     </html>
