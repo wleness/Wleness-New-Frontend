@@ -9,10 +9,10 @@ export default function Community() {
     <section className="bg-primary-two">
       <div>
         <hgroup className={`grid ${box_class}`}>
-          <PrimaryTitle text={"Engineers build. Marketers sell."} />
-          <PrimaryTitle text={"Designers create. Operators run."} />
+          <PrimaryTitle text={"Your Mental Health Mechanic"} />
+          {/* <PrimaryTitle text={"Designers create. Operators run."} /> */}
           <h4 className="font-semibold text-primary-one text-lg text-center">
-            you&apos;re trained to do things that we obviously can&apos;t.
+            We Support Your Emotional and Mental Health Needs
           </h4>
         </hgroup>
 
@@ -50,16 +50,18 @@ export default function Community() {
             <h4
               className={`p-3 bg-primary-one  text-center text-lg  ${montserrat.className}`}
             >
-              <span className="font-medium">we&apos;re </span>
-              <span className="font-bold"> trained</span>
-              <span className="font-medium"> to solve your </span> <br />
-              <span className="font-bold"> emotional & mental states</span>
+              <span className="font-medium">we&apos;re the </span>
+              <span className="font-bold"> mind mechanics, </span>
+              <span className="font-medium"> the </span> <br />
+              <span className="font-bold"> soul surgeons,</span>
+              <span className="font-medium"> the </span>
+              <span className="font-bold"> feeling fixers</span>
             </h4>
           </div>
         </div>
 
-        <div className={`p-4 ${box_class} xl:-translate-y-36`}>
-          <div className="mb-4 xl:mb-6">
+        <div className={`p-4 xl:-translate-y-36`}>
+          <div className="mb-4 text-center xl:mb-6">
             <p className="text-white font-semibold xl:text-xl flex flex-col mb-4 items-center gap-x-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,15 +76,17 @@ export default function Community() {
                   strokeWidth={2}
                 />
               </svg>
-              <span> We&apos;re an exclusive community of</span>
+              <span> Join our exclusive community of</span>
             </p>
             <h2
               className={`text-3xl font-bold py-2 text-primary-one ${montserrat.className}`}
             >
-              Therapists. Psychologists. Psychiatrists. Coaches.
+              Best psychologist in India, Therapist, Psychiatrist, Coaches
             </h2>
           </div>
-          <Certifications />
+          <div className={`${box_class}`}>
+            <Certifications />
+          </div>
         </div>
       </div>
     </section>

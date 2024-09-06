@@ -1,5 +1,6 @@
 "use client";
 import { BLOGS_URI } from "@data/api";
+import { BLOGS } from "@data/urls";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { rubik_one } from "@public";
@@ -33,7 +34,7 @@ export default function Blogs() {
         <h2
           className={`subheading text-white !font-medium ${rubik_one.className}`}
         >
-          Our Resources
+          Self Help Articles
         </h2>
       </div>
       <div className="container mx-auto border border-primary-one rounded-xl py-14 lg:pt-20">
@@ -41,7 +42,7 @@ export default function Blogs() {
           {blogs.slice(0, 3).map((value, i) => {
             return (
               <div key={i}>
-                <Link href={`/blogs/${value.slug}`} className="flex flex-col">
+                <Link href={`${BLOGS}/${value.slug}`} className="flex flex-col">
                   <Image
                     src={value.thumbnail_image}
                     alt={value.title}
@@ -69,7 +70,7 @@ export default function Blogs() {
 
         <div className="mt-12 text-center">
           <Link
-            href="/blogs"
+            href={BLOGS}
             className="border-spacing-5 border-b-2 border-primary-one text-sm font-bold text-primary-one"
           >
             <span>EXPLORE MORE </span>

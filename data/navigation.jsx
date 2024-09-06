@@ -24,6 +24,7 @@ import {
   ANGER_ISSUES,
   ANXIETY,
   BIPOLAR_DISORDER,
+  BLOGS,
   BRAIN_EXERCISE,
   CAREER,
   CONTACT_US,
@@ -114,7 +115,7 @@ export const seldCareSubpages = [
 export const resourcesSubpages = [
   {
     name: "Blogs",
-    slug: "/blogs",
+    slug: BLOGS,
   },
   // {
   //   name: "Videos",

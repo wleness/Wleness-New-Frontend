@@ -7,7 +7,7 @@ export default function Header() {
     <header className="bg-slate-800 px-4 py-5">
       <div className="text-center">
         <h1 className="subheading heading-primary !text-primary-one">
-          Our Blogs
+          Self Help Articles
         </h1>
       </div>
 

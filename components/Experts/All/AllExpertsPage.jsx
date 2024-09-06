@@ -81,7 +81,7 @@ export default function AllExpertsPage() {
         <div className="container mx-auto">
           <h1 className="text-center lg:mb-6">
             <span className="subheading heading-primary text-white">
-              Meet Our Specialists
+              Best psychologist in India - Wleness
             </span>
           </h1>
         </div>

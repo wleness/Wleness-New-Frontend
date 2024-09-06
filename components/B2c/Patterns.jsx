@@ -27,9 +27,9 @@ const Patterns = forwardRef((props) => {
   };
   return (
     <section className="px-4 bg-primary-two xl:px-10 py-10 pt-16" id="patterns">
-      <PrimaryTitle text={"Same species. Same patterns."} />
+      <PrimaryTitle text={"Shared Struggles, Shared Solutions"} />
       <p className="text-gray-400 text-center">
-        you&apos;re not alone in what you&apos;re going through.
+        You&apos;re not alone in your mental health journey
       </p>
       <p className="text-gray-400 text-center">
         you&apos;re biologically wired to face what you&apos;re facing.

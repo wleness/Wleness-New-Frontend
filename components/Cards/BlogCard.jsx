@@ -1,8 +1,9 @@
+import { BLOGS } from "@data/urls";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function BlogCard(props) {
-  let slug = "/blogs/" + props.data.slug;
+  let slug = `${BLOGS}/${props.data.slug}`;
 
   return (
     <figure className="flex h-full flex-col p-2">
@@ -27,7 +28,7 @@ export default function BlogCard(props) {
           </p>
         </div>
         <Link
-          href={`/blogs/${props.data.slug}`}
+          href={slug}
           className="mt-4 inline-block rounded-3xl bg-primary-one px-4 py-2 text-sm font-medium transition-all hover:bg-transparent md:text-base border-2 border-transparent hover:border-primary-one hover:text-primary-one"
         >
           Read more

@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
+import { BLOGS } from "@data/urls";
 
 export default function RecentBlogs({ recentPosts }) {
   return (
@@ -19,7 +20,7 @@ export default function RecentBlogs({ recentPosts }) {
         >
           {recentPosts
             ? recentPosts.map((value, i) => {
-                let slug = "/blogs/" + value.slug;
+                let slug = `${BLOGS}/${value.slug}`;
                 return (
                   <SwiperSlide key={i}>
                     <div className="items-center rounded-xl lg:flex">

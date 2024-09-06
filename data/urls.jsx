@@ -1,8 +1,8 @@
 // Pages
 export const HOME = "/";
-export const BLOGS = "/blogs";
-export const BLOGS_CATEGORY = "/blogs/:category";
-export const BLOGS_DETAILS = "/blog/:slug";
+export const BLOGS = "/self-help-articles";
+export const BLOGS_CATEGORY = "/self-help-articles/:category";
+export const BLOGS_DETAILS = "/article/:slug";
 export const ABOUT_US = "/about-us";
 export const ACTIVITIES = "/activities";
 export const COMMUNITY = "/community";

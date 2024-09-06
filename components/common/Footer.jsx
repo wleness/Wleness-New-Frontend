@@ -19,6 +19,7 @@ import {
   startUpIndiaLogo,
 } from "@public";
 import Image from "next/image";
+import { BLOGS } from "@data/urls";
 
 export default function Footer() {
   return (
@@ -140,7 +141,7 @@ export default function Footer() {
                 <li>
                   <Link
                     className="text-xs md:text-sm text-slate-300 hover:text-primary-one transition-all"
-                    href="/blogs"
+                    href={BLOGS}
                   >
                     Blogs
                   </Link>
