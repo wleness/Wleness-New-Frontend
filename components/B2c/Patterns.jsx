@@ -27,7 +27,12 @@ const Patterns = forwardRef((props) => {
   };
   return (
     <section className="px-4 bg-primary-two xl:px-10 py-10 pt-16" id="patterns">
-      <PrimaryTitle text={"Shared Struggles, Shared Solutions"} />
+      <div>
+        <PrimaryTitle
+          theme={true}
+          text={"Shared Struggles, Shared Solutions"}
+        />
+      </div>
       <p className="text-gray-400 text-center">
         You&apos;re not alone in your mental health journey
       </p>

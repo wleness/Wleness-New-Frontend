@@ -1,4 +1,5 @@
 "use client";
+import PrimaryTitle from "@components/Title/PrimaryTitle";
 import { BLOGS_URI } from "@data/api";
 import { BLOGS } from "@data/urls";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -31,11 +32,7 @@ export default function Blogs() {
   return (
     <section className="bg-primary-two pt-10 xl:pt-16">
       <div className="flex flex-col items-center justify-center text-center mb-5">
-        <h2
-          className={`subheading text-white !font-medium ${rubik_one.className}`}
-        >
-          Self Help Articles
-        </h2>
+        <PrimaryTitle theme={false} text={"Self Help Articles"} />
       </div>
       <div className="container mx-auto border border-primary-one rounded-xl py-14 lg:pt-20">
         <div className="grid gap-8 lg:grid-cols-3 lg:gap-8 px-5 ">

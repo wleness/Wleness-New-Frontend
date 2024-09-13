@@ -181,7 +181,7 @@ export default function AssessmentCategoryPage({ params }) {
             <button
               onClick={() => handleContinue()}
               disabled={currentAnswer == ""}
-              className="mx-auto flex items-center rounded-lg bg-gray-500 px-8 py-3.5  shadow-md shadow-gray-50 disabled:cursor-not-allowed disabled:bg-primary-one disabled:shadow-none lg:px-12"
+              className="mx-auto flex items-center rounded-lg  px-8 py-3.5  shadow-md disabled:cursor-not-allowed disabled:bg-[#837F58] bg-primary-one disabled:shadow-none lg:px-12"
             >
               <span className="mr-2 font-semibold">Continue</span>
               <FontAwesomeIcon icon={faArrowRight} />
