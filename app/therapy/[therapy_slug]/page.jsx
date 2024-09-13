@@ -8,6 +8,8 @@ import Community from "@components/Therapy/Detail/Community";
 import IssueQuote from "@components/Therapy/Detail/IssueQuote";
 import { notFound } from "next/navigation";
 import CouplesTherapy from "./CouplesTherapy";
+import getCanonical from "@utils/getCanonical";
+import { COUPLES_THERAPY } from "@data/urls";
 
 export const generateMetadata = ({ params }) => {
   if (params.therapy_slug == "couples-therapy") {
@@ -15,11 +17,17 @@ export const generateMetadata = ({ params }) => {
       title: "Couples Therapy | Wleness Wellbeing",
       description:
         "Wleness Couples Therapy program help you to achieve your goals and live a fulfilling life. Schedule a consultation today!",
+      alternates: {
+        canonical: getCanonical(COUPLES_THERAPY),
+      },
     };
   } else {
     return {
       title: `${therapy_details[params.therapy_slug]?.meta_title}`,
       description: `${therapy_details[params.therapy_slug]?.meta_desc}`,
+      alternates: {
+        canonical: getCanonical(therapy_details[params.therapy_slug]?.slug),
+      },
     };
   }
 };

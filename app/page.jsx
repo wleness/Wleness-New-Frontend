@@ -1,4 +1,3 @@
-"use client";
 import Blogs from "@components/B2c/Blogs";
 import Community from "@components/B2c/Community";
 import Patterns from "@components/B2c/Patterns";
@@ -6,10 +5,19 @@ import PrimaryHeader from "@components/B2c/PrimaryHeader";
 import Resolve from "@components/B2c/Resolve";
 import CTA from "@components/common/CTA";
 import { clients } from "@data/b2c";
-import usePricingScroll from "@utils/usePricingScroll";
+import { WLENESS_URL } from "@data/urls";
+
+export const metadata = {
+  title:
+    "Wleness - Best Online Therapy &amp; Counseling | Best psychologist in India",
+  description:
+    "Wleness offers best online counseling &amp; therapy with top psychologists in India. Address anxiety, depression, or any mental health concern through convenient chat, call, or video sessions.",
+  alternates: {
+    canonical: WLENESS_URL,
+  },
+};
 
 export default function Home() {
-  const { handleScrollToComponent } = usePricingScroll();
   return (
     <>
       <PrimaryHeader
@@ -17,11 +25,10 @@ export default function Home() {
         subtitle="vent. gossip. confess. discuss. laugh. cry. live."
         desc="your safe-space. just yours. "
         clients={clients}
-        handleScrollToComponent={handleScrollToComponent}
       />
       <Community />
       <Patterns />
-      <Resolve handleScrollToComponent={handleScrollToComponent} />
+      <Resolve />
       <Blogs />
       <CTA isMobile={true} />
     </>

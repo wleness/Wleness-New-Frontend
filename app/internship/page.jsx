@@ -1,5 +1,3 @@
-"use client";
-import { useState } from "react";
 // Data
 import {
   internshipHeader,
@@ -16,13 +14,22 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import InternshipBanner from "@components/JoinUs/Internship/InternshipBanner";
-import { APPLY_INTERNSHIP_FORM_URL } from "@data/urls";
+import { APPLY_INTERNSHIP_FORM_URL, INTERNSHIP } from "@data/urls";
 import HappyClient from "@components/Sliders/HappyClient";
 import { internshipClients } from "@data/clients";
 import { internshipFaqs } from "@data/faqs";
-import FaqWithImage from "@components/Therapy/CoupleTherapy/FaqWithImage";
-import InternshipApplyForm from "@components/Forms/InternshipApplyForm";
 // Components
+import FaqWithImage from "@components/Therapy/CoupleTherapy/FaqWithImage";
+import getCanonical from "@utils/getCanonical";
+
+export const metadata = {
+  title: "Internship | Wleness",
+  description:
+    "Find the perfect match for your needs. Wleness connects you with India's top-rated psychologists for online therapy & counseling. Affordable & convenient. Get started now!",
+  alternates: {
+    canonical: getCanonical(INTERNSHIP),
+  },
+};
 
 const wlenessWork = [
   {
@@ -71,16 +78,6 @@ const whyWleness = [
 ];
 
 export default function Internship() {
-  const [internshipModal, setInternshipModal] = useState(false);
-
-  const openInternshipModal = () => {
-    setInternshipModal(true);
-  };
-
-  const closeInternshipModal = () => {
-    setInternshipModal(false);
-  };
-
   return (
     <>
       <header className="py-6 bg-primary-two lg:py-16">
@@ -203,11 +200,11 @@ export default function Internship() {
 
       <HappyClient data={internshipClients} />
       <FaqWithImage data={internshipFaqs} />
-
+      {/* 
       <InternshipApplyForm
         isOpen={internshipModal}
         onClose={closeInternshipModal}
-      />
+      /> */}
     </>
   );
 }

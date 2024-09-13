@@ -42,7 +42,7 @@ const tabData = [
   },
 ];
 
-export default function Resolve({ handleScrollToComponent }) {
+export default function Resolve() {
   const [activeTab, setActiveTab] = useState(tabData[1]);
 
   const Box = ({ value }) => {
@@ -75,10 +75,7 @@ export default function Resolve({ handleScrollToComponent }) {
                   {value.btn.text}
                 </Link>
               ) : (
-                <button
-                  onClick={handleScrollToComponent}
-                  className="btn-2 bg-primary-one"
-                >
+                <button className="btn-2 bg-primary-one">
                   {value.btn.text}
                 </button>
               )}

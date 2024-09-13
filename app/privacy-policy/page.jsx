@@ -1,10 +1,20 @@
 // Components;
-
 import Heading2xl from "@components/Policies/Heading2xl";
 import Headingxl from "@components/Policies/Headingxl";
 import List from "@components/Policies/List";
 import Paragraphs from "@components/Policies/Paragraphs";
 import PoliciesHeader from "@components/Policies/PoliciesHeader";
+import { PRIVACY_POLICY } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
+
+export const metadata = {
+  title: "Privacy Policy | Wleness",
+  description:
+    "Get answers to your questions about Wleness online therapy, life coaching, and mental health resources. Our Privacy Policies!",
+  alternates: {
+    canonical: getCanonical(PRIVACY_POLICY),
+  },
+};
 
 export default function page() {
   return (

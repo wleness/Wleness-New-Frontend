@@ -1,23 +1,16 @@
-"use client";
-import Header from "@components/Corporate/Header";
-import WellbeingHub from "@components/Corporate/WellbeingHub";
-import WhyCorporate from "@components/Corporate/WhyCorporate";
-import CorporateForm from "@components/Forms/CorporateForm";
-import { useState } from "react";
+import MainPage from "@components/Corporate/MainPage";
+import { CORPORATE_WELLBEING } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
+
+export const metadata = {
+  title: "Corporate | Wleness",
+  description:
+    "Find the perfect match for your needs. Wleness connects you with India's top-rated psychologists for online therapy & counseling. Affordable & convenient. Get started now!",
+  alternates: {
+    canonical: getCanonical(CORPORATE_WELLBEING),
+  },
+};
 
 export default function CorporatePage() {
-  const [corporateForm, setCorporateForm] = useState(false);
-
-  // Toggle form
-  const toggleForm = () => {
-    setCorporateForm(!corporateForm);
-  };
-  return (
-    <>
-      <Header toggleForm={toggleForm} />
-      <WhyCorporate toggleForm={toggleForm} />
-      <WellbeingHub toggleForm={toggleForm} />
-      <CorporateForm isOpen={corporateForm} onClose={toggleForm} />
-    </>
-  );
+  return <MainPage />;
 }

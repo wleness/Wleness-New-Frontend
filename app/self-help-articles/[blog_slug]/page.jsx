@@ -1,5 +1,7 @@
 import DetailPage from "@components/Blogs/Details/DetailPage";
 import { SINGLE_BLOG_URI } from "@data/api";
+import { BLOGS } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
 import axios from "axios";
 
 export const generateMetadata = async ({ params }) => {
@@ -9,6 +11,9 @@ export const generateMetadata = async ({ params }) => {
     const blogData = {
       title: response.data.blog_details.meta_title,
       description: response.data.blog_details.meta_description,
+      alternates: {
+        canonical: getCanonical(`${BLOGS}/${slug}`),
+      },
     };
     return blogData;
   } catch (error) {

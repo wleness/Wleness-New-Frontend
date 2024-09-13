@@ -1,11 +1,16 @@
 import Image from "next/image";
 import { bgDotsPattern, faq3 } from "@public";
 import FAQsection from "@components/FAQsection";
+import getCanonical from "@utils/getCanonical";
+import { FAQ } from "@data/urls";
 
 export const metadata = {
   title: "Frequantly Asked Question | Wleness",
   description:
     "Get answers to your questions about Wleness online therapy, life coaching, and mental health resources. Visit our comprehensive FAQ section today!",
+  alternates: {
+    canonical: getCanonical(FAQ),
+  },
 };
 
 export default function FAQsPage() {

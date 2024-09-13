@@ -1,8 +1,6 @@
 import { LayoutProvider } from "./LayoutProvider";
 import "../public/styles/globals.css";
 import Script from "next/script";
-import Head from "next/head";
-import { Favicon } from "@public";
 
 export const metadata = {
   title:
@@ -14,9 +12,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href={Favicon} type="image/svg+xml" />
-      </Head>
       <body>
         <Script
           type="text/javascript"

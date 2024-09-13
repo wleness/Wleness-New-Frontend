@@ -1,11 +1,16 @@
 import ContactForm from "@components/Forms/ContactForm";
+import { CONTACT_US } from "@data/urls";
 import { about1, about4, meeting } from "@public";
+import getCanonical from "@utils/getCanonical";
 import Image from "next/image";
 
 export const metadata = {
   title: "Contact Us | Wleness",
   description:
     "Have questions? We're here to help! Contact Wleness for any inquiries about our online therapy, coaching programs, or mental health resources.",
+  alternates: {
+    canonical: getCanonical(CONTACT_US),
+  },
 };
 
 export default function ContactUsPage() {

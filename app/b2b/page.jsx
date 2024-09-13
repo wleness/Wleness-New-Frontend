@@ -2,17 +2,22 @@ import FrontlineGrowth from "@components/B2b/FrontlineGrowth";
 import Potential from "@components/B2b/Potential";
 import UpgradeFrontline from "@components/B2b/UpgradeFrontline";
 import PrimaryHeader from "@components/B2c/PrimaryHeader";
+import { B2B } from "@data/urls";
 import {
   therapyClient1,
   therapyClient2,
   therapyClient3,
   therapyClient4,
 } from "@public";
+import getCanonical from "@utils/getCanonical";
 
 export const metadata = {
   title: "Empower Your Workforce: Wleness Corporate Mental Wellbeing",
   description:
     "Invest in your team's well-being with Wleness Corporate Programs. Reduce stress, improve engagement, and empower your workforce!",
+  alternates: {
+    canonical: getCanonical(B2B),
+  },
 };
 
 const clients = [

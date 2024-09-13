@@ -1,4 +1,15 @@
 import CareerForm from "@components/Forms/CareerForm";
+import { CAREER } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
+
+export const metadata = {
+  title: "Career | Wleness",
+  description:
+    "Gain valuable insights into your mental well-being with Wleness online mental health assessment. Confidential & personalized feedback. Take control of your mental health today! ",
+  alternates: {
+    canonical: getCanonical(CAREER),
+  },
+};
 
 export default function CareerPage() {
   return (

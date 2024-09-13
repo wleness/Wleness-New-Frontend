@@ -1,4 +1,15 @@
 import PoliciesHeader from "@components/Policies/PoliciesHeader";
+import { TERMS_AND_CONDITIONS } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
+
+export const metadata = {
+  title: "Terms and Conditions | Wleness",
+  description:
+    "Get answers to your questions about Wleness online therapy, life coaching, and mental health resources. Our Privacy Terms & Conditions!",
+  alternates: {
+    canonical: getCanonical(TERMS_AND_CONDITIONS),
+  },
+};
 
 export default function page() {
   return (

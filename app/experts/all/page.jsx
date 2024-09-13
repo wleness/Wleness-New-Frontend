@@ -1,11 +1,16 @@
 import AllExpertsPage from "@components/Experts/All/AllExpertsPage";
 import HappyClient from "@components/Sliders/HappyClient";
 import { expertsClients } from "@data/clients";
+import { ALL_EXPERTS } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
 
 export const metadata = {
   title: "Best Psychologist in India | Wleness",
   description:
     "Find the perfect match for your needs. Wleness connects you with India's top-rated psychologists for online therapy & counseling. Affordable & convenient. Get started now!",
+  alternates: {
+    canonical: getCanonical(ALL_EXPERTS),
+  },
 };
 
 export default function MainExpertsPage() {

@@ -1,4 +1,5 @@
 // Pages
+export const WLENESS_URL = "https://wleness.com";
 export const HOME = "/";
 export const BLOGS = "/self-help-articles";
 export const BLOGS_CATEGORY = "/self-help-articles/:category";
@@ -13,6 +14,7 @@ export const ASSESSMENT = "/assessment";
 export const ASSESSMENT_SLUG = "/assessment/:slug";
 export const ASSESSMENT_RESULT = "/assessment/result";
 export const PRICING = "/pricing";
+export const B2B = "/b2b";
 
 // Self Assessment
 export const SELF_ASSESSMENT = "/self-assessment";
