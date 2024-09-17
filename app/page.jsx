@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <PrimaryHeader
         title="we listen. we understand. we resolve."
-        subtitle="vent. gossip. confess. discuss. laugh. cry. live."
+        subtitle="vent. whisper. confess. discuss. laugh. cry. live."
         desc="your safe-space. just yours. "
         clients={clients}
       />

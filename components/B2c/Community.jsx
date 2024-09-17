@@ -81,7 +81,7 @@ export default function Community() {
             <h2
               className={`text-3xl font-bold py-2 text-primary-one ${montserrat.className}`}
             >
-              Best psychologist in India, Therapist, Psychiatrist, Coaches
+              Best Psychologist in India, Therapist, Psychiatrist, Coaches
             </h2>
           </div>
           <div className={`${box_class}`}>

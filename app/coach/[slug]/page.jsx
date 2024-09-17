@@ -48,7 +48,7 @@ export default function CoachPage({ params }) {
         image={coach.image}
         desc={coach.desc}
       />
-      <AboutCoach name={coach.about.title} paras={coach.about.desc} />
+      <AboutCoach name={coach.about?.title} paras={coach.about?.desc} />
       <WhyCoach
         name={coach.whyCoach.title}
         image={coach.whyCoach.image}
