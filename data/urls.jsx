@@ -1,5 +1,5 @@
 // Pages
-export const WLENESS_URL = "https://wleness.com";
+export const WLENESS_URL = "https://www.wleness.com";
 export const HOME = "/";
 export const BLOGS = "/self-help-articles";
 export const BLOGS_CATEGORY = "/self-help-articles/:category";
