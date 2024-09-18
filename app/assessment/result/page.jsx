@@ -1,5 +1,5 @@
 "use client";
-import { Chart, ArcElement, Tooltip, Legend, controllers } from "chart.js";
+import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
 import getBlogs from "@utils/getBlogs";
@@ -7,9 +7,7 @@ import { self_assessments } from "@data/self_assessment";
 import getExperts from "@utils/getExperts";
 import BlogCard from "@components/Cards/BlogCard";
 import CoachExpertise from "@components/Coach/Profile/CoachExpertise";
-import ExpertsCard from "@components/Cards/ExpertsCard";
-import Link from "next/link";
-import { getLocalItem, setLocalItem } from "@utils";
+import { getLocalItem } from "@utils";
 import Specialist from "@components/Experts/Specialist";
 
 Chart.register(ArcElement, Tooltip, Legend);
