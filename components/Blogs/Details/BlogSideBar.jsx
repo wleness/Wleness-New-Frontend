@@ -43,12 +43,12 @@ export default function BlogSideBar({ blogCategories, recentBlogs }) {
             {blogCategories?.map((value, i) => {
               return (
                 <li key={i} className="flex justify-between px-4 font-semibold">
-                  <span
-                    // href={`${BLOGS}/${value.slug}`}
+                  <Link
+                    href={`${BLOGS}/category/${value.slug}`}
                     className="transition-all text-slate-200 hover:text-primary-one"
                   >
                     {value.category}
-                  </span>
+                  </Link>
                 </li>
               );
             })}
