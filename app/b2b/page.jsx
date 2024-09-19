@@ -66,6 +66,7 @@ export default function page() {
         title="we amplify human performance & engagement."
         subtitle="business = f(money-in, money-out) = f(your frontline)"
         desc="your frontline brings your topline & defines your bottomline."
+        button={["Connect", "/#patterns"]}
         clients={clients}
       />
       <FrontlineGrowth />
