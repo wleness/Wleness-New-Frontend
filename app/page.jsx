@@ -9,7 +9,7 @@ import { WLENESS_URL } from "@data/urls";
 
 export const metadata = {
   title:
-    "Wleness - Best Online Therapy &amp; Counseling | Best psychologist in India",
+    "Wleness - Best Online Therapy and Counseling | Best psychologist in India",
   description:
     "Wleness offers best online counseling &amp; therapy with top psychologists in India. Address anxiety, depression, or any mental health concern through convenient chat, call, or video sessions.",
   alternates: {

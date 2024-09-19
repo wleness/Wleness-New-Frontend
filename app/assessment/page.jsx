@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { self_assessments } from "@data/self_assessment";
 import getCanonical from "@utils/getCanonical";
-import { SELF_ASSESSMENT } from "@data/urls";
+import { ASSESSMENT } from "@data/urls";
 
 export const metadata = {
   title: "Get Wleness Mental Health Assessment | Wleness",
   description:
     "Gain valuable insights into your mental well-being with Wleness online mental health assessment. Confidential & personalized feedback. Take control of your mental health today! ",
   alternates: {
-    canonical: getCanonical(SELF_ASSESSMENT),
+    canonical: getCanonical(ASSESSMENT),
   },
 };
 
