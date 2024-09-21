@@ -63,7 +63,7 @@ header {
 
 /* Headings */
 .subheading {
-  @apply inline-block pb-2 font-quicksand text-3xl font-bold capitalize leading-10 lg:text-[2rem] 4xl:text-4xl;
+  @apply inline-block pb-2 font-quicksand text-3xl font-bold lowercase leading-10 lg:text-[2rem] 4xl:text-4xl;
 }
 .heading-primary {
   @apply bg-gradient-to-r from-primary-one to-yellow-400 bg-clip-text text-transparent;

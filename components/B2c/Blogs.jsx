@@ -32,7 +32,7 @@ export default function Blogs() {
   return (
     <section className="bg-primary-two pt-10 xl:pt-16">
       <div className="flex flex-col items-center justify-center text-center mb-5">
-        <PrimaryTitle theme={false} text={"Self Help Articles"} />
+        <PrimaryTitle text={"Self-Help Articles"} />
       </div>
       <div className="container mx-auto border border-primary-one rounded-xl py-14 lg:pt-20">
         <div className="grid gap-8 lg:grid-cols-3 lg:gap-8 px-5 ">

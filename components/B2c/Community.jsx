@@ -4,14 +4,13 @@ import PrimaryTitle from "@components/Title/PrimaryTitle";
 import Certifications from "@components/common/Certifications";
 
 export default function Community() {
-  const box_class = "mx-auto xl:w-[1280px] xl:px-[184px]";
   return (
     <section className="bg-primary-two">
       <div>
-        <hgroup className={`grid ${box_class}`}>
+        <hgroup className="grid container mx-auto">
           <PrimaryTitle text={"Your Mental Health Mechanic"} />
           {/* <PrimaryTitle text={"Designers create. Operators run."} /> */}
-          <h4 className="font-semibold text-primary-one text-lg text-center">
+          <h4 className="font-semibold text-slate-400 text-lg text-center">
             We Support Your Emotional and Mental Health Needs
           </h4>
         </hgroup>
@@ -42,7 +41,7 @@ export default function Community() {
         <div className="relative">
           <Image
             src={EngineersMarketers}
-            className="mx-auto w-[90%]"
+            className="mx-auto w-full"
             alt="Engineers marketers"
           />
 
@@ -84,7 +83,7 @@ export default function Community() {
               Best Psychologist in India, Therapist, Psychiatrist, Coaches
             </h2>
           </div>
-          <div className={`${box_class}`}>
+          <div className="container mx-auto">
             <Certifications />
           </div>
         </div>
