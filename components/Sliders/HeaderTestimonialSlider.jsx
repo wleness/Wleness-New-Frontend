@@ -33,7 +33,7 @@ export default function HeaderTestimonialSlider() {
             <SwiperSlide key={i}>
               <figure
                 key={i}
-                className={`${value.bg} py-2 px-4 space-y-2 rounded-lg`}
+                className={`${value.bg} py-2 px-4 3xl:py-6 space-y-2 rounded-lg`}
               >
                 <div className="flex gap-x-4">
                   <div>
