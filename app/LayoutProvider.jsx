@@ -15,6 +15,7 @@ export const LayoutProvider = ({ children }) => {
     "/experts/login",
     "/experts/dashboard",
     "/experts/payment",
+    "/registration",
   ];
 
   const pathname = usePathname();

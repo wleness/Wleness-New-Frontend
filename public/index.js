@@ -1459,3 +1459,7 @@ India's Most Diverse Holistic Platform,
 Healthy Habits,
 Energy Healing Practices 
 **/
+
+import LandingPageHeaderImage from "./images/landingpage/d1.png";
+import LandingPageImage from "./images/landingpage/w1.jpg";
+export { LandingPageHeaderImage, LandingPageImage };

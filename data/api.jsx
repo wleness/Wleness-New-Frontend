@@ -87,3 +87,6 @@ export const GET_SESSION_DETAILS = URI + "get-session-details";
 export const APPLY_BOOKING_COUPON = URI + "apply-booking-coupon";
 
 // Razorpay Key
+
+// Landing page user resgistration
+export const LANDINGPAGE_SIGNUP = URI + "registration";
