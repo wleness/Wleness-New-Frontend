@@ -42,13 +42,18 @@ export default function SignupModal({ isOpen, onClose }) {
     axios
       .post(LANDINGPAGE_SIGNUP, userData)
       .then((res) => {
-        console.log(res);
         if (res.data.status == "success") {
           setAlert("success", "User created successfully");
+          setUserData({
+            name: "",
+            email: "",
+            phone: "",
+          });
         } else {
           setAlert("error", "Please! Try Again");
         }
         window.location = "https://rzp.io/rzp/stress-management-for-trader";
+        setAlert("", "");
       })
       .catch((error) => setAlert("error", "Please! Try Again."));
   };
