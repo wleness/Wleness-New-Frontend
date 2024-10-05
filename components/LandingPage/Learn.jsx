@@ -16,8 +16,8 @@ export default function Learn() {
     <section className="bg-slate-950 py-20">
       <div className="container mx-auto">
         <h3 className="text-4xl font-bold text-white text-center mb-5 xl:mb-12">
-          What You'll Learn in This{" "}
-          <span className="text-primary">Webinar</span>
+          What You&apos;ll Learn in This
+          <span className="text-primary"> Webinar</span>
         </h3>
 
         <div className="grid grid-cols-2 gap-10 items-center">

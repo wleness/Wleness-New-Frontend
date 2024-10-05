@@ -57,10 +57,10 @@ export default function WhyStressful() {
               </li>
             </ul>
             <p className="text-white">
-              We've got something that could really help. Wleness is organizing
-              an insightful webinar on Stress Management for Traders. It's
-              designed to help you take control of the stress that comes with
-              trading and give you tools to handle it better.
+              We&apos;ve got something that could really help. Wleness is
+              organizing an insightful webinar on Stress Management for Traders.
+              It&apos;s designed to help you take control of the stress that
+              comes with trading and give you tools to handle it better.
             </p>
           </div>
         </div>
