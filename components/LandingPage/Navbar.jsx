@@ -4,6 +4,29 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useState } from "react";
 
+const links = [
+  {
+    name: "Home",
+    slug: "/registration",
+  },
+  {
+    name: "Learn",
+    slug: "#learn",
+  },
+  {
+    name: "Webinar",
+    slug: "#webinar",
+  },
+  {
+    name: "Testimonials",
+    slug: "#testimonials",
+  },
+  {
+    name: "FAQs",
+    slug: "#faqs",
+  },
+];
+
 export default function Navbar() {
   const [active, setActive] = useState(false);
   return (
@@ -22,24 +45,16 @@ export default function Navbar() {
               active ? "grid gap-4" : "hidden"
             }`}
           >
-            <li
-              className="hover:text-primary-one"
-              onClick={() => setActive(false)}
-            >
-              <Link href="/registration">Home</Link>
-            </li>
-            <li
-              className="hover:text-primary-one"
-              onClick={() => setActive(false)}
-            >
-              <a href="#">Contact</a>
-            </li>
-            <li
-              className="hover:text-primary-one"
-              onClick={() => setActive(false)}
-            >
-              <a href="#">About us</a>
-            </li>
+            {links.map((value, i) => {
+              return (
+                <li
+                  className="hover:text-primary-one"
+                  onClick={() => setActive(false)}
+                >
+                  <Link href={value.slug}>{value.name}</Link>
+                </li>
+              );
+            })}
           </ul>
 
           <button className="lg:hidden" onClick={() => setActive(!active)}>

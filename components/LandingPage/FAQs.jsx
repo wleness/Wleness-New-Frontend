@@ -40,7 +40,7 @@ export default function FAQs() {
   };
 
   return (
-    <section className="bg-black py-12 lg:py-28">
+    <section className="bg-black py-12 lg:py-28" id="faqs">
       <div className="container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-10">
         <div>
           <h2 className="font-bold text-3xl lg:text-5xl text-white mb-8">

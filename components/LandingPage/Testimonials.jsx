@@ -42,7 +42,7 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <section className="py-12 lg:py-24 bg-black">
+    <section className="py-12 lg:py-24 bg-black" id="testimonials">
       <div>
         <div className="mb-10 xl:mb-16 container mx-auto">
           <h3 className="text-3xl lg:text-4xl text-center font-bold text-white">

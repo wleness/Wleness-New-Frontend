@@ -6,7 +6,7 @@ export default function JoinWebinar() {
   const { enquiryForm, toggleForm } = useEnquiryForm();
   return (
     <>
-      <section className="py-16 bg-primary-one">
+      <section className="py-16 bg-primary-one" id="webinar">
         <div className="flex flex-col justify-center items-center">
           <div className="lg:w-[600px] space-y-8  text-center">
             <h2 className="text-3xl lg:text-4xl font-bold">

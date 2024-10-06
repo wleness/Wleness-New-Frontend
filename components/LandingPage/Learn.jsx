@@ -13,7 +13,7 @@ const list_data = [
 
 export default function Learn() {
   return (
-    <section className="bg-slate-950 py-12 lg:py-20">
+    <section className="bg-slate-950 py-12 lg:py-20" id="learn">
       <div className="container mx-auto">
         <h3 className="text-3xl lg:text-4xl font-bold text-white text-center mb-5 xl:mb-12">
           What You&apos;ll Learn in This
