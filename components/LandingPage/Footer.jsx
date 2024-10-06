@@ -7,6 +7,8 @@ import {
 import {
   faFacebookF,
   faInstagram,
+  faLinkedin,
+  faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,18 +29,23 @@ export default function Footer() {
           </p>
           <div className="flex gap-4 text-primary-one text-xl">
             <div>
-              <Link href="#">
+              <Link href="https://www.instagram.com/wleness/">
                 <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" />
               </Link>
             </div>
             <div>
-              <Link href="#">
-                <FontAwesomeIcon icon={faYoutube} className="w-5 h-5" />
+              <Link href="http://facebook.com/profile.php?id=100094475627706">
+                <FontAwesomeIcon icon={faFacebookF} className="w-5 h-5" />
               </Link>
             </div>
             <div>
-              <Link href="#">
-                <FontAwesomeIcon icon={faFacebookF} className="w-5 h-5" />
+              <Link href="https://www.linkedin.com/company/wleness/">
+                <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
+              </Link>
+            </div>
+            <div>
+              <Link href="http://twitter.com/wleness111">
+                <FontAwesomeIcon icon={faXTwitter} className="w-5 h-5" />
               </Link>
             </div>
           </div>

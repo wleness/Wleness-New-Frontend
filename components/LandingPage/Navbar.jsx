@@ -7,7 +7,7 @@ import { useState } from "react";
 const links = [
   {
     name: "Home",
-    slug: "/registration",
+    slug: "/",
   },
   {
     name: "Learn",
@@ -32,10 +32,7 @@ export default function Navbar() {
   return (
     <nav className="bg-black py-10">
       <div className="flex container mx-auto justify-between">
-        <Link
-          href="/registration"
-          className="font-extrabold text-primary-one text-3xl"
-        >
+        <Link href="/" className="font-extrabold text-primary-one text-3xl">
           Wleness
         </Link>
 
