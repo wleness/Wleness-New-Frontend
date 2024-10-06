@@ -48,6 +48,7 @@ export default function Navbar() {
             {links.map((value, i) => {
               return (
                 <li
+                  key={i}
                   className="hover:text-primary-one"
                   onClick={() => setActive(false)}
                 >
