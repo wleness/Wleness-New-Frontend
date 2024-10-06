@@ -1460,6 +1460,13 @@ Healthy Habits,
 Energy Healing Practices 
 **/
 
-import LandingPageHeaderImage from "./images/landingpage/d1.png";
-import LandingPageImage from "./images/landingpage/w1.jpg";
-export { LandingPageHeaderImage, LandingPageImage };
+import LandingPageHeaderImage from "./images/landingpage/hero-bg.jpg";
+import TradingSuccess from "./images/landingpage/trading-success.jpg";
+import WhatYouWillLearn from "./images/landingpage/what-you-will-learn.jpg";
+import WhyStressfull from "./images/landingpage/why-stressful.jpg";
+export {
+  LandingPageHeaderImage,
+  TradingSuccess,
+  WhatYouWillLearn,
+  WhyStressfull,
+};

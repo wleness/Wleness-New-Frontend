@@ -11,9 +11,8 @@ export default function Header() {
       <header className="bg-black py-8 lg:py-20">
         <div className="container mx-auto grid gap-10 lg:grid-cols-2 justify-between items-center">
           <div className="lg:order-2 flex flex-col lg:flex-row justify-center relative items-center">
-            <div className="z-10 bg-primary-one w-72 h-72 lg:w-[28rem] lg:h-[28rem] rounded-full border-[1.2rem] border-slate-800"></div>
             <Image
-              className="rounded-full z-10 lg:w-[32rem] lg:h-[32rem] absolute bottom-5"
+              className="rounded-full z-10 lg:w-[28rem] lg:h-[28rem] border-[20px] border-slate-900 object-cover"
               src={LandingPageHeaderImage}
               alt="main header image"
             />

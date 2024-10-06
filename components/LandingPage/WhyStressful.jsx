@@ -1,6 +1,6 @@
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { LandingPageImage } from "@public";
+import { LandingPageImage, TradingSuccess } from "@public";
 import Image from "next/image";
 
 export default function WhyStressful() {
@@ -15,8 +15,8 @@ export default function WhyStressful() {
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <Image
-              className="object-cover rounded-lg"
-              src={LandingPageImage}
+              className="object-cover rounded-lg lg:w-96 mx-auto"
+              src={TradingSuccess}
               alt=""
             />
           </div>

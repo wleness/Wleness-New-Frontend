@@ -1,6 +1,6 @@
 import { faCheckToSlot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { LandingPageImage } from "@public";
+import { WhyStressfull } from "@public";
 import Image from "next/image";
 
 const points = [
@@ -27,7 +27,7 @@ export default function WhyChoose() {
             <div className="bg-white bg-opacity-70 w-20 h-20 absolute rounded-full flex justify-center items-center text-2xl text-[#3ac8b8]">
               <i className="fa-solid fa-play"></i>
             </div>
-            <Image className="rounded-xl" src={LandingPageImage} alt="" />
+            <Image className="rounded-xl" src={WhyStressfull} alt="" />
           </div>
           <div className="space-y-6 lg:space-y-7 lg:order-1">
             {points.map((value, i) => {

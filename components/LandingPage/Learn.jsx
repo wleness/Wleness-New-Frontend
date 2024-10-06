@@ -1,6 +1,6 @@
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { LandingPageImage } from "@public";
+import { LandingPageImage, WhatYouWillLearn } from "@public";
 import Image from "next/image";
 
 const list_data = [
@@ -17,14 +17,14 @@ export default function Learn() {
       <div className="container mx-auto">
         <h3 className="text-3xl lg:text-4xl font-bold text-white text-center mb-5 xl:mb-12">
           What You&apos;ll Learn in This
-          <span className="text-primary"> Webinar</span>
+          <span className="text-primary-one"> Webinar</span>
         </h3>
 
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <Image
-              className="object-cover rounded-lg"
-              src={LandingPageImage}
+              className="object-cover rounded-lg w-96 mx-auto"
+              src={WhatYouWillLearn}
               alt=""
             />
           </div>

@@ -5,8 +5,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { clients } from "@data/b2c";
-import { montserrat, LandingPageImage } from "@public";
+import {
+  testimonial1,
+  testimonial2,
+  testimonial3,
+  testimonial4,
+} from "@public";
 import Image from "next/image";
 
 const reviews = [
@@ -15,28 +19,28 @@ const reviews = [
     designation: "Full-time trader",
     review:
       "Since applying the stress management techniques, I've been able to trade more calmly and avoid those emotional, costly mistakes",
-    image: LandingPageImage,
+    image: testimonial3,
   },
   {
     name: "Priya",
     designation: "Day trader",
     review:
       "I can finally think clearly during high-pressure trades. This program really works!",
-    image: LandingPageImage,
+    image: testimonial2,
   },
   {
     name: "Amruta",
     designation: "Full-time trader",
     review:
       "Since applying the stress management techniques, I've been able to trade more calmly and avoid those emotional, costly mistakes",
-    image: LandingPageImage,
+    image: testimonial1,
   },
   {
     name: "Saniya",
     designation: "Investor",
     review:
       "Since applying the stress management techniques, I've been able to trade more calmly and avoid those emotional, costly mistakes",
-    image: LandingPageImage,
+    image: testimonial4,
   },
 ];
 
@@ -82,9 +86,7 @@ export default function Testimonials() {
                       <Image
                         src={value.image}
                         alt={value.name}
-                        width={30}
-                        height={30}
-                        className="rounded-full xl:w-12 xl:h-12 object-cover"
+                        className="rounded-full xl:w-14 xl:h-14 object-cover"
                       />
                       <div className="flex flex-col items-start">
                         <span className="text-white font-medium">
