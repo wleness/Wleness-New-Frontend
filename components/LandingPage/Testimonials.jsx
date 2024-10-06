@@ -42,15 +42,15 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-black">
+    <section className="py-12 lg:py-24 bg-black">
       <div>
         <div className="mb-10 xl:mb-16 container mx-auto">
-          <h3 className="text-4xl text-center font-bold text-white">
+          <h3 className="text-3xl lg:text-4xl text-center font-bold text-white">
             Trusted by <span className="text-primary-one"> Traders </span> Think
             Like You
           </h3>
         </div>
-        <div className="px-10">
+        <div className="px-4 lg:px-10">
           <Swiper
             modules={[Autoplay]}
             slidesPerView={1}
@@ -75,7 +75,7 @@ export default function Testimonials() {
                     key={i}
                     className="bg-slate-900 px-6 space-y-2 rounded-lg"
                   >
-                    <figcaption className="text-slate-200 py-4 xl:py-8 text-sm font-medium">
+                    <figcaption className="text-slate-200 py-6 xl:py-8 text-sm font-medium">
                       {value.review}
                     </figcaption>
                     <div className="flex items-center py-6 gap-x-4 border-t border-slate-600">

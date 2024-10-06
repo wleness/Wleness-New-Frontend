@@ -8,11 +8,11 @@ export default function JoinWebinar() {
     <>
       <section className="py-16 bg-primary-one">
         <div className="flex flex-col justify-center items-center">
-          <div className="w-[600px] space-y-8  text-center">
-            <h2 className="text-4xl font-bold">
+          <div className="lg:w-[600px] space-y-8  text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold">
               Join Our Exclusive Webinar: Stress Management for Traders
             </h2>
-            <div className="font-medium">
+            <div className="font-medium px-4">
               <p>
                 <strong>Date & Time</strong>: October 18th, 4:00 PM - 5:30 PM
                 (IST)

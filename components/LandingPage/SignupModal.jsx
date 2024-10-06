@@ -65,7 +65,7 @@ export default function SignupModal({ isOpen, onClose }) {
     <section className="fixed inset-0 z-50 place-items-center bg-black/40 transition-all grid">
       <div className="w-4/5 rounded-2xl bg-slate-900 p-6 transition-all lg:w-[420px] border border-primary-one-one">
         <div className="text-center">
-          <h2 className="text-lg font-semibold text-white">Sign Up</h2>
+          <h2 className="text-lg font-semibold text-white mb-4">Sign Up</h2>
         </div>
         <form className="lg:py-2" onSubmit={handleSignup}>
           <label for="name">

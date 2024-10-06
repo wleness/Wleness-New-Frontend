@@ -8,8 +8,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="py-16 bg-slate-950">
-      <div className="container mx-auto grid grid-cols-[2fr_1fr_1fr_1fr] gap-5">
+    <footer className="py-12 lg:py-16 bg-slate-950">
+      <div className="container mx-auto grid lg:grid-cols-[2fr_1fr_1fr_1fr] gap-5">
         <div className="pr-10">
           <span className="font-bold text-primary-one text-2xl">Wleness</span>
           <p className="mt-3 text-slate-300">

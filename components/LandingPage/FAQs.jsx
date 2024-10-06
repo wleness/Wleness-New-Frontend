@@ -40,10 +40,10 @@ export default function FAQs() {
   };
 
   return (
-    <section className="bg-black py-16 lg:py-28">
-      <div className="container mx-auto grid xl:grid-cols-2 gap-8 lg:gap-12">
+    <section className="bg-black py-12 lg:py-28">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-10">
         <div>
-          <h2 className="font-bold text-5xl text-white mb-8">
+          <h2 className="font-bold text-3xl lg:text-5xl text-white mb-8">
             <p>Your Questions</p>
             <p>Answered</p>
           </h2>
@@ -62,7 +62,7 @@ export default function FAQs() {
                 >
                   <h4
                     onClick={() => handleActive(i)}
-                    className="font-dm-sans text-lg font-semibold items-center text-white hover:text-primary-one grid grid-cols-[4fr_1fr]"
+                    className="font-dm-sans lg:text-lg font-semibold items-center text-white hover:text-primary-one grid grid-cols-[4fr_1fr]"
                   >
                     <span>{value.question}</span>
                     <span className="text-right">
@@ -73,7 +73,7 @@ export default function FAQs() {
                     </span>
                   </h4>
                   {active == i && (
-                    <p className="footer-text  mt-4 text-slate-300">
+                    <p className="text-sm lg:text-base mt-4 text-slate-300">
                       {value.answer}
                     </p>
                   )}

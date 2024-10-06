@@ -5,14 +5,14 @@ import Image from "next/image";
 
 export default function WhyStressful() {
   return (
-    <section className="bg-slate-950 py-20">
+    <section className="bg-slate-950 py-16 lg:py-20">
       <div className="container mx-auto">
-        <h3 className="text-4xl font-bold text-white text-center mb-5 xl:mb-12">
+        <h3 className="text-3xl lg:text-4xl font-bold text-white text-center mb-5 xl:mb-12">
           Why Managing Stress is Key to Your
           <span className="text-primary-one"> Trading Success</span>
         </h3>
 
-        <div className="grid grid-cols-2 gap-10 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <Image
               className="object-cover rounded-lg"
