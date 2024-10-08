@@ -55,6 +55,12 @@ export default function PrimaryNavbar() {
             </span>
           </Link>
 
+          <Link
+            className="text-primary-one font-medium lg:ml-2"
+            href={"/registration"}
+          >
+            Webinar
+          </Link>
           <button name="menu-button" type="button" onClick={openMenu}>
             <FontAwesomeIcon
               icon={faBars}
@@ -87,6 +93,7 @@ export default function PrimaryNavbar() {
               close={closeMenu}
             />
             <MenuLink url={ALL_EXPERTS} text="Our Experts" close={closeMenu} />
+            <MenuLink url={"/registration"} text="Webinar" close={closeMenu} />
             <MenuLink
               url={ASSESSMENT}
               text="Self Assessment"

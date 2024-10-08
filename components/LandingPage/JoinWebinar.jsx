@@ -1,6 +1,8 @@
 "use client";
 import useEnquiryForm from "@utils/useEnquiryForm";
 import SignupModal from "./SignupModal";
+import Image from "next/image";
+import { swatiGhoshalPortrait, WebinarGuest1, WebinarGuest2 } from "@public";
 
 export default function JoinWebinar() {
   const { enquiryForm, toggleForm } = useEnquiryForm();
@@ -30,6 +32,40 @@ export default function JoinWebinar() {
               >
                 Enroll Now
               </button>
+            </div>
+          </div>
+        </div>
+        <div className="container mt-10 xl:mt-20 text-center mx-auto">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6 xl:mb-10">
+            Our Guest Speakers
+          </h2>
+
+          <div className="flex flex-col md:flex-row items-center gap-5 xl:gap-10 justify-center">
+            <div>
+              <Image
+                src={WebinarGuest1}
+                alt="this is the alt text"
+                className="w-56 h-56 object-cover rounded-full shadow-md"
+              />
+              <h5 className="font-bold text-xl">Swati Ghoshal</h5>
+              <p className="text-sm font-medium">
+                Psychologist & CBT Practitioner
+              </p>
+              <p className="text-sm font-medium">8+ years of experience</p>
+              <p className="text-sm font-medium">Hindi, English & Bengali</p>
+            </div>
+            <div>
+              <Image
+                src={WebinarGuest2}
+                alt="this is the alt text"
+                className="w-56 h-56 object-cover rounded-full shadow-md"
+              />
+              <h5 className="font-bold text-xl">Shivani Narang</h5>
+              <p className="text-sm font-medium">Mindfulness & Yoga Coach</p>
+              <p className="text-sm font-medium">
+                Certified in mindfulness and meditation
+              </p>
+              <p className="text-sm font-medium">Diploma in coaching</p>
             </div>
           </div>
         </div>

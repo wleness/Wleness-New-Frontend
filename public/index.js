@@ -666,6 +666,8 @@ import expertsWhy3 from "./images/experts/why-3.webp";
 import specialist1 from "./images/experts/specialist-1.png";
 import expertClient from "./images/experts/expert-client.png";
 import featuredPatient from "./images/experts/featuredPatient.png";
+import WebinarGuest1 from "./images/experts/guest-1.jpg";
+import WebinarGuest2 from "./images/experts/guest-2.jpg";
 
 export {
   doctor1,
@@ -681,6 +683,8 @@ export {
   specialist1,
   expertClient,
   featuredPatient,
+  WebinarGuest1,
+  WebinarGuest2,
 };
 
 // Services Images
