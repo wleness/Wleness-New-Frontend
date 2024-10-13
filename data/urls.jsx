@@ -135,3 +135,6 @@ export const EC_COACH_ANDREA_BIANCHI = "/coach/andrea-bianchi";
 export const LS_COACH_RIDHI_BAJAJ = "/coach/ridhi-bajaj";
 export const LS_COACH_TANUJA_CHOUDHURY = "/coach/tanuja-choudhury";
 export const LS_COACH_SHIVANI_NARANG = "/coach/shivani-narang";
+
+// Configuration
+export const GTM_ID = "G-2FD61NETZL";

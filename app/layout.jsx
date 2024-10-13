@@ -1,6 +1,8 @@
 import { LayoutProvider } from "./LayoutProvider";
 import "../public/styles/globals.css";
 import Script from "next/script";
+import { GoogleTagManager } from "@next/third-parties/google";
+import { GTM_ID } from "@data/urls";
 
 export const metadata = {
   title:
@@ -12,6 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId={GTM_ID} />
       <body>
         <Script
           type="text/javascript"
