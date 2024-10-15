@@ -4,6 +4,10 @@ import { GENERAL_ENQUIRY_URI } from "@data/api";
 import { useRouter } from "next/navigation";
 
 export default function EnquiryForm({ isOpen, onClose, purpose }) {
+  if (!isOpen) {
+    return null;
+  }
+
   const router = useRouter();
 
   // Handle Joining Form
