@@ -9,6 +9,9 @@ export const metadata = {
     "Wleness - Best Online Therapy & Counseling | Best psychologist in India",
   description:
     "Wleness offers best online counseling & therapy with top psychologists in India. Address anxiety, depression, or any mental health concern through convenient chat, call, or video sessions.",
+  verification: {
+    google: "7ZPiRbEkyzTOk1rCf-fRYLOSl_k_ev1-sgwTLkVGT3A",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -23,6 +26,9 @@ export default function RootLayout({ children }) {
           widget-id="Tvl1K8"
         />
         <LayoutProvider>{children}</LayoutProvider>
+        <Script id="gtm" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', ${GTM_ID});`}
+        </Script>
       </body>
     </html>
   );

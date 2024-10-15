@@ -24,12 +24,6 @@ export const LayoutProvider = ({ children }) => {
   } else {
     return (
       <>
-        {/* <PrimaryNavbar scrollToPattern={scrollToPattern} /> */}
-        {/* {Children.map(children, (child) =>
-          cloneElement(child, {
-            ref: ref,
-            })
-            )} */}
         <PrimaryNavbar />
         {children}
         <CTA isMobile={false} />

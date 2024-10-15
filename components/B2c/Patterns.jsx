@@ -1,6 +1,6 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState, forwardRef } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 import { montserrat } from "@/public";
@@ -12,7 +12,7 @@ import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import PrimaryTitle from "@components/Title/PrimaryTitle";
 import { same_patterns } from "@data/b2c";
 
-const Patterns = forwardRef((props) => {
+export default function Patterns() {
   const [activeTab, setActiveTab] = useState(same_patterns[0]);
   const [myPatterns, setMyPatterns] = useState(["Anxiety", "Trust Issues"]);
 
@@ -155,7 +155,4 @@ const Patterns = forwardRef((props) => {
       </div>
     </section>
   );
-});
-
-Patterns.displayName = "Patterns";
-export default Patterns;
+}
