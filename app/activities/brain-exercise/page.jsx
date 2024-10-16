@@ -1,6 +1,17 @@
 import Header from "@components/Activities/Header";
 import GamesCard from "@components/Cards/GamesCard";
 import { brain_exercise } from "@data/activities";
+import { BRAIN_EXERCISE } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
+
+export const metadata = {
+  title: "Cognitive Exercises Online | Wleness",
+  description:
+    " Wleness Life Coaching program help you to achieve your goals and live a fulfilling life. Schedule a consultation today!",
+  alternates: {
+    canonical: getCanonical(BRAIN_EXERCISE),
+  },
+};
 
 export default function page() {
   return (

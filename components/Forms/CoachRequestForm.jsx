@@ -1,3 +1,4 @@
+"use client";
 import { COACH_CALLBACK_URI } from "@data/api";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

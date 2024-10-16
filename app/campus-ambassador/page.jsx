@@ -1,9 +1,6 @@
-"use client";
-import { useState } from "react";
 // Data
 import {
   campusAmbassadorHeader,
-  campusAmbassadorTeam,
   doodle2,
   roleCampus,
   roleProgram,
@@ -15,7 +12,10 @@ import {
   whyToApply4,
 } from "@public";
 import Image from "next/image";
-import CampusAmbassadorForm from "@components/Forms/CampusAmbassadorForm";
+import WhoCanJoinCampus from "@components/Cards/WhoCanJoinCampus";
+import OurCampusProgram from "@components/Cards/OurCampusProgram";
+import getCanonical from "@utils/getCanonical";
+import { CAMPUS_AMBASSADOR } from "@data/urls";
 
 const roles = [
   [roleSMM, "Social Media & Public Marketing"],
@@ -48,16 +48,16 @@ export const whyToApplyCampus = [
   },
 ];
 
+export const metadata = {
+  title: "Join the Wleness Campus Team | Wleness",
+  description:
+    " Wleness Life Coaching program help you to achieve your goals and live a fulfilling life. Schedule a consultation today!",
+  alternates: {
+    canonical: getCanonical(CAMPUS_AMBASSADOR),
+  },
+};
+
 export default function CampusAmbassadorPage() {
-  const [campusModal, setcampusModal] = useState(false);
-
-  const openCampusModal = () => {
-    setcampusModal(true);
-  };
-
-  const closeCampusModal = () => {
-    setcampusModal(false);
-  };
   return (
     <>
       <header className="relative overflow-y-auto overflow-x-hidden bg-black py-6 text-center">
@@ -74,56 +74,7 @@ export default function CampusAmbassadorPage() {
       </header>
 
       {/* Our Program */}
-      <section className="pb-10 pt-4 bg-primary-two">
-        <div className="container mx-auto ">
-          {/* <h2 className="text-center text-2xl font-bold text-primary-300 lg:px-44 lg:text-4xl"> */}
-          <h2 className="subheading text-center !text-xl text-primary-one lg:px-44 lg:!text-3xl">
-            Welcome to our Health and Wellness Campus Ambassador Program!
-          </h2>
-          <p className="para my-7 text-center lg:my-8 lg:px-12">
-            Are you passionate about promoting a peaceful & stress free
-            lifestyle and inspiring others to prioritize their well-being? Join
-            our dynamic team of Campus Ambassadors and become a driving force
-            for positive change on your campus.
-          </p>
-          <div className="mb-6 text-center">
-            <button className="btn-one" onClick={openCampusModal}>
-              Join Us Now
-            </button>
-          </div>
-          <div>
-            <figure className="lg:flex lg:gap-x-5 lg:py-12">
-              <div className="pb-8 lg:order-2 lg:w-2/5 lg:pb-0">
-                <Image
-                  src={campusAmbassadorTeam}
-                  alt="Join Us Now"
-                  className="mx-auto block w-fit object-cover"
-                />
-              </div>
-              <figcaption className="self-center lg:order-1 lg:w-3/5">
-                <div className="mr-10 rounded-2xl border-2 border-primary-one px-6 py-3 text-sm md:text-base lg:mr-20">
-                  <p className="font-medium text-slate-300">
-                    As an ambassador, you will have the opportunity to engage
-                    with fellow students, organize exciting health-focused
-                    events, share valuable wellness tips, and contribute to a
-                    thriving community dedicated to fostering physical, mental,
-                    and emotional wellness.
-                  </p>
-                </div>
-                <div className="-mt-2 ml-10 rounded-2xl rounded-br-[4rem] bg-primary-one px-6 py-3 text-sm shadow-lg md:text-base lg:ml-20">
-                  <p className="font-medium">
-                    By becoming a part of our Wellness Campus Ambassador
-                    Program, you&apos;re not just joining a team - you&apos;re
-                    joining a movement. Your passion for wellness will have a
-                    ripple effect, touching the lives of your peers and creating
-                    a lasting legacy of health consciousness.
-                  </p>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+      <OurCampusProgram />
 
       {/* Why to Apply */}
       <section className="bg-primary-two">
@@ -188,25 +139,7 @@ export default function CampusAmbassadorPage() {
       </section>
 
       {/* Who can join */}
-      <section className="relative overflow-y-auto overflow-x-hidden bg-primary-two py-4 lg:py-8">
-        <div className="container mx-auto text-center">
-          <h2 className="subheading mb-4 text-white">
-            Who can join <span className="heading-primary">Wleness</span>
-          </h2>
-          <p className="mb-8 px-2 text-base font-semibold lg:px-10 lg:text-xl text-slate-400">
-            An energetic passionate Psychology Students pursuing
-            under-graduation & post-graduation from any university or college
-            across India.
-          </p>
-          <div>
-            <button className="btn-one" onClick={openCampusModal}>
-              Join Us Now
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <CampusAmbassadorForm isOpen={campusModal} onClose={closeCampusModal} />
+      <WhoCanJoinCampus />
     </>
   );
 }

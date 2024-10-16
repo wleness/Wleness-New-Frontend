@@ -347,6 +347,7 @@ export const coaches = [
     name: "Ridhi Bajaj",
     category: "lifestyle",
     profession: "Lifestyle Coach",
+    meta_title: "Prioritize Self-Care | Wleness",
     slug: LS_COACH_RIDHI_BAJAJ,
     alt: "Ridhi Bajaj - Lifestyle Coach - Wleness",
     displayPricing: true,
@@ -444,6 +445,7 @@ export const coaches = [
   },
   {
     name: "Tanuja Choudhury",
+    meta_title: "Nurture Your Mind and Soul | Wleness",
     profession: "Lifestyle Coach",
     category: "lifestyle",
     alt: "Tanuja Choudhary - Lifestyle Coach - Wleness",
@@ -535,6 +537,7 @@ export const coaches = [
   },
   {
     name: "Shivani Narang",
+    meta_title: "Discover Your Inner Strength | Wleness",
     category: "lifestyle",
     profession: "Mindfulness Coach",
     alt: "Shivani Narang - Lifestyle Coach - Wleness",
@@ -628,6 +631,7 @@ export const coaches = [
   },
   {
     name: "Saloni Gupta",
+    meta_title: "Online Therapy Appointments | Wleness",
     profession: "Executive Coach | Speaker",
     category: "executive",
     slug: EC_COACH_SALONI_GUPTA,
@@ -680,6 +684,8 @@ export const coaches = [
   },
   {
     name: "Dr. Anju Chawla",
+    meta_title: "Discover Personalized Therapy | Wleness",
+    meta_title: "Online Therapy Appointments | Wleness",
     profession: "Coach | Speaker | Trainer | Assessor",
     category: "executive",
     slug: EC_COACH_ANJU_CHAWLA,
@@ -727,6 +733,7 @@ export const coaches = [
   },
   {
     name: "Andrea Bianchi",
+    meta_title: "Personalized Therapy | Wleness",
     profession: "Executive Coach",
     category: "executive",
     slug: EC_COACH_ANDREA_BIANCHI,

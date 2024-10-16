@@ -5,12 +5,16 @@ import WhyUs from "@components/Experts/WhyUs";
 import Appointment from "@components/Experts/Appointment";
 import HappyClient from "@components/Sliders/HappyClient";
 import { doctorsPageClient } from "@data/clients";
-import { COUPLES_THERAPY, PSYCHIATRIST, THERAPY } from "@data/urls";
+import { COUPLES_THERAPY, EXPERTS, PSYCHIATRIST, THERAPY } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
 
 export const metadata = {
-  title: "Best Psychologist in India | Wleness",
+  title: "Wleness Experts | Online Mental Health Professionals",
   description:
     "Find the perfect match for your needs. Wleness connects you with India's top-rated psychologists for online therapy & counseling. Affordable & convenient. Get started now!",
+  alternates: {
+    canonical: getCanonical(EXPERTS),
+  },
 };
 
 const expertsTherapy = {

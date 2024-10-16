@@ -5,6 +5,18 @@ import RightImageList2 from "@components/Details/RightImageList2";
 import RightProcedureList from "@components/Details/RightProcedureList";
 import SubpagesConclusion from "@components/Details/SubpagesConclusion";
 import { meditation_details } from "@data/activities";
+import getCanonical from "@utils/getCanonical";
+
+export const generateMetadata = ({ params }) => {
+  const info = meditation_details[params.meditation_slug];
+  return {
+    title: info?.meta_title,
+    description: info?.header.desc,
+    alternates: {
+      canonical: getCanonical(info?.header.slug),
+    },
+  };
+};
 
 export default function Page({ params }) {
   const info = meditation_details[params.meditation_slug];

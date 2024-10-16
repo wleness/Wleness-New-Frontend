@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { yoga__montly_subscription, yoga__one_time_session } from "@public";
 import useEnquiryForm from "@utils/useEnquiryForm";

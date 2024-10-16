@@ -248,6 +248,7 @@ export const sadhna = {
 
 export const sadhna_details = {
   "yoga-sadhna": {
+    meta_title: "Deepen Your Practice with Yoga Sadhna | Wleness",
     header: {
       title: "Yoga Sadhana",
       slug: YOGA_SADHNA,
@@ -346,6 +347,7 @@ export const sadhna_details = {
     },
   },
   "meditation-sadhna": {
+    meta_title: "Start Meditating Today | Wleness",
     header: {
       title: "Meditation Sadhana",
       slug: MEDITATION_SADHNA,
@@ -448,6 +450,7 @@ export const sadhna_details = {
     },
   },
   "mantra-sadhna": {
+    meta_title: "Effective Mantra Meditation Techniques | Wleness",
     header: {
       title: "Mantra Sadhana",
       slug: MANTRA_SADHNA,
@@ -550,6 +553,7 @@ export const sadhna_details = {
     },
   },
   "japa-sadhna": {
+    meta_title: "Spiritual Healing with Japa | Wleness",
     header: {
       title: "Japa Sadhana",
       slug: JAPA_SADHNA,
@@ -652,6 +656,7 @@ export const sadhna_details = {
     },
   },
   "bhakti-sadhna": {
+    meta_title: "Online Bhakti Sadhna Therapy | Wleness",
     header: {
       title: "Bhakti Sadhana",
       slug: BHAKTI_SADHNA,
@@ -754,6 +759,7 @@ export const sadhna_details = {
     },
   },
   "kundalini-sadhna": {
+    meta_title: "Kundalini Meditation for Well-being | Wleness",
     header: {
       title: "Kundalini Sadhana",
       slug: KUNDALINI_MEDITATION,
@@ -860,6 +866,7 @@ export const sadhna_details = {
     },
   },
   "seva-sadhna": {
+    meta_title: "Online Seva Sadhna | Wleness",
     header: {
       title: "Seva Sadhana",
       slug: SEVA_SADHNA,
@@ -966,6 +973,7 @@ export const sadhna_details = {
     },
   },
   "nature-sadhna": {
+    meta_title: "Nature Therapy and Meditation | Wleness",
     header: {
       title: "Nature Sadhana",
       slug: NATURE_SADHNA,
@@ -1146,6 +1154,7 @@ export const meditation = {
 
 export const meditation_details = {
   "mindfulness-meditation": {
+    meta_title: "Mindful Meditation | Wleness",
     header: {
       title: "Mindfulness Meditation",
       slug: MINDFULNESS_MEDITATION,
@@ -1228,6 +1237,7 @@ export const meditation_details = {
     },
   },
   "breath-awareness-meditation": {
+    meta_title: "Breathing Exercises for Relaxation | Wleness",
     header: {
       title: "Breath Awareness Meditation",
       slug: BREADTH_AWARENESS_MEDITATION,
@@ -1315,6 +1325,7 @@ export const meditation_details = {
     },
   },
   "kundalini-meditation": {
+    meta_title: "Meditation for Stress Relief | Wleness",
     header: {
       title: "Kundalini Meditation",
       slug: KUNDALINI_MEDITATION,
@@ -1429,6 +1440,7 @@ export const meditation_details = {
     },
   },
   "zen-meditation": {
+    meta_title: "Find Your Inner Peace | Wleness",
     header: {
       title: "Zen Meditation (Zazen)",
       slug: ZEN_MEDITATION,
@@ -1519,6 +1531,7 @@ export const meditation_details = {
     },
   },
   "spiritual-meditation": {
+    meta_title: "Spiritual Healing with Japa | Wleness",
     header: {
       title: "Spiritual Meditation",
       slug: SPIRITUAL_MEDITATION,
@@ -1621,6 +1634,7 @@ export const meditation_details = {
     },
   },
   "walking-meditation": {
+    meta_title: "Walking Meditation | Wleness",
     header: {
       title: "Walking Meditation",
       slug: WALKING_MEDITATION,
@@ -1736,6 +1750,7 @@ export const meditation_details = {
     },
   },
   "vipassana-meditation": {
+    meta_title: "Guided Meditation Online | Wleness",
     header: {
       title: "Vipassana Meditation",
       slug: VIPASSANA_MEDITATION,
@@ -1815,6 +1830,7 @@ export const meditation_details = {
     },
   },
   "concentrative-meditation": {
+    meta_title: "Mindfulness Techniques | Wleness",
     header: {
       title: "Concentrate Meditation",
       slug: CONCENTRATIVE_MEDITATION,

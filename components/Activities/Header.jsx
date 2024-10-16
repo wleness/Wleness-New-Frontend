@@ -1,7 +1,12 @@
+"use client";
+import ActivityForm from "@components/Forms/ActivityForm";
 import { textColorize } from "@utils";
+import useEnquiryForm from "@utils/useEnquiryForm";
 import Image from "next/image";
 
 export default function Header(props) {
+  const { enquiryForm, toggleForm } = useEnquiryForm();
+
   return (
     <>
       <header className="relative animate-fadeIn overflow-x-clip bg-slate-900 pb-6 pt-12 xl:pb-10 xl:pt-16">
@@ -27,7 +32,7 @@ export default function Header(props) {
 
             {props.button && (
               <div className="text-center lg:text-left">
-                <button className="btn-one" onClick={props.button.action}>
+                <button className="btn-one" onClick={toggleForm}>
                   Enquire Now
                 </button>
               </div>
@@ -35,6 +40,12 @@ export default function Header(props) {
           </div>
         </div>
       </header>
+
+      <ActivityForm
+        purpose={props.name}
+        isOpen={enquiryForm}
+        onClose={toggleForm}
+      />
     </>
   );
 }

@@ -1,53 +1,34 @@
-"use client";
 import Header from "@components/Activities/Header";
-import InfoCard from "@components/Cards/InfoCard";
-import EnquiryForm from "@components/Forms/EnquiryForm";
+import MeditationTechniques from "@components/Activities/MeditationTechniques";
 import { meditation } from "@data/activities";
-import useEnquiryForm from "@utils/useEnquiryForm";
+import { MEDITATION } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
+
+export const metadata = {
+  title: "Guided Meditation for Beginners | Wleness",
+  description:
+    " Wleness Life Coaching program help you to achieve your goals and live a fulfilling life. Schedule a consultation today!",
+  alternates: {
+    canonical: getCanonical(MEDITATION),
+  },
+};
 
 export default function MeditationPage() {
-  const { enquiryForm, toggleForm } = useEnquiryForm();
-
   return (
     <>
       <Header
+        name={meditation.name}
         title={meditation.header.title}
         desc={meditation.header.desc}
         image={meditation.header.image}
         alt={meditation.header.alt}
-        button={{ text: "Enquire Now", action: toggleForm }}
+        button={{ text: "Enquire Now" }}
       />
-
-      <section className="pb-10 bg-primary-two">
-        <div className="container mx-auto">
-          <div className="rounded-2xl py-4 pt-8 text-center lg:pb-4 lg:pt-10">
-            <h2 className="subheading heading-primary">
-              {meditation.activities.title}
-            </h2>
-            <p className="font-semibold lg:text-lg text-slate-300">
-              {meditation.activities.desc}
-            </p>
-          </div>
-
-          {/* Sadhnas */}
-          <div className="grid gap-6 pb-4 lg:grid-cols-3 xl:grid-cols-4 xl:gap-0">
-            {meditation.activities.types.map((value, i) => {
-              return <InfoCard key={i} data={value} />;
-            })}
-          </div>
-
-          <div className="py-4 text-center">
-            <button onClick={toggleForm} className="btn-one">
-              Enquire Now
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <EnquiryForm
-        purpose={meditation.name}
-        isOpen={enquiryForm}
-        onClose={toggleForm}
+      <MeditationTechniques
+        name={meditation.name}
+        title={meditation.activities.title}
+        desc={meditation.activities.desc}
+        types={meditation.activities.types}
       />
     </>
   );

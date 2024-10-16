@@ -1,3 +1,4 @@
+"use client";
 import { textColorize } from "@utils";
 import { useState } from "react";
 

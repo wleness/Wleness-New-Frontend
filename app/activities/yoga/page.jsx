@@ -1,29 +1,37 @@
-"use client";
 import Header from "@components/Activities/Header";
 import YogaBenefits from "@components/Activities/YogaBenefits";
 import YogaGuidedPath from "@components/Activities/YogaGuidedPath";
 import YogaSession from "@components/Activities/YogaSession";
 import YogaTechniques from "@components/Activities/YogaTechniques";
-import ActivityForm from "@components/Forms/ActivityForm";
 import HappyClient from "@components/Sliders/HappyClient";
 import YogaSlider from "@components/Sliders/YogaSlider";
 import { yoga } from "@data/activities";
 import { yogaClients } from "@data/clients";
-import useEnquiryForm from "@utils/useEnquiryForm";
+import { YOGA } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
+
+export const metadata = {
+  title: "Wleness: Yoga for a Balanced Mind and Body",
+  description:
+    " Wleness Life Coaching program help you to achieve your goals and live a fulfilling life. Schedule a consultation today!",
+  alternates: {
+    canonical: getCanonical(YOGA),
+  },
+};
 
 export default function Yogapage() {
-  const { enquiryForm, toggleForm } = useEnquiryForm();
   return (
     <>
       <Header
+        name={yoga.name}
         title={yoga.header.title}
         desc={yoga.header.desc}
         image={yoga.header.image}
         alt={yoga.header.alt}
-        button={{ text: "Enquire Now", action: toggleForm }}
+        button={{ text: "Enquire Now" }}
       />
 
-      <YogaTechniques data={yoga.activities} openEnquiry={toggleForm} />
+      <YogaTechniques data={yoga.activities} />
       <YogaSession
         title={[
           {
@@ -52,11 +60,6 @@ export default function Yogapage() {
       />
       <YogaSlider />
       <YogaBenefits />
-      <ActivityForm
-        purpose={yoga.name}
-        isOpen={enquiryForm}
-        onClose={toggleForm}
-      />
       <HappyClient data={yogaClients} />
     </>
   );

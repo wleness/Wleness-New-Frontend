@@ -4,6 +4,8 @@ import List from "@components/Policies/List";
 import Paragraphs from "@components/Policies/Paragraphs";
 import PoliciesHeader from "@components/Policies/PoliciesHeader";
 import Table from "@components/Policies/Table";
+import { CANCELLATION } from "@data/urls";
+import getCanonical from "@utils/getCanonical";
 
 const sessoinsPolicy = [
   ["0", "1,000.00", "6,000.00", "10,000.00"],
@@ -20,6 +22,15 @@ const sessoinsPolicy = [
   ["11", "-", "-", "-"],
   ["12", "-", "-", "-"],
 ];
+
+export const metadata = {
+  title: "Wleness Cancellation -Your mental health matters",
+  description:
+    " Wleness Life Coaching program help you to achieve your goals and live a fulfilling life. Schedule a consultation today!",
+  alternates: {
+    canonical: getCanonical(CANCELLATION),
+  },
+};
 
 export default function page() {
   return (
