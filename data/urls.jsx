@@ -137,4 +137,5 @@ export const LS_COACH_TANUJA_CHOUDHURY = "/coach/tanuja-choudhury";
 export const LS_COACH_SHIVANI_NARANG = "/coach/shivani-narang";
 
 // Configuration
-export const GTM_ID = "G-2FD61NETZL";
+// export const GTM_ID = "G-2FD61NETZL";
+export const GTM_ID = "GTM-TZWK2K83";

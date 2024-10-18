@@ -25,10 +25,16 @@ export default function RootLayout({ children }) {
           id="aisensy-wa-widget"
           widget-id="Tvl1K8"
         />
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
         <LayoutProvider>{children}</LayoutProvider>
-        <Script id="gtm" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', ${GTM_ID});`}
-        </Script>
       </body>
     </html>
   );
