@@ -1,8 +1,8 @@
 import { LayoutProvider } from "./LayoutProvider";
 import "../public/styles/globals.css";
 import Script from "next/script";
-import { GoogleTagManager } from "@next/third-parties/google";
-import { GTM_ID } from "@data/urls";
+// import { GoogleTagManager } from "@next/third-parties/google";
+// import { GTM_ID } from "@data/urls";
 
 export const metadata = {
   title:
@@ -17,16 +17,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId={GTM_ID} />
+      {/* <GoogleTagManager gtmId={GTM_ID} /> */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-2FD61NETZL"
+      ></Script>
+      <Script>
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2FD61NETZL');`}
+      </Script>
       <body>
-        <noscript>
+        {/* <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript>
+        </noscript> */}
         <Script
           type="text/javascript"
           src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
