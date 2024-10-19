@@ -19,12 +19,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <GoogleTagManager gtmId={GTM_ID} />
       <body>
-        <Script
-          type="text/javascript"
-          src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
-          id="aisensy-wa-widget"
-          widget-id="Tvl1K8"
-        />
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
@@ -33,7 +27,12 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-
+        <Script
+          type="text/javascript"
+          src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+          id="aisensy-wa-widget"
+          widget-id="Tvl1K8"
+        />
         <LayoutProvider>{children}</LayoutProvider>
       </body>
     </html>
