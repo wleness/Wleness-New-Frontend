@@ -5,7 +5,7 @@ import getCanonical from "@utils/getCanonical";
 import { BLOGS } from "@data/urls";
 
 export const metadata = {
-  title: "Wleness - Menta Health Blogs | self help articles",
+  title: "Wleness - Mental Health Blogs | self help articles",
   description:
     "Learn more about Mental illness with Wleness mental health blogs. Self-help articles, expert advice, and resources to support your well-being.",
   alternates: {
