@@ -1,4 +1,5 @@
 import ContactForm from "@components/Forms/ContactForm";
+import Banner from "@components/Cards/Banner";
 import { CONTACT_US } from "@data/urls";
 import { about1, about4, meeting } from "@public";
 import getCanonical from "@utils/getCanonical";
@@ -27,6 +28,7 @@ export default function ContactUsPage() {
 
       <section className="py-8 bg-primary-two">
         <div className="container mx-auto space-y-5 font-medium">
+          <Banner/>
           <ContactForm />
           <div>
             <div className="my-6 text-center">

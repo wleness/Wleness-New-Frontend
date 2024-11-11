@@ -143,13 +143,13 @@ export default function Footer() {
                     className="text-xs md:text-sm text-slate-300 hover:text-primary-one transition-all"
                     href={BLOGS}
                   >
-                    Blogs
+                    Self-Help Aritcles
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="text-xs md:text-sm text-slate-300 hover:text-primary-one transition-all"
-                    href="/assessment"
+                    href="/free_mental_health_counselling"
                   >
                     Assessments
                   </Link>

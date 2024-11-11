@@ -210,16 +210,16 @@ export const footer_assessment = [
 
 // Footer - Useful Links
 export const usefulLinks = [
-  ["Online therapy services", THERAPY],
-  ["Best online psychologist ", ALL_EXPERTS],
-  ["Couple counseling", COUPLES_THERAPY],
+  ["Online Therapy in India", THERAPY],
+  ["Best Psychologist in India", ALL_EXPERTS],
+  ["Counselling for Relationships", COUPLES_THERAPY],
   ["Music therapy", MUSICAL_HEALING],
-  ["Best depression therapy ", DEPRESSION],
-  ["Stress management ", STRESS],
+  ["Counsellors for depression", DEPRESSION],
+  ["Therapy for stress", STRESS],
   ["Anxiety management ", ANXIETY],
   ["Best family counseling in india", ""],
-  ["Best online lifestyle coaching", LIFESTYLE_COACHING],
-  ["Best executive coaching in india", EXECUTIVE_COACHING],
+  ["Online life coaching", LIFESTYLE_COACHING],
+  ["Leadership and Management skill", EXECUTIVE_COACHING],
 ];
 
 // Footer - Our Experts

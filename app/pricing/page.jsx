@@ -3,9 +3,9 @@ import { PRICING } from "@data/urls";
 import getCanonical from "@utils/getCanonical";
 
 export const metadata = {
-  title: "Wleness Online Therapy & Counesling plan",
+  title: "Get Online Psychologist Consultation and talk to Experts Today",
   description:
-    "Find the perfect Wleness Online Therapy Plan for your needs. Affordable online therapy sessions with top-rated psychologists. Get effective treatment for anxiety, depression, and more through convenient chat, call, or video sessions. Start your mental health journey today!",
+    "Consult an online psychologist for expert advice. Experience the best online therapy in India with the best psychologist. Consult now to enhance your mental health.",
   alternates: {
     canonical: getCanonical(PRICING),
   },

@@ -53,7 +53,7 @@ export default function AssessmentQuestionPage({ params }) {
   const handleBack = () => {
     let index = questions.indexOf(activeQuestion);
     if (index == 0 || index == -1) {
-      router.push("/assessment");
+      router.push("/free_mental_health_counselling");
     } else {
       setActiveQuestion(questions[index - 1]);
       setCurrentAnswer(allAnswers[index - 1]);
