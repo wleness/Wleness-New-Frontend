@@ -9,9 +9,9 @@ import HeaderTestimonialSlider from "@components/Sliders/HeaderTestimonialSlider
 
 export const metadata = {
   title:
-    "Wleness - Best Online Therapy and Counseling | Best psychologist in India",
+    "Consult Best Psychologists in India with Virtual Therapy sessions",
   description:
-    "Wleness offers best online counseling &amp; therapy with top psychologists in India. Address anxiety, depression, or any mental health concern through convenient chat, call, or video sessions.",
+    "Find expert online psychologist services and online therapy in India. Access professional mental health clinic support for effective therapy and well-being.Wleness offers besamp; therapy with top psychologists in India. Address anxiety, depression, or any mental health concern through convenient chat, call, or video sessions.",
   alternates: {
     canonical: WLENESS_URL,
   },

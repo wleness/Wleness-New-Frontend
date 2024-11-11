@@ -10,9 +10,9 @@ export const COMMUNITY = "/community";
 export const CONTACT_US = "/contact-us";
 export const CAREER = "/career";
 export const FAQ = "/faqs";
-export const ASSESSMENT = "/assessment";
-export const ASSESSMENT_SLUG = "/assessment/:slug";
-export const ASSESSMENT_RESULT = "/assessment/result";
+export const ASSESSMENT = "/free_mental_health_counselling";
+export const ASSESSMENT_SLUG = "/free_mental_health_counselling/:slug";
+export const ASSESSMENT_RESULT = "/free_mental_health_counselling/result";
 export const PRICING = "/pricing";
 export const B2B = "/b2b";
 

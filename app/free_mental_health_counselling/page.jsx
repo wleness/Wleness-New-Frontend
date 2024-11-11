@@ -40,7 +40,7 @@ export default function AssessmentPage() {
             {self_assessments.map((value, i) => {
               return (
                 <Link
-                  href={"/assessment/" + value.slug}
+                  href={"/free_mental_health_counselling/" + value.slug}
                   key={i}
                   className="mx-auto inline-block w-full cursor-pointer rounded-lg border-2 border-slate-700 bg-slate-800 py-6 shadow-md shadow-yellow-200 transition-all hover:border-primary-one hover:shadow-lg"
                 >
