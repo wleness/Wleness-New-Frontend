@@ -43,12 +43,12 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript> */}
-        <Script
+        {/* <Script
           type="text/javascript"
           src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
           id="aisensy-wa-widget"
           widget-id="Tvl1K8"
-        />
+        /> */}
         <LayoutProvider>{children}</LayoutProvider>
       </body>
     </html>
