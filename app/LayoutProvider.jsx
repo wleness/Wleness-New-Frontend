@@ -2,7 +2,8 @@
 import { usePathname } from "next/navigation";
 import Footer from "@components/common/Footer";
 import PrimaryNavbar from "@components/common/PrimaryNavbar";
-import CTA from "@components/common/CTA";
+import dynamic from "next/dynamic";
+const CTA = dynamic(() => import("@components/common/CTA"), { ssr: false });
 
 export const LayoutProvider = ({ children }) => {
   const plain_pages = [

@@ -1,7 +1,4 @@
 "use client" ;
-
-import { useRef } from "react";
-
 export default function CTA({ isMobile }) {
   var url = "https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?6498";
   var s = document.createElement("script");
