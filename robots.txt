@@ -8,4 +8,4 @@ Disallow: /gauth/
 Disallow: /avatar/
 
 
-Sitemap: https://wleness.com/sitemap.xml
+Sitemap: https://www.wleness.com/sitemap.xml
