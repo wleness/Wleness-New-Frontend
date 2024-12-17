@@ -11,13 +11,13 @@ export default function Community() {
           <PrimaryTitle text={"Your Mental Health Mechanic"} />
           {/* <PrimaryTitle text={"Designers create. Operators run."} /> */}
           <h4 className="font-semibold text-slate-400 text-lg text-center">
-            We Support Your Emotional and Mental Health Needs
+            We are deeply committed to ensuring that your emotional and psychological well-being is supported by the best counselor at/in every step of your journey.
           </h4>
         </hgroup>
 
-        {/* <div className="grid xl:grid-cols-3">
+        {/* <div className="grid xl:grid-cols-3">a
           <div className="bg-[#BF0000]"></div>
-          <div>
+          <div>a
             <div>
               <Image
                 src={EngineersBuild}

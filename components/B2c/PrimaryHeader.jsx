@@ -28,16 +28,16 @@ export default function PrimaryHeader({
           </span>
         </h1>
         <div>
-          <p
+          <h2
             className={`${montserrat.className} mb-2 font-semibold text-primary-one text-xs text-center xl:text-[20px]`}
           >
             {subtitle}
-          </p>
-          <h2
+          </h2>
+          <h3
             className={`${montserrat.className} text-lg font-bold text-white text-center xl:text-2xl grid xl:block`}
           >
             {title}
-          </h2>
+          </h3>
         </div>
         <div className="text-center">
           <Link

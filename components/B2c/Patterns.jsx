@@ -6,9 +6,10 @@ import Image from "next/image";
 import { montserrat } from "@/public";
 import {
   faClose,
-  faHeart as solidHeart,
+  faSquareCheck, 
+
 } from "@fortawesome/free-solid-svg-icons";
-import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
+import { faSquare } from "@fortawesome/free-regular-svg-icons";
 import PrimaryTitle from "@components/Title/PrimaryTitle";
 import { same_patterns } from "@data/b2c";
 
@@ -94,13 +95,13 @@ export default function Patterns() {
                         <span>{key.title}</span>
                         {myPatterns.includes(key.title) ? (
                           <FontAwesomeIcon
-                            icon={solidHeart}
-                            className="cursor-pointer text-primary-one"
+                            icon={faSquareCheck}
+                            className="cursor-pointer "
                             onClick={() => handlePatterns(key.title)}
                           />
                         ) : (
                           <FontAwesomeIcon
-                            icon={regularHeart}
+                            icon={faSquare}
                             className="cursor-pointer hover:text-primary-one"
                             onClick={() => handlePatterns(key.title)}
                           />
@@ -151,7 +152,7 @@ export default function Patterns() {
             strokeWidth={2}
           />
         </svg>
-        <button className="btn-2 bg-primary-one">Let&apos;s solve now</button>
+        <a href="#resolve_home" className="btn-2 bg-primary-one">Let&apos;s solve now</a>
       </div>
     </section>
   );

@@ -19,14 +19,14 @@ const headerSlider = [
   },
   {
     desc: "your safe-space. just yours. ",
-    subtitle: "find qualified psychologists and therapists",
+    subtitle: "find best psychologist and counsellor",
     title: "confidential & secure",
     button: ["view experts", ALL_EXPERTS],
     clients: false,
   },
   {
     desc: "your safe-space. just yours. ",
-    subtitle: "access your mental fitness",
+    subtitle: "access your fitness therapy",
     title: "free & insightful",
     button: ["start test", ASSESSMENT],
     clients: false,

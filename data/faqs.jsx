@@ -230,50 +230,62 @@ export const internshipFaqs = {
 // FAQ's page
 export const faqs = [
   {
-    question: "What is Wleness?",
+    question: "What is Online Counseling and Therapy?",
     answer:
-      "Wleness is an inclusive online platform promoting mental health and wellness. We provide numerous resources to support individuals on their journey towards better mental well-being. Our platform is LGBTQ-friendly, and a safe and inclusive environment for all.",
+      "Online therapy can be defined as reaching out to the best psychologist or a therapist nearby in front of a computer screen. One does so by utilizing applications such as video calls, chats, or emails which do not require one to physically go to a medical center. It provides privacy, comfort, and the easy accessibility of being able to stay within one’s home.",
   },
   {
-    question: "What services does Wleness offer?",
+    question: "How much does online counseling cost?",
     answer:
-      "Wleness offers a wide range of services to support mental health including online therapy sessions with licensed professionals, self-help resources, articles, guided meditation, exercises etc. and a supportive community forum at your fingertips. We prioritize providing world-class services and the well-being of our users.",
+      "The price of online therapy is dependent on the platform and the services on offer. Some of them even provide free therapy online in India, which assists and encourages people towards seeking mental healthcare. The price of a paid session would however still be reasonable and most times affordable going upwards to premium pricing with the choice of seeking the best behavioural psychologists in India or general mental health experts.",
   },
   {
-    question: "How can I get started with Wleness?",
+    question: "What are the advantages of online counseling?",
     answer:
-      "Simply visit Wleness.com and create an account. From there, you can explore the various resources and services available on the platform. We guide you in selecting a therapist and schedule sessions based on your preferences. We offer a plethora of services to suit your needs.",
+      ` <span style="font-weight: 700;">Convenience:</span> Whether you are searching for a <span style="font-weight: 700;"> counselling session near you</span> or an online therapist, therapy can be from anywhere. </br>
+        <span style="font-weight: 700;">Privacy:</span> Seek the services of the <span style="font-weight: 700;">best psychologist</span> without revealing your identity.
+        </br>
+        <span style="font-weight: 700;"> Accessibility:</span> Online platforms are able to match you easily with the <span style="font-weight: 700;">best mental health therapist near you </span> which can be a plus to patients in the rural areas.
+        </br>
+        <span style="font-weight: 700;">Affordability:</span> Several platforms allow access to <span style="font-weight: 700;">free psychologists near you </span> or at affordable rates.
+      </span>
+      `,
   },
   {
     question:
-      "Is Wleness suitable for individuals with severe mental health conditions?",
+      "Why is wellness the best online psychologist consultation platform?",
     answer:
-      "While all therapists on Wleness are licensed professionals who possess the necessary qualifications, it may not be suitable for severe mental health conditions or those in crisis. In such cases, we recommend immediate assistance from emergency services that provide more intensive and prompt support.",
+      `Wellness is preferred because of its affordability and its team of best psychologists in India. The platform’s features include: </br>
+        Providing access to <span style="font-weight: 700;"> best behavioural psychologists in India.</span> </br>
+        Providing affordable and <span style="font-weight: 700;">free therapy online in India.</span> </br>
+        Easy to use websites for individuals looking to <span style="font-weight: 700;"> consult a psychologist online.</span> </br>
+        Treatment of personal as well as family and occupational mental health concerns.
+      `,
   },
   {
-    question: "Is my privacy protected on Wleness?",
-    answer:
-      "Wleness takes privacy and confidentiality seriously. Our platform employs robust security measures to protect user information and adheres to strict privacy policies. Any personal data shared during sessions or forums is strictly confidential, following professional ethics and legal requirements. Your anonymity matters to us!",
+    question: "What services are being offered by wleness?",
+    answer: `
+      There is a variety of mental health services offered at Wellness including:
+      </br>
+      <span style="font-weight: 700;">One-on-one Counseling Sessions: </span>  Get therapy from the <span style="font-weight: 700;">best psychologist </span> for a customized target.
+      </br>
+      <span style="font-weight: 700;">Couple Therapy:</span>  Get help from the <span style="font-weight: 700;"> best relationship counseling in India </span> to deal with relationship issues. 
+      </br>
+      <span style="font-weight: 700;"> Workplace Wellness: </span>  Provides top support for employees' mental health.  
+      </br>
+      <span style="font-weight: 700;"> Life counselling: </span>  Get top quality professional and personal life Counseling from the <span style="font-weight: 700;"> best life coaches. </span>
+      </br>
+
+    `,
   },
   {
-    question: "Are the therapists on Wleness licensed and qualified?",
+    question: "How can I consult the best psychologist in India?",
     answer:
-      "Yes, all therapists on Wleness are licensed professionals who possess the necessary qualifications to provide mental health services. We carefully select therapists based on their credentials, experience, and adherence to ethical guidelines and prioritize quality over quantity.",
-  },
-  {
-    question: "Can I cancel or modify my subscription to Wleness?",
-    answer:
-      "Yes, you may cancel or modify your subscription. Our platform provides customizable options to manage your subscription settings, and you can reach out to our customer support for assistance with any changes you wish to make.",
-  },
-  {
-    question: "How can I contact customer support for further assistance?",
-    answer:
-      "You can contact Wleness.com's customer support team through our designated contact channels for any inquiries or assistance. We are dedicated to helping users and addressing any concerns or questions you may have. Your well-being is our priority.",
-  },
-  {
-    question: "Is the information on Wleness reliable and trustworthy?",
-    answer:
-      "Wleness is committed to accurate and trustworthy information. We collaborate with licensed mental health experts to ensure content is evidence-based and up-to-date. However, note that the information provided on the website is not a substitute for a professional diagnosis. Rest assured, you are in good hands!",
+      `Through Wleness, the best psychologist in India is available for consultation. Wleness helps you with: </br>
+        <span>The most advanced specialists including the <span style="font-weight: 700;">best behavioral psychologist in India.</span></span></br>
+        <span>Initial inquiries which are affordable and include <span style="font-weight: 700;">free therapy online India</span> for the first sessions. </span> </br>
+        <span>Safe and private appointments through video calls, chats, and other platforms.</span>
+      `,
   },
 ];
 

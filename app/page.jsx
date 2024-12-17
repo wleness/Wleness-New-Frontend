@@ -7,6 +7,9 @@ const CTA = dynamic(() => import("@components/common/CTA"), { ssr: false });
 import MainHeaderSlider from "@components/B2c/MainHeaderSlider";
 import { WLENESS_URL } from "@data/urls";
 import HeaderTestimonialSlider from "@components/Sliders/HeaderTestimonialSlider";
+import Therapies from "@components/Home/Therapies";
+import { TherapyData2 } from "@data/therapy";
+import WhyChooseGrid from "@components/Therapy/WhyChooseGrid";
 
 export const metadata = {
   title:
@@ -23,9 +26,16 @@ export default function Home() {
     <>
       <MainHeaderSlider />
       <Community />
+      <Therapies is_title={true} is_bg={true} headingClasses={'text-3xl font-bold heading-primary'} description={true} therapyCard={{
+          buttonText: 'Know More',
+        }}
+      />
       <Patterns />
       <Resolve />
       <HeaderTestimonialSlider />
+      <div className="py-20 bg-primary-two"> 
+        <WhyChooseGrid data={TherapyData2.whyChoose} />
+      </div>
       <Blogs />
       <CTA isMobile={true} />
     </>

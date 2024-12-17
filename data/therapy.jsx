@@ -1043,3 +1043,29 @@ export const coupleTherapyData = {
     desc: "Wleness provides quality therapy and couples counselling to all our clients. Get the best and most recommended online therapy and guidance packages with India's best counsellors for you and your loved ones. Connect your relationship with a trained and certified online psychologist and counsellor.",
   },
 };
+
+export const TherapyData2 = {
+  title: "Why Wleness",
+  whyChoose: [
+    {
+      title: "Emotional Support at Your Fingertips",
+      desc: "Need a listening ear? Consult a psychologist online at Wleness Therapy. Our best mental health therapists near you are here to provide personalized support, ensuring your emotional well-being.",
+      image: whyChooseTherapy1,
+    },
+    {
+      title: "Problem Solving",
+      desc: "Let the best psychologists in India at Wleness Therapy guide you through your challenges. We provide practical solutions and break down obstacles into manageable steps.",
+      image: whyChooseTherapy2,
+    },
+    {
+      title: "Relationships",
+      desc: "Build trust, improve communication, and foster healthy conversations with our experienced online therapists. Get quality online couple counseling from the comfort of your home.",
+      image: whyChooseTherapy3,
+    },
+    {
+      title: "Mental Wellness",
+      desc: "Get your inner strength and find balance with Wleness. Our top therapists offer best online psychologist consultations to help you live a positive life.",
+      image: whyChooseTherapy4,
+    },
+  ],
+};

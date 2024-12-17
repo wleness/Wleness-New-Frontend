@@ -34,7 +34,7 @@ export default function Certifications() {
             />
           </div>
           <p
-            className={`text-slate-400 text-center md:text-left text-sm leading-4 ${montserrat.className}`}
+            className={`text-slate-300 text-center md:text-left text-sm leading-4 ${montserrat.className}`}
           >
             {value.desc}
           </p>

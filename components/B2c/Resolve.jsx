@@ -10,7 +10,7 @@ const tabData = [
   {
     id: 1,
     label: "Self Help Kit",
-    desc: "Get a self-care toolbox covering everything you need to take care of yourself. Access health and wellness resources for nurturing yourself for better mental well-being from the comfort of your home today!",
+    desc: "Get your self-care toolbox today! Access health and wellness resources to nurture your mental well-being from the comfort of your home. Connect with best counselors and best psychologists in India to receive personalized support. Free psychometric test is available to help you start your journey to better mental health.",
     title: "Self Care",
     image: ResolveSelfHelp,
     btn: {
@@ -21,7 +21,7 @@ const tabData = [
   {
     id: 2,
     label: "Book a Session",
-    desc: "Get the best and most recommended online therapy and guidance packages with India's best psychiatrists, therapists, and guides. Connect with a trained and certified online psychologist and counselor.",
+    desc: "Get the best and most recommended online therapy and guidance packages with India's best psychologists and therapists. Consult a psychologist online and connect with a trained and certified online counselor.",
     title: "Book a Session",
     image: ResolveSession,
     btn: {
@@ -32,7 +32,7 @@ const tabData = [
   {
     id: 3,
     label: "Join our Community",
-    desc: "Join us to find more than just a community; rather a place where wellness wins and friendships grow. And the best part? You can be anonymous, as per your comfort.",
+    desc: "The Wleness Mental Health community offers a safe, anonymous space to share your struggles and receive peer support from people around the world. Our trained experts moderate the community to ensure a supportive and understanding environment.",
     title: "Join Community",
     image: ResolveCommunity,
     btn: {
@@ -47,7 +47,7 @@ export default function Resolve() {
 
   const Box = ({ value }) => {
     return (
-      <div>
+      <div id="resolve_home">
         <button
           onClick={() => setActiveTab(value)}
           className={`block mb-4 w-full border-2 text-sm md:text-base font-bold py-3 border-primary-one ${
@@ -90,7 +90,8 @@ export default function Resolve() {
     <section className="px-4 xl:px-10 pb-20 pt-28 xl:py-28 bg-primary-two">
       <PrimaryTitle text={"All humans have the same problems. "} />
       <p className="text-gray-400 font-semibold xl:text-2xl text-center text-xl">
-        You&apos;re not alone. You&apos;re one of the many.
+        Youre not alone. You&apos;re one of the many.
+        You&apos;re not alone. You&apos;re one of the many who seek support. Consult a psychologist online to re-discover yourself.
       </p>
       <div className="pt-8">
         <div className="grid gap-5 xl:grid-cols-3">

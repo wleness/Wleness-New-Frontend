@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WhyChooseGrid(props) {
   return (
-    <section className="pb-8 pt-7 bg-primary-two text-center">
+    <section className={`pb-8 pt-7 bg-primary-two text-center ${props.customClasses}`}>
       <h2 className="subheading mx-auto mb-8 lg:w-[640px]">
         <span className="text-white">Why Should I Choose </span>
         <span className="heading-primary">Wleness Therapy</span>

@@ -1,11 +1,8 @@
 User-agent: *
+Disallow: /admin/
 Disallow: /private/
-Disallow: /experts-login/
-Disallow: /login/
-Disallow: /forgot-password/
-Disallow: /user/
-Disallow: /gauth/
-Disallow: /avatar/
-
+User-agent: SemrushBot-SI
+Allow: /
+Crawl-delay: 1
 
 Sitemap: https://www.wleness.com/sitemap.xml

@@ -47,7 +47,7 @@ export default function Blogs() {
                     height={180}
                     className="mb-2 rounded-lg xl:w-full"
                   />
-                  <h2 className="text-lg font-bold text-white">
+                  <h4 className="text-lg font-bold text-white">
                     {value.title.length > 50 ? (
                       <span>
                         {value.title.substring(0, 50)}
@@ -58,7 +58,7 @@ export default function Blogs() {
                     ) : (
                       value.title
                     )}
-                  </h2>
+                  </h4>
                 </Link>
               </div>
             );
