@@ -15,7 +15,7 @@ export const metadata = {
   title:
     "Consult Best Psychologists in India with Virtual Therapy sessions",
   description:
-    "Find expert online psychologist services and online therapy in India. Access professional mental health clinic support for effective therapy and well-being.Wleness offers besamp; therapy with top psychologists in India. Address anxiety, depression, or any mental health concern through convenient chat, call, or video sessions.",
+    "Find expert online psychologist services and online therapy in India. Access professional mental health clinic support for effective therapy and well-being",
   alternates: {
     canonical: WLENESS_URL,
   },
@@ -34,7 +34,7 @@ export default function Home() {
       <Resolve />
       <HeaderTestimonialSlider />
       <div className="py-20 bg-primary-two"> 
-        <WhyChooseGrid data={TherapyData2.whyChoose} />
+        <WhyChooseGrid title={TherapyData2.title} data={TherapyData2.whyChoose} />
       </div>
       <Blogs />
       <CTA isMobile={true} />

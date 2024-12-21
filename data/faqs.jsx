@@ -283,8 +283,12 @@ export const faqs = [
     answer:
       `Through Wleness, the best psychologist in India is available for consultation. Wleness helps you with: </br>
         <span>The most advanced specialists including the <span style="font-weight: 700;">best behavioral psychologist in India.</span></span></br>
-        <span>Initial inquiries which are affordable and include <span style="font-weight: 700;">free therapy online India</span> for the first sessions. </span> </br>
-        <span>Safe and private appointments through video calls, chats, and other platforms.</span>
+        <span>Initial inquiries which are affordable and include <span style="font-weight: 700;">free therapy online India</span> for the first sessions. </span> </br> 
+        <span>Safe and private appointments through video calls, chats, and other platforms.</span> </br> 
+        </br>
+       To meet with the best psychologist, go to Wleness, look through the services offered, and make an appointment for a virtual help session by selecting the option to book your counseling session near me. Wleness provides thorough and discrete professional help that is appropriate for an individual’s specific mental health disorder.
+
+
       `,
   },
 ];

@@ -87,11 +87,11 @@ export default function Resolve() {
   };
 
   return (
-    <section className="px-4 xl:px-10 pb-20 pt-28 xl:py-28 bg-primary-two">
+    <section className="px-4 xl:px-10 pb-20 pt-10 xl:py-28 bg-primary-two">
       <PrimaryTitle text={"All humans have the same problems. "} />
       <p className="text-gray-400 font-semibold xl:text-2xl text-center text-xl">
-        Youre not alone. You&apos;re one of the many.
-        You&apos;re not alone. You&apos;re one of the many who seek support. Consult a psychologist online to re-discover yourself.
+        You&apos;re not alone. You&apos;re one of the many.
+        Consult a psychologist online to re-discover yourself.
       </p>
       <div className="pt-8">
         <div className="grid gap-5 xl:grid-cols-3">

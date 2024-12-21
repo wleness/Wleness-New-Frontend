@@ -8,10 +8,10 @@ export default function Community() {
     <section className="bg-primary-two">
       <div>
         <hgroup className="grid container mx-auto">
-          <PrimaryTitle text={"Your Mental Health Mechanic"} />
+          <PrimaryTitle text={"Your Emotional Wellness Coach "} />
           {/* <PrimaryTitle text={"Designers create. Operators run."} /> */}
           <h4 className="font-semibold text-slate-400 text-lg text-center">
-            We are deeply committed to ensuring that your emotional and psychological well-being is supported by the best counselor at/in every step of your journey.
+          We are partnering  your emotional and psychological well-being and  is supported by the best counselors
           </h4>
         </hgroup>
 
