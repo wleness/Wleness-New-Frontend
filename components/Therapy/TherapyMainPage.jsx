@@ -6,6 +6,7 @@ import SelectBest from "@components/Therapy/SelectBest";
 import WhyChooseGrid from "@components/Therapy/WhyChooseGrid";
 import { therapyClient } from "@data/clients";
 import { TherapyData } from "@data/therapy";
+import { PRICING } from "@data/urls";
 import { useRef } from "react";
 
 export default function TherapyMainPage() {
@@ -33,7 +34,11 @@ export default function TherapyMainPage() {
         headingBg={true}
       />
       {/* Therapies */}
-      <Therapies is_title={false} is_bg={true} />
+      <Therapies is_title={false} is_bg={true} headingClasses={'subheading'} therapyCard={{
+          buttonText: 'Book Now',
+          cb: () => resetBookNow(),
+          redirect: PRICING
+      }} />
       <HappyClient data={therapyClient} />
     </>
   );

@@ -11,7 +11,7 @@ export default function Faq({ question, answer, isOpen, toggleFAQ }) {
         <span>{question}</span>
         <FontAwesomeIcon icon={isOpen ? faMinus : faPlus} />
       </h3>
-      <p className={isOpen ? "block font-semibold" : "hidden "}>{answer}</p>
+      <p className={isOpen ? "block font-semibold" : "hidden "} dangerouslySetInnerHTML={{__html: answer}} />
     </div>
   );
 }

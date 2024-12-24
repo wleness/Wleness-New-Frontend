@@ -28,16 +28,16 @@ export default function ExpertProfileCard(props) {
         </div>
         <figcaption className="w-[65%] px-4 lg:w-3/5 3xl:px-6">
           <hgroup>
-            <h2 className="text-xl font-semibold text-white lg:text-2xl">
+            <h3 className="text-xl font-semibold text-white lg:text-2xl">
               <span>{props.data.name}</span>
-            </h2>
-            <h5 className="font-semibold text-primary-one">
+            </h3>
+            <h4 className="font-semibold text-primary-one">
               {props.data.profession}
-            </h5>
-
-            <h4 className="text-sm font-semibold text-slate-200 lg:text-lg">
-              {props.data.experience}
             </h4>
+
+            <h5 className="text-sm font-semibold text-slate-200 lg:text-lg">
+              {props.data.experience}
+            </h5>
           </hgroup>
           <div className="text-xs font-medium lg:my-3 lg:text-base">
             <p className="leading-5 text-slate-300 lg:mb-2">

@@ -39,7 +39,7 @@ export default function HeaderTestimonialSlider() {
                   <div>
                     <Image
                       src={value.image}
-                      alt={value.name}
+                      alt={value.altText}
                       width={60}
                       height={60}
                       className="rounded-lg xl:w-20 xl:h-20 object-cover"

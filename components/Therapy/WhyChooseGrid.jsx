@@ -2,10 +2,14 @@ import Image from "next/image";
 
 export default function WhyChooseGrid(props) {
   return (
-    <section className="pb-8 pt-7 bg-primary-two text-center">
-      <h2 className="subheading mx-auto mb-8 lg:w-[640px]">
+    <section className={`pb-8 pt-7 bg-primary-two text-center ${props.customClasses}`}>
+      <h2 className={`subheading mx-auto mb-8 lg:w-[640px] capitalize ${props.title && 'heading-primary text-3xl'}`}>
+       { props?.title ?  props.title : 
+        <>
         <span className="text-white">Why Should I Choose </span>
         <span className="heading-primary">Wleness Therapy</span>
+        </>
+       }
       </h2>
 
       <div className="container mx-auto grid grid-cols-2 gap-5 lg:grid-cols-4">

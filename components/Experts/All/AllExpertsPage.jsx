@@ -5,19 +5,19 @@ import Image from "next/image";
 
 const points = [
   {
-    title: "Consult Best Psychologist & Counsellor in India",
+    title: "Consult Best Psychologist Online",
     description:
-      "List of Top Psychologists in India. Best Psychotherapists, Counsellors, Mental Health Therapists in India. Consult the best psychologist in India now.",
+      "Consult the best psychologists in India online. Our team of expert counsellors and psychotherapists is here to help you navigate life's challenges. Whether you're struggling with stress, anxiety, depression, or relationship issues, we're here to listen, understand, and provide personalized support.",
   },
   {
     title: "Certified & Experienced",
     description:
-      "Get the best online Therapy & Counseling Experience from the Verified Professionals. Best Psychologist, Counsellor, Therapist for your Mental Health.",
+      "Connect with top psychiatrists from expert therapy through our Wleness Prime Service. Get expert psychiatric advice and treatment from the comfort of your home.",
   },
   {
-    title: "Best Psychiatrists in India",
+    title: "Online Counsellors",
     description:
-      "Connect with top psychiatrist from AIIMS & NIMHANS online at your comfortable space on your convenient time. Get the best Psychiatric treatment possible online with Wleness Wellbeing.",
+      "We believe in providing the best possible care. That's why we carefully match you with the most suitable psychologist or counsellor online for your specific needs.",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function AllExpertsPage() {
             })}
           </div>
           <div>
-            <h1 className="subheading heading-primary mb-3">
+            <h1 className="subheading heading-primary mb-3 !capitalize">
               Top Psychologist in India
             </h1>
             <div>
@@ -84,6 +84,7 @@ export default function AllExpertsPage() {
               Best psychologist in India - Wleness
             </span>
           </h1>
+          <p className="text-gray-400 text-lg lg:text-xl text-center">Take the first step towards a happier, healthier you. Book your counselling psychologist today.</p>
         </div>
       </header>
 

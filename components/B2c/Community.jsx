@@ -8,16 +8,16 @@ export default function Community() {
     <section className="bg-primary-two">
       <div>
         <hgroup className="grid container mx-auto">
-          <PrimaryTitle text={"Your Mental Health Mechanic"} />
+          <PrimaryTitle text={"Your Emotional Wellness Coach "} />
           {/* <PrimaryTitle text={"Designers create. Operators run."} /> */}
           <h4 className="font-semibold text-slate-400 text-lg text-center">
-            We Support Your Emotional and Mental Health Needs
+          We are partnering  your emotional and psychological well-being and  is supported by the best counselors
           </h4>
         </hgroup>
 
-        {/* <div className="grid xl:grid-cols-3">
+        {/* <div className="grid xl:grid-cols-3">a
           <div className="bg-[#BF0000]"></div>
-          <div>
+          <div>a
             <div>
               <Image
                 src={EngineersBuild}
