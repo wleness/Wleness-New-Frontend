@@ -38,6 +38,7 @@ export default function Home() {
       </div>
       <Blogs />
       <CTA isMobile={true} />
+      <FAQs faqLanding={true}/>
     </>
   );
 }
