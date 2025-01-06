@@ -21,6 +21,9 @@ export default function Patterns() {
     if (!myPatterns.includes(text)) {
       setMyPatterns([...myPatterns, text]);
     }
+    else{
+      removePattern(text)
+    }
   };
 
   const removePattern = (text) => {

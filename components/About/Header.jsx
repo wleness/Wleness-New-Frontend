@@ -12,7 +12,7 @@ export default function Header() {
         <div className="absolute inset-0"></div>
         <div className="space-y-4 px-4 sm:w-full lg:order-1 lg:ml-56 lg:w-1/2 lg:space-y-6 lg:px-0 lg:pr-44">
           <h1 className="text-[42px] font-semibold text-white brightness-105">
-            About <span className="heading-primary !text-white">Wleness</span>
+          Wleness the Best Online Mental Health Counseling
           </h1>
           <p className="brightness-10 relative z-10 w-full text-base font-semibold text-white">
             At Wleness, we believe in nurturing the harmony of mind, body, and
@@ -22,17 +22,10 @@ export default function Header() {
             insights curated to elevate every facet of your wellness.
           </p>
           <p className="relative z-10 w-full text-base font-semibold text-white">
-            By leveraging technology, Wleness connects users with licensed
-            mental health professionals via a secure online platform, making it
-            easier for people to receive support from the comfort of their own
-            homes.
+          Recognizing the effectiveness and convenience of online therapy, Wleness offers flexible therapy options to suit your preferences. Whether you prefer phone calls, video sessions, or messaging, you can consult a psychologist online in a way that feels most comfortable for you. Our platform is guided by veteran therapists, ensuring you receive the most feasible and effective treatments.
           </p>
           <p className="relative z-10 w-full text-base font-semibold text-white">
-            The organization aims to establish a comprehensive mental health
-            ecosystem offering treatment and tailored care plans for a spectrum
-            of mental health conditions, including but not limited to anxiety,
-            depression, bipolar disorder, ADHD, OCD, schizophrenia, and
-            addictions.
+          If you&apos;sre looking for the best psychologist or the best counselor and want to consult a psychologist online, Wleness is here to help. Let us guide you towards resolving your challenges and embracing a brighter future.
           </p>
         </div>
       </div>

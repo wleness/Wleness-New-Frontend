@@ -63,7 +63,7 @@ export default function UserDashboardPage() {
     const currentDate = new Date();
     const day = currentDate.getDay();
     setSelectedDay(days[day]);
-  }, []);
+  }, [days]);
 
   const options = {
     headers: {

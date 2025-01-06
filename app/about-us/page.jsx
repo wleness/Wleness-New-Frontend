@@ -6,9 +6,9 @@ import { ABOUT_US } from "@data/urls";
 import getCanonical from "@utils/getCanonical";
 
 export const metadata = {
-  title: "About Us | Wleness",
+  title: "About Wleness- Best Online Mental Health Counseling",
   description:
-    "Get to know more about Wleness, your trusted partner in mental health & well-being. We offer online therapy, life coaching, and menta health counselling to help you thrive.",
+    "Get to know more about Wleness, Best online mental health counseling for your well-being. We offer online therapy, life coaching, and mental health counselling to help you thrive.",
   alternates: {
     canonical: getCanonical(ABOUT_US),
   },

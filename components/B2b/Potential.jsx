@@ -34,13 +34,14 @@ const Range = ({ title, value, handle_change, max }) => {
 };
 
 // Algo Data Box
-const AlgoDataBox = ({ title, value }) => {
+const AlgoDataBox = ({ title, value, range, rangeVal }) => {
+  let computedValue = typeof rangeVal === 'number' ? rangeVal : parseInt(value.split(' ')[0])
   return (
     <div className="bg-slate-900">
       <h2 className="text-center text-xl font-semibold py-2.5 border-2 text-white border-[#EB0000] px-4 xl:px-7 bg-[#790000]">
         {title}
       </h2>
-      <p className="text-4xl text-center font-bold py-5 xl:py-8 text-red-500">
+      <p className={`text-4xl text-center font-bold py-5 xl:py-8 ${(range === 'range-1' && computedValue <= 16000) || (range === 'range-2' && computedValue <= 16) || ((range === 'range-3' && computedValue <= 3100)) ? 'text-yellow-500': 'text-red-500'} `}>
         {value}
       </p>
     </div>
@@ -86,12 +87,14 @@ export default function Potential() {
             handle_change={handleRange1}
             title="Organization Size"
             value={range1}
+            min={1}
             max={100000}
           />
           <Range
             handle_change={handleRange2}
             title="Annulalized Revenue"
             value={range2}
+            min={1}
             max={1000000000000}
           />
         </div>
@@ -99,14 +102,32 @@ export default function Potential() {
           <AlgoDataBox
             title={"Employees w/ chronic mental issues"}
             value={Math.floor(data.mental_issue)}
+            range={'range-1'}
+            rangeVal={Math.floor(data.mental_issue)}
           />
           <AlgoDataBox
             title={"Potential Revenue Loss due to unproductivity"}
             value={`${Math.floor(data.unproductivity / 10000000)} Cr`}
+            range='range-3'
+            rangeVal={
+              typeof data.attrition === 'number' && !isNaN(data.attrition)
+                ? `${Math.floor(data.attrition / 10000000)} Cr`
+                : "0 Cr"
+            }
           />
           <AlgoDataBox
             title={"Potential Revenue Loss due to attrition"}
-            value={`${Math.floor(data.attrition / 10000000)} Cr`}
+            value={
+              typeof data.attrition === 'number' && !isNaN(data.attrition)
+                ? `${Math.floor(data.attrition / 10000000)} Cr`
+                : "0 Cr"
+            }
+            range={'range-2'}
+            rangeVal={
+              typeof data.attrition === 'number' && !isNaN(data.attrition)
+                ? `${Math.floor(data.attrition / 10000000)} Cr`
+                : "0 Cr"
+            }
           />
         </div>
       </div>

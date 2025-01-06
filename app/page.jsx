@@ -10,6 +10,7 @@ import HeaderTestimonialSlider from "@components/Sliders/HeaderTestimonialSlider
 import Therapies from "@components/Home/Therapies";
 import { TherapyData2 } from "@data/therapy";
 import WhyChooseGrid from "@components/Therapy/WhyChooseGrid";
+import FAQs from "@components/LandingPage/FAQs";
 
 export const metadata = {
   title:
@@ -38,6 +39,7 @@ export default function Home() {
       </div>
       <Blogs />
       <CTA isMobile={true} />
+      <FAQs faqLanding={true}/>
     </>
   );
 }

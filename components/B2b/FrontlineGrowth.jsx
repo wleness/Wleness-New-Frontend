@@ -30,7 +30,7 @@ const data = [
 
 const ContainerBox = ({ value }) => {
   return (
-    <div className="relative rounded-md cursor-pointer">
+    <div className="relative rounded-md cursor-pointer w-full">
       <Image
         src={value.image}
         alt={value.title}
@@ -53,7 +53,7 @@ export default function FrontlineGrowth() {
           <Image
             src={DoubleArrow}
             alt="Double arrow"
-            className="hidden md:block"
+            className="hidden md:block object-contain"
           />
           <ContainerBox value={data[1]} />
         </div>

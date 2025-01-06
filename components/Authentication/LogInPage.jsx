@@ -26,7 +26,7 @@ function LogInPageComp() {
         router.push("/");
       }
     }
-  });
+  },[]);
 
   const {
     successMessage,
