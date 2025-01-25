@@ -30,7 +30,7 @@ const data = [
 
 const ContainerBox = ({ value }) => {
   return (
-    <div className="relative rounded-md cursor-pointer w-full">
+    <div className="relative rounded-md cursor-pointer w-full my-4">
       <Image
         src={value.image}
         alt={value.title}
@@ -61,7 +61,7 @@ export default function FrontlineGrowth() {
           <Image src={DoubleArrow} alt="Double arrow" className="rotate-90" />
           <Image src={DoubleArrow} alt="Double arrow" className="rotate-90" />
         </div>
-        <div className="grid pb-8 md:grid-cols-2 gap-10 xl:gap-32">
+        <div className="grid pb-8 md:grid-cols-2 gap-10 xl:gap-32 my-4">
           <ContainerBox value={data[2]} />
           <ContainerBox value={data[3]} />
         </div>
