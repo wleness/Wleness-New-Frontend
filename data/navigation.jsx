@@ -71,7 +71,6 @@ export const services_pages = [
 
 export const aboutus_subpages = [
   ["About Wleness", ABOUT_US],
-  ["Contact Us", CONTACT_US],
   ["FAQs", FAQ],
 ];
 

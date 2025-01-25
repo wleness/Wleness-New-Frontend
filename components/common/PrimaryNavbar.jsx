@@ -13,12 +13,12 @@ import {
   COMMUNITY,
   LOGIN,
   USER_DASHBOARD,
+  CONTACT_US
 } from "@data/urls";
 import { aboutus_subpages, services_pages } from "@data/navigation";
 import { StarIcon } from "@components/Icons";
 import useNavbar from "./Navbar/useNavbar";
 import { getUserInfo } from "@utils/useEnquiryForm";
-import { useRouter } from "next/navigation";
 
 export default function PrimaryNavbar() {
   const { menu, openMenu, closeMenu } = useNavbar();
@@ -113,6 +113,11 @@ export default function PrimaryNavbar() {
               text="About Us"
               close={closeMenu}
               pages={aboutus_subpages}
+            />
+            <MenuLink
+              url={CONTACT_US}
+              text="Contact Us"
+              close={closeMenu}
             />
           </ul>
           <br />
