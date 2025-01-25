@@ -3,6 +3,7 @@
 const DATA = [
     {
         title: "Stress",
+        theme: "bg-[#ff53f6]",
         points: [
             "Trouble staying focused.",
             "Having a hard time sleeping.",
@@ -12,16 +13,8 @@ const DATA = [
         ],
     },
     {
-        title: "Anxiety",
-        points: [
-            "Avoiding situations or problems that cause stress.",
-            "Feeling tired or having trouble focusing because of too many thoughts.",
-            "Physical signs can include a fast heartbeat, sweating, shaking, and tight muscles.",
-            "Sleep problems, like difficulty falling asleep or staying asleep.",
-        ],
-    },
-    {
         title: "Depression",
+        theme: "bg-[#FFDB01]",
         points: [
             "Struggling to focus and concentrate",
             "Feeling sad and inadequate",
@@ -31,7 +24,18 @@ const DATA = [
         ],
     },
     {
+        title: "Anxiety",
+        theme: "bg-[#ff53f6]",
+        points: [
+            "Avoiding situations or problems that cause stress.",
+            "Feeling tired or having trouble focusing because of too many thoughts.",
+            "Physical signs can include a fast heartbeat, sweating, shaking, and tight muscles.",
+            "Sleep problems, like difficulty falling asleep or staying asleep.",
+        ],
+    },
+    {
         title: "Anger",
+        theme: "bg-[#FF5300]",
         points: [
             "Feeling annoyed or irritated by small problems often.",
             "Holding onto grudges and not letting go of past issues.",
@@ -41,23 +45,25 @@ const DATA = [
         ],
     },
     {
-        title: "ADHD",
-        points: [
-            "Struggling to manage time effectively.",
-            "Having trouble focusing on tasks or details.",
-            "Acting without thinking about the consequences.",
-            "Difficulty organizing tasks or activities.",
-            "Often losing items and missing appointments.",
-        ],
-    },
-    {
         title: "Panic Attacks",
+        theme: "bg-[#05A0FD]",
         points: [
             "Experiencing trouble breathing.",
             "Feeling dizzy or faint.",
             "Worrying about losing control or feeling crazy.",
             "Experiencing chest pain or discomfort.",
             "Sweating and shaking.",
+        ],
+    },
+    {
+        title: "ADHD",
+        theme: "bg-[#FF5300]",
+        points: [
+            "Struggling to manage time effectively.",
+            "Having trouble focusing on tasks or details.",
+            "Acting without thinking about the consequences.",
+            "Difficulty organizing tasks or activities.",
+            "Often losing items and missing appointments.",
         ],
     },
 ];
@@ -68,9 +74,9 @@ export default function Banner() {
             <div className="grid md:grid-cols-2 gap-y-9 xl:grid-cols-3 mt-6 lg:gap-5 mb-12">
                 {DATA?.map((value, i) => (
                     <div className="text-center border" key={i}>
-                        <h4 className="text-xs lg:text-base font-semibold text-primary-one py-4 bg-slate-900">
+                        <h2 className={`font-semibold text-black py-4 text-lg ${value.theme}`}>
                             {value.title}
-                        </h4>
+                        </h2>
 
                         <ul className="mt-4 list-disc px-8 pb-4">
                             {value.points.map((point, i) => (
