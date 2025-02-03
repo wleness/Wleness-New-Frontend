@@ -99,8 +99,7 @@ export default function FAQs({ faqLanding = false }) {
             <div className="container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-10">
                 <div>
                     <h2 className="font-bold text-3xl lg:text-5xl text-white mb-8">
-                        <p>Your Questions</p>
-                        <p>Answered</p>
+                        <p> FAQ on Online Therapy Platforms</p>
                     </h2>
 
                     <button className="bg-primary-one font-medium rounded-xl py-3 px-6 hover:scale-[1.03] transition-all">

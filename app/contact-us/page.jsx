@@ -21,7 +21,7 @@ export default function ContactUsPage() {
         <div className="container mx-auto text-center">
           <h1 className="subheading heading-primary">Contact Us</h1>
           <p className="text-lg font-semibold text-slate-300">
-            Reach Out for Support and Guidance
+            Best Mental Health Helpline
           </p>
         </div>
       </header>

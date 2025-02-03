@@ -58,7 +58,7 @@ export default function Resolve() {
           {value.label}
         </button>
 
-        <div className="h-full border border-primary-one py-10 hover:scale-[1.04] hover:shadow-md hover:shadow-primary-one/45 transition-all">
+        <div id={`resolve_${value.id}`} className="h-full border border-primary-one py-10 hover:scale-[1.04] hover:shadow-md hover:shadow-primary-one/45 transition-all">
           <div>
             <Image
               src={value.image}

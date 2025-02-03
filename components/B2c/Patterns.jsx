@@ -155,7 +155,7 @@ export default function Patterns() {
             strokeWidth={2}
           />
         </svg>
-        <a href="#resolve_home" className="btn-2 bg-primary-one">Let&apos;s solve now</a>
+        <a href="#resolve_2" className="btn-2 bg-primary-one">Let&apos;s solve now</a>
       </div>
     </section>
   );
