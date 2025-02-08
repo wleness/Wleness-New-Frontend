@@ -89,7 +89,7 @@ export default function DoctorSlider(props) {
         >
           <Swiper
             modules={[EffectCoverflow, Autoplay]}
-            className="mySwiper h-[420px] overflow-y-visible rounded-2xl lg:h-[500px]"
+            className="mySwiper sm:h-[460px] overflow-y-visible rounded-2xl lg:h-[500px]"
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
@@ -138,7 +138,7 @@ export default function DoctorSlider(props) {
                           <Image
                             src={value.image}
                             alt={`${value.name} - ${value.expertise}`}
-                            className="box-border block w-full rounded-2xl object-cover"
+                            className="box-border block w-full h-[256px] rounded-2xl object-cover"
                             width={192}
                             height={256}
                           />
