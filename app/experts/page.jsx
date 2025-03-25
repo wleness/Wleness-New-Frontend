@@ -9,47 +9,56 @@ import { COUPLES_THERAPY, EXPERTS, PSYCHIATRIST, THERAPY } from "@data/urls";
 import getCanonical from "@utils/getCanonical";
 
 export const metadata = {
-  title: "Wleness Experts | Online Mental Health Professionals",
-  description:
-    "Find the perfect match for your needs. Wleness connects you with India's top-rated psychologists for online therapy & counseling. Affordable & convenient. Get started now!",
-  alternates: {
-    canonical: getCanonical(EXPERTS),
-  },
+    title: "At wleness you Find the Best Psychologists in India and wellness therapist",
+    keywords: [
+        "psychologist near me",
+        "Best psychologist in India",
+        "best therapist in india",
+        "therapist near me",
+        "best psychologist near me",
+        "best counsellor in india",
+        "top psychologist in india",
+    ],
+    description:
+        "Looking for a therapist near you or the best psychologist near you? Consult the best counsellor in India or a top psychologist in India for professional help.",
+    alternates: {
+        canonical: getCanonical(EXPERTS),
+    },
 };
 
 const expertsTherapy = {
-  title: "Therapy",
-  desc: "A holistic approach to therapy that considers the whole person - mind, body, and spirit. Our therapeutic services are tailored to meet each client's individual needs, ensuring personalized and effective care.",
-  image: expertsWhy1,
-  slug: THERAPY,
+    title: "Therapy",
+    desc: "A holistic approach to therapy that considers the whole person - mind, body, and spirit. Our therapeutic services are tailored to meet each client's individual needs, ensuring personalized and effective care.",
+    image: expertsWhy1,
+    slug: THERAPY,
 };
 
 const expertsPsychiatrist = {
-  title: "Psychiatrist",
-  desc: "A psychiatry is grounded in the principles of empathy, compassion, and evidence-based practice. Our psychiatrists employ a holistic view of mental health, considering biological, psychological, and social factors that may impact an individual's well-being.",
-  image: expertsWhy2,
-  slug: PSYCHIATRIST,
+    title: "Psychiatrist",
+    desc: "A psychiatry is grounded in the principles of empathy, compassion, and evidence-based practice. Our psychiatrists employ a holistic view of mental health, considering biological, psychological, and social factors that may impact an individual's well-being.",
+    image: expertsWhy2,
+    slug: PSYCHIATRIST,
 };
 
 const expertsCoupleTherapy = {
-  title: "Couple Therapy",
-  desc: "We believe that every couple is unique, and their therapy should reflect that. Our couple therapy approach is tailored to meet each relationship's specific needs and dynamics.",
-  image: expertsWhy3,
-  slug: COUPLES_THERAPY,
+    title: "Couple Therapy",
+    desc: "We believe that every couple is unique, and their therapy should reflect that. Our couple therapy approach is tailored to meet each relationship's specific needs and dynamics.",
+    image: expertsWhy3,
+    slug: COUPLES_THERAPY,
 };
 
 export default function ExpertsPage() {
-  return (
-    <>
-      <Header />
-      <Specialist />
-      <WhyUs
-        expertsTherapy={expertsTherapy}
-        expertsPsychiatrist={expertsPsychiatrist}
-        expertsCoupleTherapy={expertsCoupleTherapy}
-      />
-      <Appointment />
-      <HappyClient data={doctorsPageClient} />
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <Specialist />
+            <WhyUs
+                expertsTherapy={expertsTherapy}
+                expertsPsychiatrist={expertsPsychiatrist}
+                expertsCoupleTherapy={expertsCoupleTherapy}
+            />
+            <Appointment />
+            <HappyClient data={doctorsPageClient} />
+        </>
+    );
 }

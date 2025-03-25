@@ -13,33 +13,47 @@ import WhyChooseGrid from "@components/Therapy/WhyChooseGrid";
 import FAQs from "@components/LandingPage/FAQs";
 
 export const metadata = {
-  title:
-    "Consult Best Psychologists in India with Virtual Therapy sessions",
-  description:
-    "Find expert online psychologist services and online therapy in India. Access professional mental health clinic support for effective therapy and well-being",
-  alternates: {
-    canonical: WLENESS_URL,
-  },
+    title: "Best Psychologist in India | Mental Health Clinic – Wleness",
+    keywords: [
+        "Best Psychologist in India",
+        "Free online therapist",
+        "Online psychologist",
+        "online therapy india",
+        "Mental health clinic",
+    ],
+    description:
+        "If you need help with mental health solutions. Find the best psychologist in India for wleness. Book NOW.",
+    alternates: {
+        canonical: WLENESS_URL,
+    },
 };
 
 export default function Home() {
-  return (
-    <>
-      <MainHeaderSlider />
-      <Community />
-      <Therapies is_title={true} is_bg={true} headingClasses={'text-3xl font-bold heading-primary'} description={true} therapyCard={{
-          buttonText: 'Know More',
-        }}
-      />
-      <Patterns />
-      <Resolve />
-      <HeaderTestimonialSlider />
-      <div className="py-20 bg-primary-two"> 
-        <WhyChooseGrid title={TherapyData2.title} data={TherapyData2.whyChoose} />
-      </div>
-      <Blogs />
-      <CTA isMobile={true} />
-      <FAQs faqLanding={true}/>
-    </>
-  );
+    return (
+        <>
+            <MainHeaderSlider />
+            <Community />
+            <Therapies
+                is_title={true}
+                is_bg={true}
+                headingClasses={"text-3xl font-bold heading-primary"}
+                description={true}
+                therapyCard={{
+                    buttonText: "Know More",
+                }}
+            />
+            <Patterns />
+            <Resolve />
+            <HeaderTestimonialSlider />
+            <div className="py-20 bg-primary-two">
+                <WhyChooseGrid
+                    title={TherapyData2.title}
+                    data={TherapyData2.whyChoose}
+                />
+            </div>
+            <Blogs />
+            <CTA isMobile={true} />
+            <FAQs faqLanding={true} />
+        </>
+    );
 }

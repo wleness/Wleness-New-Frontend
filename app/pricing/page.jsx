@@ -3,14 +3,20 @@ import { PRICING } from "@data/urls";
 import getCanonical from "@utils/getCanonical";
 
 export const metadata = {
-  title: "Get Online Psychologist Consultation and talk to Experts Today",
-  description:
-    "Consult an online psychologist for expert advice. Experience the best online therapy in India with the best psychologist. Consult now to enhance your mental health.",
-  alternates: {
-    canonical: getCanonical(PRICING),
-  },
+    title: "Connect with the Top-rated Psychologist in India at wleness and Talk to Experts Today",
+    keywords: [
+        "online psychologist consultation",
+        "Best online therapy india",
+        "Best psychologist",
+        "consult a psychologist online",
+    ],
+    description:
+        "Join wleness therapy community and find the best psychologist near you. Consult the best counselor in India for expert support in improving mental well-being.",
+    alternates: {
+        canonical: getCanonical(PRICING),
+    },
 };
 
 export default function PricingPage() {
-  return <PricingCards />;
+    return <PricingCards />;
 }
